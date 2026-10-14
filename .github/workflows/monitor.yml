@@ -1,0 +1,89 @@
+# ============================================================
+#  予約ページ監視の自動実行設定（GitHub Actions）
+#  5分おきに monitor/main.py を動かします。
+#  手動実行（Actions タブ → Run workflow）ではモードを選べます。
+# ============================================================
+name: 予約ページ監視
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"        # 5分おき（GitHub が混んでいると遅れることがあります）
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "実行モード"
+        type: choice
+        default: normal
+        options:
+          - normal        # 通常の見張り
+          - dry-run       # 通知を送らず、内容だけ表示（記録も保存しない）
+          - test-notify   # テスト通知を1件だけ送る
+
+# 必要最小限の権限：記録ファイル（docs/status.json）を保存するための書き込みだけ
+permissions:
+  contents: write
+
+# 前の見張りが終わる前に次が始まらないようにする
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      MODE: ${{ github.event.inputs.mode || 'normal' }}
+    steps:
+      - name: プログラムを取り出す
+        uses: actions/checkout@v4
+
+      - name: Python を準備する
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 部品を入れる
+        run: pip install -r requirements.txt
+
+      - name: 前回の作業記録を読み込む
+        if: env.MODE == 'normal'
+        uses: actions/cache/restore@v4
+        with:
+          path: .state
+          key: monitor-state-${{ github.run_id }}
+          restore-keys: monitor-state-
+
+      - name: 見張る
+        env:
+          # 秘密情報は GitHub Secrets から渡す（ログには表示されません）
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          case "$MODE" in
+            dry-run)     python monitor/main.py --dry-run ;;
+            test-notify) python monitor/main.py --test-notify ;;
+            *)           python monitor/main.py ;;
+          esac
+
+      - name: 作業記録を保存する
+        if: env.MODE == 'normal'
+        uses: actions/cache/save@v4
+        with:
+          path: .state
+          key: monitor-state-${{ github.run_id }}
+
+      - name: 一覧ページ用の記録をリポジトリに保存する
+        if: env.MODE == 'normal'
+        run: |
+          if git diff --quiet -- docs/status.json && [ -z "$(git status --porcelain -- docs/status.json)" ]; then
+            echo "記録に変化がないため保存しません"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/status.json
+          git commit -m "受付状況を更新"
+          git pull --rebase --autostash
+          git push
