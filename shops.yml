@@ -18,35 +18,19 @@ target:
 # enabled: false にすると、そのショップは見張りを休みます。
 # interval_minutes: 何分おきに見るか（最短5。robots.txt の指定があれば自動でそれ以上空けます）
 shops:
-  - id: surugaya
-    name: 駿河屋
-    url: "https://www.suruga-ya.jp/search?category=&search_word=デュエル・マスターズ&rankBy=release_date(int):descending"
-    mode: list            # list = 一覧ページに並ぶ商品を見張る / product = 1つの商品ページを見張る
-    fetch: static
-    enabled: true
-    interval_minutes: 5
-    rules:
-      item: "#search_result div.item"     # 商品1つ分の枠
-      title: "h3.product-name"            # 商品名の場所
-      link: ".title a"                    # 商品ページへのリンクの場所
-      status: ".item_price"               # 受付状況が書いてある場所
-      id_regex: '/product/detail/(\d+)'   # リンクから商品番号を取り出す決まり
-      open_keywords: ["予約：", "新品："]
-      soldout_keywords: ["品切れ"]
-
   - id: animate
     name: アニメイト通販
     url: "https://www.animate-onlineshop.jp/animetitle/index.php?aid=3346&ss=5&sl=1"
-    mode: list
+    mode: list            # list = 一覧ページに並ぶ商品を見張る / product = 1つの商品ページを見張る
     fetch: static
     enabled: true
     interval_minutes: 20  # robots.txt で約20分空けるよう指定されているため
     rules:
-      item: "div.item_list > ul > li"
-      title: "h3 a"
-      link: "h3 a"
-      status: "p.stock"
-      id_regex: '/pd/(\d+)'
+      item: "div.item_list > ul > li"     # 商品1つ分の枠
+      title: "h3 a"                       # 商品名の場所
+      link: "h3 a"                        # 商品ページへのリンクの場所
+      status: "p.stock"                   # 受付状況が書いてある場所
+      id_regex: '/pd/(\d+)'               # リンクから商品番号を取り出す決まり
       open_keywords: ["予約受付中", "在庫あり", "残りわずか", "以内に入荷", "取り寄せ"]
       soldout_keywords: ["販売終了", "品切れ", "完売", "受付終了"]
 
@@ -83,25 +67,9 @@ shops:
       open_keywords: ["残りあと"]
       soldout_keywords: ["sold out"]
 
-  - id: yuyutei
-    name: 遊々亭
-    url: "https://yuyu-tei.jp/sell/dm/m/boosterbox"
-    mode: list
-    fetch: static
-    enabled: true
-    interval_minutes: 5
-    rules:
-      item: "div.card-product"
-      title: "p.item-name"
-      link: "p.item-name a"
-      status: "label.cart_sell_zaiko"
-      id_regex: '/item/pack/(\d+)'
-      all_items: true                     # デュエマ専用ページなので、商品名のチェックを省く
-      open_pattern: '在庫 ?: ?\d'          # 「在庫 : 3」のように数字があれば受付中
-      soldout_keywords: ["×"]
-
 # ---- 対象外にしたショップ（メモ） ----
 # 次のショップは、規約で禁止されている・プログラムからのアクセスを遮断している等の理由で見張りません。
 # 遮断を回避する設定は社是（相手サイトに迷惑をかけない）に反するため、追加しないでください。
 #   Amazon / 楽天 / あみあみ / セブンネット / ヨドバシ / ビックカメラ / タカラトミーモール /
-#   ジョーシン / イオンスタイルオンライン / トイザらス / エディオン など
+#   ジョーシン / イオンスタイルオンライン / トイザらス / エディオン / カードラッシュ /
+#   駿河屋・遊々亭（GitHub からのアクセスを拒否されるため） など
