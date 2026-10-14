@@ -13,6 +13,7 @@ target:
     - "Duel Masters"
   exclude_keywords:                       # 商品名にこれが入っていたら対象外
     - "(キャラクターグッズ)"
+    - "カードスリーブ"                    # 「DXカードスリーブ」「(カードスリーブ)」など
   include_restock: true                   # 再販も通知するなら true、しないなら false
 
 # ---- 見張るショップ ----
