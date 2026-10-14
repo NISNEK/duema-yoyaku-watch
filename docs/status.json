@@ -1,18 +1,6 @@
 {
-  "saved_at": "2026-10-14T22:09:58+09:00",
+  "saved_at": "2026-10-14T22:12:14+09:00",
   "shops": {
-    "animate": {
-      "changed_at": null,
-      "checked_at": "2026-10-14T22:09:58+09:00",
-      "enabled": true,
-      "error_count": 12,
-      "error_notified": true,
-      "items": {},
-      "last_error": "ページが開けませんでした（HTTP 403）",
-      "name": "アニメイト通販",
-      "state": "error",
-      "url": "https://www.animate-onlineshop.jp/animetitle/index.php?aid=3346&ss=5&sl=1"
-    },
     "fullahead": {
       "changed_at": "2026-10-14T15:29:39+09:00",
       "checked_at": "2026-10-14T22:09:58+09:00",
