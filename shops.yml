@@ -18,35 +18,19 @@ target:
 # enabled: false にすると、そのショップは見張りを休みます。
 # interval_minutes: 何分おきに見るか（最短5。robots.txt の指定があれば自動でそれ以上空けます）
 shops:
-  - id: animate
-    name: アニメイト通販
-    url: "https://www.animate-onlineshop.jp/animetitle/index.php?aid=3346&ss=5&sl=1"
-    mode: list            # list = 一覧ページに並ぶ商品を見張る / product = 1つの商品ページを見張る
-    fetch: static
-    enabled: true
-    interval_minutes: 20  # robots.txt で約20分空けるよう指定されているため
-    rules:
-      item: "div.item_list > ul > li"     # 商品1つ分の枠
-      title: "h3 a"                       # 商品名の場所
-      link: "h3 a"                        # 商品ページへのリンクの場所
-      status: "p.stock"                   # 受付状況が書いてある場所
-      id_regex: '/pd/(\d+)'               # リンクから商品番号を取り出す決まり
-      open_keywords: ["予約受付中", "在庫あり", "残りわずか", "以内に入荷", "取り寄せ"]
-      soldout_keywords: ["販売終了", "品切れ", "完売", "受付終了"]
-
   - id: hobbysearch
     name: ホビーサーチ
     url: "https://www.1999.co.jp/search?typ1_c=121&searchkey=デュエル・マスターズ&spage=1&sortid=0"
-    mode: list
+    mode: list            # list = 一覧ページに並ぶ商品を見張る / product = 1つの商品ページを見張る
     fetch: static
     enabled: true
     interval_minutes: 5
     rules:
-      item: "div.c-product-list__item"
-      title: "div.c-card__title"
-      link: "a.c-card__info-links"
-      status: "ul.c-card__tags-list"
-      id_regex: '/(\d+)$'
+      item: "div.c-product-list__item"    # 商品1つ分の枠
+      title: "div.c-card__title"          # 商品名の場所
+      link: "a.c-card__info-links"        # 商品ページへのリンクの場所
+      status: "ul.c-card__tags-list"      # 受付状況が書いてある場所
+      id_regex: '/(\d+)$'                 # リンクから商品番号を取り出す決まり
       open_keywords: ["予約品", "在庫あり", "在庫僅少", "新入荷"]
       soldout_keywords: ["販売終了", "品切れ", "完売"]
 
@@ -72,4 +56,4 @@ shops:
 # 遮断を回避する設定は社是（相手サイトに迷惑をかけない）に反するため、追加しないでください。
 #   Amazon / 楽天 / あみあみ / セブンネット / ヨドバシ / ビックカメラ / タカラトミーモール /
 #   ジョーシン / イオンスタイルオンライン / トイザらス / エディオン / カードラッシュ /
-#   駿河屋・遊々亭（GitHub からのアクセスを拒否されるため） など
+#   駿河屋・遊々亭・アニメイト通販（GitHub からのアクセスを拒否されるため） など

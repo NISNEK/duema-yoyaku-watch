@@ -21,7 +21,6 @@ DM = quote("デュエル・マスターズ")
 
 CANDIDATES = [
     # (区分, 名前, URL)
-    ("予約", "アニメイト通販", "https://www.animate-onlineshop.jp/animetitle/index.php?aid=3346&ss=5&sl=1"),
     ("予約", "ホビーサーチ", f"https://www.1999.co.jp/search?typ1_c=121&searchkey={DM}&spage=1&sortid=0"),
     ("予約", "フルアヘッド", "https://fullahead-dm.com/shopbrand/yoyaku/page1/new/"),
     ("予約", "イオンスタイルオンライン", f"https://aeonretail.com/Form/Product/ProductList.aspx?shop=0&swrd={DM}"),
