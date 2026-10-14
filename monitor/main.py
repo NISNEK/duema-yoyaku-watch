@@ -46,18 +46,23 @@ def effective_interval(shop, rec):
 
 
 def robots_allows(shop, rec, at):
-    """robots.txt の確認は1日1回だけ行い、結果を覚えておく。"""
+    """robots.txt の確認は1日1回だけ行い、結果を覚えておく（取りに行けない時は1時間ごとに確認し直す）。"""
     robots = rec.get("robots") or {}
     checked = state.parse_iso(robots.get("checked_at"))
-    if checked is None or at - checked >= ROBOTS_RECHECK:
-        allowed, delay = fetcher.check_robots(shop["url"])
-        robots = {"checked_at": state.iso(at), "allowed": allowed, "crawl_delay": delay}
+    recheck = ROBOTS_RECHECK if robots.get("allowed") else timedelta(hours=1)
+    if checked is None or "status" not in robots or at - checked >= recheck:
+        allowed, delay, status = fetcher.check_robots(shop["url"])
+        robots = {"checked_at": state.iso(at), "allowed": allowed,
+                  "crawl_delay": delay, "status": status}
         rec["robots"] = robots
     return robots["allowed"]
 
 
 def check_shop(shop, rec, target, at):
     if not robots_allows(shop, rec, at):
+        status = rec["robots"]["status"]
+        if status >= 500:
+            raise fetcher.FetchError(f"robots.txt が取得できません（HTTP {status}・サーバー不調）")
         raise fetcher.FetchError("robots.txt でアクセスが禁止されたため、見張りを中止しました")
     html, final_url = fetcher.fetch_html(shop["url"])
     rules = shop.get("rules", {})

@@ -34,18 +34,24 @@ def _get(url):
 
 
 def check_robots(url):
-    """robots.txt を読み、(取りに行ってよいか, 指定された待ち秒数) を返す。"""
+    """robots.txt を読み、(取りに行ってよいか, 指定された待ち秒数, HTTPステータス) を返す。
+
+    robots.txt の国際ルール（RFC 9309）に従う:
+      200     … 書かれている内容に従う
+      400番台 … robots.txt が無いのと同じ扱い（制限なし）
+      500番台 … サーバー不調のため、今回は取りに行かない
+    """
     parts = urlsplit(url)
     robots_url = f"{parts.scheme}://{parts.netloc}/robots.txt"
     res = _get(robots_url)
-    if res.status_code in (401, 403):
-        return False, None  # robots.txt 自体を拒否 → 全部ダメとみなす
+    if res.status_code >= 500:
+        return False, None, res.status_code
     if res.status_code >= 400:
-        return True, None  # robots.txt が無い → 制限なし
+        return True, None, res.status_code
     parser = urllib.robotparser.RobotFileParser()
     parser.parse(res.text.splitlines())
     ua = user_agent()
-    return parser.can_fetch(ua, url), parser.crawl_delay(ua)
+    return parser.can_fetch(ua, url), parser.crawl_delay(ua), res.status_code
 
 
 def fetch_html(url):
