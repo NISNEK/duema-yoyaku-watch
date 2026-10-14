@@ -11,7 +11,8 @@ target:
     - "デュエル・マスターズ"
     - "デュエマ"
     - "Duel Masters"
-  exclude_keywords: []                    # 商品名にこれが入っていたら対象外（例: ["中古"]）
+  exclude_keywords:                       # 商品名にこれが入っていたら対象外
+    - "(キャラクターグッズ)"
   include_restock: true                   # 再販も通知するなら true、しないなら false
 
 # ---- 見張るショップ ----
@@ -20,7 +21,7 @@ target:
 shops:
   - id: hobbysearch
     name: ホビーサーチ
-    url: "https://www.1999.co.jp/search?typ1_c=121&searchkey=デュエル・マスターズ&spage=1&sortid=0"
+    url: "https://www.1999.co.jp/search?typ1_c=121&cat=toreca&state=&sold=0&sortid=0&searchkey=デュエル・マスターズ"
     mode: list            # list = 一覧ページに並ぶ商品を見張る / product = 1つの商品ページを見張る
     fetch: static
     enabled: true
@@ -31,8 +32,9 @@ shops:
       link: "a.c-card__info-links"        # 商品ページへのリンクの場所
       status: "ul.c-card__tags-list"      # 受付状況が書いてある場所
       id_regex: '/(\d+)$'                 # リンクから商品番号を取り出す決まり
-      open_keywords: ["予約品", "在庫あり", "在庫僅少", "新入荷"]
-      soldout_keywords: ["販売終了", "品切れ", "完売"]
+      open_keywords: ["予約品", "販売中", "在庫あり", "在庫僅少", "新入荷"]
+      soldout_keywords: ["在庫なし", "販売終了", "品切れ", "完売"]
+      soldout_first: true                 # 「予約品 在庫なし」は売り切れ（予約枠が埋まった）と判定する
 
   - id: fullahead
     name: フルアヘッド
@@ -47,6 +49,7 @@ shops:
       link: "a[href*='/shopdetail/']"
       status: "span.M_item-stock-smallstock, span.soldout"
       id_regex: '/shopdetail/(\d+)'
+      link_template: "https://fullahead-dm.com/shopdetail/{id}/"   # 一覧のリンクのままだと「ページがありません」になるため
       all_items: true                     # デュエマ専門店なので、商品名のチェックを省く
       open_keywords: ["残りあと"]
       soldout_keywords: ["sold out"]

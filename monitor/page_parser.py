@@ -43,17 +43,26 @@ def _matches(text, words, pattern):
 
 
 def classify(text, rules):
-    if _matches(text, rules.get("open_keywords", []), rules.get("open_pattern")):
+    is_open = _matches(text, rules.get("open_keywords", []), rules.get("open_pattern"))
+    is_soldout = _matches(text, rules.get("soldout_keywords", []), rules.get("soldout_pattern"))
+    if is_open and is_soldout:
+        # 両方の言葉がある時（例:「予約品 在庫なし」）は、soldout_first の設定で決める
+        return "soldout" if rules.get("soldout_first") else "open"
+    if is_open:
         return "open"
-    if _matches(text, rules.get("soldout_keywords", []), rules.get("soldout_pattern")):
+    if is_soldout:
         return "soldout"
     return "before"
 
 
-def is_target(title, target):
-    if not _contains_any(title, target.get("keywords", [])):
+def is_excluded(title, target):
+    return _contains_any(title, target.get("exclude_keywords", []))
+
+
+def is_target(title, target, check_keywords=True):
+    if check_keywords and not _contains_any(title, target.get("keywords", [])):
         return False
-    return not _contains_any(title, target.get("exclude_keywords", []))
+    return not is_excluded(title, target)
 
 
 def _text(element, selector):
@@ -76,11 +85,15 @@ def parse_list(html, page_url, rules, target):
         link = block.select_one(rules.get("link") or "a")
         if not title or link is None or not link.get("href"):
             continue
-        if not rules.get("all_items") and not is_target(title, target):
+        # all_items: true のページでも、対象外の言葉（exclude_keywords）は除く
+        if not is_target(title, target, check_keywords=not rules.get("all_items")):
             continue
         url = urljoin(page_url, link["href"])
         match = re.search(rules["id_regex"], url) if rules.get("id_regex") else None
         item_id = match.group(1) if match else url
+        if match and rules.get("link_template"):
+            # 一覧ページのリンクにおまけの文字が付いていて直接開けない店は、商品番号から正しいURLを作る
+            url = rules["link_template"].format(id=item_id)
         state = classify(_text(block, rules.get("status")), rules)
         items[item_id] = Item(item_id, title, url, state)
     return list(items.values())

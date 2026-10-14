@@ -95,6 +95,10 @@ def run(dry_run):
             print(f"- {shop['name']}: 失敗 … {e}")
             events += state.apply_failure(rec, shop, str(e), at)
             continue
+        # 対象外の言葉が後から追加された時のため、記録済みの該当商品も消す
+        for item_id in [k for k, v in rec["items"].items()
+                        if page_parser.is_excluded(v["title"], target)]:
+            del rec["items"][item_id]
         new_events = state.apply_success(rec, shop, items, include_restock, at)
         counts = {s: sum(1 for i in items if i.state == s) for s in ("open", "before", "soldout")}
         print(f"- {shop['name']}: 商品 {len(items)} 件（受付中 {counts['open']} / "
