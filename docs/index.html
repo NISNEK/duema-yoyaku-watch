@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>デュエマ予約ウォッチ</title>
+<title>デュエマ予約確認</title>
 <style>
   :root {
     --bg: #f6f7f9; --card: #ffffff; --text: #1d2127; --sub: #5f6b7a; --line: #e2e6eb;
@@ -58,7 +58,7 @@
 </head>
 <body>
 <main>
-  <h1>デュエマ予約ウォッチ</h1>
+  <h1>デュエマ予約確認</h1>
   <div class="meta" id="meta">読み込み中…</div>
 
   <section class="shops" id="shops" aria-label="ショップごとの状況"></section>
@@ -103,8 +103,9 @@ function renderShops(shops) {
   for (const s of list) {
     const card = el("div", { class: "shop" });
     const top = el("div");
-    top.append(el("a", { href: s.url, target: "_blank", rel: "noopener" }, s.name), " ", badge(s.state));
-    card.append(top, el("div", { class: "when" }, "最終確認 " + fmt(s.checked_at)));
+    top.append(s.url ? el("a", { href: s.url, target: "_blank", rel: "noopener" }, s.name) : el("strong", {}, s.name), " ", badge(s.state));
+    const when = s.checked_at ? "最終確認 " + fmt(s.checked_at) : Object.keys(s.items || {}).length + " 件（人が登録）";
+    card.append(top, el("div", { class: "when" }, when));
     if (s.error_count) card.append(el("div", { class: "err" }, s.last_error || "取得に失敗しています"));
     box.append(card);
   }
@@ -148,7 +149,7 @@ fetch("status.json?t=" + Date.now())
     all = [];
     for (const s of Object.values(shops)) {
       if (s.enabled === false) continue;
-      for (const i of Object.values(s.items || {})) all.push({ ...i, shop: s.name });
+      for (const i of Object.values(s.items || {})) all.push({ ...i, shop: i.shop ? i.shop + "（手動登録）" : s.name });
     }
     renderItems();
   })
