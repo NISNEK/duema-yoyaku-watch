@@ -1,9 +1,9 @@
 {
-  "saved_at": "2026-10-14T22:12:14+09:00",
+  "saved_at": "2026-10-14T22:56:38+09:00",
   "shops": {
     "fullahead": {
       "changed_at": "2026-10-14T15:29:39+09:00",
-      "checked_at": "2026-10-14T22:09:58+09:00",
+      "checked_at": "2026-10-14T22:56:38+09:00",
       "enabled": true,
       "error_count": 0,
       "error_notified": false,
@@ -12,501 +12,501 @@
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【宅配便のみ】DMBD-13 デュエル・マスターズTCG クロニクル最終決戦デッキ 覚醒流星",
-          "url": "https://fullahead-dm.com/shopdetail/000000014625/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000014625/"
         },
         "000000014626": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【宅配便のみ】DMBD-14 デュエル・マスターズTCG クロニクル最終決戦デッキ 龍魂紅蓮譚【12月10日出荷予定】",
-          "url": "https://fullahead-dm.com/shopdetail/000000014626/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000014626/"
         },
         "000000025611": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "おひとりさま3BOXまで【宅配便のみ】DM22-RP2 デュエル・マスターズTCG ゴッド・オブ・アビス 第2弾「轟炎の竜皇」 DP-BOX 12月17日発売予定",
-          "url": "https://fullahead-dm.com/shopdetail/000000025611/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000025611/"
         },
         "000000025613": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": true,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "open",
           "title": "【宅配便のみ】DM22-SP2 デュエル・マスターズTCG 「轟炎の竜皇」暴竜爵からの招待状",
-          "url": "https://fullahead-dm.com/shopdetail/000000025613/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000025613/"
         },
         "000000025632": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【宅配便のみ】DM24-SD1 デュエル・マスターズTCG いきなりつよいデッキ 攻めの王道",
-          "url": "https://fullahead-dm.com/shopdetail/000000025632/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000025632/"
         },
         "000000025633": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【宅配便のみ】DM24-SD2 デュエル・マスターズTCG いきなりつよいデッキ 守りの王道",
-          "url": "https://fullahead-dm.com/shopdetail/000000025633/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000025633/"
         },
         "000000025634": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【宅配便のみ】 DM24-SP1 デュエル・マスターズTCG キャラプレミアムデッキ 「ドラゴン娘になりたくないっ!」イェーイめっちゃドラゴン!!",
-          "url": "https://fullahead-dm.com/shopdetail/000000025634/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000025634/"
         },
         "000000025635": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DM24-RP1 デュエル・マスターズTCG 王道篇第1弾 「デーモン・オブ・ハイパームーン」 DP-BOX 4月13日発売",
-          "url": "https://fullahead-dm.com/shopdetail/000000025635/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000025635/"
         },
         "000000025636": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DM24-RP1 デュエル・マスターズTCG 王道篇第1弾 「デーモン・オブ・ハイパームーン」12BOX入りカートン 4月13日発売",
-          "url": "https://fullahead-dm.com/shopdetail/000000025636/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000025636/"
         },
         "000000031932": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DM23-RP4X デュエル・マスターズTCG アビス・レボリューション 第4弾 「竜皇神爆輝」超刺激パック DP-BOX 12月16日発売",
-          "url": "https://fullahead-dm.com/shopdetail/000000031932/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000031932/"
         },
         "000000033612": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】デュエル・マスターズ TCG DM24-RP2 王道篇第2弾 「カイザー・オブ・ハイパードラゴン」 1カートン12BOX【宅配便のみ】6/22発売予定",
-          "url": "https://fullahead-dm.com/shopdetail/000000033612/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033612/"
         },
         "000000033956": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【宅配便のみ】DM24-EX1 デュエル・マスターズTCG 「超感謝祭 ファンタジーBEST」",
-          "url": "https://fullahead-dm.com/shopdetail/000000033956/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033956/"
         },
         "000000033957": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DM24-EX1 デュエル・マスターズTCG 「超感謝祭 ファンタジーBEST」 24BOX入り1カートン 7月20日発売",
-          "url": "https://fullahead-dm.com/shopdetail/000000033957/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033957/"
         },
         "000000033958": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DM24-BD1 デュエル・マスターズTCG ドリーム英雄譚デッキ ドギラゴンの書",
-          "url": "https://fullahead-dm.com/shopdetail/000000033958/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033958/"
         },
         "000000033959": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DM24-BD2 デュエル・マスターズTCG ドリーム英雄譚デッキ ジョニーの書",
-          "url": "https://fullahead-dm.com/shopdetail/000000033959/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033959/"
         },
         "000000033960": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】デュエル・マスターズ TCG DM24-RP3 王道篇第3弾 「ゴールド・オブ・ハイパーエンジェル」 BOX 9/21発売予定",
-          "url": "https://fullahead-dm.com/shopdetail/000000033960/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033960/"
         },
         "000000033961": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】デュエル・マスターズ TCG DM24-RP3 王道篇第3弾 「ゴールド・オブ・ハイパーエンジェル」 1カートン12BOX 9/21発売予定",
-          "url": "https://fullahead-dm.com/shopdetail/000000033961/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033961/"
         },
         "000000033963": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】デュエル・マスターズ TCG DM24-SP2 キャラプレミアムデッキ 「デュエル・マスターズLOST」 誓いの水晶 【10/5発売予定】【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033963/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033963/"
         },
         "000000033965": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "デュエル・マスターズ TCG DM24-EX2 天下夢双!! デュエキングDreaM2024 BOX【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033965/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033965/"
         },
         "000000033966": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DM24-BD3 デュエル・マスターズTCG ドリーム英雄譚デッキ モモキングの書 11月23日発売予定",
-          "url": "https://fullahead-dm.com/shopdetail/000000033966/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033966/"
         },
         "000000033968": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DM24-RP4 デュエル・マスターズTCG 王道篇第4弾 「悪魔神、復活」 DP-BOX 12月21日発売予定",
-          "url": "https://fullahead-dm.com/shopdetail/000000033968/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033968/"
         },
         "000000033969": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DM24-EX3 デュエル・マスターズTCG 刺激爆発デュエナマイトパック DP-BOX 1月18日発売予定",
-          "url": "https://fullahead-dm.com/shopdetail/000000033969/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033969/"
         },
         "000000033972": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DM24-EX4 にじさんじコラボ・マスターズ 「異次元の超獣使い」 1BOX【6/18再販分】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033972/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033972/"
         },
         "000000033973": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【宅配便のみ】DM25-RP1 王道W 第1弾 邪神vs邪神 〜ソウル・オブ・ジ・アビス〜 BOX",
-          "url": "https://fullahead-dm.com/shopdetail/000000033973/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033973/"
         },
         "000000033974": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DM25-RP1 王道W 第1弾 邪神vs邪神 〜ソウル・オブ・ジ・アビス〜 12BOX カートン【4/19発売】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033974/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033974/"
         },
         "000000033975": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "デュエル・マスターズ TCG DM25-SD1 いきなりつよいデッキ 技の王道【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033975/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033975/"
         },
         "000000033976": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "デュエル・マスターズ TCG DM25-SD2 いきなりつよいデッキ 力の王道【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033976/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033976/"
         },
         "000000033977": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DM25-RP2 王道W 第2弾 邪神vs邪神�� 〜ジャシン・イン・ザ・シェル〜 【6/21発売】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033977/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033977/"
         },
         "000000033978": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DM25-RP2 王道W 第2弾 邪神vs邪神�� 〜ジャシン・イン・ザ・シェル〜 12BOX カートン【6/21発売】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033978/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033978/"
         },
         "000000033979": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DM24-EX4 にじさんじコラボ・マスターズ 「異次元の超獣使い」 30BOX入り1カートン【6/18再販分】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033979/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033979/"
         },
         "000000033980": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】DM25-BD1 デュエル・マスターズTCG ドリーム英雄譚デッキ ボルシャックの書【宅配便のみ】8月9日発売予定",
-          "url": "https://fullahead-dm.com/shopdetail/000000033980/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033980/"
         },
         "000000033981": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】DM25-BD2 デュエル・マスターズTCG ドリーム英雄譚デッキ アルカディアスの書【宅配便のみ】8月9日発売予定",
-          "url": "https://fullahead-dm.com/shopdetail/000000033981/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033981/"
         },
         "000000033982": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】DM25-SP2 キャラプレミアムデッキ ドラゴン娘になりたくないっ! はじけろスポーツ!青春☆ワールドカップ!!【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033982/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033982/"
         },
         "000000033983": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】DM25-RP3 デュエル・マスターズTCG 王道W 第3弾 邪神vs時皇 〜ビヨンド・ザ・タイム〜 1BOX 9/20発売予定【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033983/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033983/"
         },
         "000000033984": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】DM25-RP3 デュエル・マスターズTCG 王道W 第3弾 邪神vs時皇 〜ビヨンド・ザ・タイム〜 12BOX入り1カートン 9/20発売予定【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033984/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033984/"
         },
         "000000033985": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】DM25-EX2 デュエル・マスターズTCG 王道vs邪道 デュエキングWDreaM 2025 1BOX 10/18発売予定【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033985/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033985/"
         },
         "000000033986": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】DM25-EX2 デュエル・マスターズTCG 王道vs邪道 デュエキングWDreaM 2025 12BOX入り1カートン 10/18発売予定【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033986/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033986/"
         },
         "000000033987": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】DM25-BD3 デュエル・マスターズTCG ドリーム英雄譚デッキ グレンモルトの書【11月15日お届け予定】【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033987/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033987/"
         },
         "000000033988": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】DM25-RP4 デュエル・マスターズTCG 王道W 第4弾 終淵 〜LOVE&ABYSS〜 1BOX【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033988/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033988/"
         },
         "000000033989": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】DM25-RP4 デュエル・マスターズTCG 王道W 第4弾 終淵 〜LOVE&ABYSS〜 1カートン(12BOX入)【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033989/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033989/"
         },
         "000000033990": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】DM25-EX3 デュエル・マスターズTCG 邪神爆発デュエナマイトパック「王道W」1BOX【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033990/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033990/"
         },
         "000000033991": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】DM25-EX3 デュエル・マスターズTCG 邪神爆発デュエナマイトパック「王道W」1カートン(12BOX入り)【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033991/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033991/"
         },
         "000000033992": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "DM25-EX4 デュエル・マスターズTCG エピソード4 パンドラ・ウォーズ 1BOX【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033992/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033992/"
         },
         "000000033993": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "DM25-EX4 デュエル・マスターズTCG エピソード4 パンドラ・ウォーズ 1カートン(24BOX入り)【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033993/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033993/"
         },
         "000000033994": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "DM26-SD1 デュエル・マスターズTCG ドキドキつよいデッキ 25の王道 お一人様5個まで",
-          "url": "https://fullahead-dm.com/shopdetail/000000033994/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033994/"
         },
         "000000033997": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "DM26-EX2 デュエル・マスターズTCG 悪感謝祭 カリスマBEST 1BOX【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033997/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033997/"
         },
         "000000033998": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": true,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "open",
           "title": "【予約】DM26-EX4 デュエル・マスターズTCG 切札不滅!! デュエキング FOREVER 2026 10/17発売予定 1BOX(12BOXまで)【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033998/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033998/"
         },
         "000000033999": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": true,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "open",
           "title": "【予約】DM26-EX4 デュエル・マスターズTCG 切札不滅!! デュエキング FOREVER 2026 10/17発売予定 1カートン(12BOX)【宅配便のみ】",
-          "url": "https://fullahead-dm.com/shopdetail/000000033999/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000033999/"
         },
         "000000039169": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DMART-25 デュエル・マスターズTCG 神アート アビス、東京に現わる【タカラトミーモール限定】",
-          "url": "https://fullahead-dm.com/shopdetail/000000039169/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000039169/"
         },
         "000000039182": {
           "changed_at": "2026-10-14T15:29:39+09:00",
           "ever_open": false,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
           "state": "soldout",
           "title": "【予約】【宅配便のみ】DMART-26 デュエル・マスターズTCG 神アート デュエマ × モンスターハンターワイルズ【タカラトミーモール限定】",
-          "url": "https://fullahead-dm.com/shopdetail/000000039182/yoyaku/page1/new/"
+          "url": "https://fullahead-dm.com/shopdetail/000000039182/"
         }
       },
       "last_error": null,
@@ -515,607 +515,617 @@
       "url": "https://fullahead-dm.com/shopbrand/yoyaku/page1/new/"
     },
     "hobbysearch": {
-      "changed_at": "2026-10-14T15:29:39+09:00",
-      "checked_at": "2026-10-14T22:09:58+09:00",
+      "changed_at": "2026-10-14T22:56:38+09:00",
+      "checked_at": "2026-10-14T22:56:38+09:00",
       "enabled": true,
       "error_count": 0,
       "error_notified": false,
       "items": {
-        "11437804": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11158770": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 真気楼と誠偽感の決断 箔プリントTシャツレディース(サイズ/XXL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437804"
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 王闘竜皇 ボルシャック・ドラゴン (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11158770"
         },
-        "11437805": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11158771": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 真気楼と誠偽感の決断 箔プリントTシャツレディース(サイズ/XXXL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437805"
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 至高の魂 アビスベル=ジャシン帝 (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11158771"
         },
-        "11437806": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11158772": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 神帝(アージュ、ムーラ、ヴィシュ、スヴァ) F3号キャンバスボード (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437806"
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXオーバーカードスリーブ ドリームレアver. (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11158772"
         },
-        "11437807": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11162233": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 極真龍魂 オール・オーバー・ザ・ワールド F3号キャンバスボード (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437807"
+          "state": "soldout",
+          "title": "デュエル・マスターズTCG にじさんじコラボ・マスターズ「異次元の超獣使い」 [DM24-EX4] (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11162233"
         },
-        "11437808": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11169897": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 終焉の禁断 ドルマゲドンX F3号キャンバスボード (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437808"
+          "state": "soldout",
+          "title": "デュエル・マスターズTCG 王道W 第1弾 邪神vs邪神 ~ソウル・オブ・ジ・アビス~ [DM25-RP1] (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11169897"
         },
-        "11437809": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11169902": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 零龍 F3号キャンバスボード (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437809"
+          "state": "soldout",
+          "title": "DM25-SD1 デュエル・マスターズTCG いきなりつよいデッキ 技の王道 (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11169902"
         },
-        "11437810": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11169903": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 超次元の王家 アクリルジオラマスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437810"
+          "state": "soldout",
+          "title": "DM25-SD2 デュエル・マスターズTCG いきなりつよいデッキ 力の王道 (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11169903"
         },
-        "11437811": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11169908": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 飛翔龍 5000VT アクリルジオラマスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437811"
+          "state": "soldout",
+          "title": "DM25-SP1 デュエル・マスターズTCG キャラプレミアムデッキ 「ドラゴン娘になりたくないっ!」Jack-Pot-Live!! in 桜龍高校 (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11169908"
         },
-        "11437812": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11178944": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 革命の絆 アクリルジオラマスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437812"
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 王導聖霊 アルファディオス (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11178944"
         },
-        "11437813": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11178945": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 轟く覚醒 レッドゾーン・バスター アクリルジオラマスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437813"
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 究極の虚 ジャシン=ヴリドガルド (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11178945"
         },
-        "11437814": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
+        "11190367": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
           "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": true,
           "state": "open",
-          "title": "デュエル・マスターズ 蒼き覚醒 ドギラゴンX アクリルジオラマスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437814"
+          "title": "★特価品 デュエル・マスターズ DXカードスリーブ 滝川るる&ラフルル -閃光のヒロイン- (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11190367"
         },
-        "11437815": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11190368": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ ガヨウ神 アクリルジオラマスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437815"
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 黄昏ミミ&トワイライトMk.3 -挑戦のヒロイン- (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11190368"
         },
-        "11437816": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11190369": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 月下卍壊 ガ・リュミーズ 卍 アクリルジオラマスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437816"
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 本能寺カレン&カオスマントラ ー裏切のヒロインー (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11190369"
         },
-        "11437817": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11190370": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 超神羅星アポロヌス・ドラゲリオン アクリルジオラマスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437817"
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ うららかもも&ミノマル -献身のヒロイン- (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11190370"
         },
-        "11437818": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11190371": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 切札勝舞 アクリルカードホルダー (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437818"
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 超愛銀河クエーサー・ラブエクスパンジョン (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11190371"
         },
-        "11437819": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11192812": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 切札勝太 アクリルカードホルダー (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437819"
+          "state": "soldout",
+          "title": "デュエル・マスターズTCG 王道W 第2弾 邪神vs邪神II ~ジャシン・イン・ザ・シェル~ 〔DM25-RP2〕 (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11192812"
         },
-        "11437820": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11201446": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 切札ジョー アクリルカードホルダー (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437820"
+          "state": "soldout",
+          "title": "デュエル・マスターズTCG 愛感謝祭 ヒロインBEST 〔DM25-EX1〕 (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11201446"
         },
-        "11437821": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11213515": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 斬札ウィン アクリルカードホルダー (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437821"
+          "state": "soldout",
+          "title": "デュエル・マスターズTCG ドリーム英雄譚デッキ ボルシャックの書 [DM25-BD1] (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11213515"
         },
-        "11437822": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11213516": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ ボルシャック・ドラゴン A3マット加工ポスター (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437822"
+          "state": "soldout",
+          "title": "デュエル・マスターズTCG ドリーム英雄譚デッキ アルカディアスの書 [DM25-BD2] (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11213516"
         },
-        "11437823": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11213517": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 浄化の精霊ウルス A3マット加工ポスター (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437823"
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ ドラゴン娘になりたくないっ!アオハル組ver. (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11213517"
         },
-        "11437824": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11213518": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 燃える革命 ドギラゴン A3マット加工ポスター (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437824"
+          "state": "soldout",
+          "title": "デュエル・マスターズ ラバーマット ドラゴン娘になりたくないっ!アオハル組ver. (カードサプライ)",
+          "url": "https://www.1999.co.jp/11213518"
         },
-        "11437825": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11213519": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 伝説の禁断 ドキンダムX A3マット加工ポスター (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437825"
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 轟く邪道 レッドゾーン (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11213519"
         },
-        "11437826": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11213520": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 勝熱龍主 モモキング A3マット加工ポスター (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437826"
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 逆転こそが、カードゲームだ。ver. (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11213520"
         },
-        "11437827": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11213521": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 鬼ヶ大王 ジャオウガ A3マット加工ポスター (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437827"
+          "state": "soldout",
+          "title": "デュエル・マスターズ UVカットディスプレイフレーム (カードサプライ)",
+          "url": "https://www.1999.co.jp/11213521"
         },
-        "11437828": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11220713": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ アビスベル=ジャシン帝 A3マット加工ポスター (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437828"
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 勝熱伝双 モモキングVS (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11220713"
         },
-        "11437829": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+        "11220714": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 鬼ヶ伝双 VSジャオウガ (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11220714"
+        },
+        "11220715": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 双龍覇王 モルトVERSUS (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11220715"
+        },
+        "11220716": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 双龍覇王 バーサス=ザ=デッドマン (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11220716"
+        },
+        "11227510": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "DM25-SP2 デュエル・マスターズTCG キャラプレミアムデッキ ドラゴン娘になりたくないっ!はじけろスポーツ!青春☆ワールドカップ!! (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11227510"
+        },
+        "11227511": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "DM25-RP3 デュエル・マスターズTCG 王道W 第3弾 邪神vs時皇 ~ビヨンド・ザ・タイム~ (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11227511"
+        },
+        "11241473": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズTCG 王道vs邪道 デュエキングWDreaM 2025 [DM25-EX2] (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11241473"
+        },
+        "11255955": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": true,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": true,
           "state": "open",
-          "title": "デュエル・マスターズ 轟炎の竜皇 ボルシャック・カイザー A3マット加工ポスター (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11437829"
+          "title": "★特価品 デュエル・マスターズTCG ドリーム英雄譚デッキ グレンモルトの書 [DM25-BD3] (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11255955"
+        },
+        "11255956": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 剣轟の団長 ドギラゴン王道 (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11255956"
+        },
+        "11255963": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ アビスラブ=ジャシン帝 (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11255963"
+        },
+        "11268374": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズTCG 王道W 第4弾 終淵 ~LOVE&ABYSS~ [DM25-RP4] (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11268374"
+        },
+        "11283072": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズTCG 邪神爆発デュエナマイトパック「王道W」 [DM25-EX3] (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11283072"
+        },
+        "11301191": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズTCG エピソード4 パンドラ・ウォーズ [DM25-EX4] (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11301191"
+        },
+        "11311455": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "DM26-SD1 デュエル・マスターズTCG ドキドキつよいデッキ 25の王道 (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11311455"
+        },
+        "11311483": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 切札竜 ボルメテウス・リバース・ドラゴン (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11311483"
+        },
+        "11311484": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ 逆転龍神ヘヴィ・ウィン・メタル (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11311484"
+        },
+        "11325478": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズTCG 逆札篇 第1弾 逆転神VS切札竜 [DM26-RP1] (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11325478"
+        },
+        "11346305": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": true,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": true,
+          "state": "open",
+          "title": "デュエル・マスターズ DXカードスリーブ 烈しき切札 ドギラゴン逆 (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11346305"
+        },
+        "11346306": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": true,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": true,
+          "state": "open",
+          "title": "デュエル・マスターズ DXカードスリーブ 燃える禁断 ドルマゲドンW (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11346306"
+        },
+        "11354079": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズTCG ますますつよいパック 25の援軍 [DM26-EX1] (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11354079"
+        },
+        "11360536": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": true,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": true,
+          "state": "open",
+          "title": "デュエル・マスターズ DXカードスリーブ 邪眼魔凰デス・フェニックス&ザキラ (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11360536"
+        },
+        "11360537": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": true,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": true,
+          "state": "open",
+          "title": "★特価品 デュエル・マスターズ DXカードスリーブ SSS級侵略 カリスマゾーン&バサラ (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11360537"
+        },
+        "11360538": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": true,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": true,
+          "state": "open",
+          "title": "★特価品 デュエル・マスターズ DXカードスリーブ CRY-S-MAX ジャオウガ&アバク (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11360538"
+        },
+        "11360539": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": true,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": true,
+          "state": "open",
+          "title": "デュエル・マスターズ DXカードスリーブ 世界竜皇 ボルシャック・ヒカリスマ&カイザ (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11360539"
+        },
+        "11360540": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": true,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": true,
+          "state": "open",
+          "title": "★特価品 デュエル・マスターズ DXカードスリーブ 瀑水神 ミヅハノオオミカミ&ロスト (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11360540"
+        },
+        "11361301": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "「てれコロスペシャル」5月号(「コロコロコミック」5月号『デュエル・マスターズ メモリアル表紙版』) (書籍)",
+          "url": "https://www.1999.co.jp/11361301"
+        },
+        "11367032": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズTCG 逆札篇 第2弾 燃えろ禁断! 逆転のドギラゴン革命!! [DM26-RP2] (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11367032"
+        },
+        "11378457": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ ドラゴン娘になりたくないっ!生徒会組集合!! (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11378457"
+        },
+        "11378458": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ ドラゴン娘になりたくないっ!アオハル組集合!! (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11378458"
+        },
+        "11378459": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズ DXカードスリーブ ドラゴン娘になりたくないっ!Jack-Pot集合!! (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11378459"
+        },
+        "11378460": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": true,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": true,
+          "state": "open",
+          "title": "デュエル・マスターズ DXカードスリーブ ドラゴン娘になりたくないっ!PENTADRE集合!! (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11378460"
+        },
+        "11381427": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズTCG 悪感謝祭 カリスマBEST [DM26-EX2] (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11381427"
+        },
+        "11402483": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": true,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": true,
+          "state": "open",
+          "title": "デュエル・マスターズ DXカードスリーブ 逆転こそが、カードゲームだ。 モノクロver. (カードスリーブ)",
+          "url": "https://www.1999.co.jp/11402483"
+        },
+        "11412315": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "デュエル・マスターズTCG キャラプレミアムパック ドラゴン娘になりたくないっ! 文化祭だョ!全員集合!!ドラ娘100%パック [DM26-EX3] (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11412315"
+        },
+        "11430951": {
+          "changed_at": "2026-10-14T22:56:38+09:00",
+          "ever_open": false,
+          "first_seen": "2026-10-14T22:56:38+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
+          "notified_open": false,
+          "state": "soldout",
+          "title": "DM26-RP3 デュエル・マスターズTCG 逆札篇 第3弾 勝敵!逆転おこせ鬼の∞ディスペクター!! (トレーディングカード)",
+          "url": "https://www.1999.co.jp/11430951"
         },
         "11448276": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
+          "changed_at": "2026-10-14T22:56:38+09:00",
           "ever_open": true,
           "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
+          "last_seen": "2026-10-14T22:56:38+09:00",
           "notified_open": false,
-          "state": "open",
+          "state": "soldout",
           "title": "デュエル・マスターズTCG 切札不滅!! デュエキング FOREVER 2026 (トレーディングカード)",
           "url": "https://www.1999.co.jp/11448276"
-        },
-        "11469223": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ トレーディングアクリルカード ver.A (14個セット) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469223"
-        },
-        "11469224": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ トレーディングアクリルカード ver.B (14個セット) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469224"
-        },
-        "11469225": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ デュエル・マスターズ プルオーバーフーディーユニセックス(サイズ/XL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469225"
-        },
-        "11469226": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ デュエル・マスターズ プルオーバーフーディーユニセックス(サイズ/XXL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469226"
-        },
-        "11469227": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ ファースト・コンタクト プルオーバーフーディーユニセックス(サイズ/XL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469227"
-        },
-        "11469228": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ ファースト・コンタクト プルオーバーフーディーユニセックス(サイズ/XXL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469228"
-        },
-        "11469229": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ ジョーカーズ参上!! プルオーバーフーディーユニセックス(サイズ/XL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469229"
-        },
-        "11469230": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ ジョーカーズ参上!! プルオーバーフーディーユニセックス(サイズ/XXL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469230"
-        },
-        "11469231": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 伝説の邪神 プルオーバーフーディーユニセックス(サイズ/XL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469231"
-        },
-        "11469232": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 伝説の邪神 プルオーバーフーディーユニセックス(サイズ/XXL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469232"
-        },
-        "11469233": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ デュエル・マスターズ Teeユニセックス(サイズ/XL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469233"
-        },
-        "11469234": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ デュエル・マスターズ Teeユニセックス(サイズ/XXL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469234"
-        },
-        "11469235": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ ファースト・コンタクト Teeユニセックス(サイズ/XL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469235"
-        },
-        "11469236": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ ファースト・コンタクト Teeユニセックス(サイズ/XXL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469236"
-        },
-        "11469237": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ ジョーカーズ参上!! Teeユニセックス(サイズ/XL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469237"
-        },
-        "11469238": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ ジョーカーズ参上!! Teeユニセックス(サイズ/XXL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469238"
-        },
-        "11469239": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 伝説の邪神 Teeユニセックス(サイズ/XL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469239"
-        },
-        "11469240": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 伝説の邪神 Teeユニセックス(サイズ/XXL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469240"
-        },
-        "11469241": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 唯我独尊ガイアール・オレドラゴン チェンジングマグカップ (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469241"
-        },
-        "11469242": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 熱血星龍 ガイギンガ チェンジングマグカップ (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469242"
-        },
-        "11469243": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 切札勝舞 パーツ付きBIGアクリルスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469243"
-        },
-        "11469244": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 白凰 パーツ付きBIGアクリルスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469244"
-        },
-        "11469245": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 切札勝太 パーツ付きBIGアクリルスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469245"
-        },
-        "11469246": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ ルシファー パーツ付きBIGアクリルスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469246"
-        },
-        "11469247": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 切札ジョー パーツ付きBIGアクリルスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469247"
-        },
-        "11469248": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ キラ パーツ付きBIGアクリルスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469248"
-        },
-        "11469249": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ 斬札ウィン パーツ付きBIGアクリルスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469249"
-        },
-        "11469250": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ プリンス・カイザ パーツ付きBIGアクリルスタンド (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11469250"
-        },
-        "11471634": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ フルグラフィックTシャツユニセックス(サイズ/S) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11471634"
-        },
-        "11471635": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ フルグラフィックTシャツユニセックス(サイズ/M) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11471635"
-        },
-        "11471636": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ フルグラフィックTシャツユニセックス(サイズ/L) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11471636"
-        },
-        "11471637": {
-          "changed_at": "2026-10-14T15:29:39+09:00",
-          "ever_open": true,
-          "first_seen": "2026-10-14T15:29:39+09:00",
-          "last_seen": "2026-10-14T22:09:58+09:00",
-          "notified_open": false,
-          "state": "open",
-          "title": "デュエル・マスターズ フルグラフィックTシャツユニセックス(サイズ/XL) (キャラクターグッズ)",
-          "url": "https://www.1999.co.jp/11471637"
         }
       },
       "last_error": null,
       "name": "ホビーサーチ",
       "state": "open",
-      "url": "https://www.1999.co.jp/search?typ1_c=121&searchkey=デュエル・マスターズ&spage=1&sortid=0"
+      "url": "https://www.1999.co.jp/search?typ1_c=121&cat=toreca&state=&sold=0&sortid=0&searchkey=デュエル・マスターズ"
     }
   }
 }
