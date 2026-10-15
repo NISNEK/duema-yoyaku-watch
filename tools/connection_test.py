@@ -2,6 +2,7 @@
 
 - 本番と同じく正直に名乗り、robots.txt を確認してからページを1回だけ取る
 - サイトごとに数秒空ける
+- ページが開けるかだけでなく、本番と同じ読み取り方で「商品を何件読めるか」も数える
 - 結果を表にして、Actions の実行画面（Summary）に表示する
 """
 import os
@@ -11,6 +12,7 @@ import urllib.robotparser
 from urllib.parse import quote, urlsplit
 
 import requests
+from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "monitor"))
 from fetcher import user_agent  # noqa: E402
@@ -18,28 +20,39 @@ from fetcher import user_agent  # noqa: E402
 WAIT_SECONDS = 4
 CHALLENGE_SIGNS = ["Just a moment", "アクセス確認", "cf-chl", "captcha", "/cheq/", "Access Denied"]
 DM = quote("デュエル・マスターズ")
+JSON = "json"   # 商品データ（JSON）で返ってくるページの印
 
 CANDIDATES = [
-    # (区分, 名前, URL)
-    ("予約", "ホビーサーチ", f"https://www.1999.co.jp/search?typ1_c=121&searchkey={DM}&spage=1&sortid=0"),
-    ("予約", "フルアヘッド", "https://fullahead-dm.com/shopbrand/yoyaku/page1/new/"),
-    ("予約", "イオンスタイルオンライン", f"https://aeonretail.com/Form/Product/ProductList.aspx?shop=0&swrd={DM}"),
-    ("予約", "トイザらス", "https://www.toysrus.co.jp/ja-jp/duelmasters/"),
-    ("予約", "エディオン", f"https://www.edion.com/item_list.html?keyword={DM}&d_num=90&d_sort=1&d_type=panel"),
-    ("予約", "ジョーシン", "https://joshinweb.jp/"),
-    ("予約", "ヨドバシ", "https://www.yodobashi.com/"),
-    ("予約", "ビックカメラ", "https://www.biccamera.com/"),
-    ("予約", "タカラトミーモール", "https://takaratomymall.jp/"),
+    # (区分, 名前, URL, 商品1つ分の枠, 商品名の場所)  ※枠が None のものは「開けるか」だけ確認
+    ("予約", "ホビーサーチ",
+     f"https://www.1999.co.jp/search?typ1_c=121&cat=toreca&state=&sold=0&sortid=0&searchkey={DM}",
+     "div.c-product-list__item", "div.c-card__title"),
+    ("予約", "フルアヘッド", "https://fullahead-dm.com/shopbrand/yoyaku/page1/new/",
+     "div.indexItemBox > div", "span.itemName"),
+    ("予約", "マスターズスクウェア", "https://www.tcgacademy.com/product-list/2270",
+     "li.list_item_cell", "span.goods_name"),
+    ("予約", "カードラボ", "https://www.c-labo-online.jp/product-list/3378",
+     "li.list_item_cell", "span.goods_name"),
     ("予約", "ハピネット・オンライン",
-     f"https://www.happinetonline.com/ec/Facet?inputKeywordFacet={DM}&kclsf=AND&dnumber=60"),
-    ("予約", "ドラゴンスター", "https://dorasuta.jp/"),
-    ("予約", "マスターズスクウェア", "https://www.tcgacademy.com/product-list/2270"),
-    ("予約", "カードラボ", "https://www.c-labo-online.jp/product-list/3378"),
+     f"https://www.happinetonline.com/ec/Facet?inputKeywordFacet={DM}&kclsf=AND&dnumber=60",
+     "div.item", "h2.name"),
+    ("予約", "イオンスタイルオンライン", f"https://aeonretail.com/Form/Product/ProductList.aspx?shop=0&swrd={DM}",
+     None, None),
+    ("予約", "トイザらス", "https://www.toysrus.co.jp/ja-jp/duelmasters/", None, None),
+    ("予約", "エディオン", f"https://www.edion.com/item_list.html?keyword={DM}&d_num=90&d_sort=1&d_type=panel",
+     "#resultBox > ul > li", "p.item a"),
+    ("予約", "ジョーシン", "https://joshinweb.jp/", None, None),
+    ("予約", "ヨドバシ", "https://www.yodobashi.com/", None, None),
+    ("予約", "ビックカメラ", "https://www.biccamera.com/", None, None),
+    ("予約", "タカラトミーモール", "https://takaratomymall.jp/", None, None),
+    ("予約", "ドラゴンスター", "https://dorasuta.jp/", None, None),
     ("シングル", "トレキャット（本日の入荷品）",
-     "https://torecat.shop/collections/" + quote("本日の入荷品") + "/products.json?limit=250"),
-    ("シングル", "アメニティードリーム（新着）", "https://www.amenitydream.com/new"),
+     "https://torecat.shop/collections/" + quote("本日の入荷品") + "/products.json?limit=250", JSON, None),
+    ("シングル", "アメニティードリーム（新着）", "https://www.amenitydream.com/new",
+     "li.list_item_cell", ".goods_name"),
     ("シングル", "アメニティードリーム（検索）",
-     "https://www.amenitydream.com/product-list?keyword=" + quote("ボルメテウス") + "&num=100"),
+     "https://www.amenitydream.com/product-list?keyword=" + quote("ボルメテウス") + "&num=100",
+     "li.list_item_cell", ".goods_name"),
 ]
 
 
@@ -47,50 +60,78 @@ def get(url):
     return requests.get(url, headers={"User-Agent": user_agent(), "Accept-Language": "ja"}, timeout=20)
 
 
-def check(url):
+def count_items(res, item_sel, title_sel):
+    """本番と同じ読み取り方で商品を数え、(件数, 1件目の商品名) を返す。"""
+    if item_sel == JSON:
+        products = res.json().get("products", [])
+        return len(products), (products[0].get("title", "") if products else "")
+    if not res.encoding or res.encoding.lower() == "iso-8859-1":
+        res.encoding = res.apparent_encoding
+    soup = BeautifulSoup(res.text, "lxml")
+    blocks = soup.select(item_sel)
+    first = ""
+    for block in blocks:
+        found = block.select_one(title_sel)
+        if found and found.get_text(strip=True):
+            first = found.get_text(" ", strip=True)
+            break
+    return len(blocks), first
+
+
+def check(url, item_sel, title_sel):
     parts = urlsplit(url)
     try:
         robots = get(f"{parts.scheme}://{parts.netloc}/robots.txt")
     except requests.RequestException as e:
-        return "❌", f"接続できない（{type(e).__name__}）", "-"
+        return "❌", f"接続できない（{type(e).__name__}）", "-", ""
     robots_note = f"robots {robots.status_code}"
     if robots.status_code == 200:
         rp = urllib.robotparser.RobotFileParser()
         rp.parse(robots.text.splitlines())
         if not rp.can_fetch(user_agent(), url):
-            return "⛔", "robots.txt で禁止", robots_note
+            return "⛔", "robots.txt で禁止", robots_note, ""
     elif robots.status_code >= 500:
-        return "❌", f"robots.txt がサーバーエラー（{robots.status_code}）", robots_note
+        return "❌", f"robots.txt がサーバーエラー（{robots.status_code}）", robots_note, ""
     time.sleep(WAIT_SECONDS)
     try:
         res = get(url)
     except requests.RequestException as e:
-        return "❌", f"接続できない（{type(e).__name__}）", robots_note
-    text = res.text[:200000]
+        return "❌", f"接続できない（{type(e).__name__}）", robots_note, ""
     if res.status_code != 200:
-        return "❌", f"拒否・エラー（HTTP {res.status_code}）", robots_note
+        return "❌", f"拒否・エラー（HTTP {res.status_code}）", robots_note, ""
     # 確認画面は小さいページなので、タイトルと「小さいページの本文」だけを調べる
     # （普通のページにも問い合わせフォーム用の captcha 部品が入っていることがあるため）
+    text = res.text[:200000]
     title = text.split("<title", 1)[-1].split("</title>", 1)[0] if "<title" in text else ""
     body = text if len(res.content) < 60000 else ""
     sign = next((s for s in CHALLENGE_SIGNS if s in title or s in body or s in res.url), None)
     if sign:
-        return "❌", f"ロボット確認画面（{sign}）", robots_note
-    return "✅", f"OK（{len(res.content) // 1024}KB）", robots_note
+        return "❌", f"ロボット確認画面（{sign}）", robots_note, ""
+    if not item_sel:
+        return "✅", f"ページは開ける（{len(res.content) // 1024}KB）※商品の読み取りは未確認", robots_note, ""
+    try:
+        count, first = count_items(res, item_sel, title_sel)
+    except ValueError:
+        return "⚠️", "開けたが、商品データの形が想定と違う", robots_note, ""
+    if count == 0:
+        return "⚠️", "開けたが、商品を1件も読み取れない", robots_note, ""
+    return "✅", f"商品 {count} 件を読み取れた", robots_note, first[:40]
 
 
 def main():
     rows = []
-    for kind, name, url in CANDIDATES:
-        mark, result, robots_note = check(url)
-        print(f"{mark} [{kind}] {name}: {result} / {robots_note}")
-        rows.append(f"| {mark} | {kind} | {name} | {result} | {robots_note} |")
+    for kind, name, url, item_sel, title_sel in CANDIDATES:
+        mark, result, robots_note, example = check(url, item_sel, title_sel)
+        print(f"{mark} [{kind}] {name}: {result} / {robots_note} / 例: {example}")
+        rows.append(f"| {mark} | {kind} | {name} | {result} | {example} | {robots_note} |")
         time.sleep(WAIT_SECONDS)
-    table = "\n".join(["| 結果 | 区分 | ショップ | 内容 | robots.txt |", "|---|---|---|---|---|", *rows])
+    table = "\n".join(["| 結果 | 区分 | ショップ | 内容 | 読み取れた商品の例 | robots.txt |",
+                       "|---|---|---|---|---|---|", *rows])
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
         with open(summary, "a", encoding="utf-8") as f:
-            f.write("## GitHub からの接続テスト結果\n\n" + table + "\n")
+            f.write("## GitHub からの接続テスト結果\n\n"
+                    "✅＝見張れる見込み ／ ⚠️＝開けるが読み取れない ／ ❌⛔＝見張れない\n\n" + table + "\n")
 
 
 if __name__ == "__main__":
