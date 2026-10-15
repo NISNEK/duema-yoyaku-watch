@@ -9,6 +9,7 @@ target:
   product: "デュエル・マスターズ"          # 通知に表示する名前
   keywords:                               # 商品名にこのどれかが入っていたら対象
     - "デュエル・マスターズ"
+    - "デュエルマスターズ"
     - "デュエマ"
     - "Duel Masters"
   exclude_keywords:                       # 商品名にこれが入っていたら対象外
@@ -54,6 +55,39 @@ shops:
       all_items: true                     # デュエマ専門店なので、商品名のチェックを省く
       open_keywords: ["残りあと"]
       soldout_keywords: ["sold out"]
+
+  - id: mastersquare
+    name: マスターズスクウェア
+    url: "https://www.tcgacademy.com/product-list/2270"
+    mode: list
+    fetch: static
+    enabled: true
+    interval_minutes: 5
+    rules:
+      item: "li.list_item_cell"
+      title: "span.goods_name"
+      link: "a.item_data_link"
+      status: "p.stock"
+      id_regex: '/product/(\d+)'
+      all_items: true                     # デュエマの予約BOX専用コーナーなので、商品名のチェックを省く
+      open_keywords: ["在庫数"]
+      soldout_keywords: ["在庫なし"]
+
+  - id: cardlabo
+    name: カードラボ
+    url: "https://www.c-labo-online.jp/product-list/3378"
+    mode: list
+    fetch: static
+    enabled: true
+    interval_minutes: 5
+    rules:
+      item: "li.list_item_cell"
+      title: "span.goods_name"
+      link: "a.item_data_link"
+      status: "p.stock"
+      id_regex: '/product/(\d+)'
+      open_keywords: ["受付中", "在庫数"]
+      soldout_keywords: ["在庫なし"]
 
 # ---- 対象外にしたショップ（メモ） ----
 # 次のショップは、規約で禁止されている・プログラムからのアクセスを遮断している等の理由で見張りません。

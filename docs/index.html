@@ -52,6 +52,8 @@
   .item-title { color: var(--text); text-decoration: none; font-weight: 600; word-break: break-word; }
   .item-title:hover { text-decoration: underline; }
   .item-sub { color: var(--sub); font-size: .8rem; margin-top: 4px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; }
+  .mercari { color: var(--accent); text-decoration: none; border: 1px solid var(--accent);
+             border-radius: 999px; padding: 0 8px; font-size: .75rem; white-space: nowrap; }
   .empty { color: var(--sub); text-align: center; padding: 24px; }
   footer { color: var(--sub); font-size: .78rem; margin: 24px 0 8px; }
 </style>
@@ -93,6 +95,14 @@ function el(tag, attrs = {}, text) {
   if (text !== undefined) e.textContent = text;
   return e;
 }
+// メルカリの検索ページへのリンクを作る（このページがメルカリにアクセスすることはない）
+function mercariUrl(title) {
+  const code = title.match(/DM\d{2}-[A-Z]+\d+/i);
+  const keyword = code
+    ? "デュエマ " + code[0]
+    : title.replace(/[【\[〔(（][^】\]〕)）]*[】\]〕)）]/g, " ").replace(/\s+/g, " ").trim().slice(0, 40);
+  return "https://jp.mercari.com/search?keyword=" + encodeURIComponent(keyword) + "&status=on_sale";
+}
 function badge(state, text) { return el("span", { class: "badge s-" + state }, text || LABEL[state]); }
 
 function renderShops(shops) {
@@ -128,6 +138,7 @@ function renderItems() {
     sub.append(badge(i.state));
     if (now - new Date(i.first_seen).getTime() < NEW_DAYS * 864e5) sub.append(badge("new", "NEW"));
     sub.append(el("span", {}, i.shop), el("span", {}, "掲載確認 " + fmt(i.first_seen)), el("span", {}, "状態変化 " + fmt(i.changed_at)));
+    sub.append(el("a", { class: "mercari", href: mercariUrl(i.title), target: "_blank", rel: "noopener" }, "メルカリで探す"));
     li.append(sub);
     box.append(li);
   }
