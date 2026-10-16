@@ -8,7 +8,7 @@
 import argparse
 import os
 import sys
-from datetime import timedelta
+from datetime import date, timedelta
 
 import common
 import commands
@@ -56,7 +56,7 @@ def process_commands(ctx, discord, channel_id, owner_id, data):
         if dm_text and not discord.dm(uid, dm_text):
             reply = "DMを受け取れない設定のようなので、ここに書きます。\n" + dm_text
         discord.send(channel_id, f"<@{uid}> {reply}", reply_to=msg["id"])
-        print(f"- コマンドを処理しました: {msg.get('content', '')[:30]}")
+        print("- コマンドを1件処理しました")  # 公開ログに「何を登録したか」を残さない
     ctx.work["last_message_id"] = last_id
     return last_id
 
@@ -304,6 +304,45 @@ def expire(ctx, discord, data):
             discord.dm(uid, "\n".join(lines))
 
 
+TOKEN_REMIND_DAYS = (90, 60, 30, 14, 7, 3, 1, 0)   # 3か月前・2か月前・1か月前・2週間前・1週間前・3日前・前日・当日
+
+TOKEN_GUIDE = """\
+🔑 **GitHub トークンの期限のお知らせ**（オーナーだけに送っています）
+{status}
+期限が切れると、`/登録` などのスラッシュコマンドが「⚠️ 受付に失敗しました」になります（`!登録` などは今まで通り使えます）。
+
+**作り直しの手順（10分ほど）**
+① https://github.com/settings/personal-access-tokens を開き、**duema-bot** を押す
+② **「Regenerate token」**（作り直す）を押し、有効期限を選んで、もう一度 **Regenerate token**
+③ 表示された `github_pat_…` をコピー（閉じると二度と見られません）
+④ Cloudflare → **Workers & Pages** → **duema-bot** → **Settings** → **Variables and Secrets**
+⑤ **GITHUB_TOKEN** の右の編集ボタンを押し、③を貼り付けて保存 → **Deploy**
+⑥ Discord で `!トークン期限 新しい期限の日付`（例: `!トークン期限 2027-04-14`）と送る
+⑦ `/ヘルプ` を試して、約1分で返事が来れば完了です
+"""
+
+
+def token_reminder(ctx, discord, data, owner_id):
+    """GitHub トークンの期限が近づいたら、オーナーにだけDMで知らせる（各段階1回ずつ）。"""
+    expires = data["global"].get("token_expires")
+    if not expires:
+        return
+    days_left = (date.fromisoformat(expires) - ctx.at.date()).days
+    sent = data["global"].setdefault("token_reminded", [])
+    due = [d for d in TOKEN_REMIND_DAYS if days_left <= d and d not in sent]
+    if not due:
+        return
+    if days_left < 0:
+        status = f"⚠️ **期限（{expires}）を過ぎています。**"
+    elif days_left == 0:
+        status = f"⚠️ **今日（{expires}）で期限が切れます。**"
+    else:
+        status = f"期限（{expires}）まで、あと **{days_left}日** です。"
+    if discord.dm(owner_id, TOKEN_GUIDE.format(status=status)):
+        sent.extend(due)  # 届いた時だけ「送った」と記録（届かなければ次の回にもう一度）
+        print("- トークン期限のお知らせをオーナーに送りました")
+
+
 # ---------------- 4. 一覧ページ ----------------
 
 def publish(ctx):
@@ -377,6 +416,7 @@ def run(dry_run):
     refresh_catalog(ctx)
     notify(ctx, discord, data, channel_id)
     expire(ctx, discord, data)
+    token_reminder(ctx, discord, data, owner_id)
     for warning in ctx.owner_warnings:
         discord.dm(owner_id, warning)
     print(f"お店へのアクセス: {ctx.http.count} 回、入荷の検知: {len(ctx.events)} 件")

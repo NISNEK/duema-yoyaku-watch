@@ -14,12 +14,14 @@ from datetime import timedelta
 import yaml
 
 import fetcher
+import manual
 import notifier
 import page_parser
 import state
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SHOPS_FILE = os.path.join(ROOT, "shops.yml")
+MANUAL_FILE = os.path.join(ROOT, "manual.yml")                # 人が書き足す予約ページ
 PUBLIC_FILE = os.path.join(ROOT, "docs", "status.json")     # 一覧ページ用（リポジトリに保存）
 WORK_FILE = os.path.join(ROOT, ".state", "state.json")       # 毎回の作業用（キャッシュに保存）
 PUBLISH_EVERY = timedelta(hours=1)
@@ -112,10 +114,13 @@ def run(dry_run):
         print("（テストモードのため、記録は保存しません）")
         return
 
+    manual_entry = manual.build(MANUAL_FILE, data, at)
     data["saved_at"] = state.iso(at)
     state.save(WORK_FILE, data)
 
     public = state.publishable(data, config["shops"])
+    if manual_entry:
+        public["shops"]["manual"] = manual_entry
     last_publish = state.parse_iso(published_before.get("saved_at"))
     changed = state.without_times(public) != state.without_times(published_before)
     stale = last_publish is None or at - last_publish >= PUBLISH_EVERY - timedelta(minutes=1)

@@ -20,6 +20,7 @@ OWNER_HELP = """\
 👑 **オーナー用**
 `!全体停止` / `!全体再開` … 全員の通知を止める・再開する
 `!タイマー 2026-11-15 2` … 指定日から2日間だけ通知する（`!タイマー 解除` で取り消し）
+`!トークン期限 2027-01-14` … GitHub トークンの期限を登録（近づくとDMでお知らせ）
 """
 
 
@@ -67,6 +68,7 @@ class Handler:
             "延長": self.extend, "検索": self.search,
             "停止": self.pause, "再開": self.resume,
             "全体停止": self.global_pause, "全体再開": self.global_resume, "タイマー": self.timer,
+            "トークン期限": self.token_expiry,
         }.get(cmd)
         if func is None:
             return f"「!{cmd}」というコマンドはありません。`!ヘルプ` で使い方を確認できます。", None
@@ -198,6 +200,25 @@ class Handler:
         self.data["global"]["timer"] = {"start": start.isoformat(), "days": days}
         end = start + timedelta(days=days - 1)
         return f"⏱️ {start:%m/%d}〜{end:%m/%d} の{days}日間だけ通知します。", None
+
+    def token_expiry(self, uid, name, arg):
+        """GitHub の専用トークンの期限を覚える（期限が近づくとオーナーにDMで知らせる）。"""
+        if (deny := self._owner_only(uid)):
+            return deny, None
+        if not arg:
+            current = self.data["global"].get("token_expires")
+            if not current:
+                return "トークンの期限は登録されていません。書き方: `!トークン期限 2027-01-14`", None
+            return f"🔑 GitHub トークンの期限は {current} です。", None
+        try:
+            parts = [int(x) for x in arg.split("-")]
+            expires = date(*parts)
+        except (TypeError, ValueError):
+            return "日付が正しくありません。書き方: `!トークン期限 2027-01-14`", None
+        self.data["global"]["token_expires"] = expires.isoformat()
+        self.data["global"]["token_reminded"] = []
+        return (f"🔑 GitHub トークンの期限を {expires:%Y/%m/%d} として覚えました。"
+                f"3か月前・2か月前・1か月前・2週間前・1週間前・3日前・前日・当日に、オーナーにDMでお知らせします。"), None
 
 
 def _md(iso_text):
