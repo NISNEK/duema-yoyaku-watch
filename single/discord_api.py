@@ -40,7 +40,8 @@ class Discord:
             if res.status_code == 401:
                 raise DiscordError("ボットのトークンが正しくありません（DISCORD_BOT_TOKEN を確認）")
             if res.status_code >= 400:
-                raise DiscordError(f"Discord への{method}に失敗しました（HTTP {res.status_code}・{_code(res)}）")
+                raise DiscordError(f"Discord への{_what(method, path)}に失敗しました"
+                                   f"（HTTP {res.status_code}・{_code(res)}）{_hint(res)}")
             return res.json() if res.content else None
         raise DiscordError("Discord が混み合っていて送れませんでした")
 
@@ -100,6 +101,33 @@ class Discord:
             if "50007" in str(e) or "403" in str(e):
                 return False
             raise
+
+
+def _what(method, path):
+    if path.startswith("/users/@me/channels"):
+        return "DMの準備（OWNER_DISCORD_ID 宛て）"
+    if path.startswith("/channels/") and method == "POST":
+        return "書き込み（SINGLE_CHANNEL_ID または DM）"
+    if path.startswith("/channels/"):
+        return "チャンネルの読み取り（SINGLE_CHANNEL_ID）"
+    return f"{method} {path}"
+
+
+def _hint(res):
+    code = None
+    try:
+        code = res.json().get("code")
+    except ValueError:
+        pass
+    hints = {
+        0: " → IDの形がおかしい可能性。Secrets に数字だけが入っているか確認してください",
+        10003: " → チャンネルが見つかりません。SINGLE_CHANNEL_ID を確認してください",
+        10013: " → ユーザーが見つかりません。OWNER_DISCORD_ID を確認してください",
+        50001: " → ボットにそのチャンネルを見る権限がありません",
+        50013: " → ボットに書き込む権限がありません",
+        50035: " → IDの形が正しくありません（数字だけか確認）",
+    }
+    return hints.get(code, "")
 
 
 def _code(res):

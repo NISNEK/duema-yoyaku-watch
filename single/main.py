@@ -325,12 +325,24 @@ def _without_times(public):
 
 # ---------------- 全体の流れ ----------------
 
+def read_ids():
+    """Secrets の ID が「17〜20けたの数字だけ」になっているか確かめる。"""
+    ids = {}
+    for name in ("SINGLE_CHANNEL_ID", "OWNER_DISCORD_ID"):
+        value = os.environ.get(name, "").strip()
+        if not value:
+            raise discord_api.DiscordError(f"{name} が設定されていません")
+        if not value.isdigit() or not 17 <= len(value) <= 20:
+            raise discord_api.DiscordError(
+                f"{name} の形が正しくありません（{len(value)}文字・数字以外を含む={not value.isdigit()}）。"
+                "17〜20けたの数字だけを入れてください")
+        ids[name] = value
+    return ids["SINGLE_CHANNEL_ID"], ids["OWNER_DISCORD_ID"]
+
+
 def run(dry_run):
     settings = common.load_settings()
-    channel_id = os.environ.get("SINGLE_CHANNEL_ID", "").strip()
-    owner_id = os.environ.get("OWNER_DISCORD_ID", "").strip()
-    if not channel_id or not owner_id:
-        raise discord_api.DiscordError("SINGLE_CHANNEL_ID または OWNER_DISCORD_ID が設定されていません")
+    channel_id, owner_id = read_ids()
     discord = discord_api.Discord(os.environ.get("DISCORD_BOT_TOKEN", "").strip(), dry_run=dry_run)
 
     data = wl.load()
@@ -361,14 +373,19 @@ def run(dry_run):
 
 
 def test_dm():
-    owner_id = os.environ.get("OWNER_DISCORD_ID", "").strip()
-    channel_id = os.environ.get("SINGLE_CHANNEL_ID", "").strip()
-    discord = discord_api.Discord(os.environ.get("DISCORD_BOT_TOKEN", "").strip())
-    wl.check_key()  # 暗号化の鍵が正しい形かの確認も兼ねる
+    """1つずつ確かめて、どこまでできたかを表示する。"""
+    channel_id, owner_id = read_ids()
+    print("① ID の形: OK")
+    wl.check_key()
     wl.load()
-    ok = discord.dm(owner_id, "✅ シングル通知のテストDMです。このメッセージが届けば、DMの設定は完了です。")
+    print("② 暗号化の鍵: OK")
+    discord = discord_api.Discord(os.environ.get("DISCORD_BOT_TOKEN", "").strip())
+    discord.bot_user_id()
+    print("③ ボットのトークン: OK")
     discord.send(channel_id, "✅ シングル通知ボットは動いています。`!ヘルプ` と書くと使い方を表示します（返事まで5〜15分）。")
-    print("テストDM: " + ("送れました" if ok else "送れませんでした（DMを受け付けない設定の可能性）"))
+    print("④ チャンネルへの書き込み: OK")
+    ok = discord.dm(owner_id, "✅ シングル通知のテストDMです。このメッセージが届けば、DMの設定は完了です。")
+    print("⑤ オーナーへのDM: " + ("OK" if ok else "送れませんでした（Discord のプライバシー設定でDMがオフの可能性）"))
 
 
 def report_fatal(error):
