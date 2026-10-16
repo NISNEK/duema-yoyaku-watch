@@ -284,31 +284,11 @@
       "at": "2026-10-16T09:46:51+09:00",
       "available": true,
       "kind": "new",
-      "price": "460円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "【状態B】SSS級侵略 カリスマゾーン（SPR㊙4/SPR㊙5）",
-      "url": "https://torecat.shop/products/dm26ex2-sprsec004"
-    },
-    {
-      "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
-      "kind": "new",
       "price": "400円",
       "shop": "トレキャット",
       "stock": "在庫あり",
       "title": "【状態B】蒼斬しのぶ＜やったるばい！＞（㊙10/㊙20）",
       "url": "https://torecat.shop/products/状態b-蒼斬しのぶ-やったるばい-㊙10-㊙20"
-    },
-    {
-      "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
-      "kind": "new",
-      "price": "400円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "【状態B】SSS級侵略 カリスマゾーン（SPR4/SPR5）",
-      "url": "https://torecat.shop/products/dm26ex2-spr004"
     },
     {
       "at": "2026-10-16T09:46:51+09:00",
@@ -369,16 +349,6 @@
       "stock": "在庫あり",
       "title": "【状態B】音卿の精霊龍 ラフルル・ラブ / 「未来から来る、だからミラクル」（15/100）",
       "url": "https://torecat.shop/products/状態b-音卿の精霊龍-ラフルル-ラブ-未来から来る-だからミラクル-15-100"
-    },
-    {
-      "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
-      "kind": "new",
-      "price": "280円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "策士のシダン ニャハン（PR9/PR10）",
-      "url": "https://torecat.shop/products/dm26ex2-pr009"
     },
     {
       "at": "2026-10-16T09:46:51+09:00",
@@ -574,16 +544,6 @@
       "at": "2026-10-16T09:46:51+09:00",
       "available": true,
       "kind": "new",
-      "price": "80円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "【状態B】瀑水神 ミヅハノオオミカミ（SPR1/SPR5）",
-      "url": "https://torecat.shop/products/dm26ex2-spr001"
-    },
-    {
-      "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
-      "kind": "new",
       "price": "60円",
       "shop": "トレキャット",
       "stock": "在庫あり",
@@ -609,16 +569,6 @@
       "stock": "在庫あり",
       "title": "【状態B】真久間メガ＜ボクにおまかせ！＞（11/100）",
       "url": "https://torecat.shop/products/状態b-真久間メガ-ボクにおまかせ-11-100"
-    },
-    {
-      "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
-      "kind": "new",
-      "price": "60円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "龍頭星雲人 / 零誕祭（PR2/PR10）",
-      "url": "https://torecat.shop/products/dm26ex2-pr002"
     },
     {
       "at": "2026-10-16T09:46:51+09:00",
@@ -891,10 +841,10 @@
       "url": "https://torecat.shop/products/堕呪-バレッドゥdm26-sd1"
     }
   ],
-  "saved_at": "2026-10-16T17:51:57+09:00",
+  "saved_at": "2026-10-16T18:22:50+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-16T17:51:57+09:00",
+      "checked_at": "2026-10-16T18:22:50+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -902,7 +852,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-16T17:51:57+09:00",
+      "checked_at": "2026-10-16T18:22:50+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
