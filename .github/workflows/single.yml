@@ -84,7 +84,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-                    for f in docs/single.json data/watchlist.enc; do
+          for f in docs/single.json data/watchlist.enc; do
             if [ -e "$f" ]; then git add "$f"; fi   # まだ無いファイル（初回の登録リストなど）は飛ばす
           done
           git commit -m "シングル通知の記録を更新"
