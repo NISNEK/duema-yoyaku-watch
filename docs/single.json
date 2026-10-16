@@ -1,9 +1,1380 @@
 {
-  "items": [],
-  "saved_at": "2026-10-16T09:46:51+09:00",
+  "items": [
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10,800円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態A-】流星のガイアッシュ・カイザー（DCR11/DCR15）",
+      "url": "https://torecat.shop/products/流星のガイアッシュ-カイザー-dcr11-dcr15"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "9,980円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】流星のガイアッシュ・カイザー（DCR11/DCR15）",
+      "url": "https://torecat.shop/products/状態b-流星のガイアッシュ-カイザー-dcr11-dcr15"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "5,980円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】真邪連結 バウ・M・ロマイオン(DM26RP1 SP5/SP5) R",
+      "url": "https://torecat.shop/products/真邪連結-バウ-m-ロマイオンdm26rp1-sp5-sp5-r"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "3,900円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】∞龍 ゲンムエンペラー（DCR2/DCR15）",
+      "url": "https://torecat.shop/products/状態b-龍-ゲンムエンペラー-dcr2-dcr15"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "3,300円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】流星アーシュ＜私が主役⁉＞（㊙2/㊙20）",
+      "url": "https://torecat.shop/products/状態b-流星アーシュ-私が主役⁉-㊙2-㊙20"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "2,900円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】水晶の王 ゴスペル（DCR10/DCR15）",
+      "url": "https://torecat.shop/products/状態b-水晶の王-ゴスペル-dcr10-dcr15"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": false,
+      "kind": "new",
+      "price": "2,500円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "帝王坂∞＜…………！＞（㊙16/㊙20）",
+      "url": "https://torecat.shop/products/dm26ex3-sec016"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "2,380円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "ルード・ザーナ　P13/Y25 DMPROMOY25",
+      "url": "https://torecat.shop/products/duelmasters-promoy25-013"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "2,200円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】「修羅」の頂 VAN・ベートーベン（DCR4/DCR15）",
+      "url": "https://torecat.shop/products/状態b-修羅-の頂-van-ベートーベン-dcr4-dcr15"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "1,750円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】龍世界 ドラゴ大王（DCR1/DCR15）",
+      "url": "https://torecat.shop/products/状態b-龍世界-ドラゴ大王-dcr1-dcr15"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "1,480円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "世界のY チャクラ・デル・フィン(DM26RP1 S2/S11) SR",
+      "url": "https://torecat.shop/products/世界のy-チャクラ-デル-フィンdm26rp1-s2-s11-sr"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "1,280円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "轟腕のR ダグラジャパニカン(DM26RP1 S9/S11) SR",
+      "url": "https://torecat.shop/products/轟腕のr-ダグラジャパニカンdm26rp1-s9-s11-sr"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "1,200円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "～そして覚醒へ…～(DM25RP4 ㊙7/㊙24)",
+      "url": "https://torecat.shop/products/そして覚醒へ-dm25rp4-㊙7-㊙24"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "1,100円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】地封龍 ギャイア（DCR9/DCR15）",
+      "url": "https://torecat.shop/products/状態b-地封龍-ギャイア-dcr9-dcr15"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "1,100円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "マーシャル・クロウラー　19/98 DMEX06",
+      "url": "https://torecat.shop/products/duelmasters-dmex06-019"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": false,
+      "kind": "new",
+      "price": "1,050円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "【状態B】超竜バジュラズテラ（DCR7/DCR15）",
+      "url": "https://torecat.shop/products/状態b-超竜バジュラズテラ-dcr7-dcr15"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "1,020円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】地封院ギャイ＜まかしとき！＞（33/100）",
+      "url": "https://torecat.shop/products/状態b-地封院ギャイ-まかしとき-33-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "1,020円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】流星アーシュ＜私が主役⁉＞（7/100）",
+      "url": "https://torecat.shop/products/状態b-流星アーシュ-私が主役⁉-7-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": false,
+      "kind": "new",
+      "price": "1,000円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "コラプス・ウェーブ　11/55 DM22",
+      "url": "https://torecat.shop/products/duelmasters-dm22-011"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "980円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】世界竜皇 ボルシャック・ヒカリスマ（SPR2/SPR5）",
+      "url": "https://torecat.shop/products/dm26ex2-spr002"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "850円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】龍仙ロマネスク（DCR13/DCR15）",
+      "url": "https://torecat.shop/products/状態b-龍仙ロマネスク-dcr13-dcr15"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": false,
+      "kind": "new",
+      "price": "780円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "【状態B】宿禰マロン＜最強傑作でし！＞（㊙18/㊙20）",
+      "url": "https://torecat.shop/products/状態b-宿禰マロン-最強傑作でし-㊙18-㊙20"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "780円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】CRY-S-MAX ジャオウガ（SPR5/SPR5）",
+      "url": "https://torecat.shop/products/dm26ex2-spr005"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "760円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】S級原始 レッドマッド（15/89）",
+      "url": "https://torecat.shop/products/dm26ex2-015"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "710円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】飛翔龍 5000VT（1/89）",
+      "url": "https://torecat.shop/products/dm26ex2-001"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "700円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ボルバルザーク・エクス（DCR12/DCR15）",
+      "url": "https://torecat.shop/products/状態b-ボルバルザーク-エクス-dcr12-dcr15"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "680円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】インフェル星樹（DCR15/DCR15）",
+      "url": "https://torecat.shop/products/状態b-インフェル星樹-dcr15-dcr15"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "680円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】メガ・マグマ・ドラゴン（DCR8/DCR15）",
+      "url": "https://torecat.shop/products/状態b-メガ-マグマ-ドラゴン-dcr8-dcr15"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "640円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】天命＜天下のお嬢様ですのよ＞（㊙1/㊙20）",
+      "url": "https://torecat.shop/products/状態b-天命-天下のお嬢様ですのよ-㊙1-㊙20"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "630円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】邪眼魔凰デス・フェニックス（SPR3/SPR5）",
+      "url": "https://torecat.shop/products/dm26ex2-spr003"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "630円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】鬼黒皇グレイテスト・ジャオウガ（16/89）",
+      "url": "https://torecat.shop/products/dm26ex2-016"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "600円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "V頂神話 カツムゲン（S11/S11）",
+      "url": "https://torecat.shop/products/dm26rp2-s011"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "520円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "傷だらけの革命 スカーレッドゾーン（S10/S11）",
+      "url": "https://torecat.shop/products/dm26rp2-s010"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "480円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】庵野しゅうら＜楽しんでね！＞（㊙6/㊙20）",
+      "url": "https://torecat.shop/products/状態b-庵野しゅうら-楽しんでね-㊙6-㊙20"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "460円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】SSS級侵略 カリスマゾーン（SPR㊙4/SPR㊙5）",
+      "url": "https://torecat.shop/products/dm26ex2-sprsec004"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "420円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ボルシャック・カクメイジン（14/89）",
+      "url": "https://torecat.shop/products/dm26ex2-014"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "400円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】蒼斬しのぶ＜やったるばい！＞（㊙10/㊙20）",
+      "url": "https://torecat.shop/products/状態b-蒼斬しのぶ-やったるばい-㊙10-㊙20"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "400円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】SSS級侵略 カリスマゾーン（SPR4/SPR5）",
+      "url": "https://torecat.shop/products/dm26ex2-spr004"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "380円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】深淵の逆転撃（32/100）",
+      "url": "https://torecat.shop/products/状態b-深淵の逆転撃-32-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "380円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "ティラノ・リンク・ノヴァ　4/55 DM21",
+      "url": "https://torecat.shop/products/duelmasters-dm21-004"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "370円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】～墓碑に刻まれし魔弾の名～（7/89）",
+      "url": "https://torecat.shop/products/dm26ex2-007"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "360円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ボルシャック・ロマネスク（35/100）",
+      "url": "https://torecat.shop/products/状態b-ボルシャック-ロマネスク-35-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "320円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】帝王坂∞＜…………！＞（54/100）",
+      "url": "https://torecat.shop/products/状態b-帝王坂-54-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "320円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】砕慄接続 グレイトフル・ベン（23/100）",
+      "url": "https://torecat.shop/products/状態b-砕慄接続-グレイトフル-ベン-23-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "320円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】音卿の精霊龍 ラフルル・ラブ / 「未来から来る、だからミラクル」（15/100）",
+      "url": "https://torecat.shop/products/状態b-音卿の精霊龍-ラフルル-ラブ-未来から来る-だからミラクル-15-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "280円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "策士のシダン ニャハン（PR9/PR10）",
+      "url": "https://torecat.shop/products/dm26ex2-pr009"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "260円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】禁断の轟速 ブラックゾーン（MC6/30）",
+      "url": "https://torecat.shop/products/dm26ex2-mc006"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "250円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】伍代ドーラ＜楽勝じゃ！＞（17/100）",
+      "url": "https://torecat.shop/products/状態b-伍代ドーラ-楽勝じゃ-17-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "240円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ジュラ子・リューバー＜LOVEですわ＞（8/100）",
+      "url": "https://torecat.shop/products/状態b-ジュラ子-リューバー-loveですわ-8-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "240円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】勝利宣言 鬼丸「覇」（1/100）",
+      "url": "https://torecat.shop/products/状態b-勝利宣言-鬼丸-覇-1-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "230円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】水蜃 フカフチノカミ（4/89）",
+      "url": "https://torecat.shop/products/dm26ex2-004"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "220円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】神聖龍 エモーショナル・ハードコア（4/100）",
+      "url": "https://torecat.shop/products/状態b-神聖龍-エモーショナル-ハードコア-4-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "220円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】邪眼破壊神R・R・R（6/89）",
+      "url": "https://torecat.shop/products/dm26ex2-006"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "200円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】天命＜天下のお嬢様ですのよ＞（6/100）",
+      "url": "https://torecat.shop/products/状態b-天命-天下のお嬢様ですのよ-6-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "200円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "戦極竜ヴァルキリアス・ムサシ　4/55 DM30",
+      "url": "https://torecat.shop/products/duelmasters-dm30-004"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "200円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ボルシャック・ゴルファンタジスタ（24/89）",
+      "url": "https://torecat.shop/products/dm26ex2-024"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "200円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】邪眼左神エンドレス（18/89）",
+      "url": "https://torecat.shop/products/dm26ex2-018"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "180円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】桜龍パーフェクト・スターズ（25/100）",
+      "url": "https://torecat.shop/products/状態b-桜龍パーフェクト-スターズ-25-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "170円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】王道の革命 ドギラゴン（24/100）",
+      "url": "https://torecat.shop/products/状態b-王道の革命-ドギラゴン-24-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "170円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】パルフェ・ルピア / 「あとはたのんだぞ」（17/89）",
+      "url": "https://torecat.shop/products/dm26ex2-017"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "160円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】庵野水晶＜がんばるっ!!＞（21/100）",
+      "url": "https://torecat.shop/products/状態b-庵野水晶-がんばるっ-21-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "160円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】龍風混成 ザーディクリカ（20/100）",
+      "url": "https://torecat.shop/products/状態b-龍風混成-ザーディクリカ-20-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "150円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "王闘の大地（36/100）",
+      "url": "https://torecat.shop/products/dm26ex3-036"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "150円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "王来英雄 モモキングRX（2/100）",
+      "url": "https://torecat.shop/products/dm26ex3-002"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "150円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】禁鬼機関 ジャオウガ-8（12/89）",
+      "url": "https://torecat.shop/products/dm26ex2-012"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "140円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】クリム・美心・ギャラクシー＜アガる！＞（12/100）",
+      "url": "https://torecat.shop/products/状態b-クリム-美心-ギャラクシー-アガる-12-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "130円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ボルシャック・ゴルギーニ（13/89）",
+      "url": "https://torecat.shop/products/dm26ex2-013"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "120円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】王闘の大地（36/100）",
+      "url": "https://torecat.shop/products/状態b-王闘の大地-36-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "120円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】恋葉ココア（22/100）",
+      "url": "https://torecat.shop/products/状態b-恋葉ココア-22-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "120円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】王来英雄 モモキングRX（2/100）",
+      "url": "https://torecat.shop/products/状態b-王来英雄-モモキングrx-2-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "120円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】覚悟の決闘（31/89）",
+      "url": "https://torecat.shop/products/dm26ex2-031"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "120円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】轟速 ザ・ロウィン（28/89）",
+      "url": "https://torecat.shop/products/dm26ex2-028"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "100円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】CRYMAX ジャオウガ（MC2/30）",
+      "url": "https://torecat.shop/products/dm26ex2-mc002"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "100円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】邪眼破壊神デスアポロヌス・ドラゲリオン（10/89）",
+      "url": "https://torecat.shop/products/dm26ex2-010"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "80円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】庵野しゅうら＜楽しんでね！＞（16/100）",
+      "url": "https://torecat.shop/products/状態b-庵野しゅうら-楽しんでね-16-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "80円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】蒼き守護神 ドギラゴン閃（3/100）",
+      "url": "https://torecat.shop/products/状態b-蒼き守護神-ドギラゴン閃-3-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "80円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "マーシャル・クイーン　9/55 DM16",
+      "url": "https://torecat.shop/products/duelmasters-dm16-009"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "80円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】瀑水神 ミヅハノオオミカミ（SPR1/SPR5）",
+      "url": "https://torecat.shop/products/dm26ex2-spr001"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "80円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】轟速 ザ・ドック（20/89）",
+      "url": "https://torecat.shop/products/dm26ex2-020"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "80円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】夢の轟速 ザ・ランド（8/89）",
+      "url": "https://torecat.shop/products/dm26ex2-008"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "60円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】星増樹＜あきない遊びだぜ！＞（73/100）",
+      "url": "https://torecat.shop/products/状態b-星増樹-あきない遊びだぜ-73-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "60円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】熊田すず＜わらわは天才！＞（57/100）",
+      "url": "https://torecat.shop/products/状態b-熊田すず-わらわは天才-57-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "60円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】真久間メガ＜ボクにおまかせ！＞（11/100）",
+      "url": "https://torecat.shop/products/状態b-真久間メガ-ボクにおまかせ-11-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "60円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "龍頭星雲人 / 零誕祭（PR2/PR10）",
+      "url": "https://torecat.shop/products/dm26ex2-pr002"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "50円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "聖沌忍者 シャーリーシー / シャーリー・チャージャー　15A/20 DM23RP2",
+      "url": "https://torecat.shop/products/duelmasters-dm23rp2-15a"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "50円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】孤高の決闘（35/89）",
+      "url": "https://torecat.shop/products/dm26ex2-035"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "50円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】一王二命三眼槍の封（34/89）",
+      "url": "https://torecat.shop/products/dm26ex2-034"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "40円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】玖伍零壱（27/100）",
+      "url": "https://torecat.shop/products/状態b-玖伍零壱-27-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "40円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】永遠のリュウセイ・カイザー（10/100）",
+      "url": "https://torecat.shop/products/状態b-永遠のリュウセイ-カイザー-10-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "30円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ワダエビノミコト（19/89）",
+      "url": "https://torecat.shop/products/dm26ex2-019"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "20円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ボルシャック・ガラワルド（9/100）",
+      "url": "https://torecat.shop/products/状態b-ボルシャック-ガラワルド-9-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "20円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】魔誕の悪魔デスモナーク（9/89）",
+      "url": "https://torecat.shop/products/dm26ex2-009"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】伝説の正体 ギュウジン丸（MC3/30）",
+      "url": "https://torecat.shop/products/dm26ex2-mc003"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】終来王鬼 ジャオウガ（2/89）",
+      "url": "https://torecat.shop/products/dm26ex2-002"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】聖霊左神ジャスティス（MC10/30）",
+      "url": "https://torecat.shop/products/dm26ex2-mc010"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】覇道の決闘（33/89）",
+      "url": "https://torecat.shop/products/dm26ex2-033"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】野望の決闘（32/89）",
+      "url": "https://torecat.shop/products/dm26ex2-032"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】宿命の決闘（30/89）",
+      "url": "https://torecat.shop/products/dm26ex2-030"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ワダユメ＝縛＝ノミコト（29/89）",
+      "url": "https://torecat.shop/products/dm26ex2-029"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】暗黒破壊神デス・フェニックス（27/89）",
+      "url": "https://torecat.shop/products/dm26ex2-027"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】「鬼情」の極 ジャオウグリラ / 「自由で欲望のままに生きるのだ！」（26/89）",
+      "url": "https://torecat.shop/products/dm26ex2-026"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】氷柱と炎弧の決断（25/89）",
+      "url": "https://torecat.shop/products/dm26ex2-025"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ボルテール・ミラー・ドラゴン / ミラー・チャージャー（23/89）",
+      "url": "https://torecat.shop/products/dm26ex2-023"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】邪眼龍神メタル・アポロヌス（22/89）",
+      "url": "https://torecat.shop/products/dm26ex2-022"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】怒像アゲ（21/89）",
+      "url": "https://torecat.shop/products/dm26ex2-021"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】不敬合成王 ロマティックダム・アルキング（MC9/30）",
+      "url": "https://torecat.shop/products/dm26ex2-mc009"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】魔誕導師ブラックルシファー（MC8/30）",
+      "url": "https://torecat.shop/products/dm26ex2-mc008"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】天罪堕将 アルカクラウン（MC7/30）",
+      "url": "https://torecat.shop/products/dm26ex2-mc007"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】煉獄邪神M・R・C・ロマノフ（MC5/30）",
+      "url": "https://torecat.shop/products/dm26ex2-mc005"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】絶望と反魂と滅殺の決断（MC4/30）",
+      "url": "https://torecat.shop/products/dm26ex2-mc004"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】「涅槃」の鬼 ゲドウ大権現（11/89）",
+      "url": "https://torecat.shop/products/dm26ex2-011"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】嵐神 ミヅハノクエビコ（5/89）",
+      "url": "https://torecat.shop/products/dm26ex2-005"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ボルシャック・アークゼオスNEX（3/89）",
+      "url": "https://torecat.shop/products/dm26ex2-003"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】竜皇神 ボルシャック・バクテラス（MC1/30）",
+      "url": "https://torecat.shop/products/dm26ex2-mc001"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "偽りの剣豪バロムバロスト(DM25EX4 9/65) VR",
+      "url": "https://torecat.shop/products/偽りの剣豪バロムバロストdm25ex4-9-65-vr"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】雨森まもり（88/100）",
+      "url": "https://torecat.shop/products/状態b-雨森まもり-88-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】帝哲人＜声出していけヨ！＞（71/100）",
+      "url": "https://torecat.shop/products/状態b-帝哲人-声出していけヨ-71-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】宿禰マロン＜最強傑作でし！＞（70/100）",
+      "url": "https://torecat.shop/products/状態b-宿禰マロン-最強傑作でし-70-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】阿武祖怒幽竜（58/100）",
+      "url": "https://torecat.shop/products/状態b-阿武祖怒幽竜-58-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】吹貴ゼツ（51/100）",
+      "url": "https://torecat.shop/products/状態b-吹貴ゼツ-51-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】江戸素・Q・真理＜計算通り！＞（50/100）",
+      "url": "https://torecat.shop/products/状態b-江戸素-q-真理-計算通り-50-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ルード・ザーナ＜音が鳴いてる＞（46/100）",
+      "url": "https://torecat.shop/products/状態b-ルード-ザーナ-音が鳴いてる-46-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】行くよー！生徒会、ハイチーズ！（40/100）",
+      "url": "https://torecat.shop/products/状態b-行くよー-生徒会-ハイチーズ-40-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】桜龍スプリング・アース（39/100）",
+      "url": "https://torecat.shop/products/状態b-桜龍スプリング-アース-39-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】行くよー！アオハル、ハイチーズ！（38/100）",
+      "url": "https://torecat.shop/products/状態b-行くよー-アオハル-ハイチーズ-38-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】行くよー！Jack-Pot、ハイチーズ！（37/100）",
+      "url": "https://torecat.shop/products/状態b-行くよー-jack-pot-ハイチーズ-37-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】春咲栄久＜アンコールだ＞（34/100）",
+      "url": "https://torecat.shop/products/状態b-春咲栄久-アンコールだ-34-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】闇王ゼーロ（31/100）",
+      "url": "https://torecat.shop/products/状態b-闇王ゼーロ-31-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】熊田不死子＜かわいらしいわ～＞（30/100）",
+      "url": "https://torecat.shop/products/状態b-熊田不死子-かわいらしいわ-30-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】バイケンの海幻（29/100）",
+      "url": "https://torecat.shop/products/状態b-バイケンの海幻-29-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】蒼斬しのぶ＜やったるばい！＞（28/100）",
+      "url": "https://torecat.shop/products/状態b-蒼斬しのぶ-やったるばい-28-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】サーヴァ・K・ゼオス＜スゴイ！＞（26/100）",
+      "url": "https://torecat.shop/products/状態b-サーヴァ-k-ゼオス-スゴイ-26-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】無双と竜機の伝説（19/100）",
+      "url": "https://torecat.shop/products/状態b-無双と竜機の伝説-19-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ボルシャック・ドラゴ大王（18/100）",
+      "url": "https://torecat.shop/products/状態b-ボルシャック-ドラゴ大王-18-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】邪帝類五龍目 ドミティウス（14/100）",
+      "url": "https://torecat.shop/products/状態b-邪帝類五龍目-ドミティウス-14-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ボルシャック・アークゼオスNEX（5/100）",
+      "url": "https://torecat.shop/products/状態b-ボルシャック-アークゼオスnex-5-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "5円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】堕呪 バレッドゥ",
+      "url": "https://torecat.shop/products/堕呪-バレッドゥdm26-sd1"
+    }
+  ],
+  "saved_at": "2026-10-16T10:09:13+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-16T09:46:51+09:00",
+      "checked_at": "2026-10-16T10:09:13+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -11,7 +1382,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-16T09:46:51+09:00",
+      "checked_at": "2026-10-16T10:09:13+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
