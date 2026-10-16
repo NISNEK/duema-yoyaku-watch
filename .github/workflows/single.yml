@@ -1,0 +1,90 @@
+# ============================================================
+#  シングル通知の自動実行設定（GitHub Actions）
+#  5分おきに single/main.py を動かします（予約確認とは別に動きます）。
+# ============================================================
+name: シングル通知
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "実行モード"
+        type: choice
+        default: normal
+        options:
+          - normal     # 通常の見回り
+          - dry-run    # Discord に送らず、内容だけ表示（記録も保存しない）
+          - test-dm    # オーナーにテストのDMを送り、チャンネルにも書き込む
+
+# 必要最小限の権限：記録ファイルと登録リスト（暗号化済み）を保存するための書き込みだけ
+permissions:
+  contents: write
+
+concurrency:
+  group: single
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      MODE: ${{ github.event.inputs.mode || 'normal' }}
+    steps:
+      - name: プログラムを取り出す
+        uses: actions/checkout@v4
+
+      - name: Python を準備する
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 部品を入れる
+        run: pip install -r requirements.txt
+
+      - name: 前回の作業記録を読み込む
+        if: env.MODE == 'normal'
+        uses: actions/cache/restore@v4
+        with:
+          path: .state-single
+          key: single-state-${{ github.run_id }}
+          restore-keys: single-state-
+
+      - name: 見回る
+        env:
+          # 秘密情報は GitHub Secrets から渡す（ログには表示されません）
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          SINGLE_CHANNEL_ID: ${{ secrets.SINGLE_CHANNEL_ID }}
+          OWNER_DISCORD_ID: ${{ secrets.OWNER_DISCORD_ID }}
+          WATCHLIST_KEY: ${{ secrets.WATCHLIST_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          case "$MODE" in
+            dry-run) python single/main.py --dry-run ;;
+            test-dm) python single/main.py --test-dm ;;
+            *)       python single/main.py ;;
+          esac
+
+      - name: 作業記録を保存する
+        if: env.MODE == 'normal'
+        uses: actions/cache/save@v4
+        with:
+          path: .state-single
+          key: single-state-${{ github.run_id }}
+
+      - name: 一覧ページの記録と登録リストをリポジトリに保存する
+        if: env.MODE == 'normal'
+        run: |
+          if [ -z "$(git status --porcelain -- docs/single.json data/watchlist.enc)" ]; then
+            echo "変化がないため保存しません"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/single.json data/watchlist.enc
+          git commit -m "シングル通知の記録を更新"
+          git pull --rebase --autostash
+          git push
