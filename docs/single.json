@@ -1024,7 +1024,7 @@
       "at": "2026-10-17T00:28:35+09:00",
       "available": true,
       "kind": "new",
-      "price": "450円",
+      "price": "300円",
       "shop": "トレキャット",
       "stock": "在庫あり",
       "title": "希望の絆 鬼修羅（超13/超50）",
@@ -1881,10 +1881,10 @@
       "url": "https://torecat.shop/products/堕呪-バレッドゥdm26-sd1"
     }
   ],
-  "saved_at": "2026-10-17T02:12:03+09:00",
+  "saved_at": "2026-10-17T02:46:50+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-17T02:12:03+09:00",
+      "checked_at": "2026-10-17T02:46:50+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1892,7 +1892,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-17T02:12:03+09:00",
+      "checked_at": "2026-10-17T02:46:50+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
