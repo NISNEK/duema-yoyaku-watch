@@ -1,0 +1,22 @@
+{
+  "items": [],
+  "saved_at": "2026-10-16T09:46:51+09:00",
+  "shops": {
+    "amenity": {
+      "checked_at": "2026-10-16T09:46:51+09:00",
+      "error_count": 0,
+      "error_notified": false,
+      "last_error": null,
+      "name": "アメニティードリーム",
+      "state": "ok"
+    },
+    "torecat": {
+      "checked_at": "2026-10-16T09:46:51+09:00",
+      "error_count": 0,
+      "error_notified": false,
+      "last_error": null,
+      "name": "トレキャット",
+      "state": "ok"
+    }
+  }
+}
