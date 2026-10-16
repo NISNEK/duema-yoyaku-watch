@@ -6,7 +6,9 @@
   python single/main.py --test-dm     … オーナーにテストのDMを送り、チャンネルにも書き込む
 """
 import argparse
+import hashlib
 import os
+import re
 import sys
 from datetime import date, timedelta
 
@@ -343,6 +345,25 @@ def token_reminder(ctx, discord, data, owner_id):
         print("- トークン期限のお知らせをオーナーに送りました")
 
 
+ANNOUNCE_FILE = os.path.join(common.ROOT, "announce.md")
+
+
+def announce(discord, data, channel_id):
+    """announce.md にお知らせが書いてあれば、チャンネルに1回だけ投稿する（同じ文は二度投稿しない）。"""
+    if not os.path.exists(ANNOUNCE_FILE):
+        return
+    with open(ANNOUNCE_FILE, encoding="utf-8") as f:
+        text = re.sub(r"<!--.*?-->", "", f.read(), flags=re.S).strip()  # 書き方の説明（コメント）は投稿しない
+    if not text:
+        return
+    digest = hashlib.sha256(text.encode()).hexdigest()
+    if data["global"].get("announced") == digest:
+        return
+    discord.send(channel_id, text)
+    data["global"]["announced"] = digest
+    print("- お知らせをチャンネルに投稿しました")
+
+
 # ---------------- 4. 一覧ページ ----------------
 
 def publish(ctx):
@@ -411,6 +432,7 @@ def run(dry_run):
     ctx = Context(settings, work, common.Http(work), state.now())
 
     last_id = process_commands(ctx, discord, channel_id, owner_id, data)
+    announce(discord, data, channel_id)
     watch_arrivals(ctx)
     watch_registered(ctx, data)
     refresh_catalog(ctx)
