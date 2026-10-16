@@ -34,10 +34,10 @@ jobs:
       MODE: ${{ github.event.inputs.mode || 'normal' }}
     steps:
       - name: プログラムを取り出す
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Python を準備する
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -47,7 +47,7 @@ jobs:
 
       - name: 前回の作業記録を読み込む
         if: env.MODE == 'normal'
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: .state-single
           key: single-state-${{ github.run_id }}
@@ -70,7 +70,7 @@ jobs:
 
       - name: 作業記録を保存する
         if: env.MODE == 'normal'
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: .state-single
           key: single-state-${{ github.run_id }}
@@ -88,5 +88,12 @@ jobs:
             if [ -e "$f" ]; then git add "$f"; fi   # まだ無いファイル（初回の登録リストなど）は飛ばす
           done
           git commit -m "シングル通知の記録を更新"
-          git pull --rebase --autostash
-          git push
+          # 予約とシングルが同時に保存するとぶつかることがあるので、最大3回やり直す
+          for i in 1 2 3; do
+            if git pull --rebase --autostash && git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            echo "保存がほかの更新とぶつかったため、やり直します（${i}回目）"
+            sleep $((i * 5))
+          done
+          echo "::error::記録の保存に3回失敗しました（次の実行で自動的に保存し直します）"
+          exit 1
