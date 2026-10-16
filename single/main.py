@@ -297,7 +297,7 @@ def expire(ctx, discord, data):
         lines = []
         if soon:
             lines += ["⏰ **登録の期限が近づいています**", *[f"・{s}" for s in soon],
-                      "続けたい場合は `!延長 カード名`（または `!延長 全部`）と書いてください。"]
+                      "続けたい場合は `/延長` でカード名（または「全部」）を入れてください。"]
         if gone:
             lines += ["🗑️ **期限切れのため登録を消しました**", *[f"・{g}" for g in gone]]
         if lines:
@@ -317,7 +317,7 @@ TOKEN_GUIDE = """\
 ③ 表示された `github_pat_…` をコピー（閉じると二度と見られません）
 ④ Cloudflare → **Workers & Pages** → **duema-bot** → **Settings** → **Variables and Secrets**
 ⑤ **GITHUB_TOKEN** の右の編集ボタンを押し、③を貼り付けて保存 → **Deploy**
-⑥ Discord で `!トークン期限 新しい期限の日付`（例: `!トークン期限 2027-04-14`）と送る
+⑥ Discord で `/トークン期限` を選び、新しい期限の日付（例: 2027-04-14）を入れて送る
 ⑦ `/ヘルプ` を試して、約1分で返事が来れば完了です
 """
 
@@ -443,7 +443,7 @@ def test_dm():
     discord = discord_api.Discord(os.environ.get("DISCORD_BOT_TOKEN", "").strip())
     discord.bot_user_id()
     print("③ ボットのトークン: OK")
-    discord.send(channel_id, "✅ シングル通知ボットは動いています。`!ヘルプ` と書くと使い方を表示します（返事まで5〜15分）。")
+    discord.send(channel_id, "✅ シングル通知ボットは動いています。`/ヘルプ` で使い方を表示します（約1分で返事）。")
     print("④ チャンネルへの書き込み: OK")
     ok = discord.dm(owner_id, "✅ シングル通知のテストDMです。このメッセージが届けば、DMの設定は完了です。")
     print("⑤ オーナーへのDM: " + ("OK" if ok else "送れませんでした（Discord のプライバシー設定でDMがオフの可能性）"))
