@@ -49,6 +49,7 @@ jobs:
           PAYLOAD_KEY: ${{ secrets.PAYLOAD_KEY }}
           WATCHLIST_KEY: ${{ secrets.WATCHLIST_KEY }}
           OWNER_DISCORD_ID: ${{ secrets.OWNER_DISCORD_ID }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}   # 一覧をDMでも送るため
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -18,6 +18,7 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
 import common  # noqa: I001  先に読み込む（予約確認の部品を使えるようにするため）
 import commands
+import discord_api
 import state
 import watchlist as wl
 
@@ -45,7 +46,7 @@ def to_text_command(payload):
 
 
 def process(payload, settings, owner_id, work):
-    """最新の登録リストを読み、コマンドを処理する。(返事, 登録リストが変わったか) を返す。"""
+    """最新の登録リストを読み、コマンドを処理する。(返事, DMで送る内容, 登録リストが変わったか) を返す。"""
     data = wl.load()
     before = wl.dump({**data, "last_message_id": None})
     ctx = single_main.Context(settings, work, common.Http(work), state.now())
@@ -53,27 +54,26 @@ def process(payload, settings, owner_id, work):
     msg = {"author": {"id": payload["user"]["id"], "global_name": payload["user"].get("name", "")},
            "content": to_text_command(payload)}
     reply, private_text = handler.handle(msg)
-    # スラッシュコマンドの返事は本人にしか見えないので、DM ではなく返事の中にそのまま書く
+    # チャンネル（本人にだけ見える返事）には今まで通り一覧などを表示し、同じ内容をDMにも送る
     text = private_text or reply or "（返事はありません）"
     changed = wl.dump({**data, "last_message_id": None}) != before
     if changed:
         wl.save(data)
-    return text, changed
+    return text, private_text, changed
 
 
 def save_with_retry(payload, settings, owner_id, work):
     branch = os.environ.get("GITHUB_REF_NAME", "main")
-    text = None
     for attempt in range(1, 4):
         git("fetch", "--quiet", "origin", branch)
         git("reset", "--quiet", "--hard", f"origin/{branch}")
-        text, changed = process(payload, settings, owner_id, work)
+        text, private_text, changed = process(payload, settings, owner_id, work)
         if not changed:
-            return text
+            return text, private_text
         git("add", os.path.relpath(common.WATCHLIST_FILE, common.ROOT))
         git("commit", "--quiet", "-m", "シングル通知の登録を更新（スラッシュコマンド）")
         if git("push", "--quiet", "origin", f"HEAD:{branch}", check=False).returncode == 0:
-            return text
+            return text, private_text
         print(f"保存がほかの更新とぶつかったため、やり直します（{attempt}回目）")
     raise RuntimeError("登録の保存に3回失敗しました。少し待ってからもう一度お試しください。")
 
@@ -104,13 +104,29 @@ def main():
     owner_id = os.environ.get("OWNER_DISCORD_ID", "").strip()
     work = state.load(common.WORK_FILE)  # 値段検索用のカード一覧（読むだけ・保存しない）
     print(f"コマンド: /{payload.get('command')}")
+    private_text = None
     try:
-        text = save_with_retry(payload, settings, owner_id, work)
+        text, private_text = save_with_retry(payload, settings, owner_id, work)
     except Exception as e:  # 失敗しても、本人には理由を伝える
         text = f"⚠️ 処理に失敗しました：{e}"
         print(f"::error::{e}")
     respond(payload, text)
     print("返事を送りました")
+    if private_text:
+        send_dm(payload["user"]["id"], private_text)
+
+
+def send_dm(user_id, text):
+    """一覧などを、チャンネルの表示に加えてDMにも送る（送れなくてもチャンネルには表示済み）。"""
+    token = os.environ.get("DISCORD_BOT_TOKEN", "").strip()
+    if not token:
+        print("::warning::DISCORD_BOT_TOKEN が無いため、DMは送りませんでした")
+        return
+    try:
+        ok = discord_api.Discord(token).dm(user_id, text)
+        print("DMも送りました" if ok else "DMを受け取れない設定のため、DMは送れませんでした")
+    except discord_api.DiscordError as e:
+        print(f"::warning::DMを送れませんでした（{e}）")
 
 
 if __name__ == "__main__":
