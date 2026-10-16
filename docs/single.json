@@ -332,11 +332,11 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "kind": "new",
       "price": "5,280円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "王導聖霊 アルファディオス（超G9/超G12）",
       "url": "https://torecat.shop/products/dm26ex4-chog09"
     },
@@ -392,11 +392,11 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "エータ・トゥレイト（42/99）",
       "url": "https://torecat.shop/products/dm26ex4-042"
     },
@@ -1302,11 +1302,11 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "覇王 コロッサス-4（95/99）",
       "url": "https://torecat.shop/products/dm26ex4-095"
     },
@@ -1372,11 +1372,11 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "覇王 カリーマ-4（88/99）",
       "url": "https://torecat.shop/products/dm26ex4-088"
     },
@@ -1482,11 +1482,11 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "覇王 ヘイヴン-4（82/99）",
       "url": "https://torecat.shop/products/dm26ex4-082"
     },
@@ -1881,10 +1881,10 @@
       "url": "https://torecat.shop/products/堕呪-バレッドゥdm26-sd1"
     }
   ],
-  "saved_at": "2026-10-17T00:28:35+09:00",
+  "saved_at": "2026-10-17T01:05:03+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-17T00:28:35+09:00",
+      "checked_at": "2026-10-17T01:05:03+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1892,7 +1892,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-17T00:28:35+09:00",
+      "checked_at": "2026-10-17T01:05:03+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
