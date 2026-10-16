@@ -41,13 +41,26 @@ class Handler:
         self.searcher = searcher
 
     def handle(self, msg):
-        """1つの発言を処理し、(チャンネルへの返事, DMで送る内容) を返す。"""
-        parsed = parse(msg.get("content"))
+        """1つの発言を処理し、(チャンネルへの返事, DMで送る内容) を返す。
+
+        1回の発言に複数行のコマンドが書いてあれば、1行ずつ処理して返事をまとめる。
+        """
+        uid = msg["author"]["id"]
+        name = msg["author"].get("global_name") or msg["author"].get("username", "")
+        replies, dms = [], []
+        for line in (msg.get("content") or "").splitlines()[:10]:
+            reply, dm_text = self._handle_line(line, uid, name)
+            if reply:
+                replies.append(reply)
+            if dm_text:
+                dms.append(dm_text)
+        return ("\n".join(replies) or None), ("\n\n".join(dms) or None)
+
+    def _handle_line(self, line, uid, name):
+        parsed = parse(line)
         if not parsed:
             return None, None
         cmd, arg = parsed
-        uid = msg["author"]["id"]
-        name = msg["author"].get("global_name") or msg["author"].get("username", "")
         func = {
             "ヘルプ": self.help, "help": self.help,
             "登録": self.register, "解除": self.unregister, "一覧": self.listing,
