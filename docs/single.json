@@ -224,16 +224,6 @@
       "at": "2026-10-16T09:46:51+09:00",
       "available": true,
       "kind": "new",
-      "price": "780円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "【状態B】CRY-S-MAX ジャオウガ（SPR5/SPR5）",
-      "url": "https://torecat.shop/products/dm26ex2-spr005"
-    },
-    {
-      "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
-      "kind": "new",
       "price": "760円",
       "shop": "トレキャット",
       "stock": "在庫あり",
@@ -1371,10 +1361,10 @@
       "url": "https://torecat.shop/products/堕呪-バレッドゥdm26-sd1"
     }
   ],
-  "saved_at": "2026-10-16T10:09:13+09:00",
+  "saved_at": "2026-10-16T10:44:23+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-16T10:09:13+09:00",
+      "checked_at": "2026-10-16T10:44:23+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1382,7 +1372,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-16T10:09:13+09:00",
+      "checked_at": "2026-10-16T10:44:23+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
