@@ -153,21 +153,31 @@ def track(ctx, store_key, shop_key, products, notify_new):
                 add_event(ctx, "new", shop_key, p)
         elif not prev["a"] and p.available:
             add_event(ctx, "restock", shop_key, p)
-        seen[p.id] = {"a": p.available, "t": state.iso(ctx.at)}
+        seen[p.id] = {"a": p.available, "t": state.iso(ctx.at),
+                      "f": prev.get("f", prev["t"]) if prev else state.iso(ctx.at)}  # f = 初めて見た時刻
     keep = SEEN_KEEP if notify_new else WATCH_KEEP
     for pid in [k for k, v in seen.items() if ctx.at - state.parse_iso(v["t"]) > keep]:
         del seen[pid]
+
+
+def snapshot(ctx, shop_key, products):
+    """一覧ページに載せるため、いまお店の入荷一覧に並んでいる商品を覚えておく。"""
+    ctx.work.setdefault("arrivals", {})[shop_key] = [
+        {"id": p.id, "title": p.title, "url": p.url, "price": p.price,
+         "stock": p.stock, "available": p.available} for p in products]
 
 
 def watch_arrivals(ctx):
     def torecat():
         products = shops.torecat_arrivals(ctx.http, ctx.settings["torecat"])
         track(ctx, "torecat_seen", "torecat", products, notify_new=True)
+        snapshot(ctx, "torecat", products)
         print(f"- トレキャット 本日の入荷品: {len(products)} 件")
 
     def amenity():
         products = shops.amenity_new(ctx.http, ctx.settings["amenity"])
         track(ctx, "amenity_seen", "amenity", products, notify_new=True)
+        snapshot(ctx, "amenity", products)
         print(f"- アメニティードリーム 新着: デュエマ {len(products)} 件")
 
     guarded(ctx, "torecat", torecat)
@@ -303,7 +313,18 @@ def publish(ctx):
     limit = ctx.at - timedelta(days=checks["recent_days"])
     recent[:] = [r for r in recent if state.parse_iso(r["at"]) >= limit][-300:]
 
-    public = {"saved_at": state.iso(ctx.at), "shops": {}, "items": list(reversed(recent))}
+    # いま入荷一覧に並んでいる商品（入荷）＋ 見つけた再入荷 を、新しい順に並べる
+    items = []
+    for key in SHOPS:
+        seen = ctx.work.get(f"{key}_seen", {})
+        for p in ctx.work.get("arrivals", {}).get(key, []):
+            first = (seen.get(p["id"]) or {}).get("f") or state.iso(ctx.at)
+            items.append({"kind": "new", "shop": ctx.settings[key]["name"], "at": first,
+                          **{k: p[k] for k in ("title", "url", "price", "stock", "available")}})
+    items += [{**r, "available": True} for r in recent if r["kind"] == "restock"]
+    items.sort(key=lambda i: i["at"], reverse=True)
+
+    public = {"saved_at": state.iso(ctx.at), "shops": {}, "items": items[:300]}
     for key in SHOPS:
         st = shop_status(ctx, key)
         public["shops"][key] = {"name": ctx.settings[key]["name"], **st,

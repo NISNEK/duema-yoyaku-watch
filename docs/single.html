@@ -77,12 +77,13 @@
 
   <section class="shops" id="shops" aria-label="ショップごとの状況"></section>
 
-  <div class="note">トレキャット・アメニティードリームで最近入荷したデュエマのシングルです。
+  <div class="note">トレキャット（本日の入荷品）・アメニティードリーム（新着）に並んでいるデュエマのシングルと、最近の再入荷です。
     Discord で <code>!登録 カード名</code> と書くと、そのカードが入荷した時に DM でお知らせします。</div>
 
   <div class="tools" role="toolbar" aria-label="絞り込み">
     <button data-filter="all" aria-pressed="true">すべて</button>
-    <button data-filter="new" aria-pressed="false">新規入荷</button>
+    <button data-filter="buy" aria-pressed="false">買えるものだけ</button>
+    <button data-filter="new" aria-pressed="false">入荷</button>
     <button data-filter="restock" aria-pressed="false">再入荷</button>
     <input id="q" type="search" placeholder="カード名で絞り込み" aria-label="カード名で絞り込み">
   </div>
@@ -92,7 +93,7 @@
 </main>
 
 <script>
-const KIND = { new: "新規入荷", restock: "再入荷" };
+const KIND = { new: "入荷", restock: "再入荷" };
 let all = [];
 let filter = "all";
 
@@ -130,11 +131,11 @@ function renderItems() {
   const q = document.getElementById("q").value.trim().toLowerCase();
   const box = document.getElementById("items");
   box.replaceChildren();
-  const rows = all.filter(i => filter === "all" || i.kind === filter)
+  const rows = all.filter(i => filter === "all" || (filter === "buy" ? i.available !== false : i.kind === filter))
                   .filter(i => !q || i.title.toLowerCase().includes(q));
   if (!rows.length) { box.append(el("li", { class: "empty" }, "該当するカードはありません")); return; }
   for (const i of rows.slice(0, 300)) {
-    const li = el("li", { class: "open" });
+    const li = el("li", { class: i.available === false ? "soldout" : "open" });
     li.append(el("a", { class: "item-title", href: i.url, target: "_blank", rel: "noopener" }, i.title));
     const sub = el("div", { class: "item-sub" });
     sub.append(el("span", { class: "badge " + (i.kind === "new" ? "s-new" : "s-restock") }, KIND[i.kind] || i.kind));
