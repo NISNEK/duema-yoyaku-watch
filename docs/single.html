@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>デュエマ予約確認</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1d2127; --sub: #5f6b7a; --line: #e2e6eb;
+    --open: #0f8a4a; --open-bg: #e3f6ec; --before: #b26b00; --before-bg: #fff3dc;
+    --soldout: #6b7280; --soldout-bg: #eef0f3; --error: #c62828; --error-bg: #fde8e8;
+    --accent: #1f6feb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111418; --card: #1a1f25; --text: #e7eaee; --sub: #9aa5b1; --line: #2b323b;
+      --open: #4ad08a; --open-bg: #12321f; --before: #f0b44c; --before-bg: #3a2c12;
+      --soldout: #a0a8b3; --soldout-bg: #262c33; --error: #ff7b7b; --error-bg: #3b1a1a;
+      --accent: #58a6ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.5; }
+  main { max-width: 960px; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 1.4rem; margin: 8px 0 4px; }
+  .meta { color: var(--sub); font-size: .85rem; margin-bottom: 16px; }
+  .tabs { display: flex; gap: 4px; border-bottom: 2px solid var(--line); margin: 8px 0 12px; }
+  .tabs a { padding: 8px 18px; color: var(--sub); text-decoration: none; font-weight: 600;
+            border-bottom: 3px solid transparent; margin-bottom: -2px; }
+  .tabs a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
+  .shops { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; }
+  .shop { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+  .shop a { color: var(--text); text-decoration: none; font-weight: 600; }
+  .shop .when { color: var(--sub); font-size: .78rem; }
+  .shop .err { color: var(--error); font-size: .78rem; margin-top: 4px; }
+  .badge { display: inline-block; font-size: .75rem; font-weight: 700; padding: 1px 8px; border-radius: 999px; white-space: nowrap; }
+  .s-open { color: var(--open); background: var(--open-bg); }
+  .s-before { color: var(--before); background: var(--before-bg); }
+  .s-soldout { color: var(--soldout); background: var(--soldout-bg); }
+  .s-error { color: var(--error); background: var(--error-bg); }
+  .s-new { color: #fff; background: var(--accent); }
+  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .tools button { border: 1px solid var(--line); background: var(--card); color: var(--text);
+                  border-radius: 999px; padding: 6px 14px; font-size: .9rem; cursor: pointer; }
+  .tools button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .tools input { flex: 1 1 200px; min-width: 0; border: 1px solid var(--line); background: var(--card);
+                 color: var(--text); border-radius: 8px; padding: 6px 10px; font-size: .95rem; }
+  ul.items { list-style: none; margin: 0; padding: 0; }
+  ul.items li { background: var(--card); border: 1px solid var(--line); border-left-width: 5px;
+                border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; }
+  ul.items li.open { border-left-color: var(--open); }
+  ul.items li.before { border-left-color: var(--before); }
+  ul.items li.soldout { border-left-color: var(--soldout); opacity: .85; }
+  .item-title { color: var(--text); text-decoration: none; font-weight: 600; word-break: break-word; }
+  .item-title:hover { text-decoration: underline; }
+  .item-sub { color: var(--sub); font-size: .8rem; margin-top: 4px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; }
+  .mercari { color: var(--accent); text-decoration: none; border: 1px solid var(--accent);
+             border-radius: 999px; padding: 0 8px; font-size: .75rem; white-space: nowrap; }
+  .empty { color: var(--sub); text-align: center; padding: 24px; }
+  footer { color: var(--sub); font-size: .78rem; margin: 24px 0 8px; }
+  .s-restock { color: #fff; background: var(--open); }
+  .price { font-weight: 700; color: var(--text); }
+  .note { color: var(--sub); font-size: .82rem; background: var(--card); border: 1px solid var(--line);
+          border-radius: 8px; padding: 8px 12px; margin-bottom: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>デュエマ予約確認</h1>
+  <nav class="tabs" aria-label="ページの切り替え">
+    <a href="index.html">予約</a>
+    <a href="single.html" aria-current="page">シングル</a>
+  </nav>
+  <div class="meta" id="meta">読み込み中…</div>
+
+  <section class="shops" id="shops" aria-label="ショップごとの状況"></section>
+
+  <div class="note">トレキャット・アメニティードリームで最近入荷したデュエマのシングルです。
+    Discord で <code>!登録 カード名</code> と書くと、そのカードが入荷した時に DM でお知らせします。</div>
+
+  <div class="tools" role="toolbar" aria-label="絞り込み">
+    <button data-filter="all" aria-pressed="true">すべて</button>
+    <button data-filter="new" aria-pressed="false">新規入荷</button>
+    <button data-filter="restock" aria-pressed="false">再入荷</button>
+    <input id="q" type="search" placeholder="カード名で絞り込み" aria-label="カード名で絞り込み">
+  </div>
+  <ul class="items" id="items"></ul>
+
+  <footer>5分おきに確認し、このページは変化があった時に最大15分ごとに更新されます。値段・在庫は確認した時点のものです。</footer>
+</main>
+
+<script>
+const KIND = { new: "新規入荷", restock: "再入荷" };
+let all = [];
+let filter = "all";
+
+function fmt(iso) {
+  if (!iso) return "—";
+  return new Date(iso).toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
+}
+function el(tag, attrs = {}, text) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+// メルカリの検索ページへのリンクを作る（このページがメルカリにアクセスすることはない）
+function mercariUrl(title) {
+  const keyword = title.replace(/[【\[〔(（][^】\]〕)）]*[】\]〕)）]/g, " ").replace(/\s+/g, " ").trim().slice(0, 40);
+  return "https://jp.mercari.com/search?keyword=" + encodeURIComponent("デュエマ " + keyword) + "&status=on_sale";
+}
+
+function renderShops(shops) {
+  const box = document.getElementById("shops");
+  box.replaceChildren();
+  for (const s of Object.values(shops)) {
+    const card = el("div", { class: "shop" });
+    const top = el("div");
+    const ok = s.state !== "error";
+    top.append(el("strong", {}, s.name), " ", el("span", { class: "badge " + (ok ? "s-open" : "s-error") }, ok ? "確認中" : "取得失敗"));
+    card.append(top, el("div", { class: "when" }, "最終確認 " + fmt(s.checked_at)));
+    if (!ok) card.append(el("div", { class: "err" }, s.last_error || "取得に失敗しています"));
+    box.append(card);
+  }
+}
+
+function renderItems() {
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const box = document.getElementById("items");
+  box.replaceChildren();
+  const rows = all.filter(i => filter === "all" || i.kind === filter)
+                  .filter(i => !q || i.title.toLowerCase().includes(q));
+  if (!rows.length) { box.append(el("li", { class: "empty" }, "該当するカードはありません")); return; }
+  for (const i of rows.slice(0, 300)) {
+    const li = el("li", { class: "open" });
+    li.append(el("a", { class: "item-title", href: i.url, target: "_blank", rel: "noopener" }, i.title));
+    const sub = el("div", { class: "item-sub" });
+    sub.append(el("span", { class: "badge " + (i.kind === "new" ? "s-new" : "s-restock") }, KIND[i.kind] || i.kind));
+    sub.append(el("span", { class: "price" }, i.price || ""), el("span", {}, i.stock || ""), el("span", {}, i.shop), el("span", {}, fmt(i.at)));
+    sub.append(el("a", { class: "mercari", href: mercariUrl(i.title), target: "_blank", rel: "noopener" }, "メルカリで探す"));
+    li.append(sub);
+    box.append(li);
+  }
+}
+
+document.querySelectorAll("[data-filter]").forEach(b => b.addEventListener("click", () => {
+  filter = b.dataset.filter;
+  document.querySelectorAll("[data-filter]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  renderItems();
+}));
+document.getElementById("q").addEventListener("input", renderItems);
+
+fetch("single.json?t=" + Date.now())
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => {
+    document.getElementById("meta").textContent = "ページ更新 " + fmt(data.saved_at);
+    renderShops(data.shops || {});
+    all = data.items || [];
+    renderItems();
+  })
+  .catch(() => { document.getElementById("meta").textContent = "まだデータがありません（シングル通知の最初の見回りが終わると表示されます）"; });
+</script>
+</body>
+</html>

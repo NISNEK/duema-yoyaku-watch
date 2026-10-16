@@ -26,6 +26,10 @@
   main { max-width: 960px; margin: 0 auto; padding: 16px; }
   h1 { font-size: 1.4rem; margin: 8px 0 4px; }
   .meta { color: var(--sub); font-size: .85rem; margin-bottom: 16px; }
+  .tabs { display: flex; gap: 4px; border-bottom: 2px solid var(--line); margin: 8px 0 12px; }
+  .tabs a { padding: 8px 18px; color: var(--sub); text-decoration: none; font-weight: 600;
+            border-bottom: 3px solid transparent; margin-bottom: -2px; }
+  .tabs a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
   .shops { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; }
   .shop { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
   .shop a { color: var(--text); text-decoration: none; font-weight: 600; }
@@ -61,6 +65,10 @@
 <body>
 <main>
   <h1>デュエマ予約確認</h1>
+  <nav class="tabs" aria-label="ページの切り替え">
+    <a href="index.html" aria-current="page">予約</a>
+    <a href="single.html">シングル</a>
+  </nav>
   <div class="meta" id="meta">読み込み中…</div>
 
   <section class="shops" id="shops" aria-label="ショップごとの状況"></section>

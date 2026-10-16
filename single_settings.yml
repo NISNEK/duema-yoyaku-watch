@@ -1,0 +1,30 @@
+# ============================================================
+#  シングル通知の設定ファイル
+#  オーナーが書き換えてよいのはこのファイルだけです。
+#  （登録カードの追加・削除は Discord の !登録 / !解除 で行います）
+# ============================================================
+
+limits:
+  cards_per_user: 30        # 1人が登録できるカードの数
+  max_users: 10             # 登録できる人数
+  expire_days: 14           # 登録してから自動で消えるまでの日数
+  remind_before_days: 2     # 消える何日前にDMでお知らせするか
+
+checks:
+  restock_checks_per_run: 6 # 1回（5分）の見回りで、1店あたり何件まで再入荷を確かめるか
+  page_update_minutes: 15   # 一覧ページ（シングル）を更新する間隔（変化があった時だけ）
+  recent_days: 3            # 一覧ページに何日分の入荷を載せるか
+
+torecat:
+  name: トレキャット
+  arrivals: "https://torecat.shop/collections/本日の入荷品/products.json?limit=250"
+  catalog: "https://torecat.shop/collections/デュエルマスターズシングル全て/products.json?limit=250&page={page}"
+  catalog_pages_per_run: 10 # 値段検索用のカード一覧を作る時、1回に読むページ数（1日1回作り直す）
+  product: "https://torecat.shop/products/{handle}"
+  single_tag: "DMシングル全て"  # お店がデュエマのシングルに付けている目印（オリパ・福袋などを除くため）
+
+amenity:
+  name: アメニティードリーム
+  new: "https://www.amenitydream.com/new"
+  search: "https://www.amenitydream.com/product-list?keyword={keyword}&num=100"
+  model_prefix: "DM_"       # 型番がこれで始まる商品だけ（デュエマのシングル）
