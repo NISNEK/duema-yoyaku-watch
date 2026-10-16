@@ -278,3 +278,77 @@ Discord の準備（`# シングル通知` チャンネル・ボットの作成�
 | 「⚠️ シングル通知が止まっています」が ntfy に届いた | 本文の理由を確認。トークンや鍵の Secrets の入れ間違いが多い原因です |
 | 鍵（WATCHLIST_KEY）をなくした | 新しい鍵を作って Secrets を上書きし、リポジトリの `data/watchlist.enc` を削除します（**全員の登録が消えるので、登録し直してもらいます**） |
 | ボットのトークンが漏れた | 開発者ページの Bot → **Reset Token** で作り直し、Secrets の `DISCORD_BOT_TOKEN` を上書きします |
+
+---
+
+# 即答（スラッシュコマンド）編
+
+Discord で `/登録` などを使うと、**約1分**で返事が来るようにする手順です（`!登録` などは今まで通り5〜15分で使えます）。
+Cloudflare で `duema-bot` を作り、`Hello World!` が表示できている前提です。
+
+## Q1. 受付係のプログラムを Cloudflare に貼り付ける
+1. Cloudflare の **Workers & Pages** → **duema-bot** を開きます。
+2. 右上の **「Edit code」**（コードを編集）を押します。ブラウザの中にプログラムの編集画面が開きます。
+3. 左のファイル一覧で **`worker.js`**（または `index.js`）が選ばれていることを確認します。
+4. 右側の編集欄をクリックし、**Ctrl + A → Delete** で中身を全部消します。
+5. パソコンの `cloudflare\worker.js` をメモ帳で開き、**Ctrl + A → Ctrl + C** でコピーして、編集欄に **Ctrl + V** で貼り付けます。
+6. 右上の **「Deploy」**（デプロイ）を押します。
+
+## Q2. 依頼を暗号化する鍵（PAYLOAD_KEY）を作る
+1. **Windows PowerShell** を開き、シングル通知編 S1 と同じ1行を貼り付けて **Enter**。
+   ```powershell
+   $b = New-Object byte[] 32; [Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($b); [Convert]::ToBase64String($b).Replace('+','-').Replace('/','_')
+   ```
+2. 表示された44文字をメモ帳に「PAYLOAD_KEY：」として控えます（WATCHLIST_KEY とは**別の鍵**です）。
+3. GitHub の **Settings → Secrets and variables → Actions → New repository secret** で、Name `PAYLOAD_KEY`、Secret に今の44文字を入れて保存します。
+
+## Q3. GitHub の専用トークンを作る（Cloudflare から GitHub を起動するための鍵）
+1. ブラウザで https://github.com/settings/personal-access-tokens/new を開きます。
+2. 次のとおり入力します。
+   | 項目 | 入力・選択 |
+   |---|---|
+   | Token name | `duema-bot` |
+   | Expiration（有効期限） | 選べる中で一番長いもの（期限が来たら作り直します） |
+   | Repository access | **Only select repositories** → `duema-yoyaku-watch` だけを選ぶ |
+   | Permissions → Repository permissions → **Actions** | **Read and write** |
+   | ほかの Permissions | **触らない**（Metadata の Read-only は自動で付きます） |
+3. 一番下の **「Generate token」** を押し、表示された `github_pat_…` で始まる文字列をメモ帳に控えます（**この画面を閉じると二度と表示されません**）。
+
+## Q4. Cloudflare に設定を5つ入れる
+1. **duema-bot** の画面で **「Settings」**（設定）→ **「Variables and Secrets」**（変数とシークレット）を開き、**「Add」**（追加）を押します。
+2. 次の5つを1つずつ追加します。**Type**（種類）の選び方に注意してください。
+   | Type | Variable name | Value |
+   |---|---|---|
+   | **Text** | `DISCORD_PUBLIC_KEY` | Discord 開発者ページの **General Information → PUBLIC KEY** |
+   | **Text** | `GITHUB_REPO` | `GitHubのユーザー名/duema-yoyaku-watch` |
+   | **Text** | `ALLOWED_GUILD_ID` | 自分の Discord サーバーのID（Discord でサーバーのアイコンを右クリック →「サーバーIDをコピー」） |
+   | **Secret** | `GITHUB_TOKEN` | Q3 のトークン |
+   | **Secret** | `PAYLOAD_KEY` | Q2 の鍵（GitHub に入れたものと**同じ**もの） |
+3. **「Deploy」**（デプロイ）を押して保存します。
+
+## Q5. GitHub にファイルを追加する
+1. **Add file → Upload files** で、`single`・`cloudflare` フォルダをドラッグして **Commit changes**。
+2. **Add file → Create new file** で、次の2つを作ります（パソコンの同じ名前のファイルをメモ帳で開き、中身をコピーして貼り付け）。
+   - `.github/workflows/single-command.yml`
+   - `.github/workflows/register-commands.yml`
+
+## Q6. スラッシュコマンドを Discord に登録する
+**Actions → スラッシュコマンド登録 → Run workflow** を押します。✅ になり、ログに「スラッシュコマンドを 11 個登録しました」と出れば完了です。
+
+## Q7. Discord に受付のアドレスを教える
+1. Discord 開発者ページで **duema-bot（デュエマ通知ボット）** を開き、**General Information** を開きます。
+2. **INTERACTIONS ENDPOINT URL** の欄に `https://duema-bot.（サブドメイン）.workers.dev` を貼り付けます。
+3. **「Save Changes」** を押します。Discord が受付係に確認の呼び出しをし、成功すれば保存されます。
+   - 「interactions_endpoint_url: The specified interactions endpoint url could not be verified.」と出たら、Q1 の貼り付けと Q4 の `DISCORD_PUBLIC_KEY` を確認してください。
+
+## Q8. 試す
+`# シングル通知` で `/` を入力すると、コマンドの候補が出ます。**`/ヘルプ`** を選んで送り、「考え中…」のあと約1分で使い方が表示されれば完成です。
+
+## 即答で困ったとき
+| 症状 | 確認すること |
+|---|---|
+| 「⚠️ 受付に失敗しました」と出る | Cloudflare の `GITHUB_TOKEN`（期限切れ・権限）と `GITHUB_REPO` の書き方 |
+| 「考え中…」のまま変わらない | GitHub の **Actions → シングル即答** の実行が失敗していないか。`PAYLOAD_KEY` が GitHub と Cloudflare で同じか |
+| 「このサーバーでは使えません」と出る | Cloudflare の `ALLOWED_GUILD_ID` |
+| `/` を打ってもコマンドが出ない | Q6 を実行したか。Discord アプリを再起動 |
+| トークンの期限が切れた | Q3 で作り直し、Cloudflare の `GITHUB_TOKEN` を上書きして Deploy |

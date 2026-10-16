@@ -1,0 +1,5 @@
+# 毎回の作業記録（GitHub Actions のキャッシュに保存するので、リポジトリには入れない）
+.state/
+.state-single/
+__pycache__/
+*.pyc

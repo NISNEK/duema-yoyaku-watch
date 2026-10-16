@@ -1,0 +1,28 @@
+# ============================================================
+#  スラッシュコマンドの登録（最初に1回だけ手で実行）
+#  Actions → スラッシュコマンド登録 → Run workflow
+#  コマンドの説明文などを変えた時も、もう一度実行すれば上書きされます。
+# ============================================================
+name: スラッシュコマンド登録
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Discord にスラッシュコマンドを登録する
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          SINGLE_CHANNEL_ID: ${{ secrets.SINGLE_CHANNEL_ID }}
+        run: python single/register_commands.py

@@ -1,0 +1,55 @@
+# ============================================================
+#  シングル即答（スラッシュコマンドの処理）
+#  Discord で /登録 などを使うと、Cloudflare の受付係がこれを起動します。
+#  手で実行する必要はありません。
+# ============================================================
+name: シングル即答
+run-name: シングル即答（スラッシュコマンド）
+
+on:
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: "Discord からの依頼（暗号化済み・自動で入ります）"
+        required: true
+        type: string
+
+# 必要最小限の権限：登録リスト（暗号化済み）を保存するための書き込みだけ
+permissions:
+  contents: write
+
+jobs:
+  answer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: プログラムを取り出す
+        uses: actions/checkout@v7
+
+      - name: Python を準備する
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 部品を入れる
+        run: pip install -r requirements.txt
+
+      - name: 値段検索用のカード一覧を読み込む（読むだけ・保存しない）
+        uses: actions/cache/restore@v6
+        with:
+          path: .state-single
+          key: single-state-${{ github.run_id }}
+          restore-keys: single-state-
+
+      - name: コマンドを処理して返事する
+        env:
+          # 依頼の中身は暗号化されているので、ログには読めない文字列しか残りません
+          PAYLOAD: ${{ inputs.payload }}
+          PAYLOAD_KEY: ${{ secrets.PAYLOAD_KEY }}
+          WATCHLIST_KEY: ${{ secrets.WATCHLIST_KEY }}
+          OWNER_DISCORD_ID: ${{ secrets.OWNER_DISCORD_ID }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python single/command_main.py
