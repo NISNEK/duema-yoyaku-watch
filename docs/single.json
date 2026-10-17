@@ -42,11 +42,11 @@
     },
     {
       "at": "2026-10-17T19:23:59+09:00",
-      "available": true,
+      "available": false,
       "kind": "new",
       "price": "1,300円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "“↑↑”ブランド（S5/S11）",
       "url": "https://torecat.shop/products/dm26rp3-s005"
     },
@@ -1931,18 +1931,18 @@
       "url": "https://torecat.shop/products/堕呪-バレッドゥdm26-sd1"
     }
   ],
-  "saved_at": "2026-10-17T22:17:10+09:00",
+  "saved_at": "2026-10-17T23:09:50+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-17T22:17:10+09:00",
-      "error_count": 0,
+      "checked_at": "2026-10-17T23:09:50+09:00",
+      "error_count": 1,
       "error_notified": false,
-      "last_error": null,
+      "last_error": "ページが開けませんでした（HTTP 503）",
       "name": "アメニティードリーム",
-      "state": "ok"
+      "state": "error"
     },
     "torecat": {
-      "checked_at": "2026-10-17T22:17:10+09:00",
+      "checked_at": "2026-10-17T23:09:50+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
