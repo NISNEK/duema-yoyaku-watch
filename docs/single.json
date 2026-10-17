@@ -49,42 +49,12 @@
       "stock": "売り切れ",
       "title": "“↑↑”ブランド（S5/S11）",
       "url": "https://torecat.shop/products/dm26rp3-s005"
-    },
-    {
-      "at": "2026-10-16T09:46:51+09:00",
-      "available": false,
-      "kind": "new",
-      "price": "10,800円",
-      "shop": "トレキャット",
-      "stock": "売り切れ",
-      "title": "【状態A-】流星のガイアッシュ・カイザー（DCR11/DCR15）",
-      "url": "https://torecat.shop/products/流星のガイアッシュ-カイザー-dcr11-dcr15"
-    },
-    {
-      "at": "2026-10-16T09:46:51+09:00",
-      "available": false,
-      "kind": "new",
-      "price": "150円",
-      "shop": "トレキャット",
-      "stock": "売り切れ",
-      "title": "王闘の大地（36/100）",
-      "url": "https://torecat.shop/products/dm26ex3-036"
-    },
-    {
-      "at": "2026-10-16T09:46:51+09:00",
-      "available": false,
-      "kind": "new",
-      "price": "5円",
-      "shop": "トレキャット",
-      "stock": "売り切れ",
-      "title": "【状態B】堕呪 バレッドゥ",
-      "url": "https://torecat.shop/products/堕呪-バレッドゥdm26-sd1"
     }
   ],
-  "saved_at": "2026-10-18T00:05:06+09:00",
+  "saved_at": "2026-10-18T04:11:53+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-18T00:05:06+09:00",
+      "checked_at": "2026-10-18T04:11:53+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -92,7 +62,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-18T00:05:06+09:00",
+      "checked_at": "2026-10-18T04:11:53+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
