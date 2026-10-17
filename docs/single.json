@@ -1881,18 +1881,18 @@
       "url": "https://torecat.shop/products/堕呪-バレッドゥdm26-sd1"
     }
   ],
-  "saved_at": "2026-10-17T17:26:11+09:00",
+  "saved_at": "2026-10-17T18:56:16+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-17T17:26:11+09:00",
-      "error_count": 1,
+      "checked_at": "2026-10-17T18:56:16+09:00",
+      "error_count": 0,
       "error_notified": false,
-      "last_error": "ページが開けませんでした（HTTP 503）",
+      "last_error": null,
       "name": "アメニティードリーム",
-      "state": "error"
+      "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-17T17:26:11+09:00",
+      "checked_at": "2026-10-17T18:56:16+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
