@@ -1,6 +1,56 @@
 {
   "items": [
     {
+      "at": "2026-10-17T19:23:59+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "380円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "祝え！冥帝王 ダイジュ・ディダノス（S10/S11）",
+      "url": "https://torecat.shop/products/dm26rp3-s010"
+    },
+    {
+      "at": "2026-10-17T19:23:59+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "100円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "ミノガミ&オウ禍武斗 / T.２.D.（㊙13/㊙24）",
+      "url": "https://torecat.shop/products/dm26rp3-sec013"
+    },
+    {
+      "at": "2026-10-17T19:23:59+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "420円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "ジョット・首魁・ジョラゴン（S2/S11）",
+      "url": "https://torecat.shop/products/dm26rp3-s002"
+    },
+    {
+      "at": "2026-10-17T19:23:59+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "160円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "天地命動 バラギアラ / 輪廻虹災（S11/S11）",
+      "url": "https://torecat.shop/products/dm26rp3-s011"
+    },
+    {
+      "at": "2026-10-17T19:23:59+09:00",
+      "available": true,
+      "kind": "new",
+      "price": "1,300円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "“↑↑”ブランド（S5/S11）",
+      "url": "https://torecat.shop/products/dm26rp3-s005"
+    },
+    {
       "at": "2026-10-17T00:28:35+09:00",
       "available": true,
       "kind": "new",
@@ -1881,18 +1931,18 @@
       "url": "https://torecat.shop/products/堕呪-バレッドゥdm26-sd1"
     }
   ],
-  "saved_at": "2026-10-17T18:56:16+09:00",
+  "saved_at": "2026-10-17T19:23:59+09:00",
   "shops": {
     "amenity": {
       "checked_at": "2026-10-17T18:56:16+09:00",
-      "error_count": 0,
+      "error_count": 2,
       "error_notified": false,
-      "last_error": null,
+      "last_error": "ページが開けませんでした（HTTP 503）",
       "name": "アメニティードリーム",
-      "state": "ok"
+      "state": "error"
     },
     "torecat": {
-      "checked_at": "2026-10-17T18:56:16+09:00",
+      "checked_at": "2026-10-17T19:23:59+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
