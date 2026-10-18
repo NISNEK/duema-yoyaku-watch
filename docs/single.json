@@ -1,6 +1,16 @@
 {
   "items": [
     {
+      "at": "2026-10-18T12:09:36+09:00",
+      "available": true,
+      "kind": "restock",
+      "price": "2,980円",
+      "shop": "アメニティードリーム",
+      "stock": "在庫数 4枚",
+      "title": "【SR】切札混成 ドギラダンテ 刈",
+      "url": "https://www.amenitydream.com/product/279426"
+    },
+    {
       "at": "2026-10-17T19:23:59+09:00",
       "available": false,
       "kind": "new",
@@ -51,10 +61,10 @@
       "url": "https://torecat.shop/products/dm26rp3-s005"
     }
   ],
-  "saved_at": "2026-10-18T11:08:14+09:00",
+  "saved_at": "2026-10-18T12:09:36+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-18T11:08:14+09:00",
+      "checked_at": "2026-10-18T12:09:36+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -62,7 +72,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-18T11:08:14+09:00",
+      "checked_at": "2026-10-18T12:09:36+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
