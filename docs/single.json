@@ -1,18 +1,9 @@
 {
   "items": [
     {
-      "at": "2026-10-18T12:09:36+09:00",
-      "available": true,
-      "kind": "restock",
-      "price": "2,980円",
-      "shop": "アメニティードリーム",
-      "stock": "在庫数 4枚",
-      "title": "【SR】切札混成 ドギラダンテ 刈",
-      "url": "https://www.amenitydream.com/product/279426"
-    },
-    {
       "at": "2026-10-17T19:23:59+09:00",
       "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S010.jpg?v=1789730226",
       "kind": "new",
       "price": "380円",
       "shop": "トレキャット",
@@ -23,6 +14,7 @@
     {
       "at": "2026-10-17T19:23:59+09:00",
       "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC013a.jpg?v=1789730418",
       "kind": "new",
       "price": "100円",
       "shop": "トレキャット",
@@ -33,6 +25,7 @@
     {
       "at": "2026-10-17T19:23:59+09:00",
       "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S002.jpg?v=1789730193",
       "kind": "new",
       "price": "420円",
       "shop": "トレキャット",
@@ -43,6 +36,7 @@
     {
       "at": "2026-10-17T19:23:59+09:00",
       "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S011a.jpg?v=1789730230",
       "kind": "new",
       "price": "160円",
       "shop": "トレキャット",
@@ -53,6 +47,7 @@
     {
       "at": "2026-10-17T19:23:59+09:00",
       "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S005.jpg?v=1789730205",
       "kind": "new",
       "price": "1,300円",
       "shop": "トレキャット",
@@ -61,10 +56,10 @@
       "url": "https://torecat.shop/products/dm26rp3-s005"
     }
   ],
-  "saved_at": "2026-10-18T12:09:36+09:00",
+  "saved_at": "2026-10-18T12:32:20+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-18T12:09:36+09:00",
+      "checked_at": "2026-10-18T12:32:20+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -72,12 +67,13 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-18T12:09:36+09:00",
+      "checked_at": "2026-10-18T12:32:20+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
       "name": "トレキャット",
       "state": "ok"
     }
-  }
+  },
+  "show_images": true
 }
