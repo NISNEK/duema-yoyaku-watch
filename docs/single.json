@@ -35,12 +35,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC014.jpg?v=1792148045",
       "kind": "new",
       "price": "1,880円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "切札混成 レッヴォゾーン（㊙14/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec014"
     },
@@ -112,12 +112,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC018.jpg?v=1792148063",
       "kind": "new",
       "price": "380円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "切札縫合 零災（㊙18/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec018"
     },
@@ -156,12 +156,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC011.jpg?v=1792148031",
       "kind": "new",
       "price": "780円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "切札連結 「修羅」「黄金」「覇」（㊙11/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec011"
     },
@@ -189,12 +189,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-chog11-photo.jpg?v=1792171278",
       "kind": "new",
       "price": "3,680円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "双龍覇王 モルトVERSUS（超G11/超G12）",
       "url": "https://torecat.shop/products/dm26ex4-chog11"
     },
@@ -211,23 +211,23 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-chog08-photo.jpg?v=1792171264",
       "kind": "new",
       "price": "1,980円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "王闘竜皇 ボルシャック・ドラゴン（超G8/超G12）",
       "url": "https://torecat.shop/products/dm26ex4-chog08"
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-chog06-photo.jpg?v=1792171252",
       "kind": "new",
       "price": "3,880円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "鬼ヶ覇覇覇 ジャオウガ（超G6/超G12）",
       "url": "https://torecat.shop/products/dm26ex4-chog06"
     },
@@ -255,12 +255,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-chog03-photo.jpg?v=1792171231",
       "kind": "new",
       "price": "2,780円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "悪夢神バロム・ナイトメア（超G3/超G12）",
       "url": "https://torecat.shop/products/dm26ex4-chog03"
     },
@@ -354,12 +354,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC001.jpg?v=1792147987",
       "kind": "new",
       "price": "580円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "切札連結 バロムレイズ（㊙1/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec001"
     },
@@ -387,12 +387,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-chog01-photo.jpg?v=1792171219",
       "kind": "new",
       "price": "980円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "ハイパー・ザ・ジョニー（超G1/超G12）",
       "url": "https://torecat.shop/products/dm26ex4-chog01"
     },
@@ -497,12 +497,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-chog10-photo.jpg?v=1792171272",
       "kind": "new",
       "price": "880円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "勝熱伝双 モモキングVS（超G10/超G12）",
       "url": "https://torecat.shop/products/dm26ex4-chog10"
     },
@@ -574,12 +574,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-chog04-photo.jpg?v=1792171237",
       "kind": "new",
       "price": "3,880円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "轟く邪道 レッドゾーン（超G4/超G12）",
       "url": "https://torecat.shop/products/dm26ex4-chog04"
     },
@@ -1146,12 +1146,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/009_b2e84be1-e58f-4007-921a-7669a2cad7a7.jpg?v=1792147687",
       "kind": "new",
       "price": "2,580円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "王導聖霊 アルファディオス（超G9/超G12）",
       "url": "https://torecat.shop/products/dm26ex4-chog09"
     },
@@ -1160,7 +1160,7 @@
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-010.jpg?v=1792147382",
       "kind": "new",
-      "price": "880円",
+      "price": "2,580円",
       "shop": "トレキャット",
       "stock": "在庫あり",
       "title": "切札混成 光隼 蒼斬丸（10/99）",
@@ -1201,12 +1201,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-069.jpg?v=1792147855",
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "シェル・ファクトリーγ GR（69/99）",
       "url": "https://torecat.shop/products/dm26ex4-069"
     },
@@ -1322,12 +1322,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-chog05-photo.jpg?v=1792171246",
       "kind": "new",
       "price": "450円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "双龍覇王 バーサス＝ザ＝デッドマン（超G5/超G12）",
       "url": "https://torecat.shop/products/dm26ex4-chog05"
     },
@@ -1476,12 +1476,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-080.jpg?v=1792147902",
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "漂流 UV-20（80/99）",
       "url": "https://torecat.shop/products/dm26ex4-080"
     },
@@ -1520,12 +1520,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-chog12-photo.jpg?v=1792171284",
       "kind": "new",
       "price": "2,980円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "ドリーム・ボルメテウス・ホワイト・ドラゴン（超G12/超G12）",
       "url": "https://torecat.shop/products/dm26ex4-chog12"
     },
@@ -1696,12 +1696,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-063.jpg?v=1792147829",
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "リンネ 丙-三式（63/99）",
       "url": "https://torecat.shop/products/dm26ex4-063"
     },
@@ -1751,12 +1751,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-050.jpg?v=1792147768",
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "ニドギ・ラ・ヒツラク（50/99）",
       "url": "https://torecat.shop/products/dm26ex4-050"
     },
@@ -1861,12 +1861,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-chog02-photo.jpg?v=1792171225",
       "kind": "new",
       "price": "450円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "神歌の悪夢 ナイトメア・キリコ（超G2/超G12）",
       "url": "https://torecat.shop/products/dm26ex4-chog02"
     },
@@ -1883,12 +1883,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-chog07-photo.jpg?v=1792171257",
       "kind": "new",
       "price": "980円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "蒼き王道 ドギラゴン超（超G7/超G12）",
       "url": "https://torecat.shop/products/dm26ex4-chog07"
     },
@@ -2069,10 +2069,10 @@
       "url": "https://torecat.shop/products/dm26ex4-087"
     }
   ],
-  "saved_at": "2026-10-19T00:06:17+09:00",
+  "saved_at": "2026-10-19T00:35:26+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-19T00:06:17+09:00",
+      "checked_at": "2026-10-19T00:35:26+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -2080,7 +2080,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-19T00:06:17+09:00",
+      "checked_at": "2026-10-19T00:35:26+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
