@@ -68,12 +68,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC008.jpg?v=1792148018",
       "kind": "new",
       "price": "120円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "切札電融 ボンシャラー・KIRIX（㊙8/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec008"
     },
@@ -145,12 +145,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC021.jpg?v=1792148076",
       "kind": "new",
       "price": "380円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "切札接続 MAXAM ザ・オウガ（㊙21/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec021"
     },
@@ -1278,12 +1278,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-094.jpg?v=1792147962",
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "Disモエル（94/99）",
       "url": "https://torecat.shop/products/dm26ex4-094"
     },
@@ -1828,12 +1828,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-041.jpg?v=1792147683",
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "ヤッタレガール（41/99）",
       "url": "https://torecat.shop/products/dm26ex4-041"
     },
@@ -2069,10 +2069,10 @@
       "url": "https://torecat.shop/products/dm26ex4-087"
     }
   ],
-  "saved_at": "2026-10-19T01:01:22+09:00",
+  "saved_at": "2026-10-19T01:31:58+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-19T01:01:22+09:00",
+      "checked_at": "2026-10-19T01:31:58+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -2080,7 +2080,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-19T01:01:22+09:00",
+      "checked_at": "2026-10-19T01:31:58+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
