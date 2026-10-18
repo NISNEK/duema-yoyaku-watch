@@ -53,6 +53,12 @@
   .selected img { width: 52px; height: 72px; object-fit: contain; border-radius: 4px; background: var(--bg); flex: none; }
   .selected .nm { font-weight: 700; }
   #chart { width: 100%; height: 340px; }
+  .ohlc { display: grid; grid-template-columns: auto 1fr 1fr; gap: 4px 12px; align-items: baseline;
+          font-variant-numeric: tabular-nums; margin-bottom: 6px; }
+  .ohlc .day { color: var(--sub); font-size: .8rem; white-space: nowrap; }
+  .ohlc .cell { display: flex; flex-direction: column; min-width: 0; }
+  .ohlc .k { color: var(--sub); font-size: .72rem; }
+  .ohlc .v { font-weight: 700; font-size: 1.05rem; white-space: nowrap; }
   .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .82rem; color: var(--sub); margin-top: 8px; }
   .dot { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
   .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; margin-bottom: 8px; }
@@ -115,6 +121,7 @@
       <button data-range="90" aria-pressed="false">3か月</button>
       <button data-range="365" aria-pressed="false">1年</button>
     </div>
+    <div class="ohlc" id="ohlc" aria-live="polite"></div>
     <div id="chart" role="img" aria-label="値段のローソク足グラフ"></div>
     <div class="empty" id="empty" hidden>まだ記録がありません。毎日記録していきます。</div>
     <div class="legend">
@@ -174,10 +181,33 @@ const other = chart.addLineSeries({ color: css("--other"), lineWidth: 2, priceLi
 
 const since = () => new Date(Date.now() - range * 864e5).toISOString().slice(0, 10);
 
+// ---------- 1枚と4枚分の値段（指でなぞった日、なぞっていない時は最新の日） ----------
+let shownRows = [];
+function showOhlc(row) {
+  const box = document.getElementById("ohlc");
+  box.replaceChildren();
+  if (!row) return;
+  const day = row[0], price = row[4];
+  box.append(el("div", { class: "day" }, day.slice(5).replace("-", "/") + (row === shownRows[shownRows.length - 1] ? "（最新）" : "")));
+  [["1枚", price], ["4枚", price * 4]].forEach(([k, v]) => {
+    const cell = el("div", { class: "cell" });
+    cell.append(el("span", { class: "k" }, k), el("span", { class: "v" }, yen(v)));
+    box.append(cell);
+  });
+}
+chart.subscribeCrosshairMove((param) => {
+  if (!param || !param.time) { showOhlc(shownRows[shownRows.length - 1]); return; }
+  const t = typeof param.time === "string" ? param.time
+    : `${param.time.year}-${String(param.time.month).padStart(2, "0")}-${String(param.time.day).padStart(2, "0")}`;
+  showOhlc(shownRows.find(r => r[0] === t) || shownRows[shownRows.length - 1]);
+});
+
 // ---------- グラフと数字 ----------
 function draw(rows, otherRows, otherName) {
   rows = rows.filter(r => r[0] >= since());
   otherRows = (otherRows || []).filter(r => r[0] >= since());
+  shownRows = rows;
+  showOhlc(rows[rows.length - 1]);
   candles.setData(rows.map(r => ({ time: r[0], open: r[1], high: r[2], low: r[3], close: r[4] })));
   other.setData(otherRows.map(r => ({ time: r[0], value: r[4] })));
   document.getElementById("otherLegend").hidden = !otherRows.length;
@@ -193,7 +223,8 @@ function draw(rows, otherRows, otherName) {
     stats.append(box);
   };
   const last = rows[rows.length - 1], prev = rows[rows.length - 2];
-  add("最新", yen(last && last[4]));
+  add("最新（1枚）", yen(last && last[4]));
+  add("最新（4枚）", yen(last && last[4] * 4));
   if (last && prev) {
     const diff = last[4] - prev[4], pct = prev[4] ? diff / prev[4] * 100 : 0;
     add("前日比", (diff >= 0 ? "+" : "") + Math.round(diff).toLocaleString("ja-JP") + "円（" + pct.toFixed(1) + "%）",
