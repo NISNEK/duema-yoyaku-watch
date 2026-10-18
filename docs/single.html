@@ -108,7 +108,11 @@ function fmt(iso) {
 }
 function el(tag, attrs = {}, text) {
   const e = document.createElement(tag);
-  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  for (const [k, v] of Object.entries(attrs)) {
+    // お店のデータに変なリンク（javascript: など）が混ざっても使わない
+    if ((k === "href" || k === "src") && !/^(https?:|[\w.-]+\.html)/i.test(String(v))) continue;
+    e.setAttribute(k, v);
+  }
   if (text !== undefined) e.textContent = text;
   return e;
 }

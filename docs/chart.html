@@ -149,7 +149,7 @@
   </footer>
 </main>
 
-<script src="https://unpkg.com/lightweight-charts@4.2.3/dist/lightweight-charts.standalone.production.js"></script>
+<script src="https://unpkg.com/lightweight-charts@4.2.3/dist/lightweight-charts.standalone.production.js" integrity="sha384-stKllnUqA9AD0gsKCuUtf5XlqAW7PwIgDagoNsTWkjkBmJ/GZ/uHTgEBxdLV2VSK" crossorigin="anonymous"></script>
 <script>
 const SHOPS = { torecat: "トレキャット", amenity: "アメニティードリーム" };
 const SHORT = { torecat: "トレキャット", amenity: "アメニティ" };
@@ -157,7 +157,11 @@ const FRAME_LABEL = { "㊙": "㊙ シークレット", "通常": "通常" };
 const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 const el = (tag, attrs = {}, text) => {
   const e = document.createElement(tag);
-  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  for (const [k, v] of Object.entries(attrs)) {
+    // お店のデータに変なリンク（javascript: など）が混ざっても使わない
+    if ((k === "href" || k === "src") && !/^(https?:|[\w.-]+\.html)/i.test(String(v))) continue;
+    e.setAttribute(k, v);
+  }
   if (text !== undefined) e.textContent = text;
   return e;
 };
