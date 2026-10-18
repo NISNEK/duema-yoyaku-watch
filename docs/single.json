@@ -101,12 +101,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC023.jpg?v=1792148085",
       "kind": "new",
       "price": "580円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "切札混成 5000BT（㊙23/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec023"
     },
@@ -420,12 +420,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC003.jpg?v=1792147996",
       "kind": "new",
       "price": "580円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "切札電融 デス・フェルザーク（㊙3/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec003"
     },
@@ -937,12 +937,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO011.jpg?v=1792147395",
       "kind": "new",
       "price": "120円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "DARK MATERIAL COMPLEX（超11/超50）",
       "url": "https://torecat.shop/products/dm26ex4-cho011"
     },
@@ -1399,12 +1399,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-078a.jpg?v=1792147893",
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "闇鎧亜ジャック・アルカディアス / 執拗なる鎧亜の牢獄（78/99）",
       "url": "https://torecat.shop/products/dm26ex4-078"
     },
@@ -1454,12 +1454,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-082.jpg?v=1792147910",
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "覇王 ヘイヴン-4（82/99）",
       "url": "https://torecat.shop/products/dm26ex4-082"
     },
@@ -1850,12 +1850,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO002.jpg?v=1792147312",
       "kind": "new",
       "price": "50円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "ジョリー・ザ・ジョルネード（超2/超50）",
       "url": "https://torecat.shop/products/dm26ex4-cho002"
     },
@@ -2069,10 +2069,10 @@
       "url": "https://torecat.shop/products/dm26ex4-087"
     }
   ],
-  "saved_at": "2026-10-19T01:31:58+09:00",
+  "saved_at": "2026-10-19T02:01:13+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-19T01:31:58+09:00",
+      "checked_at": "2026-10-19T02:01:13+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -2080,7 +2080,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-19T01:31:58+09:00",
+      "checked_at": "2026-10-19T02:01:13+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
