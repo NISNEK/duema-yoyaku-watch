@@ -142,7 +142,8 @@ function renderItems() {
   for (const i of rows.slice(0, 300)) {
     const li = el("li", { class: i.available === false ? "soldout" : "open" });
     const row = el("div", { class: "row" }), body = el("div", { class: "body" });
-    if (showImages && i.image) row.append(el("img", { class: "thumb", src: i.image, alt: "", loading: "lazy" }));
+    if (showImages && i.image) row.append(el("img", { class: "thumb", alt: "", loading: "lazy",
+      src: i.image.includes("cdn.shopify.com") ? i.image + (i.image.includes("?") ? "&" : "?") + "width=160" : i.image }));
     row.append(body);
     li.append(row);
     body.append(el("a", { class: "item-title", href: i.url, target: "_blank", rel: "noopener" }, i.title));

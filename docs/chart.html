@@ -158,6 +158,7 @@ const el = (tag, attrs = {}, text) => {
   return e;
 };
 const yen = (n) => n == null ? "—" : Math.round(n).toLocaleString("ja-JP") + "円";
+const small = (src, w) => src && src.includes("cdn.shopify.com") ? src + (src.includes("?") ? "&" : "?") + "width=" + w : src;
 const pressOnly = (group, btn) => group.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(x === btn)));
 
 let showImages = true, range = 30;
@@ -173,11 +174,20 @@ const chart = LightweightCharts.createChart(document.getElementById("chart"), {
   timeScale: { borderColor: css("--line") },
   localization: { locale: "ja-JP", priceFormatter: (p) => Math.round(p).toLocaleString("ja-JP") + "円" },
 });
+// 値段が動いていない（全部同じ金額）時でも目盛りが重ならないよう、上下に少なくとも±5%の余白を取る
+const roomyScale = (original) => {
+  const r = original();
+  if (!r || !r.priceRange) return r;
+  const { minValue, maxValue } = r.priceRange;
+  const pad = Math.max((maxValue - minValue) * 0.1, maxValue * 0.05, 10);
+  return { ...r, priceRange: { minValue: Math.max(0, minValue - pad), maxValue: maxValue + pad } };
+};
 const candles = chart.addCandlestickSeries({
   upColor: css("--up"), downColor: css("--down"), borderUpColor: css("--up"), borderDownColor: css("--down"),
-  wickUpColor: css("--up"), wickDownColor: css("--down"),
+  wickUpColor: css("--up"), wickDownColor: css("--down"), autoscaleInfoProvider: roomyScale,
 });
-const other = chart.addLineSeries({ color: css("--other"), lineWidth: 2, priceLineVisible: false, lastValueVisible: false });
+const other = chart.addLineSeries({ color: css("--other"), lineWidth: 2, priceLineVisible: false, lastValueVisible: false,
+                                    autoscaleInfoProvider: roomyScale });
 
 const since = () => new Date(Date.now() - range * 864e5).toISOString().slice(0, 10);
 
@@ -239,7 +249,7 @@ function showSelected(name, img) {
   const box = document.getElementById("selected");
   box.replaceChildren();
   if (!name) return;
-  if (showImages && img) box.append(el("img", { src: img, alt: "", loading: "lazy" }));
+  if (showImages && img) box.append(el("img", { src: small(img, 200), alt: "", loading: "lazy" }));
   box.append(el("div", { class: "nm" }, name));
 }
 
@@ -293,7 +303,7 @@ function renderCardList() {
   if (!rows.length) { list.append(el("li", { class: "empty" }, "該当するカードはありません")); return; }
   for (const r of rows) {
     const li = el("li", { role: "option", "aria-selected": String(r.n === cardName) });
-    if (showImages && r.v.img) li.append(el("img", { src: r.v.img, alt: "", loading: "lazy" }));
+    if (showImages && r.v.img) li.append(el("img", { src: small(r.v.img, 120), alt: "", loading: "lazy" }));
     const nm = el("div", { class: "nm" }, r.n);
     const kinds = Object.keys(r.c.variants).length;
     if (kinds > 1) nm.append(el("span", { class: "tag" }, kinds + "種"));
