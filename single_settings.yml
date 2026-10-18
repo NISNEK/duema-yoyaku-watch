@@ -25,6 +25,7 @@ torecat:
   arrivals: "https://torecat.shop/collections/本日の入荷品/products.json?limit=250"
   catalog: "https://torecat.shop/collections/デュエルマスターズシングル全て/products.json?limit=250&page={page}"
   catalog_pages_per_run: 10 # 値段検索用のカード一覧を作る時、1回に読むページ数（1日1回作り直す）
+  catalog_start_hour: 1      # カード一覧の作り直しを始める時刻（深夜1時。朝までに新弾のグラフが更新される）
   product: "https://torecat.shop/products/{handle}"
   single_tag: "DMシングル全て"  # お店がデュエマのシングルに付けている目印（オリパ・福袋などを除くため）
 

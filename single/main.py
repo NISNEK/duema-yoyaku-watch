@@ -237,18 +237,24 @@ def watch_registered(ctx, data):
 
 
 def refresh_catalog(ctx):
-    """トレキャットの値段検索用カード一覧を、1日1回、数回に分けて作り直す。"""
+    """トレキャットの値段検索用カード一覧を、1日1回、数回に分けて作り直す。
+
+    毎日、深夜（設定の catalog_start_hour 時、ふつうは1時）を過ぎたら作り直しを始める。
+    30分おきくらいの自動実行で少しずつ進めるので、朝までに終わり、新弾のグラフも朝までに更新される。
+    """
     cfg = ctx.settings["torecat"]
     catalog = ctx.work.get("torecat_catalog") or {}
     done_at = state.parse_iso(catalog.get("complete_at"))
-    # 新弾グラフに必要な項目（弾の目印など）が無い古い形のカード一覧なら、24時間待たずに作り直す
-    old_format = any("set" not in item for item in list((catalog.get("items") or {}).values())[:1])
-    if done_at and ctx.at - done_at < timedelta(hours=24) and not old_format:
-        return
     building = ctx.work.get("torecat_building")
     if building and any("published" not in i for i in list(building["items"].values())[:1]):
         building = None   # 古い形で作りかけていた分は捨てて、最初から作り直す
     if building is None:
+        # 新弾グラフに必要な項目（弾の目印など）が無い古い形のカード一覧なら、時間を待たずに作り直す
+        old_format = any("set" not in item for item in list((catalog.get("items") or {}).values())[:1])
+        done_today = done_at is not None and done_at.date() == ctx.at.date()
+        night_start = ctx.at.hour >= int(cfg.get("catalog_start_hour", 1))
+        if not (done_at is None or old_format or (not done_today and night_start)):
+            return
         building = ctx.work["torecat_building"] = {"page": 1, "items": {}}
 
     def step():
