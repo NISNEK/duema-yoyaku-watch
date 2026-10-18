@@ -346,7 +346,7 @@
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC001.jpg?v=1792147987",
       "kind": "new",
-      "price": "480円",
+      "price": "580円",
       "shop": "トレキャット",
       "stock": "在庫あり",
       "title": "切札連結 バロムレイズ（㊙1/㊙25）",
@@ -940,7 +940,7 @@
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO021.jpg?v=1792147492",
       "kind": "new",
-      "price": "100円",
+      "price": "30円",
       "shop": "トレキャット",
       "stock": "在庫あり",
       "title": "ジョジョジョ・マキシマム（超21/超50）",
@@ -1017,7 +1017,7 @@
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-014.jpg?v=1792147418",
       "kind": "new",
-      "price": "2,580円",
+      "price": "2,880円",
       "shop": "トレキャット",
       "stock": "在庫あり",
       "title": "切札混成 ドギラダンテ刈（14/99）",
@@ -1154,12 +1154,23 @@
       "stock": "在庫あり",
       "title": "切札混成 光隼 蒼斬丸（10/99）",
       "url": "https://torecat.shop/products/dm26ex4-010"
+    },
+    {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-033.jpg?v=1792147610",
+      "kind": "new",
+      "price": "80円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "切札連結 バロムレイズ（33/99）",
+      "url": "https://torecat.shop/products/dm26ex4-033"
     }
   ],
-  "saved_at": "2026-10-18T21:45:53+09:00",
+  "saved_at": "2026-10-18T22:17:55+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-18T21:45:53+09:00",
+      "checked_at": "2026-10-18T22:17:55+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1167,7 +1178,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-18T21:45:53+09:00",
+      "checked_at": "2026-10-18T22:17:55+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
