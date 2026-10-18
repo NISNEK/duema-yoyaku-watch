@@ -58,6 +58,9 @@
   .item-sub { color: var(--sub); font-size: .8rem; margin-top: 4px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; }
   .mercari { color: var(--accent); text-decoration: none; border: 1px solid var(--accent);
              border-radius: 999px; padding: 0 8px; font-size: .75rem; white-space: nowrap; }
+  .thumb { width: 56px; height: 78px; object-fit: contain; border-radius: 4px; background: var(--bg); flex: none; }
+  .row { display: flex; gap: 10px; align-items: flex-start; }
+  .row .body { flex: 1; min-width: 0; }
   .empty { color: var(--sub); text-align: center; padding: 24px; }
   footer { color: var(--sub); font-size: .78rem; margin: 24px 0 8px; }
 </style>
@@ -68,6 +71,7 @@
   <nav class="tabs" aria-label="ページの切り替え">
     <a href="index.html" aria-current="page">予約</a>
     <a href="single.html">シングル</a>
+    <a href="chart.html">相場</a>
   </nav>
   <div class="meta" id="meta">読み込み中…</div>
 
@@ -91,6 +95,7 @@ const ORDER = { open: 0, before: 1, soldout: 2 };
 const NEW_DAYS = 7;
 let all = [];
 let filter = "open";
+let showImages = true;
 
 function fmt(iso) {
   if (!iso) return "—";
@@ -141,13 +146,17 @@ function renderItems() {
   const now = Date.now();
   for (const i of rows.slice(0, 300)) {
     const li = el("li", { class: i.state });
-    li.append(el("a", { class: "item-title", href: i.url, target: "_blank", rel: "noopener" }, i.title));
+    const row = el("div", { class: "row" }), body = el("div", { class: "body" });
+    if (showImages && i.image) row.append(el("img", { class: "thumb", src: i.image, alt: "", loading: "lazy" }));
+    row.append(body);
+    li.append(row);
+    body.append(el("a", { class: "item-title", href: i.url, target: "_blank", rel: "noopener" }, i.title));
     const sub = el("div", { class: "item-sub" });
     sub.append(badge(i.state));
     if (now - new Date(i.first_seen).getTime() < NEW_DAYS * 864e5) sub.append(badge("new", "NEW"));
     sub.append(el("span", {}, i.shop), el("span", {}, "掲載確認 " + fmt(i.first_seen)), el("span", {}, "状態変化 " + fmt(i.changed_at)));
     sub.append(el("a", { class: "mercari", href: mercariUrl(i.title), target: "_blank", rel: "noopener" }, "メルカリで探す"));
-    li.append(sub);
+    body.append(sub);
     box.append(li);
   }
 }
@@ -163,6 +172,7 @@ fetch("status.json?t=" + Date.now())
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(data => {
     const shops = data.shops || {};
+    showImages = data.show_images !== false;
     document.getElementById("meta").textContent = "ページ更新 " + fmt(data.saved_at);
     renderShops(shops);
     all = [];

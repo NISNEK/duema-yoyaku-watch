@@ -84,18 +84,21 @@ class Discord:
             last = self._req("POST", f"/channels/{channel_id}/messages", json=body)["id"]
         return last
 
-    def dm(self, user_id, content):
-        """個人メッセージを送る。相手がDMを受け付けていない時は False を返す。"""
+    def dm(self, user_id, content, embeds=None):
+        """個人メッセージを送る（embeds＝画像つきのカード表示、最大10個）。DMを受け付けていない時は False。"""
         if self.dry_run:
-            print(f"[DM・送信しません] {user_id}: {content}")
+            print(f"[DM・送信しません] {user_id}: {content}（画像カード {len(embeds or [])} 個）")
             return True
         try:
             if user_id not in self.dm_channels:
                 ch = self._req("POST", "/users/@me/channels", json={"recipient_id": user_id})
                 self.dm_channels[user_id] = ch["id"]
-            for part in _split(content):
-                self._req("POST", f"/channels/{self.dm_channels[user_id]}/messages",
-                          json={"content": part, "allowed_mentions": {"parse": []}})
+            parts = _split(content)
+            for i, part in enumerate(parts):
+                body = {"content": part, "allowed_mentions": {"parse": []}}
+                if embeds and i == len(parts) - 1:
+                    body["embeds"] = embeds[:10]
+                self._req("POST", f"/channels/{self.dm_channels[user_id]}/messages", json=body)
             return True
         except DiscordError as e:
             if "50007" in str(e) or "403" in str(e):

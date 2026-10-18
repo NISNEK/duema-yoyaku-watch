@@ -39,7 +39,8 @@ def build_messages(events, product_name):
             names = "\n".join(f"・{e.title}" for e in evs[:SUMMARY_THRESHOLD])
             body = (f"{product_name} の商品が {len(evs)} 件見つかりました（{time_text} 検知）\n"
                     f"{names}\n…ほか {len(evs) - SUMMARY_THRESHOLD} 件")
-            messages.append({"title": title, "body": body, "url": evs[0].url, "priority": 5})
+            messages.append({"title": title, "body": body, "url": evs[0].url, "priority": 5,
+                             "image": evs[0].image})
             continue
         for e in evs:
             body = {
@@ -47,7 +48,7 @@ def build_messages(events, product_name):
                 "open": f"{e.title} の予約受付が始まりました（{time_text} 検知）",
                 "restock": f"{e.title} が再び購入できるようになりました（{time_text} 検知）",
             }[kind]
-            messages.append({"title": title, "body": body, "url": e.url, "priority": 5})
+            messages.append({"title": title, "body": body, "url": e.url, "priority": 5, "image": e.image})
     return messages
 
 
@@ -60,6 +61,8 @@ def send_ntfy(topic, msg):
         "click": msg["url"],
         "actions": [{"action": "view", "label": "ページを開く", "url": msg["url"]}],
     }
+    if msg.get("image"):
+        payload["attach"] = msg["image"]   # 商品画像を通知に表示する
     res = requests.post(NTFY_SERVER, json=payload, timeout=15)
     res.raise_for_status()
 
@@ -71,6 +74,8 @@ def send_discord(webhook_url, msg):
         "url": msg["url"],
         "color": 0xF5A623 if msg["priority"] < 5 else 0xE53935,
     }]}
+    if msg.get("image"):
+        payload["embeds"][0]["thumbnail"] = {"url": msg["image"]}
     res = requests.post(webhook_url, json=payload, timeout=15)
     res.raise_for_status()
 

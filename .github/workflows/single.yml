@@ -78,13 +78,13 @@ jobs:
       - name: 一覧ページの記録と登録リストをリポジトリに保存する
         if: env.MODE == 'normal'
         run: |
-          if [ -z "$(git status --porcelain -- docs/single.json data/watchlist.enc)" ]; then
+          if [ -z "$(git status --porcelain -- docs/single.json docs/prices data/watchlist.enc)" ]; then
             echo "変化がないため保存しません"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in docs/single.json data/watchlist.enc; do
+          for f in docs/single.json docs/prices data/watchlist.enc; do
             if [ -e "$f" ]; then git add "$f"; fi   # まだ無いファイル（初回の登録リストなど）は飛ばす
           done
           git commit -m "シングル通知の記録を更新"

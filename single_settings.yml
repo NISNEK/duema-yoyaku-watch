@@ -10,6 +10,8 @@ limits:
   expire_days: 14           # 登録してから自動で消えるまでの日数
   remind_before_days: 2     # 消える何日前にDMでお知らせするか
 
+show_images: true          # 一覧ページとDMに商品画像を出すなら true（お店の画像をそのまま表示。保存はしない）
+
 checks:
   restock_checks_per_run: 6 # 1回（5分）の見回りで、1店あたり何件まで再入荷を確かめるか
   page_update_minutes: 15   # 一覧ページ（シングル）を更新する間隔（変化があった時だけ）

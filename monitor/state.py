@@ -28,6 +28,7 @@ class Event:
     shop_name: str
     title: str
     url: str
+    image: str = ""
 
 
 def load(path):
@@ -81,6 +82,7 @@ def apply_success(rec, shop, items, include_restock, at):
             rec["items"][item.id] = {
                 "title": item.title,
                 "url": item.url,
+                "image": item.image,
                 "state": item.state,
                 "first_seen": stamp,
                 "changed_at": stamp,
@@ -92,11 +94,12 @@ def apply_success(rec, shop, items, include_restock, at):
             if first_time:
                 continue  # 初回は「すでにある商品」を覚えるだけ
             kind = "open" if item.state == "open" else "page"
-            events.append(Event(kind, shop["id"], shop["name"], item.title, item.url))
+            events.append(Event(kind, shop["id"], shop["name"], item.title, item.url, item.image))
             continue
 
         old["title"] = item.title
         old["url"] = item.url
+        old["image"] = item.image
         old["last_seen"] = stamp
         if old["state"] == item.state:
             continue
@@ -109,9 +112,9 @@ def apply_success(rec, shop, items, include_restock, at):
         if before_state == "soldout" and old.get("ever_open"):
             # 一度売られてから売り切れ、また買えるようになった＝再販
             if include_restock:
-                events.append(Event("restock", shop["id"], shop["name"], item.title, item.url))
+                events.append(Event("restock", shop["id"], shop["name"], item.title, item.url, item.image))
         elif not old.get("notified_open"):
-            events.append(Event("open", shop["id"], shop["name"], item.title, item.url))
+            events.append(Event("open", shop["id"], shop["name"], item.title, item.url, item.image))
         old["notified_open"] = True
         old["ever_open"] = True
 
@@ -150,9 +153,9 @@ def shop_state(rec):
     return "before"
 
 
-def publishable(data, shops):
+def publishable(data, shops, show_images=True):
     """公開用の status.json の中身を作る（設定から外したショップは載せない）。"""
-    out = {"saved_at": data.get("saved_at"), "shops": {}}
+    out = {"saved_at": data.get("saved_at"), "show_images": show_images, "shops": {}}
     for shop in shops:
         rec = data["shops"].get(shop["id"])
         if rec is None:

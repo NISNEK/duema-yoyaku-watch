@@ -19,6 +19,7 @@ class Item:
     title: str
     url: str
     state: str
+    image: str = ""    # 商品画像のURL（お店のサイトの画像をそのまま表示する。保存はしない）
 
 
 class ParseError(Exception):
@@ -72,6 +73,20 @@ def _text(element, selector):
     return " ".join(e.get_text(" ", strip=True) for e in found)
 
 
+def image_url(block, selector, page_url):
+    """商品の枠から画像のURLを取り出す（遅れて読み込む作りの店は、大きい画像の方を使う）。"""
+    if not selector:
+        return ""
+    img = block.select_one(selector)
+    if img is None:
+        return ""
+    for attr in ("data-x2", "data-src", "data-original", "src"):
+        src = img.get(attr)
+        if src and "spacer" not in src:
+            return urljoin(page_url, src)
+    return ""
+
+
 def parse_list(html, page_url, rules, target):
     """一覧ページから対象の商品をすべて取り出す。"""
     soup = BeautifulSoup(html, "lxml")
@@ -95,7 +110,7 @@ def parse_list(html, page_url, rules, target):
             # 一覧ページのリンクにおまけの文字が付いていて直接開けない店は、商品番号から正しいURLを作る
             url = rules["link_template"].format(id=item_id)
         state = classify(_text(block, rules.get("status")), rules)
-        items[item_id] = Item(item_id, title, url, state)
+        items[item_id] = Item(item_id, title, url, state, image_url(block, rules.get("image"), page_url))
     return list(items.values())
 
 

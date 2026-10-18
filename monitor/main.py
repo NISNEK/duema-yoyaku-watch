@@ -118,7 +118,8 @@ def run(dry_run):
     data["saved_at"] = state.iso(at)
     state.save(WORK_FILE, data)
 
-    public = state.publishable(data, config["shops"])
+    show_images = bool((config.get("display") or {}).get("show_images", True))
+    public = state.publishable(data, config["shops"], show_images)
     if manual_entry:
         public["shops"]["manual"] = manual_entry
     last_publish = state.parse_iso(published_before.get("saved_at"))

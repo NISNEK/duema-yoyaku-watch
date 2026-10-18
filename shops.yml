@@ -17,6 +17,10 @@ target:
     - "カードスリーブ"                    # 「DXカードスリーブ」「(カードスリーブ)」など
   include_restock: true                   # 再販も通知するなら true、しないなら false
 
+# ---- 表示の設定 ----
+display:
+  show_images: true       # 一覧ページと通知に商品画像を出すなら true（お店の画像をそのまま表示。保存はしない）
+
 # ---- 見張るショップ ----
 # enabled: false にすると、そのショップは見張りを休みます。
 # interval_minutes: 何分おきに見るか（最短5。robots.txt の指定があれば自動でそれ以上空けます）
@@ -33,6 +37,7 @@ shops:
       title: "div.c-card__title"          # 商品名の場所
       link: "a.c-card__info-links"        # 商品ページへのリンクの場所
       status: "ul.c-card__tags-list"      # 受付状況が書いてある場所
+      image: "div.c-card__th-element img" # 商品画像の場所（無ければ書かなくてOK）
       id_regex: '/(\d+)$'                 # リンクから商品番号を取り出す決まり
       open_keywords: ["予約品", "販売中", "在庫あり", "在庫僅少", "新入荷"]
       soldout_keywords: ["在庫なし", "販売終了", "品切れ", "完売"]
@@ -50,6 +55,7 @@ shops:
       title: "span.itemName"
       link: "a[href*='/shopdetail/']"
       status: "span.M_item-stock-smallstock, span.soldout"
+      image: "img"
       id_regex: '/shopdetail/(\d+)'
       link_template: "https://fullahead-dm.com/shopdetail/{id}/"   # 一覧のリンクのままだと「ページがありません」になるため
       all_items: true                     # デュエマ専門店なので、商品名のチェックを省く
@@ -68,6 +74,7 @@ shops:
       title: "span.goods_name"
       link: "a.item_data_link"
       status: "p.stock"
+      image: "div.global_photo img"
       id_regex: '/product/(\d+)'
       all_items: true                     # デュエマの予約BOX専用コーナーなので、商品名のチェックを省く
       open_keywords: ["在庫数"]

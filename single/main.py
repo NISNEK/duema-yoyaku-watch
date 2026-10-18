@@ -15,6 +15,7 @@ from datetime import date, timedelta
 import common
 import commands
 import discord_api
+import prices
 import shops
 import watchlist as wl
 
@@ -141,7 +142,8 @@ def guarded(ctx, key, func):
 def add_event(ctx, kind, shop_key, product):
     ctx.events.append({
         "kind": kind, "shop": ctx.settings[shop_key]["name"], "id": product.id, "title": product.title,
-        "url": product.url, "price": product.price, "stock": product.stock, "at": state.iso(ctx.at)})
+        "url": product.url, "price": product.price, "stock": product.stock, "image": product.image,
+        "at": state.iso(ctx.at)})
 
 
 def track(ctx, store_key, shop_key, products, notify_new):
@@ -166,7 +168,12 @@ def snapshot(ctx, shop_key, products):
     """一覧ページに載せるため、いまお店の入荷一覧に並んでいる商品を覚えておく。"""
     ctx.work.setdefault("arrivals", {})[shop_key] = [
         {"id": p.id, "title": p.title, "url": p.url, "price": p.price,
-         "stock": p.stock, "available": p.available} for p in products]
+         "stock": p.stock, "available": p.available, "image": p.image} for p in products]
+
+
+def remember_prices(ctx, shop_key, products):
+    """グラフ用に、見回りで見た値段を覚える（お店へのアクセスは増やさない）。"""
+    prices.remember(ctx.work, shop_key, [(p.id, p.title, p.price, p.available, p.image) for p in products], ctx.at)
 
 
 def watch_arrivals(ctx):
@@ -174,12 +181,14 @@ def watch_arrivals(ctx):
         products = shops.torecat_arrivals(ctx.http, ctx.settings["torecat"])
         track(ctx, "torecat_seen", "torecat", products, notify_new=True)
         snapshot(ctx, "torecat", products)
+        remember_prices(ctx, "torecat", products)
         print(f"- トレキャット 本日の入荷品: {len(products)} 件")
 
     def amenity():
         products = shops.amenity_new(ctx.http, ctx.settings["amenity"])
         track(ctx, "amenity_seen", "amenity", products, notify_new=True)
         snapshot(ctx, "amenity", products)
+        remember_prices(ctx, "amenity", products)
         print(f"- アメニティードリーム 新着: デュエマ {len(products)} 件")
 
     guarded(ctx, "torecat", torecat)
@@ -207,6 +216,7 @@ def watch_registered(ctx, data):
         for card in rotate(ctx, "amenity_pointer", [c["name"] for c in cards]):
             products += [p for p in shops.amenity_search(ctx.http, cfg, card) if common.card_matches(card, p.title)]
         track(ctx, "amenity_watch", "amenity", products, notify_new=False)
+        remember_prices(ctx, "amenity", products)
 
     def torecat():
         catalog = (ctx.work.get("torecat_catalog") or {}).get("items") or {}
@@ -218,6 +228,7 @@ def watch_registered(ctx, data):
         products = [shops.torecat_live(ctx.http, cfg, it)
                     for it in rotate(ctx, "torecat_pointer", sorted(targets.values(), key=lambda x: x["id"]))]
         track(ctx, "torecat_watch", "torecat", products, notify_new=False)
+        remember_prices(ctx, "torecat", products)
 
     if cards:
         guarded(ctx, "amenity", amenity)
@@ -242,6 +253,9 @@ def refresh_catalog(ctx):
             if len(page) < 250:
                 ctx.work["torecat_catalog"] = {"items": building["items"], "complete_at": state.iso(ctx.at)}
                 del ctx.work["torecat_building"]
+                prices.remember(ctx.work, "torecat",
+                                [(i["id"], i["title"], i.get("price"), i.get("available"), i.get("image"))
+                                 for i in building["items"].values()], ctx.at)
                 print(f"- トレキャット カード一覧を作り直しました（{len(building['items'])} 件）")
                 return
         print(f"- トレキャット カード一覧を作成中（{building['page'] - 1} ページまで）")
@@ -252,6 +266,10 @@ def refresh_catalog(ctx):
 # ---------------- 3. 通知 ----------------
 
 LABEL = {"new": "🆕 新規入荷", "restock": "🔁 再入荷"}
+
+
+def show_images(ctx):
+    return bool(ctx.settings.get("show_images", True))
 
 
 def notify(ctx, discord, data, channel_id):
@@ -271,7 +289,11 @@ def notify(ctx, discord, data, channel_id):
             lines.append(f"{LABEL[ev['kind']]}【{ev['shop']}】{ev['title']}\n"
                          f"　{ev['price']}　{ev['stock']}（登録: {card}）\n　{ev['url']}")
         text = "\n".join(lines)
-        if not discord.dm(uid, text):
+        embeds = [{"title": ev["title"][:250], "url": ev["url"],
+                   "description": f"{ev['shop']}　{ev['price']}　{ev['stock']}",
+                   **({"thumbnail": {"url": ev["image"]}} if ev.get("image") and show_images(ctx) else {})}
+                  for _, ev in list(hits.values())[:10]]
+        if not discord.dm(uid, text, embeds):
             discord.send(channel_id, f"<@{uid}> DMを受け取れない設定のようなので、ここでお知らせします。\n{text}")
         print(f"- 通知しました（{len(hits)} 件）")
 
@@ -380,11 +402,11 @@ def publish(ctx):
         for p in ctx.work.get("arrivals", {}).get(key, []):
             first = (seen.get(p["id"]) or {}).get("f") or state.iso(ctx.at)
             items.append({"kind": "new", "shop": ctx.settings[key]["name"], "at": first,
-                          **{k: p[k] for k in ("title", "url", "price", "stock", "available")}})
+                          **{k: p.get(k, "") for k in ("title", "url", "price", "stock", "available", "image")}})
     items += [{**r, "available": True} for r in recent if r["kind"] == "restock"]
     items.sort(key=lambda i: i["at"], reverse=True)
 
-    public = {"saved_at": state.iso(ctx.at), "shops": {}, "items": items[:300]}
+    public = {"saved_at": state.iso(ctx.at), "show_images": show_images(ctx), "shops": {}, "items": items[:300]}
     for key in SHOPS:
         st = shop_status(ctx, key)
         public["shops"][key] = {"name": ctx.settings[key]["name"], **st,
@@ -436,6 +458,8 @@ def run(dry_run):
     watch_arrivals(ctx)
     watch_registered(ctx, data)
     refresh_catalog(ctx)
+    active_names = [c["name"] for c in wl.active_cards(data)]
+    prices.observe(work, active_names, ctx.at)
     notify(ctx, discord, data, channel_id)
     expire(ctx, discord, data)
     token_reminder(ctx, discord, data, owner_id)
@@ -450,6 +474,8 @@ def run(dry_run):
         data["last_message_id"] = last_id
         wl.save(data)
         print("登録リストを保存しました（暗号化）")
+    if prices.flush(work, active_names, ctx.at):
+        print("相場グラフの記録を保存しました")
     work["saved_at"] = state.iso(ctx.at)
     state.save(common.WORK_FILE, work)
     publish(ctx)
