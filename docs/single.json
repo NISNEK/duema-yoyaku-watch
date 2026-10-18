@@ -1564,12 +1564,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-056a.jpg?v=1792147798",
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "凶星王ダーク・ヒドラ / 魂と記憶の盾（56/99）",
       "url": "https://torecat.shop/products/dm26ex4-056"
     },
@@ -1762,12 +1762,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-092.jpg?v=1792147953",
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "チキン・オドッ太（92/99）",
       "url": "https://torecat.shop/products/dm26ex4-092"
     },
@@ -2069,10 +2069,10 @@
       "url": "https://torecat.shop/products/dm26ex4-087"
     }
   ],
-  "saved_at": "2026-10-19T04:18:42+09:00",
+  "saved_at": "2026-10-19T07:24:54+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-19T04:18:42+09:00",
+      "checked_at": "2026-10-19T07:24:54+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -2080,7 +2080,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-19T04:18:42+09:00",
+      "checked_at": "2026-10-19T07:24:54+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
