@@ -252,7 +252,9 @@ def refresh_catalog(ctx):
         building = ctx.work["torecat_building"] = {"page": 1, "items": {}}
 
     def step():
-        for _ in range(cfg.get("catalog_pages_per_run", 10)):
+        # 手で「catalog-now」を選んだ時だけ、最後のページまで一気に読む（自動の時は少しずつ）
+        pages = 1000 if os.environ.get("CATALOG_ALL") else cfg.get("catalog_pages_per_run", 10)
+        for _ in range(pages):
             page = shops.torecat_catalog_page(ctx.http, cfg, building["page"])
             for item in page:
                 building["items"][item["id"]] = item

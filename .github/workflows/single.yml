@@ -17,6 +17,7 @@ on:
           - normal     # 通常の見回り
           - dry-run    # Discord に送らず、内容だけ表示（記録も保存しない）
           - test-dm    # オーナーにテストのDMを送り、チャンネルにも書き込む
+          - catalog-now  # トレキャットのカード一覧の作り直しを、この1回で最後まで一気に行う（約5〜6分）
 
 # 必要最小限の権限：記録ファイルと登録リスト（暗号化済み）を保存するための書き込みだけ
 permissions:
@@ -46,7 +47,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: 前回の作業記録を読み込む
-        if: env.MODE == 'normal'
+        if: env.MODE == 'normal' || env.MODE == 'catalog-now'
         uses: actions/cache/restore@v6
         with:
           path: .state-single
@@ -65,18 +66,19 @@ jobs:
           case "$MODE" in
             dry-run) python single/main.py --dry-run ;;
             test-dm) python single/main.py --test-dm ;;
+            catalog-now) CATALOG_ALL=1 python single/main.py ;;
             *)       python single/main.py ;;
           esac
 
       - name: 作業記録を保存する
-        if: env.MODE == 'normal'
+        if: env.MODE == 'normal' || env.MODE == 'catalog-now'
         uses: actions/cache/save@v6
         with:
           path: .state-single
           key: single-state-${{ github.run_id }}
 
       - name: 一覧ページの記録と登録リストをリポジトリに保存する
-        if: env.MODE == 'normal'
+        if: env.MODE == 'normal' || env.MODE == 'catalog-now'
         run: |
           if [ -z "$(git status --porcelain -- docs/single.json docs/prices data/watchlist.enc)" ]; then
             echo "変化がないため保存しません"
