@@ -640,12 +640,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO028.jpg?v=1792147566",
       "kind": "new",
       "price": "30円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "王道ダチ モンキッド（超28/超50）",
       "url": "https://torecat.shop/products/dm26ex4-cho028"
     },
@@ -893,12 +893,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO020.jpg?v=1792147481",
       "kind": "new",
       "price": "280円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "魔誕の封殺ディアス Z（超20/超50）",
       "url": "https://torecat.shop/products/dm26ex4-cho020"
     },
@@ -1050,7 +1050,7 @@
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-014.jpg?v=1792147418",
       "kind": "new",
-      "price": "2,780円",
+      "price": "2,580円",
       "shop": "トレキャット",
       "stock": "在庫あり",
       "title": "切札混成 ドギラダンテ刈（14/99）",
@@ -1079,10 +1079,10 @@
       "url": "https://torecat.shop/products/dm26ex4-cho009"
     }
   ],
-  "saved_at": "2026-10-18T18:27:26+09:00",
+  "saved_at": "2026-10-18T18:57:04+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-18T18:27:26+09:00",
+      "checked_at": "2026-10-18T18:57:04+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1090,7 +1090,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-18T18:27:26+09:00",
+      "checked_at": "2026-10-18T18:57:04+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
