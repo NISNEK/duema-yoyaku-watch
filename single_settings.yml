@@ -17,6 +17,9 @@ checks:
   page_update_minutes: 15   # 一覧ページ（シングル）を更新する間隔（変化があった時だけ）
   recent_days: 3            # 一覧ページに何日分の入荷を載せるか
 
+set_charts:                # 相場タブの「新弾」グラフ（トレキャットの値段を1日1回記録。発売から3か月で結果だけ残す）
+  start_with: ["DM26-EX4"]  # 最初にグラフを作る弾。これより後に出た弾は自動で追加されます
+
 torecat:
   name: トレキャット
   arrivals: "https://torecat.shop/collections/本日の入荷品/products.json?limit=250"

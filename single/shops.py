@@ -5,6 +5,7 @@ from urllib.parse import quote, urljoin
 from bs4 import BeautifulSoup
 
 import common
+import sets
 
 
 @dataclass
@@ -61,10 +62,15 @@ def torecat_catalog_page(http, cfg, page):
     items = []
     for p in data.get("products", []):
         variants = p.get("variants") or [{}]
+        try:
+            price_yen = int(float(variants[0].get("price")))
+        except (TypeError, ValueError):
+            price_yen = None
         items.append({"id": str(p["id"]), "title": p.get("title", ""), "handle": p["handle"],
-                      "price": _yen(variants[0].get("price")),
+                      "price": _yen(variants[0].get("price")), "price_yen": price_yen,
                       "available": any(v.get("available") for v in variants),
-                      "image": _shopify_image(p)})
+                      "image": _shopify_image(p), "url": cfg["product"].format(handle=p["handle"]),
+                      "set": sets.set_code(p.get("tags")), "published": p.get("published_at", "")})
     return items
 
 

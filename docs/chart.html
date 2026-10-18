@@ -21,33 +21,54 @@
          font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.5; }
   main { max-width: 960px; margin: 0 auto; padding: 16px; }
   h1 { font-size: 1.4rem; margin: 8px 0 4px; }
+  h2 { font-size: 1rem; margin: 0 0 8px; }
   .tabs { display: flex; gap: 4px; border-bottom: 2px solid var(--line); margin: 8px 0 12px; }
   .tabs a { padding: 8px 18px; color: var(--sub); text-decoration: none; font-weight: 600;
             border-bottom: 3px solid transparent; margin-bottom: -2px; }
   .tabs a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
   .meta { color: var(--sub); font-size: .85rem; margin-bottom: 12px; }
   .panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin-bottom: 12px; }
-  .picker { display: flex; gap: 10px; align-items: center; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips + .chips { margin-top: 8px; }
+  .chips button { border: 1px solid var(--line); background: var(--card); color: var(--text);
+                  border-radius: 999px; padding: 5px 12px; font-size: .85rem; cursor: pointer; }
+  .chips button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .chips .sep { width: 1px; background: var(--line); margin: 0 4px; }
+  .picker { display: flex; gap: 10px; align-items: center; margin-top: 10px; }
   .picker img { width: 52px; height: 72px; object-fit: contain; border-radius: 4px; background: var(--bg); flex: none; }
   .picker select { flex: 1; min-width: 0; font-size: 1rem; padding: 8px; border-radius: 8px;
                    border: 1px solid var(--line); background: var(--card); color: var(--text); }
-  .tools { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; }
-  .tools button { border: 1px solid var(--line); background: var(--card); color: var(--text);
-                  border-radius: 999px; padding: 5px 12px; font-size: .85rem; cursor: pointer; }
-  .tools button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
-  .tools .sep { width: 1px; background: var(--line); margin: 0 4px; }
-  #chart { width: 100%; height: 360px; }
+  input[type=search] { width: 100%; margin-top: 10px; border: 1px solid var(--line); background: var(--card);
+                       color: var(--text); border-radius: 8px; padding: 7px 10px; font-size: .95rem; }
+  .cardlist { list-style: none; margin: 10px 0 0; padding: 0; max-height: 340px; overflow-y: auto;
+              border-top: 1px solid var(--line); }
+  .cardlist li { display: flex; gap: 10px; align-items: center; padding: 8px 4px; border-bottom: 1px solid var(--line); cursor: pointer; }
+  .cardlist li[aria-selected="true"] { background: color-mix(in srgb, var(--accent) 14%, transparent); }
+  .cardlist img { width: 36px; height: 50px; object-fit: contain; border-radius: 3px; background: var(--bg); flex: none; }
+  .cardlist .nm { flex: 1; min-width: 0; font-size: .9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .cardlist .pr { text-align: right; font-variant-numeric: tabular-nums; font-size: .9rem; white-space: nowrap; }
+  .cardlist .pr small { display: block; font-size: .75rem; }
+  .cardlist .tag { font-size: .7rem; color: var(--sub); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; margin-left: 4px; }
+  .selected { display: flex; gap: 10px; align-items: center; margin-bottom: 8px; }
+  .selected img { width: 52px; height: 72px; object-fit: contain; border-radius: 4px; background: var(--bg); flex: none; }
+  .selected .nm { font-weight: 700; }
+  #chart { width: 100%; height: 340px; }
   .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .82rem; color: var(--sub); margin-top: 8px; }
   .dot { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
-  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; margin-bottom: 8px; }
   .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
   .stat .label { color: var(--sub); font-size: .78rem; }
   .stat .value { font-size: 1.15rem; font-weight: 700; font-variant-numeric: tabular-nums; }
   .up { color: var(--up); } .down { color: var(--down); }
-  .links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+  .links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
   .links a { color: var(--accent); text-decoration: none; border: 1px solid var(--accent);
              border-radius: 999px; padding: 2px 12px; font-size: .85rem; }
-  .empty { color: var(--sub); text-align: center; padding: 40px 12px; }
+  .empty { color: var(--sub); text-align: center; padding: 30px 12px; }
+  details { margin-top: 12px; }
+  summary { cursor: pointer; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; font-size: .85rem; margin-top: 8px; }
+  th, td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
   footer { color: var(--sub); font-size: .78rem; margin: 20px 0 8px; }
 </style>
 </head>
@@ -61,45 +82,81 @@
   </nav>
   <div class="meta" id="meta">読み込み中…</div>
 
+  <!-- どのグラフを見るか（登録カード／新弾） -->
   <section class="panel">
-    <div class="picker">
-      <img id="cardImg" alt="" hidden>
-      <select id="card" aria-label="カードを選ぶ"></select>
+    <div class="chips" id="modes" role="toolbar" aria-label="見る対象"></div>
+
+    <!-- 登録カード -->
+    <div id="regBox">
+      <div class="picker">
+        <img id="regImg" alt="" hidden>
+        <select id="regCard" aria-label="カードを選ぶ"></select>
+      </div>
+      <div class="chips" style="margin-top:10px" role="toolbar" aria-label="お店">
+        <button data-shop="torecat" aria-pressed="true">トレキャット</button>
+        <button data-shop="amenity" aria-pressed="false">アメニティードリーム</button>
+      </div>
     </div>
-    <div class="tools" role="toolbar" aria-label="表示の切り替え">
-      <button data-shop="torecat" aria-pressed="true">トレキャット</button>
-      <button data-shop="amenity" aria-pressed="false">アメニティードリーム</button>
-      <span class="sep"></span>
+
+    <!-- 新弾 -->
+    <div id="setBox" hidden>
+      <div class="chips" id="frames" style="margin-top:10px" role="toolbar" aria-label="枠"></div>
+      <input type="search" id="q" placeholder="カード名で絞り込み" aria-label="カード名で絞り込み">
+      <ul class="cardlist" id="cardlist" aria-label="カード一覧"></ul>
+    </div>
+  </section>
+
+  <!-- グラフ -->
+  <section class="panel">
+    <div class="selected" id="selected"></div>
+    <div class="chips" id="variants" role="toolbar" aria-label="状態・枠"></div>
+    <div class="chips" style="margin:8px 0" role="toolbar" aria-label="期間">
       <button data-range="30" aria-pressed="true">1か月</button>
       <button data-range="90" aria-pressed="false">3か月</button>
       <button data-range="365" aria-pressed="false">1年</button>
     </div>
-  </section>
-
-  <section class="panel">
     <div id="chart" role="img" aria-label="値段のローソク足グラフ"></div>
-    <div class="empty" id="empty" hidden>まだ記録がありません。シングル通知に登録したカードの値段を、毎日記録していきます。</div>
+    <div class="empty" id="empty" hidden>まだ記録がありません。毎日記録していきます。</div>
     <div class="legend">
       <span><span class="dot" style="background:var(--up)"></span>上がった日（陽線）</span>
       <span><span class="dot" style="background:var(--down)"></span>下がった日（陰線）</span>
-      <span><span class="dot" style="background:var(--other)"></span>もう一方のお店（終値）</span>
+      <span id="otherLegend"><span class="dot" style="background:var(--other)"></span>もう一方のお店（終値）</span>
     </div>
   </section>
 
   <section class="stats" id="stats"></section>
   <div class="links" id="links"></div>
 
+  <details id="archiveBox" hidden>
+    <summary>過去の弾のまとめ（発売から3か月の結果）</summary>
+    <div id="archive"></div>
+  </details>
+
   <footer>
-    お店の販売価格のうち「在庫のある一番安い値段」を、見回りのたびに記録しています（1日の始値・高値・安値・終値）。
-    メルカリなどの個人売買の相場ではありません。シングル通知に登録されたカードが対象です。
+    登録カード：トレキャット・アメニティードリームの「在庫のある一番安い美品の値段」を見回りのたびに記録。<br>
+    新弾：トレキャットの値段を1日1回記録（始値＝前日の値段）。発売から3か月で結果だけをまとめて、毎日のデータは消します。<br>
+    どちらもお店の販売価格で、メルカリなどの個人売買の相場ではありません。
   </footer>
 </main>
 
 <script src="https://unpkg.com/lightweight-charts@4.2.3/dist/lightweight-charts.standalone.production.js"></script>
 <script>
 const SHOPS = { torecat: "トレキャット", amenity: "アメニティードリーム" };
+const FRAME_LABEL = { "㊙": "㊙ シークレット", "通常": "通常" };
 const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
-let index = { cards: [] }, current = null, shop = "torecat", range = 30, showImages = true;
+const el = (tag, attrs = {}, text) => {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  if (text !== undefined) e.textContent = text;
+  return e;
+};
+const yen = (n) => n == null ? "—" : Math.round(n).toLocaleString("ja-JP") + "円";
+const pressOnly = (group, btn) => group.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(x === btn)));
+
+let showImages = true, range = 30;
+let mode = "reg";                      // "reg" = 登録カード、それ以外 = 弾のコード
+let regIndex = { cards: [] }, regData = null, regShop = "torecat";
+let setData = null, frame = "all", cardName = null, variantKey = null;
 
 const chart = LightweightCharts.createChart(document.getElementById("chart"), {
   autoSize: true,
@@ -115,94 +172,224 @@ const candles = chart.addCandlestickSeries({
 });
 const other = chart.addLineSeries({ color: css("--other"), lineWidth: 2, priceLineVisible: false, lastValueVisible: false });
 
-function el(tag, attrs = {}, text) {
-  const e = document.createElement(tag);
-  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
-  if (text !== undefined) e.textContent = text;
-  return e;
-}
-const yen = (n) => n == null ? "—" : Math.round(n).toLocaleString("ja-JP") + "円";
+const since = () => new Date(Date.now() - range * 864e5).toISOString().slice(0, 10);
 
-function rowsFor(key) {
-  const since = new Date(Date.now() - range * 864e5).toISOString().slice(0, 10);
-  return ((current && current.series[key]) || []).filter(r => r[0] >= since);
-}
-
-function render() {
-  const main = rowsFor(shop);
-  const otherKey = shop === "torecat" ? "amenity" : "torecat";
-  candles.setData(main.map(r => ({ time: r[0], open: r[1], high: r[2], low: r[3], close: r[4] })));
-  other.setData(rowsFor(otherKey).map(r => ({ time: r[0], value: r[4] })));
-  // 画面の幅が決まってから全体が収まるように合わせる（すぐに呼ぶと端に寄ってしまうため）
+// ---------- グラフと数字 ----------
+function draw(rows, otherRows, otherName) {
+  rows = rows.filter(r => r[0] >= since());
+  otherRows = (otherRows || []).filter(r => r[0] >= since());
+  candles.setData(rows.map(r => ({ time: r[0], open: r[1], high: r[2], low: r[3], close: r[4] })));
+  other.setData(otherRows.map(r => ({ time: r[0], value: r[4] })));
+  document.getElementById("otherLegend").hidden = !otherRows.length;
   requestAnimationFrame(() => setTimeout(() => chart.timeScale().fitContent(), 50));
-  document.getElementById("empty").hidden = main.length > 0;
-  document.getElementById("chart").style.visibility = main.length ? "visible" : "hidden";
+  document.getElementById("empty").hidden = rows.length > 0;
+  document.getElementById("chart").style.visibility = rows.length ? "visible" : "hidden";
 
   const stats = document.getElementById("stats");
   stats.replaceChildren();
-  const last = main[main.length - 1], prev = main[main.length - 2];
   const add = (label, value, cls) => {
     const box = el("div", { class: "stat" });
     box.append(el("div", { class: "label" }, label), el("div", { class: "value " + (cls || "") }, value));
     stats.append(box);
   };
-  add(SHOPS[shop] + "の最新", yen(last && last[4]));
+  const last = rows[rows.length - 1], prev = rows[rows.length - 2];
+  add("最新", yen(last && last[4]));
   if (last && prev) {
-    const diff = last[4] - prev[4], pct = prev[4] ? (diff / prev[4] * 100) : 0;
-    add("前日比", (diff >= 0 ? "+" : "") + yen(diff).replace("円", "") + "円（" + pct.toFixed(1) + "%）", diff > 0 ? "up" : diff < 0 ? "down" : "");
+    const diff = last[4] - prev[4], pct = prev[4] ? diff / prev[4] * 100 : 0;
+    add("前日比", (diff >= 0 ? "+" : "") + Math.round(diff).toLocaleString("ja-JP") + "円（" + pct.toFixed(1) + "%）",
+        diff > 0 ? "up" : diff < 0 ? "down" : "");
   } else add("前日比", "—");
-  add("期間の最高", yen(main.length ? Math.max(...main.map(r => r[2])) : null));
-  add("期間の最安", yen(main.length ? Math.min(...main.map(r => r[3])) : null));
-  const o = rowsFor(otherKey), ol = o[o.length - 1];
-  add(SHOPS[otherKey] + "の最新", yen(ol && ol[4]));
+  add("期間の最高", yen(rows.length ? Math.max(...rows.map(r => r[2])) : null));
+  add("期間の最安", yen(rows.length ? Math.min(...rows.map(r => r[3])) : null));
+  if (otherName) { const ol = otherRows[otherRows.length - 1]; add(otherName + "の最新", yen(ol && ol[4])); }
+}
 
+function showSelected(name, img) {
+  const box = document.getElementById("selected");
+  box.replaceChildren();
+  if (!name) return;
+  if (showImages && img) box.append(el("img", { src: img, alt: "", loading: "lazy" }));
+  box.append(el("div", { class: "nm" }, name));
+}
+
+function showLinks(name, shopUrl) {
   const links = document.getElementById("links");
   links.replaceChildren();
-  if (current) {
-    const q = encodeURIComponent("デュエマ " + current.name);
-    links.append(el("a", { href: "https://jp.mercari.com/search?keyword=" + q + "&status=on_sale", target: "_blank", rel: "noopener" }, "メルカリで探す"));
+  if (!name) return;
+  if (shopUrl) links.append(el("a", { href: shopUrl, target: "_blank", rel: "noopener" }, "トレキャットで見る"));
+  links.append(el("a", { href: "https://jp.mercari.com/search?keyword=" + encodeURIComponent("デュエマ " + name) + "&status=on_sale",
+                         target: "_blank", rel: "noopener" }, "メルカリで探す"));
+}
+
+// ---------- 登録カード ----------
+function renderReg() {
+  document.getElementById("variants").replaceChildren();
+  const meta = regIndex.cards.find(c => regData && c.name === regData.name) || {};
+  showSelected(regData && regData.name, regData && (regData.img || meta.img));
+  const otherKey = regShop === "torecat" ? "amenity" : "torecat";
+  const s = (regData && regData.series) || {};
+  draw(s[regShop] || [], s[otherKey] || [], SHOPS[otherKey]);
+  showLinks(regData && regData.name, null);
+}
+
+async function loadReg(id) {
+  try { regData = await fetch("prices/" + id + ".json?t=" + Date.now()).then(r => r.json()); }
+  catch { regData = null; }
+  const meta = regIndex.cards.find(c => c.id === id);
+  const img = document.getElementById("regImg");
+  img.hidden = !(showImages && meta && meta.img);
+  if (!img.hidden) img.src = meta.img;
+  renderReg();
+}
+
+// ---------- 新弾 ----------
+function mainVariant(card) {
+  const vs = Object.entries(card.variants);
+  const pick = vs.find(([, v]) => (frame === "all" || v.frame === frame) && v.cond === "美品")
+            || vs.find(([, v]) => frame === "all" || v.frame === frame) || vs[0];
+  return pick;
+}
+
+function renderCardList() {
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const list = document.getElementById("cardlist");
+  list.replaceChildren();
+  const rows = Object.entries(setData.cards)
+    .filter(([, c]) => frame === "all" || Object.values(c.variants).some(v => v.frame === frame))
+    .filter(([n]) => !q || n.toLowerCase().includes(q))
+    .map(([n, c]) => { const [k, v] = mainVariant(c); const s = v.series; return { n, c, k, v, last: s.length ? s[s.length - 1][4] : 0, first: s.length ? s[0][4] : 0 }; })
+    .sort((a, b) => b.last - a.last);
+  if (!rows.length) { list.append(el("li", { class: "empty" }, "該当するカードはありません")); return; }
+  for (const r of rows) {
+    const li = el("li", { role: "option", "aria-selected": String(r.n === cardName) });
+    if (showImages && r.v.img) li.append(el("img", { src: r.v.img, alt: "", loading: "lazy" }));
+    const nm = el("div", { class: "nm" }, r.n);
+    const kinds = Object.keys(r.c.variants).length;
+    if (kinds > 1) nm.append(el("span", { class: "tag" }, kinds + "種"));
+    const pct = r.first ? (r.last - r.first) / r.first * 100 : 0;
+    const pr = el("div", { class: "pr" }, yen(r.last));
+    pr.append(el("small", { class: pct > 0 ? "up" : pct < 0 ? "down" : "" }, (pct >= 0 ? "+" : "") + pct.toFixed(1) + "%（発売から）"));
+    li.append(nm, pr);
+    li.addEventListener("click", () => { cardName = r.n; variantKey = r.k; renderCardList(); renderSetCard(); });
+    list.append(li);
   }
 }
 
-async function loadCard(id) {
-  const meta = index.cards.find(c => c.id === id);
-  const img = document.getElementById("cardImg");
-  img.hidden = !(showImages && meta && meta.img);
-  if (!img.hidden) img.src = meta.img;
-  try {
-    current = await fetch("prices/" + id + ".json?t=" + Date.now()).then(r => r.json());
-  } catch { current = null; }
-  render();
+function renderSetCard() {
+  const variants = document.getElementById("variants");
+  variants.replaceChildren();
+  const card = cardName && setData.cards[cardName];
+  if (!card) { showSelected(null); draw([], [], null); showLinks(null); return; }
+  if (!card.variants[variantKey]) variantKey = mainVariant(card)[0];
+  const entries = Object.entries(card.variants).sort(([, a], [, b]) => (a.frame + a.cond).localeCompare(b.frame + b.cond, "ja"));
+  if (entries.length > 1) {
+    for (const [k, v] of entries) {
+      const b = el("button", { "aria-pressed": String(k === variantKey) }, (FRAME_LABEL[v.frame] || v.frame) + "・" + v.cond);
+      b.addEventListener("click", () => { variantKey = k; renderSetCard(); });
+      variants.append(b);
+    }
+  }
+  const v = card.variants[variantKey];
+  showSelected(cardName + "（" + (v.number || v.frame) + "・" + v.cond + "）", v.img);
+  draw(v.series, [], null);
+  showLinks(cardName, v.url);
+}
+
+async function loadSet(code) {
+  try { setData = await fetch("prices/sets/" + code + ".json?t=" + Date.now()).then(r => r.json()); }
+  catch { setData = { cards: {}, frames: [] }; }
+  frame = "all"; cardName = null;
+  const frames = document.getElementById("frames");
+  frames.replaceChildren();
+  for (const f of ["all", ...(setData.frames || [])]) {
+    const b = el("button", { "aria-pressed": String(f === frame) }, f === "all" ? "すべて" : (FRAME_LABEL[f] || f));
+    b.addEventListener("click", () => { frame = f; pressOnly(frames, b); renderCardList(); });
+    frames.append(b);
+  }
+  const first = Object.entries(setData.cards).map(([n, c]) => [n, mainVariant(c)]).sort((a, b) => {
+    const la = a[1][1].series, lb = b[1][1].series;
+    return (lb.length ? lb[lb.length - 1][4] : 0) - (la.length ? la[la.length - 1][4] : 0);
+  })[0];
+  if (first) { cardName = first[0]; variantKey = first[1][0]; }
+  renderCardList();
+  renderSetCard();
+}
+
+// ---------- 切り替え ----------
+function setMode(m, btn) {
+  mode = m;
+  pressOnly(document.getElementById("modes"), btn);
+  document.getElementById("regBox").hidden = m !== "reg";
+  document.getElementById("setBox").hidden = m === "reg";
+  if (m === "reg") { if (regIndex.cards.length) loadReg(document.getElementById("regCard").value); else renderReg(); }
+  else loadSet(m);
 }
 
 document.querySelectorAll("[data-shop]").forEach(b => b.addEventListener("click", () => {
-  shop = b.dataset.shop;
+  regShop = b.dataset.shop;
   document.querySelectorAll("[data-shop]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
-  render();
+  renderReg();
 }));
 document.querySelectorAll("[data-range]").forEach(b => b.addEventListener("click", () => {
   range = Number(b.dataset.range);
   document.querySelectorAll("[data-range]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
-  render();
+  mode === "reg" ? renderReg() : renderSetCard();
 }));
-document.getElementById("card").addEventListener("change", (e) => loadCard(e.target.value));
+document.getElementById("regCard").addEventListener("change", (e) => loadReg(e.target.value));
+document.getElementById("q").addEventListener("input", renderCardList);
 
-Promise.all([
-  fetch("prices/index.json?t=" + Date.now()).then(r => r.ok ? r.json() : { cards: [] }).catch(() => ({ cards: [] })),
-  fetch("single.json?t=" + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({})),
-]).then(([idx, single]) => {
-  index = idx;
-  showImages = single.show_images !== false;
-  const select = document.getElementById("card");
-  if (!index.cards.length) {
-    document.getElementById("meta").textContent = "まだ記録がありません（シングル通知に登録されたカードの値段を記録していきます）";
-    select.append(el("option", {}, "（カードがありません）"));
-    render();
-    return;
+function renderArchive(archive) {
+  const sets = (archive && archive.sets) || [];
+  if (!sets.length) return;
+  const box = document.getElementById("archive");
+  for (const s of sets) {
+    box.append(el("h2", {}, s.code + "（" + s.first_seen + " 発売・上位10枚）"));
+    const t = el("table");
+    const head = el("tr");
+    ["カード", "最初", "最後", "最高", "変化"].forEach((h, i) => head.append(el("th", i ? { class: "num" } : {}, h)));
+    t.append(head);
+    for (const c of s.cards.slice(0, 10)) {
+      const tr = el("tr");
+      tr.append(el("td", {}, c.name + (c.frame !== "通常" ? "（" + c.frame + "）" : "") + (c.cond !== "美品" ? "【" + c.cond + "】" : "")));
+      [yen(c.first), yen(c.last), yen(c.high)].forEach(v => tr.append(el("td", { class: "num" }, v)));
+      tr.append(el("td", { class: "num " + (c.change > 0 ? "up" : c.change < 0 ? "down" : "") }, (c.change >= 0 ? "+" : "") + c.change + "%"));
+      t.append(tr);
+    }
+    box.append(t);
   }
-  document.getElementById("meta").textContent = "記録の更新 " + new Date(index.updated).toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
-  for (const c of index.cards) select.append(el("option", { value: c.id }, c.name + (c.active ? "" : "（登録終了）")));
-  loadCard(index.cards[0].id);
+  document.getElementById("archiveBox").hidden = false;
+}
+
+const get = (url, fallback) => fetch(url + "?t=" + Date.now()).then(r => r.ok ? r.json() : fallback).catch(() => fallback);
+Promise.all([
+  get("prices/index.json", { cards: [] }),
+  get("prices/sets/index.json", { sets: [] }),
+  get("prices/sets/archive.json", { sets: [] }),
+  get("single.json", {}),
+]).then(([reg, sets, archive, single]) => {
+  regIndex = reg;
+  showImages = single.show_images !== false;
+  document.getElementById("meta").textContent = "記録の更新 " +
+    new Date(reg.updated || sets.updated || Date.now()).toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
+
+  const select = document.getElementById("regCard");
+  if (reg.cards.length) for (const c of reg.cards) select.append(el("option", { value: c.id }, c.name + (c.active ? "" : "（登録終了）")));
+  else select.append(el("option", {}, "（登録カードの記録はまだありません）"));
+
+  const modes = document.getElementById("modes");
+  const regBtn = el("button", { "aria-pressed": "true" }, "登録カード");
+  regBtn.addEventListener("click", () => setMode("reg", regBtn));
+  modes.append(regBtn);
+  let firstSet = null;
+  for (const s of sets.sets || []) {
+    const b = el("button", { "aria-pressed": "false" }, "新弾 " + s.code);
+    b.addEventListener("click", () => setMode(s.code, b));
+    modes.append(b);
+    firstSet = firstSet || b;
+  }
+  renderArchive(archive);
+  // 新弾があれば新弾から、無ければ登録カードから表示する
+  if (firstSet) firstSet.click(); else setMode("reg", regBtn);
 });
 </script>
 </body>

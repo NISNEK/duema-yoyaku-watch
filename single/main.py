@@ -16,6 +16,7 @@ import common
 import commands
 import discord_api
 import prices
+import sets
 import shops
 import watchlist as wl
 
@@ -256,6 +257,12 @@ def refresh_catalog(ctx):
                 prices.remember(ctx.work, "torecat",
                                 [(i["id"], i["title"], i.get("price"), i.get("available"), i.get("image"))
                                  for i in building["items"].values()], ctx.at)
+                try:   # 新弾の相場グラフ（失敗しても見回りは止めない）
+                    codes = sets.update(list(building["items"].values()), ctx.at,
+                                        (ctx.settings.get("set_charts") or {}).get("start_with", []))
+                    print(f"- 新弾の相場グラフを更新しました（{', '.join(codes) or 'なし'}）")
+                except Exception as e:  # noqa: BLE001
+                    print(f"::warning::新弾の相場グラフを更新できませんでした（{type(e).__name__}: {e}）")
                 print(f"- トレキャット カード一覧を作り直しました（{len(building['items'])} 件）")
                 return
         print(f"- トレキャット カード一覧を作成中（{building['page'] - 1} ページまで）")
