@@ -8,12 +8,12 @@
 <style>
   :root {
     --bg: #f6f7f9; --card: #ffffff; --text: #1d2127; --sub: #5f6b7a; --line: #e2e6eb;
-    --up: #0f8a4a; --down: #d23c3c; --accent: #1f6feb; --other: #b26b00;
+    --up: #0f8a4a; --down: #d23c3c; --accent: #1f6feb; --other: #b26b00; --good: #0f8a4a;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #111418; --card: #1a1f25; --text: #e7eaee; --sub: #9aa5b1; --line: #2b323b;
-      --up: #4ad08a; --down: #ff6b6b; --accent: #58a6ff; --other: #f0b44c;
+      --up: #4ad08a; --down: #ff6b6b; --accent: #58a6ff; --other: #f0b44c; --good: #4ad08a;
     }
   }
   * { box-sizing: border-box; }
@@ -28,12 +28,12 @@
   .tabs a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
   .meta { color: var(--sub); font-size: .85rem; margin-bottom: 12px; }
   .panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin-bottom: 12px; }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
   .chips + .chips { margin-top: 8px; }
+  .chips .lbl { color: var(--sub); font-size: .78rem; margin-right: 2px; }
   .chips button { border: 1px solid var(--line); background: var(--card); color: var(--text);
                   border-radius: 999px; padding: 5px 12px; font-size: .85rem; cursor: pointer; }
   .chips button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
-  .chips .sep { width: 1px; background: var(--line); margin: 0 4px; }
   .picker { display: flex; gap: 10px; align-items: center; margin-top: 10px; }
   .picker img { width: 52px; height: 72px; object-fit: contain; border-radius: 4px; background: var(--bg); flex: none; }
   .picker select { flex: 1; min-width: 0; font-size: 1rem; padding: 8px; border-radius: 8px;
@@ -47,18 +47,19 @@
   .cardlist img { width: 36px; height: 50px; object-fit: contain; border-radius: 3px; background: var(--bg); flex: none; }
   .cardlist .nm { flex: 1; min-width: 0; font-size: .9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .cardlist .pr { text-align: right; font-variant-numeric: tabular-nums; font-size: .9rem; white-space: nowrap; }
-  .cardlist .pr small { display: block; font-size: .75rem; }
-  .cardlist .tag { font-size: .7rem; color: var(--sub); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; margin-left: 4px; }
+  .cardlist .pr small { display: block; font-size: .72rem; color: var(--sub); }
+  .tag { font-size: .7rem; color: var(--sub); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; margin-left: 4px; }
   .selected { display: flex; gap: 10px; align-items: center; margin-bottom: 8px; }
   .selected img { width: 52px; height: 72px; object-fit: contain; border-radius: 4px; background: var(--bg); flex: none; }
   .selected .nm { font-weight: 700; }
   #chart { width: 100%; height: 340px; }
-  .ohlc { display: grid; grid-template-columns: auto 1fr 1fr; gap: 4px 12px; align-items: baseline;
-          font-variant-numeric: tabular-nums; margin-bottom: 6px; }
-  .ohlc .day { color: var(--sub); font-size: .8rem; white-space: nowrap; }
-  .ohlc .cell { display: flex; flex-direction: column; min-width: 0; }
-  .ohlc .k { color: var(--sub); font-size: .72rem; }
-  .ohlc .v { font-weight: 700; font-size: 1.05rem; white-space: nowrap; }
+  .prices { display: grid; grid-template-columns: auto 1fr 1fr; gap: 2px 12px; align-items: baseline;
+            font-variant-numeric: tabular-nums; margin: 4px 0 8px; }
+  .prices .day { grid-column: 1 / -1; color: var(--sub); font-size: .8rem; }
+  .prices .shop { font-size: .82rem; white-space: nowrap; }
+  .prices .shop .best { color: var(--good); font-weight: 700; margin-left: 4px; }
+  .prices .v { font-weight: 700; white-space: nowrap; }
+  .prices .v small { color: var(--sub); font-weight: 400; font-size: .72rem; margin-right: 4px; }
   .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .82rem; color: var(--sub); margin-top: 8px; }
   .dot { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
   .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; margin-bottom: 8px; }
@@ -98,15 +99,12 @@
         <img id="regImg" alt="" hidden>
         <select id="regCard" aria-label="カードを選ぶ"></select>
       </div>
-      <div class="chips" style="margin-top:10px" role="toolbar" aria-label="お店">
-        <button data-shop="torecat" aria-pressed="true">トレキャット</button>
-        <button data-shop="amenity" aria-pressed="false">アメニティードリーム</button>
-      </div>
     </div>
 
     <!-- 新弾 -->
     <div id="setBox" hidden>
       <div class="chips" id="frames" style="margin-top:10px" role="toolbar" aria-label="枠"></div>
+      <div class="chips" id="rarities" role="toolbar" aria-label="レアリティ"></div>
       <input type="search" id="q" placeholder="カード名で絞り込み" aria-label="カード名で絞り込み">
       <ul class="cardlist" id="cardlist" aria-label="カード一覧"></ul>
     </div>
@@ -116,18 +114,23 @@
   <section class="panel">
     <div class="selected" id="selected"></div>
     <div class="chips" id="variants" role="toolbar" aria-label="状態・枠"></div>
+    <div class="chips" style="margin:8px 0" role="toolbar" aria-label="ローソク足にするお店">
+      <span class="lbl">ローソク足：</span>
+      <button data-shop="torecat" aria-pressed="true">トレキャット</button>
+      <button data-shop="amenity" aria-pressed="false">アメニティードリーム</button>
+    </div>
     <div class="chips" style="margin:8px 0" role="toolbar" aria-label="期間">
       <button data-range="30" aria-pressed="true">1か月</button>
       <button data-range="90" aria-pressed="false">3か月</button>
       <button data-range="365" aria-pressed="false">1年</button>
     </div>
-    <div class="ohlc" id="ohlc" aria-live="polite"></div>
+    <div class="prices" id="prices" aria-live="polite"></div>
     <div id="chart" role="img" aria-label="値段のローソク足グラフ"></div>
-    <div class="empty" id="empty" hidden>まだ記録がありません。毎日記録していきます。</div>
+    <div class="empty" id="empty" hidden>このお店の記録はまだありません。毎日記録していきます。</div>
     <div class="legend">
       <span><span class="dot" style="background:var(--up)"></span>上がった日（陽線）</span>
       <span><span class="dot" style="background:var(--down)"></span>下がった日（陰線）</span>
-      <span id="otherLegend"><span class="dot" style="background:var(--other)"></span>もう一方のお店（終値）</span>
+      <span id="otherLegend"><span class="dot" style="background:var(--other)"></span><span id="otherName">もう一方のお店</span>（線）</span>
     </div>
   </section>
 
@@ -141,7 +144,7 @@
 
   <footer>
     登録カード：トレキャット・アメニティードリームの「在庫のある一番安い美品の値段」を見回りのたびに記録。<br>
-    新弾：トレキャットの値段を1日1回記録（始値＝前日の値段）。発売から3か月で結果だけをまとめて、毎日のデータは消します。<br>
+    新弾：トレキャット・アメニティードリームの値段を1日1回（深夜〜朝）記録（始値＝前日の値段）。発売から3か月で結果だけをまとめて、毎日のデータは消します。<br>
     どちらもお店の販売価格で、メルカリなどの個人売買の相場ではありません。
   </footer>
 </main>
@@ -149,6 +152,7 @@
 <script src="https://unpkg.com/lightweight-charts@4.2.3/dist/lightweight-charts.standalone.production.js"></script>
 <script>
 const SHOPS = { torecat: "トレキャット", amenity: "アメニティードリーム" };
+const SHORT = { torecat: "トレキャット", amenity: "アメニティ" };
 const FRAME_LABEL = { "㊙": "㊙ シークレット", "通常": "通常" };
 const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 const el = (tag, attrs = {}, text) => {
@@ -160,20 +164,14 @@ const el = (tag, attrs = {}, text) => {
 const yen = (n) => n == null ? "—" : Math.round(n).toLocaleString("ja-JP") + "円";
 const small = (src, w) => src && src.includes("cdn.shopify.com") ? src + (src.includes("?") ? "&" : "?") + "width=" + w : src;
 const pressOnly = (group, btn) => group.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(x === btn)));
+const lastClose = (rows) => rows && rows.length ? rows[rows.length - 1][4] : null;
 
-let showImages = true, range = 30;
+let showImages = true, range = 30, shop = "torecat";
 let mode = "reg";                      // "reg" = 登録カード、それ以外 = 弾のコード
-let regIndex = { cards: [] }, regData = null, regShop = "torecat";
-let setData = null, frame = "all", cardName = null, variantKey = null;
+let regIndex = { cards: [] }, regData = null;
+let setData = null, frame = "all", rarity = "all", cardName = null, variantKey = null;
+let view = null;                       // いまグラフに出しているもの { name, img, series: {torecat, amenity}, urls: {...} }
 
-const chart = LightweightCharts.createChart(document.getElementById("chart"), {
-  autoSize: true,
-  layout: { background: { color: "transparent" }, textColor: css("--sub"), fontSize: 11 },
-  grid: { vertLines: { color: css("--line") }, horzLines: { color: css("--line") } },
-  rightPriceScale: { borderColor: css("--line") },
-  timeScale: { borderColor: css("--line") },
-  localization: { locale: "ja-JP", priceFormatter: (p) => Math.round(p).toLocaleString("ja-JP") + "円" },
-});
 // 値段が動いていない（全部同じ金額）時でも目盛りが重ならないよう、上下に少なくとも±5%の余白を取る
 const roomyScale = (original) => {
   const r = original();
@@ -182,48 +180,71 @@ const roomyScale = (original) => {
   const pad = Math.max((maxValue - minValue) * 0.1, maxValue * 0.05, 10);
   return { ...r, priceRange: { minValue: Math.max(0, minValue - pad), maxValue: maxValue + pad } };
 };
+const chart = LightweightCharts.createChart(document.getElementById("chart"), {
+  autoSize: true,
+  layout: { background: { color: "transparent" }, textColor: css("--sub"), fontSize: 11 },
+  grid: { vertLines: { color: css("--line") }, horzLines: { color: css("--line") } },
+  rightPriceScale: { borderColor: css("--line") },
+  timeScale: { borderColor: css("--line") },
+  localization: { locale: "ja-JP", priceFormatter: (p) => Math.round(p).toLocaleString("ja-JP") + "円" },
+});
 const candles = chart.addCandlestickSeries({
   upColor: css("--up"), downColor: css("--down"), borderUpColor: css("--up"), borderDownColor: css("--down"),
   wickUpColor: css("--up"), wickDownColor: css("--down"), autoscaleInfoProvider: roomyScale,
 });
-const other = chart.addLineSeries({ color: css("--other"), lineWidth: 2, priceLineVisible: false, lastValueVisible: false,
+const other = chart.addLineSeries({ color: css("--other"), lineWidth: 2, priceLineVisible: false, lastValueVisible: true,
                                     autoscaleInfoProvider: roomyScale });
 
 const since = () => new Date(Date.now() - range * 864e5).toISOString().slice(0, 10);
+const inRange = (rows) => (rows || []).filter(r => r[0] >= since());
 
-// ---------- 1枚と4枚分の値段（指でなぞった日、なぞっていない時は最新の日） ----------
-let shownRows = [];
-function showOhlc(row) {
-  const box = document.getElementById("ohlc");
+// ---------- 両方のお店の 1枚・4枚 の値段（指でなぞった日、なぞっていない時は最新の日） ----------
+function showPrices(day) {
+  const box = document.getElementById("prices");
   box.replaceChildren();
-  if (!row) return;
-  const day = row[0], price = row[4];
-  box.append(el("div", { class: "day" }, day.slice(5).replace("-", "/") + (row === shownRows[shownRows.length - 1] ? "（最新）" : "")));
-  [["1枚", price], ["4枚", price * 4]].forEach(([k, v]) => {
-    const cell = el("div", { class: "cell" });
-    cell.append(el("span", { class: "k" }, k), el("span", { class: "v" }, yen(v)));
-    box.append(cell);
-  });
+  if (!view) return;
+  const pick = (rows) => {
+    rows = inRange(rows);
+    if (!rows.length) return null;
+    if (!day) return rows[rows.length - 1];
+    return [...rows].reverse().find(r => r[0] <= day) || null;    // その日の値段（無ければ直前の日）
+  };
+  const rows = { torecat: pick(view.series.torecat), amenity: pick(view.series.amenity) };
+  const shown = Object.values(rows).filter(Boolean);
+  if (!shown.length) return;
+  const label = day || shown.map(r => r[0]).sort().pop();
+  box.append(el("div", { class: "day" }, label.slice(5).replace("-", "/") + (day ? "" : "（最新）")));
+  const prices = Object.entries(rows).filter(([, r]) => r).map(([k, r]) => [k, r[4]]);
+  const best = prices.length > 1 ? Math.min(...prices.map(p => p[1])) : null;
+  for (const [k, r] of Object.entries(rows)) {
+    const name = el("div", { class: "shop" }, SHORT[k]);
+    if (r && best != null && r[4] === best) name.append(el("span", { class: "best" }, "✅安い"));
+    const one = el("div", { class: "v" }), four = el("div", { class: "v" });
+    one.append(el("small", {}, "1枚"), document.createTextNode(r ? yen(r[4]) : "—"));
+    four.append(el("small", {}, "4枚"), document.createTextNode(r ? yen(r[4] * 4) : "—"));
+    box.append(name, one, four);
+  }
 }
 chart.subscribeCrosshairMove((param) => {
-  if (!param || !param.time) { showOhlc(shownRows[shownRows.length - 1]); return; }
+  if (!param || !param.time) { showPrices(null); return; }
   const t = typeof param.time === "string" ? param.time
     : `${param.time.year}-${String(param.time.month).padStart(2, "0")}-${String(param.time.day).padStart(2, "0")}`;
-  showOhlc(shownRows.find(r => r[0] === t) || shownRows[shownRows.length - 1]);
+  showPrices(t);
 });
 
 // ---------- グラフと数字 ----------
-function draw(rows, otherRows, otherName) {
-  rows = rows.filter(r => r[0] >= since());
-  otherRows = (otherRows || []).filter(r => r[0] >= since());
-  shownRows = rows;
-  showOhlc(rows[rows.length - 1]);
+function draw() {
+  const otherKey = shop === "torecat" ? "amenity" : "torecat";
+  const rows = inRange(view && view.series[shop]);
+  const otherRows = inRange(view && view.series[otherKey]);
   candles.setData(rows.map(r => ({ time: r[0], open: r[1], high: r[2], low: r[3], close: r[4] })));
   other.setData(otherRows.map(r => ({ time: r[0], value: r[4] })));
   document.getElementById("otherLegend").hidden = !otherRows.length;
+  document.getElementById("otherName").textContent = SHOPS[otherKey];
   requestAnimationFrame(() => setTimeout(() => chart.timeScale().fitContent(), 50));
-  document.getElementById("empty").hidden = rows.length > 0;
-  document.getElementById("chart").style.visibility = rows.length ? "visible" : "hidden";
+  document.getElementById("empty").hidden = rows.length > 0 || otherRows.length > 0;
+  document.getElementById("chart").style.visibility = rows.length || otherRows.length ? "visible" : "hidden";
+  showPrices(null);
 
   const stats = document.getElementById("stats");
   stats.replaceChildren();
@@ -233,44 +254,41 @@ function draw(rows, otherRows, otherName) {
     stats.append(box);
   };
   const last = rows[rows.length - 1], prev = rows[rows.length - 2];
-  add("最新（1枚）", yen(last && last[4]));
-  add("最新（4枚）", yen(last && last[4] * 4));
   if (last && prev) {
     const diff = last[4] - prev[4], pct = prev[4] ? diff / prev[4] * 100 : 0;
-    add("前日比", (diff >= 0 ? "+" : "") + Math.round(diff).toLocaleString("ja-JP") + "円（" + pct.toFixed(1) + "%）",
+    add(SHORT[shop] + " 前日比", (diff >= 0 ? "+" : "") + Math.round(diff).toLocaleString("ja-JP") + "円（" + pct.toFixed(1) + "%）",
         diff > 0 ? "up" : diff < 0 ? "down" : "");
-  } else add("前日比", "—");
-  add("期間の最高", yen(rows.length ? Math.max(...rows.map(r => r[2])) : null));
-  add("期間の最安", yen(rows.length ? Math.min(...rows.map(r => r[3])) : null));
-  if (otherName) { const ol = otherRows[otherRows.length - 1]; add(otherName + "の最新", yen(ol && ol[4])); }
-}
+  } else add(SHORT[shop] + " 前日比", "—");
+  add(SHORT[shop] + " 期間の最高", yen(rows.length ? Math.max(...rows.map(r => r[2])) : null));
+  add(SHORT[shop] + " 期間の最安", yen(rows.length ? Math.min(...rows.map(r => r[3])) : null));
+  const a = lastClose(inRange(view && view.series.torecat)), b = lastClose(inRange(view && view.series.amenity));
+  if (a != null && b != null) add("お店の差（1枚）", yen(Math.abs(a - b)) + "（" + (a < b ? "トレキャット" : a > b ? "アメニティ" : "同じ") + (a === b ? "" : "が安い") + "）");
 
-function showSelected(name, img) {
-  const box = document.getElementById("selected");
-  box.replaceChildren();
-  if (!name) return;
-  if (showImages && img) box.append(el("img", { src: small(img, 200), alt: "", loading: "lazy" }));
-  box.append(el("div", { class: "nm" }, name));
-}
-
-function showLinks(name, shopUrl) {
   const links = document.getElementById("links");
   links.replaceChildren();
-  if (!name) return;
-  if (shopUrl) links.append(el("a", { href: shopUrl, target: "_blank", rel: "noopener" }, "トレキャットで見る"));
-  links.append(el("a", { href: "https://jp.mercari.com/search?keyword=" + encodeURIComponent("デュエマ " + name) + "&status=on_sale",
+  if (!view) return;
+  if (view.urls.torecat) links.append(el("a", { href: view.urls.torecat, target: "_blank", rel: "noopener" }, "トレキャットで見る"));
+  if (view.urls.amenity) links.append(el("a", { href: view.urls.amenity, target: "_blank", rel: "noopener" }, "アメニティードリームで見る"));
+  links.append(el("a", { href: "https://jp.mercari.com/search?keyword=" + encodeURIComponent("デュエマ " + view.baseName) + "&status=on_sale",
                          target: "_blank", rel: "noopener" }, "メルカリで探す"));
+}
+
+function showSelected() {
+  const box = document.getElementById("selected");
+  box.replaceChildren();
+  if (!view) return;
+  if (showImages && view.img) box.append(el("img", { src: small(view.img, 200), alt: "", loading: "lazy" }));
+  box.append(el("div", { class: "nm" }, view.name));
 }
 
 // ---------- 登録カード ----------
 function renderReg() {
   document.getElementById("variants").replaceChildren();
   const meta = regIndex.cards.find(c => regData && c.name === regData.name) || {};
-  showSelected(regData && regData.name, regData && (regData.img || meta.img));
-  const otherKey = regShop === "torecat" ? "amenity" : "torecat";
-  const s = (regData && regData.series) || {};
-  draw(s[regShop] || [], s[otherKey] || [], SHOPS[otherKey]);
-  showLinks(regData && regData.name, null);
+  view = regData ? { name: regData.name, baseName: regData.name, img: regData.img || meta.img,
+                     series: { torecat: regData.series.torecat || [], amenity: regData.series.amenity || [] }, urls: {} } : null;
+  showSelected();
+  draw();
 }
 
 async function loadReg(id) {
@@ -279,16 +297,16 @@ async function loadReg(id) {
   const meta = regIndex.cards.find(c => c.id === id);
   const img = document.getElementById("regImg");
   img.hidden = !(showImages && meta && meta.img);
-  if (!img.hidden) img.src = meta.img;
+  if (!img.hidden) img.src = small(meta.img, 120);
   renderReg();
 }
 
 // ---------- 新弾 ----------
+const matches = (v) => (frame === "all" || v.frame === frame) && (rarity === "all" || v.rarity === rarity);
+
 function mainVariant(card) {
   const vs = Object.entries(card.variants);
-  const pick = vs.find(([, v]) => (frame === "all" || v.frame === frame) && v.cond === "美品")
-            || vs.find(([, v]) => frame === "all" || v.frame === frame) || vs[0];
-  return pick;
+  return vs.find(([, v]) => matches(v) && v.cond === "美品") || vs.find(([, v]) => matches(v)) || vs[0];
 }
 
 function renderCardList() {
@@ -296,20 +314,25 @@ function renderCardList() {
   const list = document.getElementById("cardlist");
   list.replaceChildren();
   const rows = Object.entries(setData.cards)
-    .filter(([, c]) => frame === "all" || Object.values(c.variants).some(v => v.frame === frame))
+    .filter(([, c]) => Object.values(c.variants).some(matches))
     .filter(([n]) => !q || n.toLowerCase().includes(q))
-    .map(([n, c]) => { const [k, v] = mainVariant(c); const s = v.series; return { n, c, k, v, last: s.length ? s[s.length - 1][4] : 0, first: s.length ? s[0][4] : 0 }; })
-    .sort((a, b) => b.last - a.last);
+    .map(([n, c]) => {
+      const [k, v] = mainVariant(c);
+      const t = lastClose(v.series), a = lastClose(v.amenity);
+      const best = [["torecat", t], ["amenity", a]].filter(p => p[1] != null).sort((x, y) => x[1] - y[1])[0];
+      return { n, c, k, v, best };
+    })
+    .sort((x, y) => (y.best ? y.best[1] : 0) - (x.best ? x.best[1] : 0));
   if (!rows.length) { list.append(el("li", { class: "empty" }, "該当するカードはありません")); return; }
   for (const r of rows) {
     const li = el("li", { role: "option", "aria-selected": String(r.n === cardName) });
     if (showImages && r.v.img) li.append(el("img", { src: small(r.v.img, 120), alt: "", loading: "lazy" }));
     const nm = el("div", { class: "nm" }, r.n);
+    if (r.v.rarity) nm.append(el("span", { class: "tag" }, r.v.rarity));
     const kinds = Object.keys(r.c.variants).length;
     if (kinds > 1) nm.append(el("span", { class: "tag" }, kinds + "種"));
-    const pct = r.first ? (r.last - r.first) / r.first * 100 : 0;
-    const pr = el("div", { class: "pr" }, yen(r.last));
-    pr.append(el("small", { class: pct > 0 ? "up" : pct < 0 ? "down" : "" }, (pct >= 0 ? "+" : "") + pct.toFixed(1) + "%（発売から）"));
+    const pr = el("div", { class: "pr" }, r.best ? yen(r.best[1]) : "—");
+    if (r.best) pr.append(el("small", {}, "最安：" + SHORT[r.best[0]]));
     li.append(nm, pr);
     li.addEventListener("click", () => { cardName = r.n; variantKey = r.k; renderCardList(); renderSetCard(); });
     list.append(li);
@@ -320,37 +343,44 @@ function renderSetCard() {
   const variants = document.getElementById("variants");
   variants.replaceChildren();
   const card = cardName && setData.cards[cardName];
-  if (!card) { showSelected(null); draw([], [], null); showLinks(null); return; }
+  if (!card) { view = null; showSelected(); draw(); return; }
   if (!card.variants[variantKey]) variantKey = mainVariant(card)[0];
   const entries = Object.entries(card.variants).sort(([, a], [, b]) => (a.frame + a.cond).localeCompare(b.frame + b.cond, "ja"));
   if (entries.length > 1) {
     for (const [k, v] of entries) {
-      const b = el("button", { "aria-pressed": String(k === variantKey) }, (FRAME_LABEL[v.frame] || v.frame) + "・" + v.cond);
+      const b = el("button", { "aria-pressed": String(k === variantKey) },
+                   (FRAME_LABEL[v.frame] || v.frame) + "・" + v.cond + (v.rarity ? "（" + v.rarity + "）" : ""));
       b.addEventListener("click", () => { variantKey = k; renderSetCard(); });
       variants.append(b);
     }
   }
   const v = card.variants[variantKey];
-  showSelected(cardName + "（" + (v.number || v.frame) + "・" + v.cond + "）", v.img);
-  draw(v.series, [], null);
-  showLinks(cardName, v.url);
+  view = { name: cardName + "（" + (v.number || v.frame) + "・" + v.cond + (v.rarity ? "・" + v.rarity : "") + "）", baseName: cardName,
+           img: v.img, series: { torecat: v.series || [], amenity: v.amenity || [] },
+           urls: { torecat: v.url, amenity: v.amenity_url } };
+  showSelected();
+  draw();
+}
+
+function chipRow(boxId, values, current, labelOf, onPick) {
+  const box = document.getElementById(boxId);
+  box.replaceChildren();
+  if (!values.length) return;
+  for (const val of ["all", ...values]) {
+    const b = el("button", { "aria-pressed": String(val === current) }, val === "all" ? labelOf(null) : labelOf(val));
+    b.addEventListener("click", () => { pressOnly(box, b); onPick(val); });
+    box.append(b);
+  }
 }
 
 async function loadSet(code) {
   try { setData = await fetch("prices/sets/" + code + ".json?t=" + Date.now()).then(r => r.json()); }
   catch { setData = { cards: {}, frames: [] }; }
-  frame = "all"; cardName = null;
-  const frames = document.getElementById("frames");
-  frames.replaceChildren();
-  for (const f of ["all", ...(setData.frames || [])]) {
-    const b = el("button", { "aria-pressed": String(f === frame) }, f === "all" ? "すべて" : (FRAME_LABEL[f] || f));
-    b.addEventListener("click", () => { frame = f; pressOnly(frames, b); renderCardList(); });
-    frames.append(b);
-  }
-  const first = Object.entries(setData.cards).map(([n, c]) => [n, mainVariant(c)]).sort((a, b) => {
-    const la = a[1][1].series, lb = b[1][1].series;
-    return (lb.length ? lb[lb.length - 1][4] : 0) - (la.length ? la[la.length - 1][4] : 0);
-  })[0];
+  frame = "all"; rarity = "all"; cardName = null;
+  chipRow("frames", setData.frames || [], frame, (f) => f ? (FRAME_LABEL[f] || f) : "全部の枠", (f) => { frame = f; renderCardList(); });
+  chipRow("rarities", setData.rarities || [], rarity, (r) => r || "全レアリティ", (r) => { rarity = r; renderCardList(); });
+  const first = Object.entries(setData.cards).map(([n, c]) => [n, mainVariant(c)])
+    .sort((a, b) => (lastClose(b[1][1].series) || 0) - (lastClose(a[1][1].series) || 0))[0];
   if (first) { cardName = first[0]; variantKey = first[1][0]; }
   renderCardList();
   renderSetCard();
@@ -367,14 +397,14 @@ function setMode(m, btn) {
 }
 
 document.querySelectorAll("[data-shop]").forEach(b => b.addEventListener("click", () => {
-  regShop = b.dataset.shop;
+  shop = b.dataset.shop;
   document.querySelectorAll("[data-shop]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
-  renderReg();
+  draw();
 }));
 document.querySelectorAll("[data-range]").forEach(b => b.addEventListener("click", () => {
   range = Number(b.dataset.range);
   document.querySelectorAll("[data-range]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
-  mode === "reg" ? renderReg() : renderSetCard();
+  draw();
 }));
 document.getElementById("regCard").addEventListener("change", (e) => loadReg(e.target.value));
 document.getElementById("q").addEventListener("input", renderCardList);

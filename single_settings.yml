@@ -33,4 +33,5 @@ amenity:
   name: アメニティードリーム
   new: "https://www.amenitydream.com/new"
   search: "https://www.amenitydream.com/product-list?keyword={keyword}&num=100"
+  set_search: "https://www.amenitydream.com/product-list?keyword={code}&num=100&page={page}"   # 新弾の比べる用（1日1回）
   model_prefix: "DM_"       # 型番がこれで始まる商品だけ（デュエマのシングル）

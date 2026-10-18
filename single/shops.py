@@ -1,4 +1,5 @@
 """トレキャット・アメニティードリームから商品を読み取る係。"""
+import re
 from dataclasses import dataclass
 from urllib.parse import quote, urljoin
 
@@ -95,6 +96,29 @@ def amenity_new(http, cfg):
 def amenity_search(http, cfg, keyword):
     res = http.get(cfg["search"].format(keyword=quote(keyword)))
     return _amenity_list(res.text, res.url, cfg)
+
+
+def amenity_set_page(http, cfg, model_code, page):
+    """新弾の型番（例: DM_26EX4）で検索した結果の1ページ分（最大100件）を返す。比べる用。"""
+    res = http.get(cfg["set_search"].format(code=model_code, page=page))
+    soup = BeautifulSoup(res.text, "lxml")
+    items = []
+    for cell in soup.select("li.list_item_cell"):
+        model = cell.select_one(".model_number_value")
+        link = cell.select_one("a.item_data_link")
+        name = cell.select_one(".goods_name")
+        if model is None or link is None or name is None:
+            continue
+        stock_el = cell.select_one("p.stock")
+        stock = stock_el.get_text(" ", strip=True) if stock_el else ""
+        price_el = cell.select_one(".selling_price .figure")
+        price = re.sub(r"[^\d]", "", price_el.get_text()) if price_el else ""
+        img = cell.select_one(".global_photo img")
+        items.append({"model": model.get_text(strip=True), "title": name.get_text(" ", strip=True),
+                      "url": urljoin(res.url, link["href"]), "price_yen": int(price) if price else None,
+                      "available": bool(stock) and "在庫なし" not in stock,
+                      "image": urljoin(res.url, img.get("data-x2") or img.get("src") or "") if img is not None else ""})
+    return items
 
 
 def _amenity_list(html, page_url, cfg):

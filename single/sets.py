@@ -1,9 +1,11 @@
-"""新弾のシングル相場の係（トレキャットのみ・お店へのアクセスは増やさない）。
+"""新弾のシングル相場の係。
 
-1日1回読んでいるトレキャットの「デュエマシングル全て」から、
+1日1回読んでいるトレキャットの「デュエマシングル全て」から（アクセスは増やさない）、
   ・発売（＝トレキャットに初めて並んだ日）から3か月以内の弾を自動で見つけ、
   ・その弾のシングルを「カード名 → 枠（㊙・超・通常など）と状態（美品・状態Bなど）」に整理し、
   ・1日1本のローソク足（始値＝前日の値段、終値＝今日の値段）を記録する。
+アメニティードリームは、新弾ごとに型番（例: DM_26EX4）の検索結果を1日1回だけ読み（1弾あたり2〜3ページ）、
+カード番号でトレキャットのカードと結びつけて、比べるための値段とレアリティ（SR・VRなど）を記録する。
 3か月を過ぎた弾は、結果（最初・最高・最安・最後の値段）だけを archive.json にまとめて、毎日のデータは消す。
 
 保存先: docs/prices/sets/index.json（弾の一覧）、<弾>.json（弾ごとのグラフ）、archive.json（過去の弾のまとめ）
@@ -11,6 +13,7 @@
 import json
 import os
 import re
+import unicodedata
 from datetime import date, timedelta
 
 import common
@@ -20,7 +23,6 @@ SETS_DIR = os.path.join(common.ROOT, "docs", "prices", "sets")
 INDEX_FILE = os.path.join(SETS_DIR, "index.json")
 ARCHIVE_FILE = os.path.join(SETS_DIR, "archive.json")
 KEEP_DAYS = 90                                   # 発売から何日グラフを残すか（3か月）
-MIN_PRODUCTS = 20                                # これより商品が少ない弾は新弾とみなさない
 SET_TAG = re.compile(r"^DM\d{2}-[A-Z]+\d+[A-Z]?$")   # 例: DM26-EX4, DM26-RP1, DM23-RP4X
 
 _COND = re.compile(r"^\s*【([^】]*)】")                       # 【状態B】など
@@ -72,7 +74,8 @@ def update(catalog_items, at, start_with=()):
     known = {s["code"]: s for s in index["sets"]}
     seen = set(index.get("seen_codes", []))
     # トレキャットは古い弾のカードをまとめて出品し直すことがあり、出品日では新弾か分からない。
-    # そこで「これまで一度も見たことのない弾の目印が、20商品以上で現れた日」を発売日とする。
+    # そこで「これまで一度も見たことのない弾の目印が現れた日」を発売日とする（デッキなど商品が少なくても新弾にする）。
+    # 古い弾のカードが初めて出品された時に間違えないよう、型番の年（DM26 なら2026年）が今年より前なら新弾にしない。
     # 最初の1回だけは、設定の start_with に書いた弾から始める（それ以外の今ある弾は「見たことがある」扱い）。
     first_run = not seen
     for code, items in by_set.items():
@@ -82,9 +85,9 @@ def update(catalog_items, at, start_with=()):
         if first_run and code not in start_with:
             seen.add(code)
             continue
-        if len(items) < MIN_PRODUCTS:
-            continue   # 数が少ないうちは、まだ新弾と決めない（次の日にもう一度見る）
         seen.add(code)
+        if not first_run and int(code[2:4]) < today.year % 100:
+            continue   # 古い年の型番は新弾にしない
         published = sorted(i["published"][:10] for i in items if i.get("published"))
         first = published[0] if first_run and published else today.isoformat()
         known[code] = {"code": code, "first_seen": min(first, today.isoformat())}
@@ -135,6 +138,94 @@ def _record(code, info, items, today):
 def _frame_order(frame):
     order = {"㊙": 0, "超G": 1, "超": 2, "通常": 9}
     return (order.get(frame, 5), frame)
+
+
+RARITY_ORDER = ["DMR", "KGM", "OR", "SR", "VR", "R", "U", "C"]
+
+
+def _rarity_order(rarity):
+    return (RARITY_ORDER.index(rarity) if rarity in RARITY_ORDER else len(RARITY_ORDER), rarity)
+
+
+# ---------------- アメニティードリーム（比べる用の値段・レアリティ） ----------------
+
+def active_codes():
+    index = _load(INDEX_FILE) or {}
+    return [s["code"] for s in index.get("sets", [])]
+
+
+def amenity_code(code):
+    """トレキャットの目印 DM26-EX4 → アメニティードリームの型番の頭 DM_26EX4"""
+    return "DM_" + code[2:].replace("-", "")
+
+
+def norm_number(number):
+    """番号をそろえる（アメニティードリームの「秘15/秘25」とトレキャットの「㊙15/㊙25」を同じにする）。"""
+    text = re.sub(r"\s", "", unicodedata.normalize("NFKC", number or ""))
+    return re.sub(r"(\d+)[a-zA-Z]+(?=/)", r"\1", text)   # 「16a/99」「秘10b/秘25」（表裏のあるカード）は同じ番号として扱う
+
+
+def parse_amenity(item):
+    """アメニティードリームの商品を (番号, レアリティ, カード名, 状態) に分ける。
+    例: 型番「DM_26EX4_秘1/秘25_シークレットレアVR」・商品名「【シークレットレアVR】切札連結 バロムレイズ」
+        → ("秘1/秘25", "VR", "切札連結 バロムレイズ", "美品")"""
+    parts = item.get("model", "").split("_")
+    number = parts[2] if len(parts) >= 3 else ""
+    m = re.search(r"([A-Z]+)$", parts[3]) if len(parts) >= 4 else None
+    rarity = m.group(1) if m else ""
+    title = item.get("title", "")
+    cond_m = re.search(r"【(状態[^】]*)】", title)
+    name = re.sub(r"\s+", " ", re.sub(r"^(\s*【[^】]*】)+", "", title)).strip()
+    return number, rarity, name, (cond_m.group(1) if cond_m else "美品")
+
+
+def record_amenity(code, items, today):
+    """新弾のアメニティードリームの値段を、カード番号でトレキャットのカードに結びつけて記録する。"""
+    path = os.path.join(SETS_DIR, f"{code}.json")
+    data = _load(path)
+    if not data:
+        return 0
+    by_number = {}
+    for name, card in data["cards"].items():
+        for v in card["variants"].values():
+            by_number[(norm_number(v.get("number")), v["cond"])] = v
+    day, matched = today.isoformat(), 0
+    for item in items:
+        number, rarity, name, cond = parse_amenity(item)
+        price = item.get("price_yen")
+        if not number or not price:
+            continue
+        v = by_number.get((norm_number(number), cond))
+        if v is None:
+            # トレキャットに無いカードは、アメニティードリームだけのカードとして加える
+            frame = re.sub(r"\d+", "", number.split("/")[0]).replace("秘", "㊙") or "通常"
+            card = data["cards"].setdefault(name, {"variants": {}})
+            v = card["variants"].setdefault(f"{frame}|{cond}", {"frame": frame, "cond": cond, "number": number,
+                                                               "series": []})
+            by_number[(norm_number(number), cond)] = v
+        else:
+            matched += 1
+        v["rarity"] = rarity or v.get("rarity", "")
+        v["amenity_url"] = item.get("url") or v.get("amenity_url", "")
+        v["img"] = v.get("img") or item.get("image", "")
+        rows = v.setdefault("amenity", [])
+        if rows and rows[-1][0] == day:
+            o, h, lo, _ = rows[-1][1:]
+            rows[-1] = [day, o, max(h, price), min(lo, price), price]
+        else:
+            o = rows[-1][4] if rows else price
+            rows.append([day, o, max(o, price), min(o, price), price])
+    data["rarities"] = sorted({v.get("rarity") for c in data["cards"].values() for v in c["variants"].values()
+                               if v.get("rarity")}, key=_rarity_order)
+    data["frames"] = sorted({v["frame"] for c in data["cards"].values() for v in c["variants"].values()},
+                            key=_frame_order)
+    _save(path, data)
+    index = _load(INDEX_FILE) or {"sets": []}
+    for s in index["sets"]:
+        if s["code"] == code:
+            s.update(rarities=data["rarities"], frames=data["frames"], cards=len(data["cards"]))
+    _save(INDEX_FILE, index)
+    return matched
 
 
 def _archive(code, info, today):

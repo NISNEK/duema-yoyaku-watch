@@ -284,6 +284,31 @@ def refresh_catalog(ctx):
     guarded(ctx, "torecat", step)
 
 
+def refresh_amenity_sets(ctx):
+    """新弾のアメニティードリームの値段を、1日1回（深夜1時以降）だけ読む。1弾あたり2〜3ページ。"""
+    if ctx.at.hour < int(ctx.settings["torecat"].get("catalog_start_hour", 1)):
+        return
+    cfg = ctx.settings["amenity"]
+    done = ctx.work.setdefault("amenity_sets_done", {})
+    today = ctx.at.date().isoformat()
+    for code in sets.active_codes():
+        if done.get(code) == today:
+            continue
+
+        def step(code=code):
+            items = []
+            for page in range(1, 6):
+                got = shops.amenity_set_page(ctx.http, cfg, sets.amenity_code(code), page)
+                items += got
+                if len(got) < 100:
+                    break
+            matched = sets.record_amenity(code, items, ctx.at.date())
+            done[code] = today
+            print(f"- アメニティードリーム 新弾 {code}: {len(items)} 件（トレキャットのカードと {matched} 件結びつけ）")
+
+        guarded(ctx, "amenity", step)
+
+
 # ---------------- 3. 通知 ----------------
 
 LABEL = {"new": "🆕 新規入荷", "restock": "🔁 再入荷"}
@@ -479,6 +504,7 @@ def run(dry_run):
     watch_arrivals(ctx)
     watch_registered(ctx, data)
     refresh_catalog(ctx)
+    refresh_amenity_sets(ctx)
     active_names = [c["name"] for c in wl.active_cards(data)]
     prices.observe(work, active_names, ctx.at)
     notify(ctx, discord, data, channel_id)
