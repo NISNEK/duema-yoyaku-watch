@@ -241,9 +241,15 @@ def refresh_catalog(ctx):
     cfg = ctx.settings["torecat"]
     catalog = ctx.work.get("torecat_catalog") or {}
     done_at = state.parse_iso(catalog.get("complete_at"))
-    if done_at and ctx.at - done_at < timedelta(hours=24):
+    # 新弾グラフに必要な項目（弾の目印など）が無い古い形のカード一覧なら、24時間待たずに作り直す
+    old_format = any("set" not in item for item in list((catalog.get("items") or {}).values())[:1])
+    if done_at and ctx.at - done_at < timedelta(hours=24) and not old_format:
         return
-    building = ctx.work.setdefault("torecat_building", {"page": 1, "items": {}})
+    building = ctx.work.get("torecat_building")
+    if building and any("published" not in i for i in list(building["items"].values())[:1]):
+        building = None   # 古い形で作りかけていた分は捨てて、最初から作り直す
+    if building is None:
+        building = ctx.work["torecat_building"] = {"page": 1, "items": {}}
 
     def step():
         for _ in range(cfg.get("catalog_pages_per_run", 10)):
