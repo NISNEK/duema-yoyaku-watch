@@ -90,12 +90,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC023.jpg?v=1792148085",
       "kind": "new",
       "price": "380円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "切札混成 5000BT（㊙23/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec023"
     },
@@ -211,12 +211,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-chog06-photo.jpg?v=1792171252",
       "kind": "new",
       "price": "3,980円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "鬼ヶ覇覇覇 ジャオウガ（超G6/超G12）",
       "url": "https://torecat.shop/products/dm26ex4-chog06"
     },
@@ -1145,10 +1145,10 @@
       "url": "https://torecat.shop/products/dm26ex4-chog09"
     }
   ],
-  "saved_at": "2026-10-18T20:20:07+09:00",
+  "saved_at": "2026-10-18T20:47:47+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-18T20:20:07+09:00",
+      "checked_at": "2026-10-18T20:47:47+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1156,7 +1156,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-18T20:20:07+09:00",
+      "checked_at": "2026-10-18T20:47:47+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
