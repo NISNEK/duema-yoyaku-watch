@@ -337,6 +337,26 @@ function renderCardList() {
     if (kinds > 1) nm.append(el("span", { class: "tag" }, kinds + "種"));
     const pr = el("div", { class: "pr" }, r.best ? yen(r.best[1]) : "—");
     if (r.best) pr.append(el("small", {}, "最安：" + SHORT[r.best[0]]));
+    // 昨日との差：いちばん安いお店の記録で計算。そのお店に2日分の記録が無ければ、もう一方のお店で計算する
+    const order = r.best && r.best[0] === "amenity" ? ["amenity", "torecat"] : ["torecat", "amenity"];
+    for (const sh of order) {
+      const rows = sh === "torecat" ? r.v.series : r.v.amenity;
+      if (!rows || rows.length < 2) continue;
+      const prev = rows[rows.length - 2][4], last = rows[rows.length - 1][4];
+      if (!prev) continue;
+      const pct = (last - prev) / prev * 100;
+      const note = r.best && sh !== r.best[0] ? "（" + (sh === "torecat" ? "トレ" : "アメ") + "）" : "";
+      const pctText = (x) => (x >= 0 ? "+" : "") + x.toFixed(1) + "%";
+      const cls = (x) => x > 0 ? "up" : x < 0 ? "down" : "";
+      pr.append(el("small", { class: cls(pct) }, "前日比 " + pctText(pct) + note));
+      // 発売から：同じお店の、記録の最初の日の値段と比べる
+      const first = rows[0][4];
+      if (first) {
+        const since = (last - first) / first * 100;
+        pr.append(el("small", { class: cls(since) }, "発売から " + pctText(since) + note));
+      }
+      break;
+    }
     li.append(nm, pr);
     li.addEventListener("click", () => { cardName = r.n; variantKey = r.k; renderCardList(); renderSetCard(); });
     list.append(li);
