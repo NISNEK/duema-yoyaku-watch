@@ -1,16 +1,6 @@
 {
   "items": [
     {
-      "at": "2026-10-18T10:37:51+09:00",
-      "available": true,
-      "kind": "restock",
-      "price": "180円",
-      "shop": "アメニティードリーム",
-      "stock": "在庫数 8枚",
-      "title": "【SR】切札連結 バロXGXディアス",
-      "url": "https://www.amenitydream.com/product/279424"
-    },
-    {
       "at": "2026-10-17T19:23:59+09:00",
       "available": false,
       "kind": "new",
@@ -61,10 +51,10 @@
       "url": "https://torecat.shop/products/dm26rp3-s005"
     }
   ],
-  "saved_at": "2026-10-18T10:37:51+09:00",
+  "saved_at": "2026-10-18T11:08:14+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-18T10:37:51+09:00",
+      "checked_at": "2026-10-18T11:08:14+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -72,7 +62,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-18T10:37:51+09:00",
+      "checked_at": "2026-10-18T11:08:14+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
