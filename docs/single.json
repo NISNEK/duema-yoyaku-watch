@@ -2069,10 +2069,10 @@
       "url": "https://torecat.shop/products/dm26ex4-087"
     }
   ],
-  "saved_at": "2026-10-19T11:33:19+09:00",
+  "saved_at": "2026-10-19T12:07:34+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-19T11:33:19+09:00",
+      "checked_at": "2026-10-19T12:07:34+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -2080,12 +2080,12 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-19T11:33:19+09:00",
-      "error_count": 1,
+      "checked_at": "2026-10-19T12:07:34+09:00",
+      "error_count": 0,
       "error_notified": false,
-      "last_error": "ページが開けませんでした（HTTP 503）",
+      "last_error": null,
       "name": "トレキャット",
-      "state": "error"
+      "state": "ok"
     }
   },
   "show_images": true
