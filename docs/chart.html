@@ -30,6 +30,9 @@
   .panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin-bottom: 12px; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
   .chips + .chips { margin-top: 8px; }
+  .chips.row { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  .chips.row::-webkit-scrollbar { display: none; }
+  .chips.row button { flex: none; white-space: nowrap; }
   .chips .lbl { color: var(--sub); font-size: .78rem; margin-right: 2px; }
   .chips button { border: 1px solid var(--line); background: var(--card); color: var(--text);
                   border-radius: 999px; padding: 5px 12px; font-size: .85rem; cursor: pointer; }
@@ -113,11 +116,10 @@
   <!-- グラフ -->
   <section class="panel">
     <div class="selected" id="selected"></div>
-    <div class="chips" id="variants" role="toolbar" aria-label="状態・枠"></div>
-    <div class="chips" style="margin:8px 0" role="toolbar" aria-label="ローソク足にするお店">
-      <span class="lbl">ローソク足：</span>
+    <div class="chips row" id="variants" role="toolbar" aria-label="状態・枠"></div>
+    <div class="chips row" style="margin:8px 0" role="toolbar" aria-label="ローソク足にするお店（もう一方は線で表示）">
       <button data-shop="torecat" aria-pressed="true">トレキャット</button>
-      <button data-shop="amenity" aria-pressed="false">アメニティードリーム</button>
+      <button data-shop="amenity" aria-pressed="false">アメニティ</button>
     </div>
     <div class="chips" style="margin:8px 0" role="toolbar" aria-label="期間">
       <button data-range="30" aria-pressed="true">1か月</button>
@@ -371,9 +373,10 @@ function renderSetCard() {
   if (!card.variants[variantKey]) variantKey = mainVariant(card)[0];
   const entries = Object.entries(card.variants).sort(([, a], [, b]) => (a.frame + a.cond).localeCompare(b.frame + b.cond, "ja"));
   if (entries.length > 1) {
+    const mixed = new Set(entries.map(([, v]) => v.rarity || "")).size > 1;
     for (const [k, v] of entries) {
       const b = el("button", { "aria-pressed": String(k === variantKey) },
-                   (FRAME_LABEL[v.frame] || v.frame) + "・" + v.cond + (v.rarity ? "（" + v.rarity + "）" : ""));
+                   v.frame + "・" + v.cond + (mixed && v.rarity ? "（" + v.rarity + "）" : ""));
       b.addEventListener("click", () => { variantKey = k; renderSetCard(); });
       variants.append(b);
     }
