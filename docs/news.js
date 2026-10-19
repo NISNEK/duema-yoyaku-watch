@@ -1,6 +1,6 @@
 // お知らせ欄に、予約ページの【予約】商品を自動で並べる（予約・シングル・相場の3ページ共通）
-// - 再販ではない予約が受付中なら「予約が始まっています！」を太字で一番上に
-// - どのお店でも売り切れなら、先頭に「予約いっぱい」
+// - 再販ではない予約が受付中なら「予約開始」を太字で一番上に（再販は「再販開始」）
+// - どのお店でも売り切れなら、先頭に「予約一杯」
 // - カートンは入れない。同じ商品（弾の番号が同じ）はお店をまとめて1行に
 // - 押すと予約のページの、その商品の場所へ移動する
 // 古い弾（去年以前の番号）は、受付中のものだけ残す
@@ -76,10 +76,10 @@
         const li = el("li", { class: "auto" });
         const first = g.items.find(i => i.state === g.state) || g.items[0];
         const a = el("a", { href: target(first) });
-        if (g.state === "open" && !g.resale) a.append(el("span", { class: "start" }, "予約が始まっています！"), " ");
-        if (g.state === "open" && g.resale) a.append(el("span", { class: "soon" }, "再販の予約受付中"), " ");
+        if (g.state === "open" && !g.resale) a.append(el("span", { class: "start" }, "予約開始"), " ");
+        if (g.state === "open" && g.resale) a.append(el("span", { class: "soon" }, "再販開始"), " ");
         if (g.state === "before") a.append(el("span", { class: "soon" }, "予約開始前"), " ");
-        if (g.state === "soldout") a.append(el("span", { class: "full" }, "予約いっぱい"), " ");
+        if (g.state === "soldout") a.append(el("span", { class: "full" }, "予約一杯"), " ");
         a.append(day(g.changed) + " " + g.name + (g.resale && g.state !== "open" ? "（再販）" : ""));
         li.append(a, " ");
         const shops = el("span", { class: "nshops" }, "（");
