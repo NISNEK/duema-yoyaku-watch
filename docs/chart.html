@@ -63,6 +63,21 @@
   #chart { width: 100%; height: 340px; }
   .prices { display: grid; grid-template-columns: auto auto auto; justify-content: start; gap: 2px 20px; align-items: baseline;
             font-variant-numeric: tabular-nums; margin: 4px 0 8px; }
+  .legendrow { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 6px; }
+  .legendrow .legend { margin: 0; flex-direction: column; gap: 2px; font-size: .75rem; flex: none; white-space: nowrap; }
+  .ctype { display: flex; align-items: center; gap: 4px; margin-left: auto; flex-wrap: wrap; justify-content: flex-end; }
+  .ctype .lbl { color: var(--sub); font-size: .72rem; white-space: nowrap; }
+  .ctype .btns { display: flex; gap: 4px; }
+  .ctype button { border: 1px solid var(--line); background: var(--card); color: var(--text); border-radius: 999px;
+                  padding: 3px 9px; font-size: .75rem; cursor: pointer; white-space: nowrap; }
+  .ctype button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .ctype-help { color: var(--sub); font-size: .7rem; line-height: 1.5; margin-top: 4px; text-align: right; }
+  @media (min-width: 760px) {
+    .legendrow .legend { flex-direction: row; gap: 6px 16px; }
+  }
+  @media (max-width: 759px) {
+    .ctype-help { display: none; }   /* スマホは見やすさ優先で説明文を出さない */
+  }
   .prices .day { grid-column: 1 / -1; color: var(--sub); font-size: .8rem; }
   .prices .shop { font-size: .82rem; white-space: nowrap; }
   .prices .shop .best { color: var(--good); font-weight: 700; margin-left: 4px; }
@@ -158,10 +173,7 @@
           <button data-shop="torecat" aria-pressed="true">トレキャット</button>
           <button data-shop="amenity" aria-pressed="false">アメニティ</button>
         </div>
-        <div class="chips row" style="margin:8px 0" role="toolbar" aria-label="グラフの形と期間">
-          <button data-ctype="candle" aria-pressed="true">ろうそく型</button>
-          <button data-ctype="line" aria-pressed="false">線型</button>
-          <span class="sep" aria-hidden="true"></span>
+        <div class="chips row" style="margin:8px 0" role="toolbar" aria-label="期間">
           <button data-range="30" aria-pressed="true">1か月</button>
           <button data-range="90" aria-pressed="false">3か月</button>
           <button data-range="365" aria-pressed="false">1年</button>
@@ -172,11 +184,22 @@
     <div class="prices" id="prices" aria-live="polite"></div>
     <div id="chart" role="img" aria-label="値段のグラフ"></div>
     <div class="empty" id="empty" hidden>このお店の記録はまだありません。毎日記録していきます。</div>
-    <div class="legend">
-      <span class="lg-candle"><span class="dot" style="background:var(--up)"></span>上がった日（陽線）</span>
-      <span class="lg-candle"><span class="dot" style="background:var(--down)"></span>下がった日（陰線）</span>
-      <span class="lg-line" hidden><span class="dot" style="background:var(--accent)"></span><span id="lineName">お店</span>の値段（線）</span>
+    <!-- 凡例（左）とグラフの形の切り替え（右端）を同じ列に。PC・スマホ共通 -->
+    <div class="legendrow">
+      <div class="legend">
+        <span class="lg-candle"><span class="dot" style="background:var(--up)"></span>上がった日（陽線）</span>
+        <span class="lg-candle"><span class="dot" style="background:var(--down)"></span>下がった日（陰線）</span>
+        <span class="lg-line" hidden><span class="dot" style="background:var(--accent)"></span><span id="lineName">お店</span>の値段（線）</span>
+      </div>
+      <div class="ctype" role="toolbar" aria-label="グラフの形">
+        <span class="lbl">グラフ表示の変更：</span>
+        <span class="btns">
+          <button data-ctype="candle" aria-pressed="true">ろうそく型</button>
+          <button data-ctype="line" aria-pressed="false">線型</button>
+        </span>
+      </div>
     </div>
+    <div class="ctype-help">ろうそく型：1日の値段の動き（始め・最高・最安・終わり）を1本で表示。緑は上がった日、赤は下がった日。／線型：毎日の値段を線でつないだ形。</div>
   </section>
 
 
@@ -235,6 +258,8 @@ const chart = LightweightCharts.createChart(document.getElementById("chart"), {
   timeScale: { borderColor: css("--line") },
   localization: { locale: "ja-JP", priceFormatter: (p) => Math.round(p).toLocaleString("ja-JP") + "円" },
 });
+// グラフの幅が後から変わった時（スマホで最初に開いた時など）も、全部の日が横いっぱいに収まるように合わせ直す
+new ResizeObserver(() => chart.timeScale().fitContent()).observe(document.getElementById("chart"));
 const candles = chart.addCandlestickSeries({
   upColor: css("--up"), downColor: css("--down"), borderUpColor: css("--up"), borderDownColor: css("--down"),
   wickUpColor: css("--up"), wickDownColor: css("--down"), autoscaleInfoProvider: roomyScale,
@@ -288,7 +313,7 @@ function draw() {
   document.querySelectorAll(".lg-candle").forEach(x => x.hidden = ctype !== "candle");
   document.querySelectorAll(".lg-line").forEach(x => x.hidden = ctype !== "line");
   document.getElementById("lineName").textContent = SHOPS[shop];
-  requestAnimationFrame(() => setTimeout(() => chart.timeScale().fitContent(), 50));
+  setTimeout(() => chart.timeScale().fitContent(), 50);
   document.getElementById("empty").hidden = rows.length > 0;
   document.getElementById("chart").style.visibility = rows.length ? "visible" : "hidden";
   showPrices(null);
