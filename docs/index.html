@@ -57,6 +57,8 @@
   ul.items li.open { border-left-color: var(--open); }
   ul.items li.before { border-left-color: var(--before); }
   ul.items li.soldout { border-left-color: var(--soldout); opacity: .85; }
+  ul.items li.jump { outline: 3px solid var(--accent); outline-offset: 2px; transition: outline-color 1.5s; }
+  ul.items li { scroll-margin-top: 12px; }
   .item-title { color: var(--text); text-decoration: none; font-weight: 600; word-break: break-word; }
   .item-title:hover { text-decoration: underline; }
   .item-sub { color: var(--sub); font-size: .8rem; margin-top: 4px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; }
@@ -162,7 +164,7 @@ function renderItems() {
   if (!rows.length) { box.append(el("li", { class: "empty" }, "該当する商品はありません")); return; }
   const now = Date.now();
   for (const i of rows.slice(0, 300)) {
-    const li = el("li", { class: i.state });
+    const li = el("li", { class: i.state, id: "i-" + i.key });
     const row = el("div", { class: "row" }), body = el("div", { class: "body" });
     if (showImages && i.image) row.append(el("img", { class: "thumb", src: i.image, alt: "", loading: "lazy" }));
     row.append(body);
@@ -185,6 +187,24 @@ document.querySelectorAll("[data-filter]").forEach(b => b.addEventListener("clic
 }));
 document.getElementById("q").addEventListener("input", renderItems);
 
+// お知らせから「index.html#i-お店-番号」で来た時：絞り込みを外して、その商品まで動かして枠を光らせる
+function jumpToHash() {
+  const key = decodeURIComponent(location.hash.replace(/^#i-/, ""));
+  if (!location.hash.startsWith("#i-") || !all.some(i => i.key === key)) return;
+  filter = "all";
+  document.querySelectorAll("[data-filter]").forEach(x => x.setAttribute("aria-pressed", String(x.dataset.filter === "all")));
+  document.getElementById("q").value = "";
+  renderItems();
+  const li = document.getElementById("i-" + key);
+  if (!li) return;
+  // 別のページから来た時は画像の読み込みで位置がずれるので、少し待ってもう一度合わせる
+  li.scrollIntoView({ behavior: "smooth", block: "start" });
+  setTimeout(() => li.scrollIntoView({ block: "start" }), 700);
+  li.classList.add("jump");
+  setTimeout(() => li.classList.remove("jump"), 2500);
+}
+window.addEventListener("hashchange", jumpToHash);
+
 fetch("status.json?t=" + Date.now())
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(data => {
@@ -193,13 +213,16 @@ fetch("status.json?t=" + Date.now())
     document.getElementById("meta").textContent = "ページ更新 " + fmt(data.saved_at);
     renderShops(shops);
     all = [];
-    for (const s of Object.values(shops)) {
+    for (const [shopKey, s] of Object.entries(shops)) {
       if (s.enabled === false) continue;
-      for (const i of Object.values(s.items || {})) all.push({ ...i, shop: i.shop ? i.shop + "（手動登録）" : s.name });
+      for (const [id, i] of Object.entries(s.items || {}))
+        all.push({ ...i, key: shopKey + "-" + id, shop: i.shop ? i.shop + "（手動登録）" : s.name });
     }
     renderItems();
+    jumpToHash();
   })
   .catch(() => { document.getElementById("meta").textContent = "まだデータがありません（最初の見張りが終わると表示されます）"; });
 </script>
+<script src="news.js"></script>
 </body>
 </html>
