@@ -310,12 +310,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC010b.webp?v=1792292786",
       "kind": "new",
       "price": "980円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "切札連結 ガイアーセイ・カイザー/切札電融 リュウセール・カイザー（㊙10/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec010"
     },
@@ -1003,12 +1003,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO015.jpg?v=1792147432",
       "kind": "new",
       "price": "30円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "極限の精霊インフィニティ・シリウス（超15/超50）",
       "url": "https://torecat.shop/products/dm26ex4-cho015"
     },
@@ -2069,10 +2069,10 @@
       "url": "https://torecat.shop/products/dm26ex4-087"
     }
   ],
-  "saved_at": "2026-10-19T13:59:54+09:00",
+  "saved_at": "2026-10-19T14:34:19+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-19T13:59:54+09:00",
+      "checked_at": "2026-10-19T14:34:19+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -2080,7 +2080,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-19T13:59:54+09:00",
+      "checked_at": "2026-10-19T14:34:19+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
