@@ -30,9 +30,10 @@
   .panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin-bottom: 12px; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
   .chips + .chips { margin-top: 8px; }
-  .chips.row { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  .chips.row { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; gap: 4px; }
   .chips.row::-webkit-scrollbar { display: none; }
-  .chips.row button { flex: none; white-space: nowrap; }
+  .chips.row button { flex: none; white-space: nowrap; padding: 5px 10px; font-size: .82rem; }
+  .chips .sep { flex: none; width: 1px; align-self: stretch; background: var(--line); margin: 2px 3px; }
   .chips .lbl { color: var(--sub); font-size: .78rem; margin-right: 2px; }
   .chips button { border: 1px solid var(--line); background: var(--card); color: var(--text);
                   border-radius: 999px; padding: 5px 12px; font-size: .85rem; cursor: pointer; }
@@ -66,11 +67,29 @@
   .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .82rem; color: var(--sub); margin-top: 8px; }
   .dot { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
   .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; margin-bottom: 8px; }
-  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+  .graphpanel { display: flex; flex-direction: column; }
+  .graphpanel > * { min-width: 0; }
+  .cardhead { display: contents; }
+  .cardhead .stats { order: 9; margin: 10px 0 0; display: block; }
+  .hero { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .hero .label { color: var(--sub); font-size: .8rem; }
+  .hero .now { font-size: 2rem; font-weight: 800; line-height: 1.2; font-variant-numeric: tabular-nums; }
+  .hero .chg { font-size: 1.35rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .hero .chg small { font-size: .75rem; font-weight: 400; color: var(--sub); margin-left: 8px; }
+  .hero .chg.flat { color: var(--sub); }
+  .minis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .ctrl { min-width: 0; }
+  @media (min-width: 760px) {
+    .graphpanel { display: block; }
+    .cardhead { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 14px; align-items: start; }
+    .cardhead .stats { margin: 0; }
+  }
+  .stat { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
   .stat .label { color: var(--sub); font-size: .78rem; }
-  .stat .value { font-size: 1.15rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .stat .note { color: var(--sub); font-size: .72rem; }
+  .stat .value { font-size: 1rem; font-weight: 700; font-variant-numeric: tabular-nums; }
   .up { color: var(--up); } .down { color: var(--down); }
-  .links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+  .links { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 10px; }
   .links a { color: var(--accent); text-decoration: none; border: 1px solid var(--accent);
              border-radius: 999px; padding: 2px 12px; font-size: .85rem; }
   .empty { color: var(--sub); text-align: center; padding: 30px 12px; }
@@ -114,30 +133,39 @@
   </section>
 
   <!-- グラフ -->
-  <section class="panel">
-    <div class="selected" id="selected"></div>
-    <div class="chips row" id="variants" role="toolbar" aria-label="状態・枠"></div>
-    <div class="chips row" style="margin:8px 0" role="toolbar" aria-label="ローソク足にするお店（もう一方は線で表示）">
-      <button data-shop="torecat" aria-pressed="true">トレキャット</button>
-      <button data-shop="amenity" aria-pressed="false">アメニティ</button>
-    </div>
-    <div class="chips" style="margin:8px 0" role="toolbar" aria-label="期間">
-      <button data-range="30" aria-pressed="true">1か月</button>
-      <button data-range="90" aria-pressed="false">3か月</button>
-      <button data-range="365" aria-pressed="false">1年</button>
+  <section class="panel graphpanel">
+    <!-- お店・メルカリへのリンクは、一覧から選んですぐ押せるように一番上に -->
+    <div class="links" id="links"></div>
+    <!-- PC：カード名・ボタンの右に数字（株の画面のように）。スマホ：数字はグラフの下 -->
+    <div class="cardhead">
+      <div class="ctrl">
+        <div class="selected" id="selected"></div>
+        <div class="chips row" id="variants" role="toolbar" aria-label="状態・枠"></div>
+        <div class="chips row" style="margin:8px 0" role="toolbar" aria-label="グラフにするお店">
+          <button data-shop="torecat" aria-pressed="true">トレキャット</button>
+          <button data-shop="amenity" aria-pressed="false">アメニティ</button>
+        </div>
+        <div class="chips row" style="margin:8px 0" role="toolbar" aria-label="グラフの形と期間">
+          <button data-ctype="candle" aria-pressed="true">ろうそく型</button>
+          <button data-ctype="line" aria-pressed="false">線型</button>
+          <span class="sep" aria-hidden="true"></span>
+          <button data-range="30" aria-pressed="true">1か月</button>
+          <button data-range="90" aria-pressed="false">3か月</button>
+          <button data-range="365" aria-pressed="false">1年</button>
+        </div>
+      </div>
+      <div class="stats" id="stats"></div>
     </div>
     <div class="prices" id="prices" aria-live="polite"></div>
-    <div id="chart" role="img" aria-label="値段のローソク足グラフ"></div>
+    <div id="chart" role="img" aria-label="値段のグラフ"></div>
     <div class="empty" id="empty" hidden>このお店の記録はまだありません。毎日記録していきます。</div>
     <div class="legend">
-      <span><span class="dot" style="background:var(--up)"></span>上がった日（陽線）</span>
-      <span><span class="dot" style="background:var(--down)"></span>下がった日（陰線）</span>
-      <span id="otherLegend"><span class="dot" style="background:var(--other)"></span><span id="otherName">もう一方のお店</span>（線）</span>
+      <span class="lg-candle"><span class="dot" style="background:var(--up)"></span>上がった日（陽線）</span>
+      <span class="lg-candle"><span class="dot" style="background:var(--down)"></span>下がった日（陰線）</span>
+      <span class="lg-line" hidden><span class="dot" style="background:var(--accent)"></span><span id="lineName">お店</span>の値段（線）</span>
     </div>
   </section>
 
-  <section class="stats" id="stats"></section>
-  <div class="links" id="links"></div>
 
   <details id="archiveBox" hidden>
     <summary>過去の弾のまとめ（発売から3か月の結果）</summary>
@@ -172,7 +200,7 @@ const small = (src, w) => src && src.includes("cdn.shopify.com") ? src + (src.in
 const pressOnly = (group, btn) => group.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(x === btn)));
 const lastClose = (rows) => rows && rows.length ? rows[rows.length - 1][4] : null;
 
-let showImages = true, range = 30, shop = "torecat";
+let showImages = true, range = 30, shop = "torecat", ctype = "candle";   // ctype: "candle"＝ろうそく型、"line"＝線型
 let mode = "reg";                      // "reg" = 登録カード、それ以外 = 弾のコード
 let regIndex = { cards: [] }, regData = null;
 let setData = null, frame = "all", rarity = "all", cardName = null, variantKey = null;
@@ -198,7 +226,7 @@ const candles = chart.addCandlestickSeries({
   upColor: css("--up"), downColor: css("--down"), borderUpColor: css("--up"), borderDownColor: css("--down"),
   wickUpColor: css("--up"), wickDownColor: css("--down"), autoscaleInfoProvider: roomyScale,
 });
-const other = chart.addLineSeries({ color: css("--other"), lineWidth: 2, priceLineVisible: false, lastValueVisible: true,
+const other = chart.addLineSeries({ color: css("--accent"), lineWidth: 2, priceLineVisible: false, lastValueVisible: true,
                                     autoscaleInfoProvider: roomyScale });
 
 const since = () => new Date(Date.now() - range * 864e5).toISOString().slice(0, 10);
@@ -240,35 +268,46 @@ chart.subscribeCrosshairMove((param) => {
 
 // ---------- グラフと数字 ----------
 function draw() {
-  const otherKey = shop === "torecat" ? "amenity" : "torecat";
+  // 選んだお店1つだけを、選んだ形（ろうそく型か線型）で描く。2店の比較は上の値段の欄で見る
   const rows = inRange(view && view.series[shop]);
-  const otherRows = inRange(view && view.series[otherKey]);
-  candles.setData(rows.map(r => ({ time: r[0], open: r[1], high: r[2], low: r[3], close: r[4] })));
-  other.setData(otherRows.map(r => ({ time: r[0], value: r[4] })));
-  document.getElementById("otherLegend").hidden = !otherRows.length;
-  document.getElementById("otherName").textContent = SHOPS[otherKey];
+  candles.setData(ctype === "candle" ? rows.map(r => ({ time: r[0], open: r[1], high: r[2], low: r[3], close: r[4] })) : []);
+  other.setData(ctype === "line" ? rows.map(r => ({ time: r[0], value: r[4] })) : []);
+  document.querySelectorAll(".lg-candle").forEach(x => x.hidden = ctype !== "candle");
+  document.querySelectorAll(".lg-line").forEach(x => x.hidden = ctype !== "line");
+  document.getElementById("lineName").textContent = SHOPS[shop];
   requestAnimationFrame(() => setTimeout(() => chart.timeScale().fitContent(), 50));
-  document.getElementById("empty").hidden = rows.length > 0 || otherRows.length > 0;
-  document.getElementById("chart").style.visibility = rows.length || otherRows.length ? "visible" : "hidden";
+  document.getElementById("empty").hidden = rows.length > 0;
+  document.getElementById("chart").style.visibility = rows.length ? "visible" : "hidden";
   showPrices(null);
 
+  // 株の画面のように：いまの値段と前日比を大きく、その下に細かい数字
   const stats = document.getElementById("stats");
   stats.replaceChildren();
-  const add = (label, value, cls) => {
-    const box = el("div", { class: "stat" });
-    box.append(el("div", { class: "label" }, label), el("div", { class: "value " + (cls || "") }, value));
-    stats.append(box);
-  };
   const last = rows[rows.length - 1], prev = rows[rows.length - 2];
+  const hero = el("div", { class: "hero" });
+  hero.append(el("div", { class: "label" }, SHORT[shop] + "（" + (last ? last[0].slice(5).replace("-", "/") : "—") + "）"),
+              el("div", { class: "now" }, last ? yen(last[4]) : "—"));
   if (last && prev) {
     const diff = last[4] - prev[4], pct = prev[4] ? diff / prev[4] * 100 : 0;
-    add(SHORT[shop] + " 前日比", (diff >= 0 ? "+" : "") + Math.round(diff).toLocaleString("ja-JP") + "円（" + pct.toFixed(1) + "%）",
-        diff > 0 ? "up" : diff < 0 ? "down" : "");
-  } else add(SHORT[shop] + " 前日比", "—");
-  add(SHORT[shop] + " 期間の最高", yen(rows.length ? Math.max(...rows.map(r => r[2])) : null));
-  add(SHORT[shop] + " 期間の最安", yen(rows.length ? Math.min(...rows.map(r => r[3])) : null));
+    const cls = diff > 0 ? "up" : diff < 0 ? "down" : "flat";
+    const sign = diff > 0 ? "▲ +" : diff < 0 ? "▼ " : "± ";
+    const chg = el("div", { class: "chg " + cls }, sign + Math.round(diff).toLocaleString("ja-JP") + "円（" + (pct > 0 ? "+" : "") + pct.toFixed(1) + "%）");
+    chg.append(el("small", {}, "前日比"));
+    hero.append(chg);
+  } else hero.append(el("div", { class: "chg flat" }, "前日比 —"));
+  stats.append(hero);
+  const minis = el("div", { class: "minis" });
+  stats.append(minis);
+  const add = (label, value, cls, note) => {
+    const box = el("div", { class: "stat" });
+    box.append(el("div", { class: "label" }, label), el("div", { class: "value " + (cls || "") }, value));
+    if (note) box.append(el("div", { class: "note" }, note));
+    minis.append(box);
+  };
+  add("期間の最高", yen(rows.length ? Math.max(...rows.map(r => r[2])) : null));
+  add("期間の最安", yen(rows.length ? Math.min(...rows.map(r => r[3])) : null));
   const a = lastClose(inRange(view && view.series.torecat)), b = lastClose(inRange(view && view.series.amenity));
-  if (a != null && b != null) add("お店の差（1枚）", yen(Math.abs(a - b)) + "（" + (a < b ? "トレキャット" : a > b ? "アメニティ" : "同じ") + (a === b ? "" : "が安い") + "）");
+  if (a != null && b != null) add("お店の差", a === b ? "同じ値段" : yen(Math.abs(a - b)), "", a === b ? "" : (a < b ? "トレキャット" : "アメニティ") + "が安い");
 
   const links = document.getElementById("links");
   links.replaceChildren();
@@ -426,6 +465,11 @@ function setMode(m, btn) {
 document.querySelectorAll("[data-shop]").forEach(b => b.addEventListener("click", () => {
   shop = b.dataset.shop;
   document.querySelectorAll("[data-shop]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  draw();
+}));
+document.querySelectorAll("[data-ctype]").forEach(b => b.addEventListener("click", () => {
+  ctype = b.dataset.ctype;
+  document.querySelectorAll("[data-ctype]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
   draw();
 }));
 document.querySelectorAll("[data-range]").forEach(b => b.addEventListener("click", () => {
