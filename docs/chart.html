@@ -21,6 +21,10 @@
          font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.5; }
   main { max-width: 960px; margin: 0 auto; padding: 16px; }
   h1 { font-size: 1.4rem; margin: 8px 0 4px; }
+  .about { color: var(--sub); font-size: .85rem; margin: 0 0 8px; line-height: 1.6; }
+  .news { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; margin: 0 0 8px; font-size: .85rem; }
+  .news b { font-size: .8rem; }
+  .news ul { margin: 4px 0 0; padding-left: 1.2em; }
   h2 { font-size: 1rem; margin: 0 0 8px; }
   .tabs { display: flex; gap: 4px; border-bottom: 2px solid var(--line); margin: 8px 0 12px; }
   .tabs a { padding: 8px 18px; color: var(--sub); text-decoration: none; font-weight: 600;
@@ -104,6 +108,15 @@
 <body>
 <main>
   <h1>デュエマ予約確認</h1>
+  <p class="about">デュエル・マスターズの新弾の予約開始、シングルカードの入荷、シングルの相場（値段の動き）をまとめて確認できる個人運営のサイトです。お店のページを定期的に見回って、自動で更新しています。</p>
+  <!-- お知らせ：3つのページで同じ内容。オーナーの指示があった時だけ書き足す -->
+  <div class="news">
+    <b>お知らせ</b>
+    <ul>
+      <li>10/18 相場機能を追加しました</li>
+      <li>10/18 新弾（DM26-EX4）を追加しました</li>
+    </ul>
+  </div>
   <nav class="tabs" aria-label="ページの切り替え">
     <a href="index.html">予約</a>
     <a href="single.html">シングル</a>
