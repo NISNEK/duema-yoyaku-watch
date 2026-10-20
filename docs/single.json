@@ -1,28 +1,6 @@
 {
   "items": [
     {
-      "at": "2026-10-20T16:48:20+09:00",
-      "available": true,
-      "image": "https://www.amenitydream.com/data/amenitydream/_/70726f647563742f444d32364558342f444d32364558345f3038332e6a7067003234300000740066.jpg",
-      "kind": "restock",
-      "price": "480円",
-      "shop": "アメニティードリーム",
-      "stock": "在庫数 5枚",
-      "title": "【SR】火神 アポフィス",
-      "url": "https://www.amenitydream.com/product/279420"
-    },
-    {
-      "at": "2026-10-20T16:48:20+09:00",
-      "available": true,
-      "image": "https://www.amenitydream.com/data/amenitydream/_/70726f647563742f444d32364558342f444d32364558345f3038372e6a7067003234300000740066.jpg",
-      "kind": "restock",
-      "price": "80円",
-      "shop": "アメニティードリーム",
-      "stock": "在庫数 5枚",
-      "title": "【SR】切札連結 バロXGXディアス",
-      "url": "https://www.amenitydream.com/product/279424"
-    },
-    {
       "at": "2026-10-20T14:09:09+09:00",
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S001.jpg?v=1789730189",
@@ -78,18 +56,18 @@
       "url": "https://torecat.shop/products/dm26ex4-017"
     }
   ],
-  "saved_at": "2026-10-20T16:48:20+09:00",
+  "saved_at": "2026-10-20T17:19:03+09:00",
   "shops": {
     "amenity": {
       "checked_at": "2026-10-20T16:48:20+09:00",
-      "error_count": 0,
+      "error_count": 2,
       "error_notified": false,
-      "last_error": null,
+      "last_error": "ページが開けませんでした（HTTP 503）",
       "name": "アメニティードリーム",
-      "state": "ok"
+      "state": "error"
     },
     "torecat": {
-      "checked_at": "2026-10-20T16:48:20+09:00",
+      "checked_at": "2026-10-20T17:19:03+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
