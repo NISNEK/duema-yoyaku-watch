@@ -54,20 +54,31 @@
       "stock": "在庫あり",
       "title": "切札電融 モモムゲン（17/99）",
       "url": "https://torecat.shop/products/dm26ex4-017"
+    },
+    {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-010.jpg?v=1792147382",
+      "kind": "new",
+      "price": "1,280円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "切札混成 光隼 蒼斬丸（10/99）",
+      "url": "https://torecat.shop/products/dm26ex4-010"
     }
   ],
-  "saved_at": "2026-10-20T17:19:03+09:00",
+  "saved_at": "2026-10-20T17:59:31+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-20T16:48:20+09:00",
-      "error_count": 2,
+      "checked_at": "2026-10-20T17:59:31+09:00",
+      "error_count": 0,
       "error_notified": false,
-      "last_error": "ページが開けませんでした（HTTP 503）",
+      "last_error": null,
       "name": "アメニティードリーム",
-      "state": "error"
+      "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-20T17:19:03+09:00",
+      "checked_at": "2026-10-20T17:59:31+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
