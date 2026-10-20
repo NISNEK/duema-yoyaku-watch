@@ -1,9 +1,21 @@
 {
-  "items": [],
-  "saved_at": "2026-10-19T23:38:21+09:00",
+  "items": [
+    {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-028.jpg?v=1792147561",
+      "kind": "new",
+      "price": "30円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "切札接続 MAXAM ザ・オウガ（28/99）",
+      "url": "https://torecat.shop/products/dm26ex4-028"
+    }
+  ],
+  "saved_at": "2026-10-20T09:22:12+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-19T23:38:21+09:00",
+      "checked_at": "2026-10-20T09:22:12+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -11,7 +23,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-19T23:38:21+09:00",
+      "checked_at": "2026-10-20T09:22:12+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
