@@ -12,17 +12,6 @@
       "url": "https://torecat.shop/products/dm26rp3-s001"
     },
     {
-      "at": "2026-10-20T10:11:38+09:00",
-      "available": false,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-054.jpg?v=1786093333",
-      "kind": "new",
-      "price": "400円",
-      "shop": "トレキャット",
-      "stock": "売り切れ",
-      "title": "帝王坂∞＜…………！＞（54/100）",
-      "url": "https://torecat.shop/products/dm26ex3-054"
-    },
-    {
       "at": "2026-10-17T00:28:35+09:00",
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-028.jpg?v=1792147561",
@@ -32,17 +21,6 @@
       "stock": "売り切れ",
       "title": "切札接続 MAXAM ザ・オウガ（28/99）",
       "url": "https://torecat.shop/products/dm26ex4-028"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": false,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO010.jpg?v=1792147386",
-      "kind": "new",
-      "price": "120円",
-      "shop": "トレキャット",
-      "stock": "売り切れ",
-      "title": "邪眼皇アレクサンドルIII世（超10/超50）",
-      "url": "https://torecat.shop/products/dm26ex4-cho010"
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
@@ -65,12 +43,23 @@
       "stock": "売り切れ",
       "title": "切札混成 光隼 蒼斬丸（10/99）",
       "url": "https://torecat.shop/products/dm26ex4-010"
+    },
+    {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-008.jpg?v=1792147365",
+      "kind": "new",
+      "price": "430円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "火神 アポフィス（8/99）",
+      "url": "https://torecat.shop/products/dm26ex4-008"
     }
   ],
-  "saved_at": "2026-10-20T19:09:14+09:00",
+  "saved_at": "2026-10-21T10:05:06+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-20T19:09:14+09:00",
+      "checked_at": "2026-10-21T10:05:06+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -78,7 +67,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-20T19:09:14+09:00",
+      "checked_at": "2026-10-21T10:05:06+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
