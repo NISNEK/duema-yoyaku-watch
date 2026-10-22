@@ -21,12 +21,56 @@
       "stock": "在庫あり",
       "title": "火神 アポフィス（8/99）",
       "url": "https://torecat.shop/products/dm26ex4-008"
+    },
+    {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-015.jpg?v=1792147428",
+      "kind": "new",
+      "price": "70円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "DREAMの逆転撃（15/99）",
+      "url": "https://torecat.shop/products/dm26ex4-015"
+    },
+    {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO006.jpg?v=1792147351",
+      "kind": "new",
+      "price": "720円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "偽りの羅刹 アガサ・エルキュール（超6/超50）",
+      "url": "https://torecat.shop/products/dm26ex4-cho006"
+    },
+    {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO049.jpg?v=1792147763",
+      "kind": "new",
+      "price": "30円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "エメラル（超49/超50）",
+      "url": "https://torecat.shop/products/dm26ex4-cho049"
+    },
+    {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-024.jpg?v=1792147521",
+      "kind": "new",
+      "price": "20円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "切札混成 インビンシブル・ドラゴン（24/99）",
+      "url": "https://torecat.shop/products/dm26ex4-024"
     }
   ],
-  "saved_at": "2026-10-22T04:21:01+09:00",
+  "saved_at": "2026-10-22T14:46:09+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-22T04:21:01+09:00",
+      "checked_at": "2026-10-22T14:46:09+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -34,7 +78,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-22T04:21:01+09:00",
+      "checked_at": "2026-10-22T14:46:09+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
