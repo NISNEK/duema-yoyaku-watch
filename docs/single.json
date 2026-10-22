@@ -827,12 +827,12 @@
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-PR001.jpg?v=1784286649",
       "kind": "new",
       "price": "900円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "引き裂かれし永劫、エムラクール（PR1/PR10）",
       "url": "https://torecat.shop/products/dm26ex2-pr001"
     },
@@ -2729,10 +2729,10 @@
       "url": "https://torecat.shop/products/dm26ex2-031"
     }
   ],
-  "saved_at": "2026-10-23T01:30:51+09:00",
+  "saved_at": "2026-10-23T02:08:10+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-23T01:30:51+09:00",
+      "checked_at": "2026-10-23T02:08:10+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -2740,7 +2740,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-23T01:30:51+09:00",
+      "checked_at": "2026-10-23T02:08:10+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
