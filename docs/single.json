@@ -1,17 +1,6 @@
 {
   "items": [
     {
-      "at": "2026-10-24T02:12:59+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC015.jpg?v=1792148049",
-      "kind": "restock",
-      "price": "5,780円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札混成 ドギラダンテ刈（㊙15/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec015"
-    },
-    {
       "at": "2026-10-17T00:28:35+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-017.jpg?v=1792147449",
@@ -188,10 +177,10 @@
       "url": "https://torecat.shop/products/dm26ex4-005"
     }
   ],
-  "saved_at": "2026-10-24T02:12:59+09:00",
+  "saved_at": "2026-10-24T02:48:34+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-24T02:12:59+09:00",
+      "checked_at": "2026-10-24T02:48:34+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -199,7 +188,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-24T02:12:59+09:00",
+      "checked_at": "2026-10-24T02:48:34+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
