@@ -1201,12 +1201,12 @@
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-086.jpg?v=1786093549",
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "庵野水晶（86/100）",
       "url": "https://torecat.shop/products/dm26ex3-086"
     },
@@ -2751,10 +2751,10 @@
       "url": "https://torecat.shop/products/dm26ex2-031"
     }
   ],
-  "saved_at": "2026-10-23T15:45:09+09:00",
+  "saved_at": "2026-10-23T16:30:27+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-23T15:45:09+09:00",
+      "checked_at": "2026-10-23T16:30:27+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -2762,7 +2762,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-23T15:45:09+09:00",
+      "checked_at": "2026-10-23T16:30:27+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
