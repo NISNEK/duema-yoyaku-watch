@@ -563,12 +563,12 @@
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25rp3-S03.jpg?v=1758287635",
       "kind": "new",
       "price": "200円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "危険深淵 デンジャラス＝ジャック(DM25RP3 S3/S11) 【SR】",
       "url": "https://torecat.shop/products/危険深淵-デンジャラス-ジャックdm25rp3-s3-s11-sr"
     },
@@ -739,12 +739,12 @@
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC004.jpg?v=1789730380",
       "kind": "new",
       "price": "1,700円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "Dr.富士山ッピング（㊙4/㊙24）",
       "url": "https://torecat.shop/products/dm26rp3-sec004"
     },
@@ -2751,10 +2751,10 @@
       "url": "https://torecat.shop/products/dm26ex2-031"
     }
   ],
-  "saved_at": "2026-10-23T15:04:19+09:00",
+  "saved_at": "2026-10-23T15:45:09+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-23T15:04:19+09:00",
+      "checked_at": "2026-10-23T15:45:09+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -2762,7 +2762,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-23T15:04:19+09:00",
+      "checked_at": "2026-10-23T15:45:09+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
