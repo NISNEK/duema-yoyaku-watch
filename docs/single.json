@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "at": "2026-10-23T15:04:19+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SP004.jpg?v=1789730355",
+      "kind": "new",
+      "price": "15,000円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "天災 デドダム（SP4/SP5）",
+      "url": "https://torecat.shop/products/dm26rp3-sp004"
+    },
+    {
+      "at": "2026-10-23T15:04:19+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp1-TR003.jpg?v=1775824016",
+      "kind": "new",
+      "price": "120円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "審判の精霊ラストジャッジ(DM26RP1 TR3/TR9) SR",
+      "url": "https://torecat.shop/products/審判の精霊ラストジャッジdm26rp1-tr3-tr9-sr"
+    },
+    {
+      "at": "2026-10-23T15:04:19+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex1-015a.jpg?v=1778856649",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】卍ギ・ルーギリン卍/卍獄ブレイン（15/50）",
+      "url": "https://torecat.shop/products/卍ギ-ルーギリン卍-卍獄ブレイン-15-50"
+    },
+    {
+      "at": "2026-10-23T15:04:19+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-067a_eb574e6a-96c5-4657-ac88-24281268b98c.jpg?v=1790254718",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "ボルシャック・マントラ　67/89 DM26EX2",
+      "url": "https://torecat.shop/products/duelmasters-dm26ex2-067"
+    },
+    {
+      "at": "2026-10-23T15:04:19+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC015.jpg?v=1789730426",
+      "kind": "new",
+      "price": "650円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "黎悪銃と邪煉哀の決断（㊙15/㊙24）",
+      "url": "https://torecat.shop/products/dm26rp3-sec015"
+    },
+    {
+      "at": "2026-10-23T15:04:19+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25rp3-008.jpg?v=1758287689",
+      "kind": "new",
+      "price": "80円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "「GT」-002(DM25RP3 8/77) 【VR】",
+      "url": "https://torecat.shop/products/gt-002dm25rp3-8-77-vr"
+    },
+    {
       "at": "2026-10-22T21:19:28+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S03.jpg?v=1771161416",
@@ -2278,50 +2344,6 @@
       "url": "https://torecat.shop/products/dm26ex4-008"
     },
     {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-015.jpg?v=1792147428",
-      "kind": "new",
-      "price": "70円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "DREAMの逆転撃（15/99）",
-      "url": "https://torecat.shop/products/dm26ex4-015"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": false,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO006.jpg?v=1792147351",
-      "kind": "new",
-      "price": "720円",
-      "shop": "トレキャット",
-      "stock": "売り切れ",
-      "title": "偽りの羅刹 アガサ・エルキュール（超6/超50）",
-      "url": "https://torecat.shop/products/dm26ex4-cho006"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO049.jpg?v=1792147763",
-      "kind": "new",
-      "price": "30円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "エメラル（超49/超50）",
-      "url": "https://torecat.shop/products/dm26ex4-cho049"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-024.jpg?v=1792147521",
-      "kind": "new",
-      "price": "20円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札混成 インビンシブル・ドラゴン（24/99）",
-      "url": "https://torecat.shop/products/dm26ex4-024"
-    },
-    {
       "at": "2026-10-16T09:46:51+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-002.jpg?v=1786093020",
@@ -2729,10 +2751,10 @@
       "url": "https://torecat.shop/products/dm26ex2-031"
     }
   ],
-  "saved_at": "2026-10-23T07:55:26+09:00",
+  "saved_at": "2026-10-23T15:04:19+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-23T07:55:26+09:00",
+      "checked_at": "2026-10-23T15:04:19+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -2740,7 +2762,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-23T07:55:26+09:00",
+      "checked_at": "2026-10-23T15:04:19+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
