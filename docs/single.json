@@ -2751,18 +2751,18 @@
       "url": "https://torecat.shop/products/dm26ex2-031"
     }
   ],
-  "saved_at": "2026-10-23T17:13:36+09:00",
+  "saved_at": "2026-10-23T17:54:55+09:00",
   "shops": {
     "amenity": {
       "checked_at": "2026-10-23T17:13:36+09:00",
-      "error_count": 0,
+      "error_count": 2,
       "error_notified": false,
-      "last_error": null,
+      "last_error": "ページが開けませんでした（HTTP 503）",
       "name": "アメニティードリーム",
-      "state": "ok"
+      "state": "error"
     },
     "torecat": {
-      "checked_at": "2026-10-23T17:13:36+09:00",
+      "checked_at": "2026-10-23T17:54:55+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
