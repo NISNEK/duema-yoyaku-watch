@@ -40,6 +40,8 @@
   .half .who { font-size: .9rem; font-weight: 700; color: var(--sub); word-break: break-word; }
   .half .clock { font-size: clamp(3rem, 16vw, 4.8rem); font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; }
   .half .tap { font-size: .75rem; color: var(--sub); min-height: 1.2em; }
+  .own { display: flex; gap: 6px; justify-content: center; margin-top: 6px; }
+  .own button { padding: 4px 12px; font-size: .78rem; }
   .half.active { border-color: var(--accent); background: var(--card); box-shadow: 0 0 0 2px var(--accent) inset; }
   .half.active .who { color: var(--accent); }
   .half.warn .clock { color: var(--before); }
@@ -52,6 +54,10 @@
   button.main { background: var(--accent); border-color: var(--accent); color: #fff; min-width: 120px; }
   button:disabled { opacity: .45; cursor: default; }
   .small { padding: 5px 12px; font-size: .82rem; font-weight: 500; }
+  .settime { display: inline-flex; align-items: center; gap: 3px; font-weight: 700; }
+  .settime input { width: 3.4em; border: 1px solid var(--line); background: var(--bg); color: var(--text);
+                   border-radius: 8px; padding: 5px 4px; font-size: 1rem; font-weight: 700; text-align: center; }
+  .settime input:disabled { opacity: .5; }
   .names { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
   .names label { font-size: .78rem; color: var(--sub); }
   .names input { width: 100%; border: 1px solid var(--line); background: var(--bg); color: var(--text);
@@ -94,20 +100,25 @@
       <div class="duo">
         <div class="half" id="h0" role="button" tabindex="0" aria-label="プレイヤー1の時計">
           <div class="who" id="w0">自分</div><div class="clock" id="c0">15:00</div><div class="tap" id="t0"></div>
+          <div class="own"><button class="small" id="go0">スタート</button><button class="small" id="rs0">リセット</button></div>
         </div>
         <div class="half" id="h1" role="button" tabindex="0" aria-label="プレイヤー2の時計">
           <div class="who" id="w1">相手</div><div class="clock" id="c1">15:00</div><div class="tap" id="t1"></div>
+          <div class="own"><button class="small" id="go1">スタート</button><button class="small" id="rs1">リセット</button></div>
         </div>
       </div>
       <div class="state" id="tstate">先に始める人の時計を押すとスタートします</div>
       <div class="btns">
-        <button class="main" id="pause" disabled>一時停止</button>
-        <button id="reset">リセット</button>
+        <button class="main" id="pause" disabled>両方停止</button>
+        <button id="reset">両方リセット</button>
       </div>
       <div class="btns">
-        <span class="hint" style="margin:0">1人の持ち時間：</span>
+        <span class="hint" style="margin:0;flex-basis:100%">1人の持ち時間（スタート前なら好きな時間にできます）</span>
         <button class="small" id="minus">−1分</button>
-        <strong id="each">15分</strong>
+        <span class="settime">
+          <input id="mm" type="number" inputmode="numeric" min="0" max="99" value="15" aria-label="分">分
+          <input id="ss" type="number" inputmode="numeric" min="0" max="59" step="1" value="0" aria-label="秒">秒
+        </span>
         <button class="small" id="plus">＋1分</button>
       </div>
       <div class="hint">名前は下の「先攻・後攻を決める」の欄で入れると、ここにも出ます。自分の番が終わったら、自分の時計を押すと相手の時計が動き出します。残り1分で黄色、0になると音とバイブでお知らせします。</div>
@@ -147,7 +158,6 @@ const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ each, left
 const load = () => { try { return JSON.parse(localStorage.getItem(KEY) || "null"); } catch { return null; } };
 const fmt = (ms) => { const t = Math.max(0, Math.ceil(ms / 1000)); return String(Math.floor(t / 60)).padStart(2, "0") + ":" + String(t % 60).padStart(2, "0"); };
 const now = (i) => left[i] - (i === active && since ? Date.now() - since : 0);
-const eachText = () => Math.floor(each / 60000) + "分" + (each % 60000 ? (each % 60000) / 1000 + "秒" : "");
 
 function render() {
   for (const i of [0, 1]) {
@@ -159,12 +169,18 @@ function render() {
     h.classList.toggle("warn", ms > 0 && ms <= 60000);
     h.classList.toggle("over", over === i);
     $("t" + i).textContent = over === i ? "時間切れ" : i === active && since ? "番が終わったら押す" : i === active ? "一時停止中" : "";
+    const mine = i === active && since;
+    $("go" + i).textContent = mine ? "停止" : i === active ? "再開" : "スタート";
+    $("go" + i).disabled = over !== null || ms <= 0;
+    $("rs" + i).disabled = left[i] === each && i !== active && over !== i;
   }
   const running = active !== null && since !== null;
   $("pause").disabled = active === null || over !== null;
-  $("pause").textContent = running || active === null || over !== null ? "一時停止" : "再開";
-  $("minus").disabled = $("plus").disabled = active !== null || over !== null;
-  $("each").textContent = eachText();
+  $("pause").textContent = running || active === null || over !== null ? "両方停止" : "再開";
+  $("minus").disabled = $("plus").disabled = $("mm").disabled = $("ss").disabled = active !== null || over !== null;
+  if (document.activeElement !== $("mm") && document.activeElement !== $("ss")) {
+    $("mm").value = Math.floor(each / 60000); $("ss").value = Math.round((each % 60000) / 1000);
+  }
   $("tstate").textContent = over !== null ? who(over) + " の時間切れです" : active === null ? "先に始める人の時計を押すとスタートします"
     : running ? who(active) + " の番" : "一時停止中（再開を押すと続きから）";
   document.title = running ? fmt(now(active)) + " | 対戦タイマー" : "デュエマ予約確認";
@@ -177,6 +193,26 @@ function tap(i) {
   else if (i === active && since) {                                           // 自分の番が終わった → 相手へ
     left[i] = now(i); active = 1 - i; since = Date.now();
   } else return;
+  save(); render();
+}
+// それぞれのタイマーのボタン：動いていれば停止、止まっていればその人の時計を動かす（もう一方が動いていれば止める）
+function own(i) {
+  if (over !== null || now(i) <= 0) return;
+  if (i === active && since) { left[i] = now(i); since = null; clearInterval(ticker); ticker = null; releaseWake(); }
+  else {
+    if (active !== null && since) left[active] = now(active);
+    active = i; since = Date.now(); run();
+  }
+  save(); render();
+}
+// それぞれのタイマーのリセット：その人だけ最初の持ち時間に戻す（動いていたら止める）
+function ownReset(i) {
+  if (i === active) {
+    if (since) { clearInterval(ticker); ticker = null; releaseWake(); }
+    active = null; since = null;
+  }
+  left[i] = each;
+  if (over === i) over = null;
   save(); render();
 }
 function timeUp(i) {
@@ -204,6 +240,9 @@ function releaseWake() { try { wake && wake.release(); } catch {} wake = null; }
 
 for (const i of [0, 1]) {
   $("h" + i).addEventListener("click", () => tap(i));
+  // ボタンを押した時は、時計を押した（番の交代）ことにはしない
+  $("go" + i).addEventListener("click", (e) => { e.stopPropagation(); own(i); });
+  $("rs" + i).addEventListener("click", (e) => { e.stopPropagation(); ownReset(i); });
   $("h" + i).addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); tap(i); } });
 }
 $("pause").addEventListener("click", () => {
@@ -217,10 +256,20 @@ $("reset").addEventListener("click", () => {
   clearInterval(ticker); ticker = null; releaseWake();
   save(); render();
 });
-function adjust(min) {
-  each = Math.min(60 * 60000, Math.max(60000, each + min * 60000));
+// 持ち時間は好きな長さにできる（10秒〜99分59秒）。始める前だけ変えられる
+function setEach(ms) {
+  each = Math.min((99 * 60 + 59) * 1000, Math.max(10000, Math.round(ms / 1000) * 1000));
   left = [each, each]; save(); render();
 }
+function adjust(min) { setEach(each + min * 60000); }
+function typed() {
+  const m = Math.max(0, parseInt($("mm").value, 10) || 0), sec = Math.min(59, Math.max(0, parseInt($("ss").value, 10) || 0));
+  setEach((m * 60 + sec) * 1000);
+}
+["mm", "ss"].forEach((id) => {
+  $(id).addEventListener("change", () => { typed(); $(id).blur(); render(); });
+  $(id).addEventListener("keydown", (e) => { if (e.key === "Enter") $(id).blur(); });
+});
 $("minus").addEventListener("click", () => adjust(-1));
 $("plus").addEventListener("click", () => adjust(1));
 document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && since) keepAwake(); });
