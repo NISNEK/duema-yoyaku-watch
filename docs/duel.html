@@ -33,11 +33,19 @@
   @media (min-width: 760px) { .grid { grid-template-columns: 1fr 1fr; } }
   .panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
   .panel h2 { font-size: 1rem; margin: 0 0 8px; }
-  .clock { font-size: clamp(3.5rem, 18vw, 5.5rem); font-weight: 800; text-align: center; line-height: 1.1;
-           font-variant-numeric: tabular-nums; letter-spacing: .02em; margin: 8px 0; }
-  .clock.warn { color: var(--before); }
-  .clock.over { color: var(--error); }
-  .state { text-align: center; color: var(--sub); font-size: .85rem; min-height: 1.4em; }
+  /* 2人の持ち時間（対局時計）。PC・スマホとも上下に2つ並べる（どちらも同じ向き） */
+  .duo { display: grid; gap: 8px; }
+  .half { border: 2px solid var(--line); border-radius: 12px; background: var(--bg); padding: 14px 10px; text-align: center;
+          cursor: pointer; user-select: none; -webkit-user-select: none; touch-action: manipulation; }
+  .half .who { font-size: .9rem; font-weight: 700; color: var(--sub); word-break: break-word; }
+  .half .clock { font-size: clamp(3rem, 16vw, 4.8rem); font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .half .tap { font-size: .75rem; color: var(--sub); min-height: 1.2em; }
+  .half.active { border-color: var(--accent); background: var(--card); box-shadow: 0 0 0 2px var(--accent) inset; }
+  .half.active .who { color: var(--accent); }
+  .half.warn .clock { color: var(--before); }
+  .half.over { border-color: var(--error); }
+  .half.over .clock { color: var(--error); }
+  .state { text-align: center; color: var(--sub); font-size: .85rem; min-height: 1.4em; margin-top: 8px; }
   .btns { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 10px; }
   button { border: 1px solid var(--line); background: var(--card); color: var(--text); border-radius: 999px;
            padding: 8px 18px; font-size: .95rem; cursor: pointer; font-weight: 600; }
@@ -80,20 +88,29 @@
   </nav>
 
   <div class="grid">
-    <!-- 15分タイマー -->
+    <!-- 対戦タイマー（2人の持ち時間） -->
     <section class="panel" aria-labelledby="t-title">
-      <h2 id="t-title">対戦タイマー</h2>
-      <div class="clock" id="clock" role="timer" aria-live="off">15:00</div>
-      <div class="state" id="tstate">スタートを押すと始まります</div>
+      <h2 id="t-title">対戦タイマー（持ち時間）</h2>
+      <div class="duo">
+        <div class="half" id="h0" role="button" tabindex="0" aria-label="プレイヤー1の時計">
+          <div class="who" id="w0">自分</div><div class="clock" id="c0">07:30</div><div class="tap" id="t0"></div>
+        </div>
+        <div class="half" id="h1" role="button" tabindex="0" aria-label="プレイヤー2の時計">
+          <div class="who" id="w1">相手</div><div class="clock" id="c1">07:30</div><div class="tap" id="t1"></div>
+        </div>
+      </div>
+      <div class="state" id="tstate">先に始める人の時計を押すとスタートします</div>
       <div class="btns">
-        <button class="main" id="start">スタート</button>
+        <button class="main" id="pause" disabled>一時停止</button>
         <button id="reset">リセット</button>
       </div>
       <div class="btns">
+        <span class="hint" style="margin:0">1人の持ち時間：</span>
         <button class="small" id="minus">−1分</button>
+        <strong id="each">7分30秒</strong>
         <button class="small" id="plus">＋1分</button>
       </div>
-      <div class="hint">残り1分で色が変わり、0になると音とバイブでお知らせします。動いている間は画面が消えにくくなります。</div>
+      <div class="hint">自分の番が終わったら、自分の時計を押すと相手の時計が動き出します。残り1分で黄色、0になると音とバイブでお知らせします。</div>
     </section>
 
     <!-- 先攻・後攻 -->
@@ -112,41 +129,62 @@
     </section>
   </div>
 
-  <footer>このページはお店にアクセスしません。タイマーと先攻・後攻の結果は、この端末の中だけで動きます。</footer>
+  <footer>このページはお店にアクセスしません。タイマーと先攻・後攻の結果は、この端末の中だけで動きます。名前は先攻・後攻の欄で入れると、タイマーにも表示されます。</footer>
 </main>
 
 <script>
-// ---------- 対戦タイマー（終わる時刻を覚えておくので、画面を閉じたり再読み込みしてもずれない） ----------
-const FULL = 15 * 60 * 1000;
-const KEY = "duelTimer";
+// ---------- 対戦タイマー（2人の持ち時間。動いている側は「動き始めた時刻」を覚えるので、閉じたり再読み込みしてもずれない） ----------
+const KEY = "duelClock";
 const $ = (id) => document.getElementById(id);
-let total = FULL;          // 設定した長さ
-let endAt = null;          // 動いている時：終わる時刻
-let left = FULL;           // 止まっている時：残り時間
-let ticker = null, wake = null, rang = false;
+const DEFAULT = 7.5 * 60 * 1000;
+let each = DEFAULT;            // 1人の持ち時間
+let left = [DEFAULT, DEFAULT]; // 0＝自分（下）、1＝相手（上）の残り
+let active = null;             // いま動いている（考えている）人
+let since = null;              // active の時計が動き始めた時刻（一時停止中は null）
+let over = null, ticker = null, wake = null;
 
-const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ total, endAt, left, rang })); } catch {} };
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ each, left, active, since, over })); } catch {} };
 const load = () => { try { return JSON.parse(localStorage.getItem(KEY) || "null"); } catch { return null; } };
-
-function fmt(ms) {
-  const s = Math.max(0, Math.ceil(ms / 1000));
-  return String(Math.floor(s / 60)).padStart(2, "0") + ":" + String(s % 60).padStart(2, "0");
-}
-function remaining() { return endAt ? endAt - Date.now() : left; }
+const fmt = (ms) => { const t = Math.max(0, Math.ceil(ms / 1000)); return String(Math.floor(t / 60)).padStart(2, "0") + ":" + String(t % 60).padStart(2, "0"); };
+const now = (i) => left[i] - (i === active && since ? Date.now() - since : 0);
+const eachText = () => Math.floor(each / 60000) + "分" + (each % 60000 ? (each % 60000) / 1000 + "秒" : "");
 
 function render() {
-  const ms = remaining();
-  const clock = $("clock");
-  clock.textContent = fmt(ms);
-  clock.classList.toggle("warn", ms > 0 && ms <= 60000);
-  clock.classList.toggle("over", ms <= 0);
-  $("start").textContent = endAt ? "一時停止" : (left < total && left > 0 ? "再開" : "スタート");
-  $("start").disabled = ms <= 0;
-  $("minus").disabled = $("plus").disabled = !!endAt;
-  $("tstate").textContent = ms <= 0 ? "時間です！" : endAt ? "計測中" : left < total ? "一時停止中" : "スタートを押すと始まります";
-  document.title = (endAt || ms <= 0) ? fmt(ms) + " | 対戦タイマー" : "デュエマ予約確認";
-  if (ms <= 0 && endAt) finish();
+  for (const i of [0, 1]) {
+    const ms = now(i);
+    if (ms <= 0 && i === active && since && over === null) return timeUp(i);
+    $("c" + i).textContent = fmt(ms);
+    const h = $("h" + i);
+    h.classList.toggle("active", i === active && over === null);
+    h.classList.toggle("warn", ms > 0 && ms <= 60000);
+    h.classList.toggle("over", over === i);
+    $("t" + i).textContent = over === i ? "時間切れ" : i === active && since ? "番が終わったら押す" : i === active ? "一時停止中" : "";
+  }
+  const running = active !== null && since !== null;
+  $("pause").disabled = active === null || over !== null;
+  $("pause").textContent = running || active === null || over !== null ? "一時停止" : "再開";
+  $("minus").disabled = $("plus").disabled = active !== null || over !== null;
+  $("each").textContent = eachText();
+  $("tstate").textContent = over !== null ? who(over) + " の時間切れです" : active === null ? "先に始める人の時計を押すとスタートします"
+    : running ? who(active) + " の番" : "一時停止中（再開を押すと続きから）";
+  document.title = running ? fmt(now(active)) + " | 対戦タイマー" : "デュエマ予約確認";
 }
+const who = (i) => $("w" + i).textContent;
+
+function tap(i) {
+  if (over !== null) return;
+  if (active === null) { active = i; since = Date.now(); run(); }              // 最初：押した人から始める
+  else if (i === active && since) {                                           // 自分の番が終わった → 相手へ
+    left[i] = now(i); active = 1 - i; since = Date.now();
+  } else return;
+  save(); render();
+}
+function timeUp(i) {
+  left[i] = 0; over = i; since = null;
+  clearInterval(ticker); ticker = null; releaseWake();
+  beep(); save(); render();
+}
+function run() { clearInterval(ticker); ticker = setInterval(render, 200); keepAwake(); }
 
 function beep() {
   try {
@@ -161,52 +199,38 @@ function beep() {
   } catch {}
   try { navigator.vibrate && navigator.vibrate([300, 150, 300, 150, 300]); } catch {}
 }
-
-function finish() {
-  endAt = null; left = 0;
-  clearInterval(ticker); ticker = null;
-  releaseWake();
-  if (!rang) { rang = true; beep(); }
-  save(); render();
-}
-
-async function keepAwake() {
-  try { if ("wakeLock" in navigator) wake = await navigator.wakeLock.request("screen"); } catch {}
-}
+async function keepAwake() { try { if ("wakeLock" in navigator) wake = await navigator.wakeLock.request("screen"); } catch {} }
 function releaseWake() { try { wake && wake.release(); } catch {} wake = null; }
 
-function run() {
-  clearInterval(ticker);
-  ticker = setInterval(render, 250);
-  keepAwake();
+for (const i of [0, 1]) {
+  $("h" + i).addEventListener("click", () => tap(i));
+  $("h" + i).addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); tap(i); } });
 }
-
-$("start").addEventListener("click", () => {
-  if (endAt) { left = endAt - Date.now(); endAt = null; clearInterval(ticker); ticker = null; releaseWake(); }
-  else { endAt = Date.now() + left; rang = false; run(); }
+$("pause").addEventListener("click", () => {
+  if (active === null || over !== null) return;
+  if (since) { left[active] = now(active); since = null; clearInterval(ticker); ticker = null; releaseWake(); }
+  else { since = Date.now(); run(); }
   save(); render();
 });
 $("reset").addEventListener("click", () => {
-  endAt = null; left = total; rang = false;
+  left = [each, each]; active = null; since = null; over = null;
   clearInterval(ticker); ticker = null; releaseWake();
   save(); render();
 });
 function adjust(min) {
-  total = Math.min(60, Math.max(1, Math.round(total / 60000) + min)) * 60000;
-  left = total; rang = false; save(); render();
+  each = Math.min(60 * 60000, Math.max(60000, each + min * 60000));
+  left = [each, each]; save(); render();
 }
 $("minus").addEventListener("click", () => adjust(-1));
 $("plus").addEventListener("click", () => adjust(1));
-// 画面に戻ってきた時は、画面が消えないお願いをもう一度する
-document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && endAt) keepAwake(); });
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && since) keepAwake(); });
 
+try { localStorage.removeItem("duelTimer"); } catch {}   // 前の1人用タイマーの記録は使わない
 const saved = load();
-if (saved) {
-  total = saved.total || FULL; endAt = saved.endAt || null; rang = !!saved.rang;
-  left = typeof saved.left === "number" ? saved.left : total;
-  if (endAt) run();
+if (saved && Array.isArray(saved.left)) {
+  each = saved.each || DEFAULT; left = saved.left; active = saved.active ?? null; since = saved.since || null; over = saved.over ?? null;
+  if (since) run();
 }
-render();
 
 // ---------- 先攻・後攻（端末の安全な乱数で 1/2 の抽選） ----------
 const NAMES = "duelNames";
@@ -214,6 +238,8 @@ try { const n = JSON.parse(localStorage.getItem(NAMES) || "{}"); $("p1").value =
 function names() {
   const a = $("p1").value.trim() || "自分", b = $("p2").value.trim() || "相手";
   $("n1").textContent = a; $("n2").textContent = b;
+  $("w0").textContent = a; $("w1").textContent = b;
+  render();
   try { localStorage.setItem(NAMES, JSON.stringify({ p1: $("p1").value, p2: $("p2").value })); } catch {}
 }
 ["p1", "p2"].forEach((id) => $(id).addEventListener("input", names));
