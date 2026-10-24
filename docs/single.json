@@ -175,12 +175,23 @@
       "stock": "在庫あり",
       "title": "切札混成 レッヴォゾーン（5/99）",
       "url": "https://torecat.shop/products/dm26ex4-005"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-054.jpg?v=1786093333",
+      "kind": "new",
+      "price": "320円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】帝王坂∞＜…………！＞（54/100）",
+      "url": "https://torecat.shop/products/状態b-帝王坂-54-100"
     }
   ],
-  "saved_at": "2026-10-24T08:47:18+09:00",
+  "saved_at": "2026-10-24T11:15:07+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-24T08:47:18+09:00",
+      "checked_at": "2026-10-24T11:15:07+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -188,7 +199,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-24T08:47:18+09:00",
+      "checked_at": "2026-10-24T11:15:07+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
