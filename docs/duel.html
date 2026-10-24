@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>デュエマ予約確認</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1d2127; --sub: #5f6b7a; --line: #e2e6eb;
+    --open: #0f8a4a; --error: #c62828; --before: #b26b00; --accent: #1f6feb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111418; --card: #1a1f25; --text: #e7eaee; --sub: #9aa5b1; --line: #2b323b;
+      --open: #4ad08a; --error: #ff7b7b; --before: #f0b44c; --accent: #58a6ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; line-height: 1.5; }
+  main { max-width: 960px; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 1.4rem; margin: 8px 0 4px; }
+  .about { color: var(--sub); font-size: .85rem; margin: 0 0 8px; line-height: 1.6; }
+  .news { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; margin: 0 0 8px; font-size: .85rem; }
+  .news b { font-size: .8rem; }
+  .news ul { margin: 4px 0 0; padding-left: 1.2em; }
+  .tabs { display: flex; gap: 4px; border-bottom: 2px solid var(--line); margin: 8px 0 12px; }
+  .tabs a { padding: 8px 18px; color: var(--sub); text-decoration: none; font-weight: 600;
+            border-bottom: 3px solid transparent; margin-bottom: -2px; }
+  .tabs a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
+  .grid { display: grid; gap: 12px; }
+  @media (min-width: 760px) { .grid { grid-template-columns: 1fr 1fr; } }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+  .panel h2 { font-size: 1rem; margin: 0 0 8px; }
+  .clock { font-size: clamp(3.5rem, 18vw, 5.5rem); font-weight: 800; text-align: center; line-height: 1.1;
+           font-variant-numeric: tabular-nums; letter-spacing: .02em; margin: 8px 0; }
+  .clock.warn { color: var(--before); }
+  .clock.over { color: var(--error); }
+  .state { text-align: center; color: var(--sub); font-size: .85rem; min-height: 1.4em; }
+  .btns { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 10px; }
+  button { border: 1px solid var(--line); background: var(--card); color: var(--text); border-radius: 999px;
+           padding: 8px 18px; font-size: .95rem; cursor: pointer; font-weight: 600; }
+  button.main { background: var(--accent); border-color: var(--accent); color: #fff; min-width: 120px; }
+  button:disabled { opacity: .45; cursor: default; }
+  .small { padding: 5px 12px; font-size: .82rem; font-weight: 500; }
+  .names { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .names label { font-size: .78rem; color: var(--sub); }
+  .names input { width: 100%; border: 1px solid var(--line); background: var(--bg); color: var(--text);
+                 border-radius: 8px; padding: 8px 10px; font-size: 1rem; }
+  .result { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+  .side { border: 1px solid var(--line); border-radius: 10px; padding: 12px 8px; text-align: center; background: var(--bg); }
+  .side .who { font-size: .9rem; font-weight: 700; word-break: break-word; }
+  .side .turn { font-size: 1.8rem; font-weight: 800; }
+  .side.first { border-color: var(--open); }
+  .side.first .turn { color: var(--open); }
+  .side.second .turn { color: var(--accent); }
+  .rolling .turn { opacity: .5; }
+  .hint { color: var(--sub); font-size: .75rem; margin-top: 8px; text-align: center; }
+  footer { color: var(--sub); font-size: .78rem; margin: 24px 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>デュエマ予約確認</h1>
+  <p class="about">デュエル・マスターズの新弾の予約開始、シングルカードの入荷、シングルの相場（値段の動き）をまとめて確認できる個人運営のサイトです。お店のページを定期的に見回って、自動で更新しています。</p>
+  <!-- お知らせ：ページで同じ内容。オーナーの指示があった時だけ書き足す -->
+  <div class="news">
+    <b>お知らせ</b>
+    <ul>
+      <li>10/18 相場機能を追加しました</li>
+      <li>10/18 新弾（DM26-EX4）を追加しました</li>
+    </ul>
+  </div>
+  <nav class="tabs" aria-label="ページの切り替え">
+    <a href="index.html">予約</a>
+    <a href="single.html">シングル</a>
+    <a href="chart.html">相場</a>
+    <a href="duel.html" aria-current="page">対戦</a>
+  </nav>
+
+  <div class="grid">
+    <!-- 15分タイマー -->
+    <section class="panel" aria-labelledby="t-title">
+      <h2 id="t-title">対戦タイマー</h2>
+      <div class="clock" id="clock" role="timer" aria-live="off">15:00</div>
+      <div class="state" id="tstate">スタートを押すと始まります</div>
+      <div class="btns">
+        <button class="main" id="start">スタート</button>
+        <button id="reset">リセット</button>
+      </div>
+      <div class="btns">
+        <button class="small" id="minus">−1分</button>
+        <button class="small" id="plus">＋1分</button>
+      </div>
+      <div class="hint">残り1分で色が変わり、0になると音とバイブでお知らせします。動いている間は画面が消えにくくなります。</div>
+    </section>
+
+    <!-- 先攻・後攻 -->
+    <section class="panel" aria-labelledby="c-title">
+      <h2 id="c-title">先攻・後攻を決める</h2>
+      <div class="names">
+        <div><label for="p1">プレイヤー1</label><input id="p1" placeholder="自分" maxlength="20"></div>
+        <div><label for="p2">プレイヤー2</label><input id="p2" placeholder="相手" maxlength="20"></div>
+      </div>
+      <div class="btns"><button class="main" id="decide">決める</button></div>
+      <div class="result" id="result" aria-live="polite">
+        <div class="side" id="s1"><div class="who" id="n1">自分</div><div class="turn" id="r1">？</div></div>
+        <div class="side" id="s2"><div class="who" id="n2">相手</div><div class="turn" id="r2">？</div></div>
+      </div>
+      <div class="hint">ボタンを押すと、コンピューターが公平に（2分の1で）決めます。</div>
+    </section>
+  </div>
+
+  <footer>このページはお店にアクセスしません。タイマーと先攻・後攻の結果は、この端末の中だけで動きます。</footer>
+</main>
+
+<script>
+// ---------- 対戦タイマー（終わる時刻を覚えておくので、画面を閉じたり再読み込みしてもずれない） ----------
+const FULL = 15 * 60 * 1000;
+const KEY = "duelTimer";
+const $ = (id) => document.getElementById(id);
+let total = FULL;          // 設定した長さ
+let endAt = null;          // 動いている時：終わる時刻
+let left = FULL;           // 止まっている時：残り時間
+let ticker = null, wake = null, rang = false;
+
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ total, endAt, left, rang })); } catch {} };
+const load = () => { try { return JSON.parse(localStorage.getItem(KEY) || "null"); } catch { return null; } };
+
+function fmt(ms) {
+  const s = Math.max(0, Math.ceil(ms / 1000));
+  return String(Math.floor(s / 60)).padStart(2, "0") + ":" + String(s % 60).padStart(2, "0");
+}
+function remaining() { return endAt ? endAt - Date.now() : left; }
+
+function render() {
+  const ms = remaining();
+  const clock = $("clock");
+  clock.textContent = fmt(ms);
+  clock.classList.toggle("warn", ms > 0 && ms <= 60000);
+  clock.classList.toggle("over", ms <= 0);
+  $("start").textContent = endAt ? "一時停止" : (left < total && left > 0 ? "再開" : "スタート");
+  $("start").disabled = ms <= 0;
+  $("minus").disabled = $("plus").disabled = !!endAt;
+  $("tstate").textContent = ms <= 0 ? "時間です！" : endAt ? "計測中" : left < total ? "一時停止中" : "スタートを押すと始まります";
+  document.title = (endAt || ms <= 0) ? fmt(ms) + " | 対戦タイマー" : "デュエマ予約確認";
+  if (ms <= 0 && endAt) finish();
+}
+
+function beep() {
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    [0, 0.45, 0.9].forEach((t) => {
+      const o = ctx.createOscillator(), g = ctx.createGain();
+      o.frequency.value = 880; o.connect(g); g.connect(ctx.destination);
+      g.gain.setValueAtTime(0.25, ctx.currentTime + t);
+      g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + t + 0.35);
+      o.start(ctx.currentTime + t); o.stop(ctx.currentTime + t + 0.36);
+    });
+  } catch {}
+  try { navigator.vibrate && navigator.vibrate([300, 150, 300, 150, 300]); } catch {}
+}
+
+function finish() {
+  endAt = null; left = 0;
+  clearInterval(ticker); ticker = null;
+  releaseWake();
+  if (!rang) { rang = true; beep(); }
+  save(); render();
+}
+
+async function keepAwake() {
+  try { if ("wakeLock" in navigator) wake = await navigator.wakeLock.request("screen"); } catch {}
+}
+function releaseWake() { try { wake && wake.release(); } catch {} wake = null; }
+
+function run() {
+  clearInterval(ticker);
+  ticker = setInterval(render, 250);
+  keepAwake();
+}
+
+$("start").addEventListener("click", () => {
+  if (endAt) { left = endAt - Date.now(); endAt = null; clearInterval(ticker); ticker = null; releaseWake(); }
+  else { endAt = Date.now() + left; rang = false; run(); }
+  save(); render();
+});
+$("reset").addEventListener("click", () => {
+  endAt = null; left = total; rang = false;
+  clearInterval(ticker); ticker = null; releaseWake();
+  save(); render();
+});
+function adjust(min) {
+  total = Math.min(60, Math.max(1, Math.round(total / 60000) + min)) * 60000;
+  left = total; rang = false; save(); render();
+}
+$("minus").addEventListener("click", () => adjust(-1));
+$("plus").addEventListener("click", () => adjust(1));
+// 画面に戻ってきた時は、画面が消えないお願いをもう一度する
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && endAt) keepAwake(); });
+
+const saved = load();
+if (saved) {
+  total = saved.total || FULL; endAt = saved.endAt || null; rang = !!saved.rang;
+  left = typeof saved.left === "number" ? saved.left : total;
+  if (endAt) run();
+}
+render();
+
+// ---------- 先攻・後攻（端末の安全な乱数で 1/2 の抽選） ----------
+const NAMES = "duelNames";
+try { const n = JSON.parse(localStorage.getItem(NAMES) || "{}"); $("p1").value = n.p1 || ""; $("p2").value = n.p2 || ""; } catch {}
+function names() {
+  const a = $("p1").value.trim() || "自分", b = $("p2").value.trim() || "相手";
+  $("n1").textContent = a; $("n2").textContent = b;
+  try { localStorage.setItem(NAMES, JSON.stringify({ p1: $("p1").value, p2: $("p2").value })); } catch {}
+}
+["p1", "p2"].forEach((id) => $(id).addEventListener("input", names));
+names();
+
+function coin() {
+  const a = new Uint32Array(1);
+  crypto.getRandomValues(a);
+  return a[0] % 2 === 0;
+}
+$("decide").addEventListener("click", () => {
+  names();
+  const btn = $("decide"), res = $("result");
+  btn.disabled = true;
+  res.classList.add("rolling");
+  let n = 0;
+  const spin = setInterval(() => {
+    const f = n++ % 2 === 0;
+    show(f, false);
+    if (n > 10) {
+      clearInterval(spin);
+      res.classList.remove("rolling");
+      show(coin(), true);
+      btn.disabled = false;
+      btn.textContent = "もう一度決める";
+    }
+  }, 90);
+});
+function show(p1First, final) {
+  $("r1").textContent = p1First ? "先攻" : "後攻";
+  $("r2").textContent = p1First ? "後攻" : "先攻";
+  $("s1").className = "side " + (final ? (p1First ? "first" : "second") : "");
+  $("s2").className = "side " + (final ? (p1First ? "second" : "first") : "");
+}
+</script>
+<script src="news.js"></script>
+</body>
+</html>
