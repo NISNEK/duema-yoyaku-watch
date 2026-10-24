@@ -178,12 +178,12 @@
     },
     {
       "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-054.jpg?v=1786093333",
       "kind": "new",
       "price": "320円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "【状態B】帝王坂∞＜…………！＞（54/100）",
       "url": "https://torecat.shop/products/状態b-帝王坂-54-100"
     },
@@ -199,10 +199,10 @@
       "url": "https://torecat.shop/products/状態b-深淵の逆転撃-32-100"
     }
   ],
-  "saved_at": "2026-10-24T13:30:47+09:00",
+  "saved_at": "2026-10-24T16:25:10+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-24T13:30:47+09:00",
+      "checked_at": "2026-10-24T16:25:10+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -210,7 +210,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-24T13:30:47+09:00",
+      "checked_at": "2026-10-24T16:25:10+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
