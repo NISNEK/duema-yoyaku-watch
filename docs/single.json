@@ -35,17 +35,6 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC007.jpg?v=1792148013",
-      "kind": "new",
-      "price": "3,380円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札混成 光隼 蒼斬丸（㊙7/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec007"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-010.jpg?v=1792147382",
       "kind": "new",
@@ -210,10 +199,10 @@
       "url": "https://torecat.shop/products/状態b-深淵の逆転撃-32-100"
     }
   ],
-  "saved_at": "2026-10-24T22:21:49+09:00",
+  "saved_at": "2026-10-24T22:53:20+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-24T22:21:49+09:00",
+      "checked_at": "2026-10-24T22:53:20+09:00",
       "error_count": 1,
       "error_notified": false,
       "last_error": "ページが開けませんでした（HTTP 503）",
@@ -221,7 +210,7 @@
       "state": "error"
     },
     "torecat": {
-      "checked_at": "2026-10-24T22:21:49+09:00",
+      "checked_at": "2026-10-24T22:53:20+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
