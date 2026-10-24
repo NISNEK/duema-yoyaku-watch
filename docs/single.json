@@ -197,12 +197,23 @@
       "stock": "売り切れ",
       "title": "【状態B】深淵の逆転撃（32/100）",
       "url": "https://torecat.shop/products/状態b-深淵の逆転撃-32-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-016.jpg?v=1784286681",
+      "kind": "new",
+      "price": "680円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】鬼黒皇グレイテスト・ジャオウガ（16/89）",
+      "url": "https://torecat.shop/products/dm26ex2-016"
     }
   ],
-  "saved_at": "2026-10-24T22:53:20+09:00",
+  "saved_at": "2026-10-24T23:19:19+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-24T22:53:20+09:00",
+      "checked_at": "2026-10-24T23:19:19+09:00",
       "error_count": 1,
       "error_notified": false,
       "last_error": "ページが開けませんでした（HTTP 503）",
@@ -210,7 +221,7 @@
       "state": "error"
     },
     "torecat": {
-      "checked_at": "2026-10-24T22:53:20+09:00",
+      "checked_at": "2026-10-24T23:19:19+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
