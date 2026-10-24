@@ -93,10 +93,10 @@
       <h2 id="t-title">対戦タイマー（持ち時間）</h2>
       <div class="duo">
         <div class="half" id="h0" role="button" tabindex="0" aria-label="プレイヤー1の時計">
-          <div class="who" id="w0">自分</div><div class="clock" id="c0">07:30</div><div class="tap" id="t0"></div>
+          <div class="who" id="w0">自分</div><div class="clock" id="c0">15:00</div><div class="tap" id="t0"></div>
         </div>
         <div class="half" id="h1" role="button" tabindex="0" aria-label="プレイヤー2の時計">
-          <div class="who" id="w1">相手</div><div class="clock" id="c1">07:30</div><div class="tap" id="t1"></div>
+          <div class="who" id="w1">相手</div><div class="clock" id="c1">15:00</div><div class="tap" id="t1"></div>
         </div>
       </div>
       <div class="state" id="tstate">先に始める人の時計を押すとスタートします</div>
@@ -107,10 +107,10 @@
       <div class="btns">
         <span class="hint" style="margin:0">1人の持ち時間：</span>
         <button class="small" id="minus">−1分</button>
-        <strong id="each">7分30秒</strong>
+        <strong id="each">15分</strong>
         <button class="small" id="plus">＋1分</button>
       </div>
-      <div class="hint">自分の番が終わったら、自分の時計を押すと相手の時計が動き出します。残り1分で黄色、0になると音とバイブでお知らせします。</div>
+      <div class="hint">名前は下の「先攻・後攻を決める」の欄で入れると、ここにも出ます。自分の番が終わったら、自分の時計を押すと相手の時計が動き出します。残り1分で黄色、0になると音とバイブでお知らせします。</div>
     </section>
 
     <!-- 先攻・後攻 -->
@@ -134,9 +134,9 @@
 
 <script>
 // ---------- 対戦タイマー（2人の持ち時間。動いている側は「動き始めた時刻」を覚えるので、閉じたり再読み込みしてもずれない） ----------
-const KEY = "duelClock";
+const KEY = "duelClock15";   // 持ち時間を15分に変えたので、前の記録（7分30秒）は使わない
 const $ = (id) => document.getElementById(id);
-const DEFAULT = 7.5 * 60 * 1000;
+const DEFAULT = 15 * 60 * 1000;   // 1人15分
 let each = DEFAULT;            // 1人の持ち時間
 let left = [DEFAULT, DEFAULT]; // 0＝自分（下）、1＝相手（上）の残り
 let active = null;             // いま動いている（考えている）人
@@ -225,7 +225,7 @@ $("minus").addEventListener("click", () => adjust(-1));
 $("plus").addEventListener("click", () => adjust(1));
 document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && since) keepAwake(); });
 
-try { localStorage.removeItem("duelTimer"); } catch {}   // 前の1人用タイマーの記録は使わない
+try { localStorage.removeItem("duelTimer"); localStorage.removeItem("duelClock"); } catch {}   // 前の1人用タイマーの記録は使わない
 const saved = load();
 if (saved && Array.isArray(saved.left)) {
   each = saved.each || DEFAULT; left = saved.left; active = saved.active ?? null; since = saved.since || null; over = saved.over ?? null;
@@ -235,10 +235,13 @@ if (saved && Array.isArray(saved.left)) {
 // ---------- 先攻・後攻（端末の安全な乱数で 1/2 の抽選） ----------
 const NAMES = "duelNames";
 try { const n = JSON.parse(localStorage.getItem(NAMES) || "{}"); $("p1").value = n.p1 || ""; $("p2").value = n.p2 || ""; } catch {}
+let firstIs = null;   // 先攻・後攻を決めた後：先攻の人（0＝プレイヤー1、1＝プレイヤー2）
 function names() {
   const a = $("p1").value.trim() || "自分", b = $("p2").value.trim() || "相手";
   $("n1").textContent = a; $("n2").textContent = b;
-  $("w0").textContent = a; $("w1").textContent = b;
+  // タイマーにも同じ名前を出す。先攻・後攻を決めた後は「（先攻）」「（後攻）」も付ける
+  const tag = (i) => firstIs === null ? "" : (firstIs === i ? "（先攻）" : "（後攻）");
+  $("w0").textContent = a + tag(0); $("w1").textContent = b + tag(1);
   render();
   try { localStorage.setItem(NAMES, JSON.stringify({ p1: $("p1").value, p2: $("p2").value })); } catch {}
 }
@@ -262,7 +265,10 @@ $("decide").addEventListener("click", () => {
     if (n > 10) {
       clearInterval(spin);
       res.classList.remove("rolling");
-      show(coin(), true);
+      const p1First = coin();
+      show(p1First, true);
+      firstIs = p1First ? 0 : 1;
+      names();
       btn.disabled = false;
       btn.textContent = "もう一度決める";
     }
