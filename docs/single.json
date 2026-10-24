@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/promoy24-081a.jpg?v=1790254043",
+      "kind": "new",
+      "price": "50円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "配球の超人 / 記録的剛球　P81/Y24 DMPROMOY24",
+      "url": "https://torecat.shop/products/duelmasters-promoy24-081"
+    },
+    {
       "at": "2026-10-17T00:28:35+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-017.jpg?v=1792147449",
@@ -199,18 +210,18 @@
       "url": "https://torecat.shop/products/状態b-深淵の逆転撃-32-100"
     }
   ],
-  "saved_at": "2026-10-24T21:48:10+09:00",
+  "saved_at": "2026-10-24T22:21:49+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-24T17:32:16+09:00",
-      "error_count": 17,
-      "error_notified": true,
+      "checked_at": "2026-10-24T22:21:49+09:00",
+      "error_count": 1,
+      "error_notified": false,
       "last_error": "ページが開けませんでした（HTTP 503）",
       "name": "アメニティードリーム",
       "state": "error"
     },
     "torecat": {
-      "checked_at": "2026-10-24T21:48:10+09:00",
+      "checked_at": "2026-10-24T22:21:49+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
