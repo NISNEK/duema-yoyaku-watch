@@ -1,17 +1,6 @@
 {
   "items": [
     {
-      "at": "2026-10-25T10:21:24+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm22rp1-SP4.jpg?v=1790249318",
-      "kind": "new",
-      "price": "13,200円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "死神術士デスマーチ　SP4/SP5 DM22RP1",
-      "url": "https://torecat.shop/products/duelmasters-dm22rp1-sp4"
-    },
-    {
       "at": "2026-10-22T21:19:28+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/promoy24-081a.jpg?v=1790254043",
@@ -89,6 +78,17 @@
       "url": "https://torecat.shop/products/dm26ex4-005"
     },
     {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-038.jpg?v=1792147658",
+      "kind": "new",
+      "price": "30円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "切札縫合 ジャシン＝ジャシン（38/99）",
+      "url": "https://torecat.shop/products/dm26ex4-038"
+    },
+    {
       "at": "2026-10-16T09:46:51+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-016.jpg?v=1784286681",
@@ -100,10 +100,10 @@
       "url": "https://torecat.shop/products/dm26ex2-016"
     }
   ],
-  "saved_at": "2026-10-26T04:15:19+09:00",
+  "saved_at": "2026-10-26T10:46:36+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-26T04:15:19+09:00",
+      "checked_at": "2026-10-26T10:46:36+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -111,7 +111,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-26T04:15:19+09:00",
+      "checked_at": "2026-10-26T10:46:36+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
