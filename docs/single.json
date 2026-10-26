@@ -12,17 +12,6 @@
       "url": "https://torecat.shop/products/duelmasters-promoy24-081"
     },
     {
-      "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex1-002.jpg?v=1778856640",
-      "kind": "new",
-      "price": "620円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "【状態B】飛翔龍5000VT（2/50）",
-      "url": "https://torecat.shop/products/飛翔龍5000vt-2-50"
-    },
-    {
       "at": "2026-10-20T10:11:38+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-054.jpg?v=1786093333",
@@ -111,10 +100,10 @@
       "url": "https://torecat.shop/products/dm26ex2-016"
     }
   ],
-  "saved_at": "2026-10-26T16:16:28+09:00",
+  "saved_at": "2026-10-26T21:38:21+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-26T16:16:28+09:00",
+      "checked_at": "2026-10-26T21:38:21+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -122,7 +111,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-26T16:16:28+09:00",
+      "checked_at": "2026-10-26T21:38:21+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
