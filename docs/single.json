@@ -1,39 +1,6 @@
 {
   "items": [
     {
-      "at": "2026-10-27T22:35:48+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC009.jpg?v=1792148023",
-      "kind": "restock",
-      "price": "600円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札連結 バロXGXディアス（㊙9/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec009"
-    },
-    {
-      "at": "2026-10-27T22:35:48+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC022.jpg?v=1792148080",
-      "kind": "restock",
-      "price": "1,580円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札縫合 アビス記号jS（㊙22/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec022"
-    },
-    {
-      "at": "2026-10-27T22:35:48+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC023.jpg?v=1792148085",
-      "kind": "restock",
-      "price": "580円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札混成 5000BT（㊙23/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec023"
-    },
-    {
       "at": "2026-10-27T17:33:12+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC011.jpg?v=1789730410",
@@ -354,12 +321,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC003.jpg?v=1792147996",
       "kind": "new",
       "price": "1,050円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "切札電融 デス・フェルザーク（㊙3/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec003"
     },
@@ -475,12 +442,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/009_b2e84be1-e58f-4007-921a-7669a2cad7a7.jpg?v=1792147687",
       "kind": "new",
       "price": "2,380円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "王導聖霊 アルファディオス（超G9/超G12）",
       "url": "https://torecat.shop/products/dm26ex4-chog09"
     },
@@ -1377,12 +1344,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-010.jpg?v=1792147382",
       "kind": "new",
       "price": "1,380円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "切札混成 光隼 蒼斬丸（10/99）",
       "url": "https://torecat.shop/products/dm26ex4-010"
     },
@@ -1486,10 +1453,10 @@
       "url": "https://torecat.shop/products/dm26ex2-016"
     }
   ],
-  "saved_at": "2026-10-27T22:35:48+09:00",
+  "saved_at": "2026-10-27T23:29:04+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-27T22:35:48+09:00",
+      "checked_at": "2026-10-27T23:29:04+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1497,7 +1464,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-27T22:35:48+09:00",
+      "checked_at": "2026-10-27T23:29:04+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
