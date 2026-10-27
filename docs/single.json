@@ -167,12 +167,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC024.jpg?v=1792148089",
       "kind": "new",
       "price": "880円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "切札縫合 メイドヴァロム（㊙24/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec024"
     },
@@ -1442,10 +1442,10 @@
       "url": "https://torecat.shop/products/dm26ex2-016"
     }
   ],
-  "saved_at": "2026-10-28T04:15:52+09:00",
+  "saved_at": "2026-10-28T04:56:55+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-28T04:15:52+09:00",
+      "checked_at": "2026-10-28T04:56:55+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1453,7 +1453,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-28T04:15:52+09:00",
+      "checked_at": "2026-10-28T04:56:55+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
