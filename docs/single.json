@@ -133,28 +133,6 @@
       "url": "https://torecat.shop/products/dm26rp3-stdsec009"
     },
     {
-      "at": "2026-10-29T00:23:22+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-TD002.jpg?v=1789730321",
-      "kind": "restock",
-      "price": "20円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "キング・マニフェスト（TD2/TD5）",
-      "url": "https://torecat.shop/products/dm26rp3-td002"
-    },
-    {
-      "at": "2026-10-29T00:23:22+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S005.jpg?v=1789730205",
-      "kind": "restock",
-      "price": "1,450円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "“↑↑”ブランド（S5/S11）",
-      "url": "https://torecat.shop/products/dm26rp3-s005"
-    },
-    {
       "at": "2026-10-27T17:33:12+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC011.jpg?v=1789730410",
@@ -606,10 +584,10 @@
       "url": "https://torecat.shop/products/状態b-ボルシャック-ロマネスク-35-100"
     }
   ],
-  "saved_at": "2026-10-29T00:23:22+09:00",
+  "saved_at": "2026-10-29T01:19:50+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-29T00:23:22+09:00",
+      "checked_at": "2026-10-29T01:19:50+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -617,7 +595,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-29T00:23:22+09:00",
+      "checked_at": "2026-10-29T01:19:50+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
