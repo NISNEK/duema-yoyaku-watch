@@ -551,6 +551,17 @@
       "url": "https://torecat.shop/products/dm26rp3-011"
     },
     {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC002.jpg?v=1789730372",
+      "kind": "new",
+      "price": "420円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "SUPREME-GUN・ザ・ジョニー（㊙2/㊙24）",
+      "url": "https://torecat.shop/products/dm26rp3-sec002"
+    },
+    {
       "at": "2026-10-20T14:09:09+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S001.jpg?v=1789730189",
@@ -716,10 +727,10 @@
       "url": "https://torecat.shop/products/状態b-ボルシャック-ロマネスク-35-100"
     }
   ],
-  "saved_at": "2026-10-29T05:18:51+09:00",
+  "saved_at": "2026-10-29T06:03:50+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-29T05:18:51+09:00",
+      "checked_at": "2026-10-29T06:03:50+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -727,7 +738,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-29T05:18:51+09:00",
+      "checked_at": "2026-10-29T06:03:50+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
