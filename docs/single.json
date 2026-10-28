@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "at": "2026-10-28T10:18:29+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-055a.jpg?v=1792147793",
+      "kind": "restock",
+      "price": "5円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "珊瑚妖精キユリ / キユリのFSMラジオ（55/99）",
+      "url": "https://torecat.shop/products/dm26ex4-055"
+    },
+    {
       "at": "2026-10-27T17:33:12+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC011.jpg?v=1789730410",
@@ -87,39 +98,6 @@
       "stock": "在庫あり",
       "title": "切札混成 ドギラダンテ刈（㊙15/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec015"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC017.jpg?v=1792148058",
-      "kind": "new",
-      "price": "480円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札電融 ”銃銃銃“ジョランド（㊙17/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec017"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO039.jpg?v=1792147671",
-      "kind": "new",
-      "price": "580円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "宇宙妖精エリンギ（超39/超50）",
-      "url": "https://torecat.shop/products/dm26ex4-cho039"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO031.jpg?v=1792147595",
-      "kind": "new",
-      "price": "230円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "一音の妖精（超31/超50）",
-      "url": "https://torecat.shop/products/dm26ex4-cho031"
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
@@ -1431,6 +1409,39 @@
       "url": "https://torecat.shop/products/dm26ex4-001"
     },
     {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC017.jpg?v=1792148058",
+      "kind": "new",
+      "price": "480円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "切札電融 ”銃銃銃“ジョランド（㊙17/㊙25）",
+      "url": "https://torecat.shop/products/dm26ex4-sec017"
+    },
+    {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-055a.jpg?v=1792147793",
+      "kind": "new",
+      "price": "5円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "珊瑚妖精キユリ / キユリのFSMラジオ（55/99）",
+      "url": "https://torecat.shop/products/dm26ex4-055"
+    },
+    {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO039.jpg?v=1792147671",
+      "kind": "new",
+      "price": "580円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "宇宙妖精エリンギ（超39/超50）",
+      "url": "https://torecat.shop/products/dm26ex4-cho039"
+    },
+    {
       "at": "2026-10-16T09:46:51+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-016.jpg?v=1784286681",
@@ -1442,10 +1453,10 @@
       "url": "https://torecat.shop/products/dm26ex2-016"
     }
   ],
-  "saved_at": "2026-10-28T04:56:55+09:00",
+  "saved_at": "2026-10-28T10:18:29+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-28T04:56:55+09:00",
+      "checked_at": "2026-10-28T10:18:29+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1453,7 +1464,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-28T04:56:55+09:00",
+      "checked_at": "2026-10-28T10:18:29+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
