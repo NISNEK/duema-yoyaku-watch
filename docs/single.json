@@ -144,6 +144,17 @@
       "url": "https://torecat.shop/products/dm26rp3-sec011"
     },
     {
+      "at": "2026-10-25T00:16:08+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC010.jpg?v=1789730406",
+      "kind": "new",
+      "price": "950円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "爆龍羅王 ゴリナボルト（㊙10/㊙24）",
+      "url": "https://torecat.shop/products/dm26rp3-sec010"
+    },
+    {
       "at": "2026-10-23T21:24:12+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-TR009.jpg?v=1789730311",
@@ -409,12 +420,12 @@
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC014.jpg?v=1789730422",
       "kind": "new",
       "price": "50円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "羅明逆夢 アシュノムカメイ（㊙14/㊙24）",
       "url": "https://torecat.shop/products/dm26rp3-sec014"
     },
@@ -584,10 +595,10 @@
       "url": "https://torecat.shop/products/状態b-ボルシャック-ロマネスク-35-100"
     }
   ],
-  "saved_at": "2026-10-29T01:19:50+09:00",
+  "saved_at": "2026-10-29T02:14:31+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-29T01:19:50+09:00",
+      "checked_at": "2026-10-29T02:14:31+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -595,7 +606,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-29T01:19:50+09:00",
+      "checked_at": "2026-10-29T02:14:31+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
