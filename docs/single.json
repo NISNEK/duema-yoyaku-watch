@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "at": "2026-10-28T15:47:15+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-032.jpg?v=1786093204",
+      "kind": "restock",
+      "price": "380円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】深淵の逆転撃（32/100）",
+      "url": "https://torecat.shop/products/状態b-深淵の逆転撃-32-100"
+    },
+    {
+      "at": "2026-10-28T15:47:15+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-092.jpg?v=1792147953",
+      "kind": "restock",
+      "price": "5円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "チキン・オドッ太（92/99）",
+      "url": "https://torecat.shop/products/dm26ex4-092"
+    },
+    {
+      "at": "2026-10-28T15:47:15+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-035.jpg?v=1786093225",
+      "kind": "restock",
+      "price": "360円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ボルシャック・ロマネスク（35/100）",
+      "url": "https://torecat.shop/products/状態b-ボルシャック-ロマネスク-35-100"
+    },
+    {
       "at": "2026-10-27T17:33:12+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC011.jpg?v=1789730410",
@@ -1410,12 +1443,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-055a.jpg?v=1792147793",
       "kind": "new",
       "price": "5円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "珊瑚妖精キユリ / キユリのFSMラジオ（55/99）",
       "url": "https://torecat.shop/products/dm26ex4-055"
     },
@@ -1431,6 +1464,17 @@
       "url": "https://torecat.shop/products/dm26ex4-cho039"
     },
     {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-092.jpg?v=1792147953",
+      "kind": "new",
+      "price": "5円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "チキン・オドッ太（92/99）",
+      "url": "https://torecat.shop/products/dm26ex4-092"
+    },
+    {
       "at": "2026-10-16T09:46:51+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-016.jpg?v=1784286681",
@@ -1440,12 +1484,67 @@
       "stock": "在庫あり",
       "title": "【状態B】鬼黒皇グレイテスト・ジャオウガ（16/89）",
       "url": "https://torecat.shop/products/dm26ex2-016"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-036.jpg?v=1786093230",
+      "kind": "new",
+      "price": "120円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】王闘の大地（36/100）",
+      "url": "https://torecat.shop/products/状態b-王闘の大地-36-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-031.jpg?v=1784286713",
+      "kind": "new",
+      "price": "120円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】覚悟の決闘（31/89）",
+      "url": "https://torecat.shop/products/dm26ex2-031"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-032.jpg?v=1786093204",
+      "kind": "new",
+      "price": "380円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】深淵の逆転撃（32/100）",
+      "url": "https://torecat.shop/products/状態b-深淵の逆転撃-32-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-040.jpg?v=1786093253",
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】行くよー！生徒会、ハイチーズ！（40/100）",
+      "url": "https://torecat.shop/products/状態b-行くよー-生徒会-ハイチーズ-40-100"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-035.jpg?v=1786093225",
+      "kind": "new",
+      "price": "360円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】ボルシャック・ロマネスク（35/100）",
+      "url": "https://torecat.shop/products/状態b-ボルシャック-ロマネスク-35-100"
     }
   ],
-  "saved_at": "2026-10-28T11:09:27+09:00",
+  "saved_at": "2026-10-28T15:47:15+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-28T11:09:27+09:00",
+      "checked_at": "2026-10-28T15:47:15+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1453,7 +1552,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-28T11:09:27+09:00",
+      "checked_at": "2026-10-28T15:47:15+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
