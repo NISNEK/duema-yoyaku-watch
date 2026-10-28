@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "at": "2026-10-29T03:01:14+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-TR007.jpg?v=1789730303",
+      "kind": "new",
+      "price": "30円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "一王二命三眼槍（TR7/TR9）",
+      "url": "https://torecat.shop/products/dm26rp3-tr007"
+    },
+    {
       "at": "2026-10-29T00:23:22+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-STDCHOSEC011.jpg?v=1789730511",
@@ -175,6 +186,17 @@
       "stock": "在庫あり",
       "title": "王道の弾丸 ジョリー・ザ・ジョニー（TD3/TD5）",
       "url": "https://torecat.shop/products/dm26rp3-td003"
+    },
+    {
+      "at": "2026-10-23T21:24:12+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S007.jpg?v=1789730214",
+      "kind": "new",
+      "price": "300円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "「正義と正義と正義と正義」（S7/S11）",
+      "url": "https://torecat.shop/products/dm26rp3-s007"
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
@@ -452,6 +474,50 @@
       "url": "https://torecat.shop/products/dm26rp3-sec018"
     },
     {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-TR003.jpg?v=1789730286",
+      "kind": "new",
+      "price": "30円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "サッヴァークDG（TR3/TR9）",
+      "url": "https://torecat.shop/products/dm26rp3-tr003"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-TD004.jpg?v=1789730330",
+      "kind": "new",
+      "price": "50円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "地封龍 ギャイア（TD4/TD5）",
+      "url": "https://torecat.shop/products/dm26rp3-td004"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S004.jpg?v=1789730201",
+      "kind": "new",
+      "price": "380円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "アイシャセー神（S4/S11）",
+      "url": "https://torecat.shop/products/dm26rp3-s004"
+    },
+    {
+      "at": "2026-10-20T14:09:09+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S001.jpg?v=1789730189",
+      "kind": "new",
+      "price": "30円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "SUPREME-GUN・ザ・ジョニー（S1/S11）",
+      "url": "https://torecat.shop/products/dm26rp3-s001"
+    },
+    {
       "at": "2026-10-20T10:11:38+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-054.jpg?v=1786093333",
@@ -483,6 +549,17 @@
       "stock": "在庫あり",
       "title": "ミノガミ&オウ禍武斗 / T.２.D.（㊙13/㊙24）",
       "url": "https://torecat.shop/products/dm26rp3-sec013"
+    },
+    {
+      "at": "2026-10-17T19:23:59+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S011a.jpg?v=1789730230",
+      "kind": "new",
+      "price": "130円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "天地命動 バラギアラ / 輪廻虹災（S11/S11）",
+      "url": "https://torecat.shop/products/dm26rp3-s011"
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
@@ -595,10 +672,10 @@
       "url": "https://torecat.shop/products/状態b-ボルシャック-ロマネスク-35-100"
     }
   ],
-  "saved_at": "2026-10-29T02:14:31+09:00",
+  "saved_at": "2026-10-29T03:01:14+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-29T02:14:31+09:00",
+      "checked_at": "2026-10-29T03:01:14+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -606,7 +683,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-29T02:14:31+09:00",
+      "checked_at": "2026-10-29T03:01:14+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
