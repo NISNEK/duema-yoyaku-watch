@@ -189,12 +189,12 @@
     },
     {
       "at": "2026-10-23T21:24:12+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-TD003.jpg?v=1789730325",
       "kind": "new",
       "price": "20円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "王道の弾丸 ジョリー・ザ・ジョニー（TD3/TD5）",
       "url": "https://torecat.shop/products/dm26rp3-td003"
     },
@@ -727,10 +727,10 @@
       "url": "https://torecat.shop/products/状態b-ボルシャック-ロマネスク-35-100"
     }
   ],
-  "saved_at": "2026-10-29T06:03:50+09:00",
+  "saved_at": "2026-10-29T08:04:18+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-29T06:03:50+09:00",
+      "checked_at": "2026-10-29T08:04:18+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -738,7 +738,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-29T06:03:50+09:00",
+      "checked_at": "2026-10-29T08:04:18+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
