@@ -1454,34 +1454,34 @@
     },
     {
       "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-036.jpg?v=1786093230",
       "kind": "new",
       "price": "120円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "【状態B】王闘の大地（36/100）",
       "url": "https://torecat.shop/products/状態b-王闘の大地-36-100"
     },
     {
       "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-031.jpg?v=1784286713",
       "kind": "new",
       "price": "120円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "【状態B】覚悟の決闘（31/89）",
       "url": "https://torecat.shop/products/dm26ex2-031"
     },
     {
       "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-032.jpg?v=1786093204",
       "kind": "new",
       "price": "380円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "【状態B】深淵の逆転撃（32/100）",
       "url": "https://torecat.shop/products/状態b-深淵の逆転撃-32-100"
     },
@@ -1498,20 +1498,20 @@
     },
     {
       "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-035.jpg?v=1786093225",
       "kind": "new",
       "price": "360円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "【状態B】ボルシャック・ロマネスク（35/100）",
       "url": "https://torecat.shop/products/状態b-ボルシャック-ロマネスク-35-100"
     }
   ],
-  "saved_at": "2026-10-28T19:17:21+09:00",
+  "saved_at": "2026-10-28T20:48:21+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-28T19:17:21+09:00",
+      "checked_at": "2026-10-28T20:48:21+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1519,7 +1519,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-28T19:17:21+09:00",
+      "checked_at": "2026-10-28T20:48:21+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
