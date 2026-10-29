@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "at": "2026-10-29T09:15:34+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC008.jpg?v=1789730397",
+      "kind": "new",
+      "price": "1,000円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "「正義と正義と正義と正義」（㊙8/㊙24）",
+      "url": "https://torecat.shop/products/dm26rp3-sec008"
+    },
+    {
       "at": "2026-10-29T04:33:57+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S006.jpg?v=1789730210",
@@ -727,10 +738,10 @@
       "url": "https://torecat.shop/products/状態b-ボルシャック-ロマネスク-35-100"
     }
   ],
-  "saved_at": "2026-10-29T08:04:18+09:00",
+  "saved_at": "2026-10-29T09:15:34+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-29T08:04:18+09:00",
+      "checked_at": "2026-10-29T09:15:34+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -738,7 +749,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-29T08:04:18+09:00",
+      "checked_at": "2026-10-29T09:15:34+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
