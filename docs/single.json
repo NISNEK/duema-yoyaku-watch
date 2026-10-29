@@ -1,17 +1,6 @@
 {
   "items": [
     {
-      "at": "2026-10-29T19:54:24+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC022.jpg?v=1792148080",
-      "kind": "restock",
-      "price": "1,580円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札縫合 アビス記号jS（㊙22/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec022"
-    },
-    {
       "at": "2026-10-29T09:15:34+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC008.jpg?v=1789730397",
@@ -233,12 +222,12 @@
     },
     {
       "at": "2026-10-23T21:24:12+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/poster_86e697ec-572d-4030-aa7e-fd48eef0c73e.jpg?v=1786111717",
       "kind": "new",
       "price": "1,200円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "ノーマル4コン(ノンホイル4コン) ※光り物を除きます",
       "url": "https://torecat.shop/products/dm26ex3-normal-4kon"
     },
@@ -310,12 +299,12 @@
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC016.jpg?v=1789730430",
       "kind": "new",
       "price": "350円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "裏魔導書グリモア-Ⅰ章（㊙16/㊙24）",
       "url": "https://torecat.shop/products/dm26rp3-sec016"
     },
@@ -332,12 +321,12 @@
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC019.jpg?v=1789730443",
       "kind": "new",
       "price": "600円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "アアルカイトの電影（㊙19/㊙24）",
       "url": "https://torecat.shop/products/dm26rp3-sec019"
     },
@@ -835,12 +824,34 @@
       "stock": "在庫あり",
       "title": "切札縫合 メイドヴァロム（㊙24/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec024"
+    },
+    {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC015.jpg?v=1792148049",
+      "kind": "new",
+      "price": "5,250円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "切札混成 ドギラダンテ刈（㊙15/㊙25）",
+      "url": "https://torecat.shop/products/dm26ex4-sec015"
+    },
+    {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-014.jpg?v=1792147418",
+      "kind": "new",
+      "price": "1,999円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "切札混成 ドギラダンテ刈（14/99）",
+      "url": "https://torecat.shop/products/dm26ex4-014"
     }
   ],
-  "saved_at": "2026-10-29T19:54:24+09:00",
+  "saved_at": "2026-10-29T20:35:52+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-29T19:54:24+09:00",
+      "checked_at": "2026-10-29T20:35:52+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -848,7 +859,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-29T19:54:24+09:00",
+      "checked_at": "2026-10-29T20:35:52+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
