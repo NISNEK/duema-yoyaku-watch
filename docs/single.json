@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "at": "2026-10-29T22:27:31+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/poster_86e697ec-572d-4030-aa7e-fd48eef0c73e.jpg?v=1786111717",
+      "kind": "restock",
+      "price": "1,200円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "ノーマル4コン(ノンホイル4コン) ※光り物を除きます",
+      "url": "https://torecat.shop/products/dm26ex3-normal-4kon"
+    },
+    {
       "at": "2026-10-29T09:15:34+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC008.jpg?v=1789730397",
@@ -222,12 +233,12 @@
     },
     {
       "at": "2026-10-23T21:24:12+09:00",
-      "available": false,
+      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/poster_86e697ec-572d-4030-aa7e-fd48eef0c73e.jpg?v=1786111717",
       "kind": "new",
       "price": "1,200円",
       "shop": "トレキャット",
-      "stock": "売り切れ",
+      "stock": "在庫あり",
       "title": "ノーマル4コン(ノンホイル4コン) ※光り物を除きます",
       "url": "https://torecat.shop/products/dm26ex3-normal-4kon"
     },
@@ -848,10 +859,10 @@
       "url": "https://torecat.shop/products/dm26ex4-014"
     }
   ],
-  "saved_at": "2026-10-29T20:35:52+09:00",
+  "saved_at": "2026-10-29T22:27:31+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-29T20:35:52+09:00",
+      "checked_at": "2026-10-29T22:27:31+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -859,7 +870,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-29T20:35:52+09:00",
+      "checked_at": "2026-10-29T22:27:31+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
