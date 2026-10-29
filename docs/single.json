@@ -640,17 +640,6 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": false,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-055a.jpg?v=1792147793",
-      "kind": "new",
-      "price": "5円",
-      "shop": "トレキャット",
-      "stock": "売り切れ",
-      "title": "珊瑚妖精キユリ / キユリのFSMラジオ（55/99）",
-      "url": "https://torecat.shop/products/dm26ex4-055"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-092.jpg?v=1792147953",
       "kind": "new",
@@ -738,10 +727,10 @@
       "url": "https://torecat.shop/products/状態b-ボルシャック-ロマネスク-35-100"
     }
   ],
-  "saved_at": "2026-10-29T09:15:34+09:00",
+  "saved_at": "2026-10-29T10:23:08+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-29T09:15:34+09:00",
+      "checked_at": "2026-10-29T10:23:08+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -749,7 +738,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-29T09:15:34+09:00",
+      "checked_at": "2026-10-29T10:23:08+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
