@@ -573,6 +573,17 @@
       "url": "https://torecat.shop/products/dm26rp3-sec002"
     },
     {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S009.jpg?v=1789730222",
+      "kind": "new",
+      "price": "220円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "爆龍羅王 ゴリナボルト（S9/S11）",
+      "url": "https://torecat.shop/products/dm26rp3-s009"
+    },
+    {
       "at": "2026-10-20T14:09:09+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S001.jpg?v=1789730189",
@@ -738,10 +749,10 @@
       "url": "https://torecat.shop/products/状態b-ボルシャック-ロマネスク-35-100"
     }
   ],
-  "saved_at": "2026-10-29T12:53:01+09:00",
+  "saved_at": "2026-10-29T13:37:59+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-29T12:53:01+09:00",
+      "checked_at": "2026-10-29T13:37:59+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -749,7 +760,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-29T12:53:01+09:00",
+      "checked_at": "2026-10-29T13:37:59+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
