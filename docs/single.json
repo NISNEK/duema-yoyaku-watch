@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "at": "2026-10-30T18:24:59+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-017.jpg?v=1786093121",
+      "kind": "new",
+      "price": "270円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "伍代ドーラ＜楽勝じゃ！＞（17/100）",
+      "url": "https://torecat.shop/products/dm26ex3-017"
+    },
+    {
       "at": "2026-10-30T17:29:58+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SEC016CHO.jpg?v=1786093805",
@@ -234,6 +245,17 @@
     {
       "at": "2026-10-22T21:19:28+09:00",
       "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-001.jpg?v=1786093013",
+      "kind": "new",
+      "price": "280円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "勝利宣言 鬼丸「覇」（1/100）",
+      "url": "https://torecat.shop/products/dm26ex3-001"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S009.jpg?v=1789730222",
       "kind": "new",
       "price": "220円",
@@ -357,7 +379,7 @@
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-054.jpg?v=1786093333",
       "kind": "new",
-      "price": "450円",
+      "price": "350円",
       "shop": "トレキャット",
       "stock": "在庫あり",
       "title": "帝王坂∞＜…………！＞（54/100）",
@@ -639,10 +661,10 @@
       "url": "https://torecat.shop/products/dm26ex2-spr005"
     }
   ],
-  "saved_at": "2026-10-30T17:29:58+09:00",
+  "saved_at": "2026-10-30T18:24:59+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-30T17:29:58+09:00",
+      "checked_at": "2026-10-30T18:24:59+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -650,7 +672,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-30T17:29:58+09:00",
+      "checked_at": "2026-10-30T18:24:59+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
