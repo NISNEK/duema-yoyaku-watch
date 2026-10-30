@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "at": "2026-10-30T20:04:45+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-004.jpg?v=1786093031",
+      "kind": "new",
+      "price": "180円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "神聖龍 エモーショナル・ハードコア（4/100）",
+      "url": "https://torecat.shop/products/dm26ex3-004"
+    },
+    {
+      "at": "2026-10-30T20:04:45+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-008.jpg?v=1786093063",
+      "kind": "new",
+      "price": "170円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "ジュラ子・リューバー＜LOVEですわ＞（8/100）",
+      "url": "https://torecat.shop/products/dm26ex3-008"
+    },
+    {
+      "at": "2026-10-30T20:04:45+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-021.jpg?v=1786093143",
+      "kind": "new",
+      "price": "150円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "庵野水晶＜がんばるっ!!＞（21/100）",
+      "url": "https://torecat.shop/products/dm26ex3-021"
+    },
+    {
       "at": "2026-10-30T19:19:20+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-DCR015.jpg?v=1786093974",
@@ -79,12 +112,12 @@
     },
     {
       "at": "2026-10-30T16:36:29+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-DCR014.jpg?v=1786093968",
       "kind": "new",
       "price": "2,800円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "【状態A-】悪魔龍 ダークマスターズ（DCR14/DCR15）",
       "url": "https://torecat.shop/products/状態a-悪魔龍-ダークマスターズ-dcr14-dcr15"
     },
@@ -245,6 +278,17 @@
     {
       "at": "2026-10-22T21:19:28+09:00",
       "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-015a.jpg?v=1786094306",
+      "kind": "new",
+      "price": "380円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "音卿の精霊龍 ラフルル・ラブ / 「未来から来る、だからミラクル」（15/100）",
+      "url": "https://torecat.shop/products/dm26ex3-015"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S004.jpg?v=1789730201",
       "kind": "new",
       "price": "380円",
@@ -278,6 +322,17 @@
     {
       "at": "2026-10-22T21:19:28+09:00",
       "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-006a.jpg?v=1786094297",
+      "kind": "new",
+      "price": "200円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "天命＜天下のお嬢様ですのよ＞（6/100）",
+      "url": "https://torecat.shop/products/dm26ex3-006"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-008.jpg?v=1789729891",
       "kind": "new",
       "price": "150円",
@@ -300,6 +355,17 @@
     {
       "at": "2026-10-22T21:19:28+09:00",
       "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-022.jpg?v=1786093149",
+      "kind": "new",
+      "price": "100円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "恋葉ココア（22/100）",
+      "url": "https://torecat.shop/products/dm26ex3-022"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-011.jpg?v=1789729904",
       "kind": "new",
       "price": "100円",
@@ -307,6 +373,17 @@
       "stock": "在庫あり",
       "title": "黎悪銃と邪煉哀の決断（11/77）",
       "url": "https://torecat.shop/products/dm26rp3-011"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-016.jpg?v=1786093116",
+      "kind": "new",
+      "price": "80円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "庵野しゅうら＜楽しんでね！＞（16/100）",
+      "url": "https://torecat.shop/products/dm26ex3-016"
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
@@ -321,12 +398,12 @@
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-TR002.jpg?v=1789730282",
       "kind": "new",
       "price": "80円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "王来英雄 モモキングRX（TR2/TR9）",
       "url": "https://torecat.shop/products/dm26rp3-tr002"
     },
@@ -617,10 +694,10 @@
       "url": "https://torecat.shop/products/状態b-恋葉ココア-22-100"
     }
   ],
-  "saved_at": "2026-10-30T19:19:20+09:00",
+  "saved_at": "2026-10-30T20:04:45+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-30T19:19:20+09:00",
+      "checked_at": "2026-10-30T20:04:45+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -628,7 +705,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-30T19:19:20+09:00",
+      "checked_at": "2026-10-30T20:04:45+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
