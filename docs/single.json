@@ -1,15 +1,15 @@
 {
   "items": [
     {
-      "at": "2026-10-30T23:29:49+09:00",
+      "at": "2026-10-31T00:24:21+09:00",
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SEC002.jpg?v=1786093647",
-      "kind": "restock",
-      "price": "3,100円",
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-SSP1.jpg?v=1790253880",
+      "kind": "new",
+      "price": "109,800円",
       "shop": "トレキャット",
       "stock": "在庫あり",
-      "title": "【状態A-】流星アーシュ＜私が主役⁉＞（㊙2/㊙20）",
-      "url": "https://torecat.shop/products/状態a-流星アーシュ-私が主役⁉-㊙2-㊙20"
+      "title": "【状態A-】メンデルスゾーン　SSP1/SSP1 DM25EX4",
+      "url": "https://torecat.shop/products/duelmasters-dm25ex4-ssp1"
     },
     {
       "at": "2026-10-30T20:04:45+09:00",
@@ -46,12 +46,12 @@
     },
     {
       "at": "2026-10-30T19:19:20+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-DCR015.jpg?v=1786093974",
       "kind": "new",
       "price": "700円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "インフェル星樹（DCR15/DCR15）",
       "url": "https://torecat.shop/products/dm26ex3-dcr015"
     },
@@ -90,12 +90,12 @@
     },
     {
       "at": "2026-10-30T17:29:58+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SEC016.jpg?v=1786093799",
       "kind": "new",
       "price": "2,800円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "【状態B】帝王坂∞＜…………！＞（㊙16/㊙20）",
       "url": "https://torecat.shop/products/状態b-帝王坂-㊙16-㊙20"
     },
@@ -112,12 +112,12 @@
     },
     {
       "at": "2026-10-30T16:36:29+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SEC002.jpg?v=1786093647",
       "kind": "new",
       "price": "3,100円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "【状態A-】流星アーシュ＜私が主役⁉＞（㊙2/㊙20）",
       "url": "https://torecat.shop/products/状態a-流星アーシュ-私が主役⁉-㊙2-㊙20"
     },
@@ -607,12 +607,12 @@
     },
     {
       "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp1-SP005.webp?v=1775826883",
       "kind": "new",
       "price": "5,280円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "【状態B】真邪連結 バウ・M・ロマイオン(DM26RP1 SP5/SP5) R",
       "url": "https://torecat.shop/products/真邪連結-バウ-m-ロマイオンdm26rp1-sp5-sp5-r"
     },
@@ -706,20 +706,20 @@
     },
     {
       "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-022.jpg?v=1786093149",
       "kind": "new",
       "price": "80円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "【状態B】恋葉ココア（22/100）",
       "url": "https://torecat.shop/products/状態b-恋葉ココア-22-100"
     }
   ],
-  "saved_at": "2026-10-30T23:29:49+09:00",
+  "saved_at": "2026-10-31T00:24:21+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-30T23:29:49+09:00",
+      "checked_at": "2026-10-31T00:24:21+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -727,7 +727,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-30T23:29:49+09:00",
+      "checked_at": "2026-10-31T00:24:21+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
