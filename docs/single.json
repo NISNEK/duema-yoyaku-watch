@@ -1,13 +1,24 @@
 {
   "items": [
     {
-      "at": "2026-10-30T11:32:26+09:00",
+      "at": "2026-10-30T12:21:25+09:00",
       "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SEC012.jpg?v=1786093756",
+      "kind": "new",
+      "price": "5,180円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態A-】地封院ギャイ＜まかしとき！＞（㊙12/㊙20）",
+      "url": "https://torecat.shop/products/状態a-地封院ギャイ-まかしとき-㊙12-㊙20"
+    },
+    {
+      "at": "2026-10-30T11:32:26+09:00",
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SSP004.jpg?v=1786093886",
       "kind": "new",
       "price": "45,800円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "【状態A-】地封院ギャイ＜まかしとき！＞（SSP4/SSP5）",
       "url": "https://torecat.shop/products/状態b-地封院ギャイ-まかしとき-ssp4-ssp5"
     },
@@ -16,22 +27,11 @@
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SEC012.jpg?v=1786093756",
       "kind": "new",
-      "price": "4,980円",
+      "price": "4,850円",
       "shop": "トレキャット",
       "stock": "在庫あり",
       "title": "【状態B】地封院ギャイ＜まかしとき！＞（㊙12/㊙20）",
       "url": "https://torecat.shop/products/状態b-地封院ギャイ-まかしとき-㊙12-㊙20"
-    },
-    {
-      "at": "2026-10-30T11:32:26+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S005.jpg?v=1789730205",
-      "kind": "restock",
-      "price": "1,400円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "“↑↑”ブランド（S5/S11）",
-      "url": "https://torecat.shop/products/dm26rp3-s005"
     },
     {
       "at": "2026-10-29T09:15:34+09:00",
@@ -287,6 +287,17 @@
       "url": "https://torecat.shop/products/dm26ex3-054"
     },
     {
+      "at": "2026-10-18T19:54:48+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SEC012.jpg?v=1786093756",
+      "kind": "new",
+      "price": "5,380円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "地封院ギャイ＜まかしとき！＞（㊙12/㊙20）",
+      "url": "https://torecat.shop/products/dm26ex3-sec012"
+    },
+    {
       "at": "2026-10-17T19:23:59+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S011a.jpg?v=1789730230",
@@ -529,10 +540,10 @@
       "url": "https://torecat.shop/products/dm26ex2-spr005"
     }
   ],
-  "saved_at": "2026-10-30T11:32:26+09:00",
+  "saved_at": "2026-10-30T12:21:25+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-30T11:32:26+09:00",
+      "checked_at": "2026-10-30T12:21:25+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -540,7 +551,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-30T11:32:26+09:00",
+      "checked_at": "2026-10-30T12:21:25+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
