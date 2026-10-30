@@ -210,6 +210,28 @@
       "url": "https://torecat.shop/products/dm26rp3-s009"
     },
     {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S008.jpg?v=1789730218",
+      "kind": "new",
+      "price": "750円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "キング∞エンペラー（S8/S11）",
+      "url": "https://torecat.shop/products/dm26rp3-s008"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-STD009.jpg?v=1789730469",
+      "kind": "new",
+      "price": "1,150円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "偽りの希望 鬼丸「終斗」（STD9/）",
+      "url": "https://torecat.shop/products/dm26rp3-std009"
+    },
+    {
       "at": "2026-10-20T14:09:09+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S001.jpg?v=1789730189",
@@ -439,12 +461,23 @@
       "stock": "在庫あり",
       "title": "切札混成 ドギラダンテ刈（14/99）",
       "url": "https://torecat.shop/products/dm26ex4-014"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-SPR005.jpg?v=1784286744",
+      "kind": "new",
+      "price": "780円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】CRY-S-MAX ジャオウガ（SPR5/SPR5）",
+      "url": "https://torecat.shop/products/dm26ex2-spr005"
     }
   ],
-  "saved_at": "2026-10-30T08:21:26+09:00",
+  "saved_at": "2026-10-30T10:49:29+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-30T08:21:26+09:00",
+      "checked_at": "2026-10-30T10:49:29+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -452,7 +485,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-30T08:21:26+09:00",
+      "checked_at": "2026-10-30T10:49:29+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
