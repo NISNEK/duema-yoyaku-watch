@@ -267,17 +267,6 @@
     {
       "at": "2026-10-22T21:19:28+09:00",
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC002.jpg?v=1789730372",
-      "kind": "new",
-      "price": "420円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "SUPREME-GUN・ザ・ジョニー（㊙2/㊙24）",
-      "url": "https://torecat.shop/products/dm26rp3-sec002"
-    },
-    {
-      "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-015a.jpg?v=1786094306",
       "kind": "new",
       "price": "380円",
@@ -387,17 +376,6 @@
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-TR006.jpg?v=1789730299",
-      "kind": "new",
-      "price": "80円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "自然の四君子 ガイアハザード（TR6/TR9）",
-      "url": "https://torecat.shop/products/dm26rp3-tr006"
-    },
-    {
-      "at": "2026-10-22T21:19:28+09:00",
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-TR002.jpg?v=1789730282",
       "kind": "new",
@@ -421,17 +399,6 @@
     {
       "at": "2026-10-22T21:19:28+09:00",
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-TR003.jpg?v=1789730286",
-      "kind": "new",
-      "price": "30円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "サッヴァークDG（TR3/TR9）",
-      "url": "https://torecat.shop/products/dm26rp3-tr003"
-    },
-    {
-      "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC018.jpg?v=1789730439",
       "kind": "new",
       "price": "30円",
@@ -439,17 +406,6 @@
       "stock": "在庫あり",
       "title": "魔具 ヴァイポイズ-4（㊙18/㊙24）",
       "url": "https://torecat.shop/products/dm26rp3-sec018"
-    },
-    {
-      "at": "2026-10-22T21:19:28+09:00",
-      "available": false,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/193580854.jpg?v=1789747144",
-      "kind": "new",
-      "price": "30円",
-      "shop": "トレキャット",
-      "stock": "売り切れ",
-      "title": "夢の轟速 ザ・ランド P103/Y25",
-      "url": "https://torecat.shop/products/夢の轟速-ザ-ランド-p103-y25"
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
@@ -716,10 +672,10 @@
       "url": "https://torecat.shop/products/状態b-恋葉ココア-22-100"
     }
   ],
-  "saved_at": "2026-10-31T00:24:21+09:00",
+  "saved_at": "2026-10-31T04:17:46+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-31T00:24:21+09:00",
+      "checked_at": "2026-10-31T04:17:46+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -727,7 +683,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-31T00:24:21+09:00",
+      "checked_at": "2026-10-31T04:17:46+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
