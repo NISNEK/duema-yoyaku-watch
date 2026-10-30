@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "at": "2026-10-30T11:32:26+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SSP004.jpg?v=1786093886",
+      "kind": "new",
+      "price": "45,800円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態A-】地封院ギャイ＜まかしとき！＞（SSP4/SSP5）",
+      "url": "https://torecat.shop/products/状態b-地封院ギャイ-まかしとき-ssp4-ssp5"
+    },
+    {
+      "at": "2026-10-30T11:32:26+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SEC012.jpg?v=1786093756",
+      "kind": "new",
+      "price": "4,980円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】地封院ギャイ＜まかしとき！＞（㊙12/㊙20）",
+      "url": "https://torecat.shop/products/状態b-地封院ギャイ-まかしとき-㊙12-㊙20"
+    },
+    {
+      "at": "2026-10-30T11:32:26+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S005.jpg?v=1789730205",
+      "kind": "restock",
+      "price": "1,400円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "“↑↑”ブランド（S5/S11）",
+      "url": "https://torecat.shop/products/dm26rp3-s005"
+    },
+    {
       "at": "2026-10-29T09:15:34+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC008.jpg?v=1789730397",
@@ -287,6 +320,28 @@
       "url": "https://torecat.shop/products/dm26rp3-s002"
     },
     {
+      "at": "2026-10-17T19:23:59+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S005.jpg?v=1789730205",
+      "kind": "new",
+      "price": "1,400円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "“↑↑”ブランド（S5/S11）",
+      "url": "https://torecat.shop/products/dm26rp3-s005"
+    },
+    {
+      "at": "2026-10-17T19:23:59+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC013a.jpg?v=1789730418",
+      "kind": "new",
+      "price": "50円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "ミノガミ&オウ禍武斗 / T.２.D.（㊙13/㊙24）",
+      "url": "https://torecat.shop/products/dm26rp3-sec013"
+    },
+    {
       "at": "2026-10-17T00:28:35+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO030a.jpg?v=1792147586",
@@ -313,7 +368,7 @@
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-010.jpg?v=1792147382",
       "kind": "new",
-      "price": "1,380円",
+      "price": "1,180円",
       "shop": "トレキャット",
       "stock": "在庫あり",
       "title": "切札混成 光隼 蒼斬丸（10/99）",
@@ -474,10 +529,10 @@
       "url": "https://torecat.shop/products/dm26ex2-spr005"
     }
   ],
-  "saved_at": "2026-10-30T10:49:29+09:00",
+  "saved_at": "2026-10-30T11:32:26+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-30T10:49:29+09:00",
+      "checked_at": "2026-10-30T11:32:26+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -485,7 +540,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-30T10:49:29+09:00",
+      "checked_at": "2026-10-30T11:32:26+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
