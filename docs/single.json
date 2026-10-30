@@ -332,12 +332,12 @@
     },
     {
       "at": "2026-10-17T19:23:59+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S005.jpg?v=1789730205",
       "kind": "new",
       "price": "1,400円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "“↑↑”ブランド（S5/S11）",
       "url": "https://torecat.shop/products/dm26rp3-s005"
     },
@@ -540,10 +540,10 @@
       "url": "https://torecat.shop/products/dm26ex2-spr005"
     }
   ],
-  "saved_at": "2026-10-30T12:21:25+09:00",
+  "saved_at": "2026-10-30T14:48:43+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-10-30T12:21:25+09:00",
+      "checked_at": "2026-10-30T14:48:43+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -551,7 +551,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-10-30T12:21:25+09:00",
+      "checked_at": "2026-10-30T14:48:43+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
