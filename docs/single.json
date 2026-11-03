@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "at": "2026-11-03T11:16:16+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm24rp3-S02.jpg?v=1744291770",
+      "kind": "new",
+      "price": "750円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "楯教の求道者 ザゼ・ゼーン S2/S11",
+      "url": "https://torecat.shop/products/dm24-rp3-s2-s11"
+    },
+    {
       "at": "2026-11-03T05:06:55+09:00",
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25rp4-050.jpg?v=1790253558",
@@ -307,17 +318,6 @@
       "stock": "在庫あり",
       "title": "ブランド ＜NEXT.Star＞（STD㊙11/）",
       "url": "https://torecat.shop/products/dm26rp3-stdsec011"
-    },
-    {
-      "at": "2026-10-29T00:23:22+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-002.jpg?v=1789729865",
-      "kind": "new",
-      "price": "50円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "七王を統べる者 魔王ザダン（2/77）",
-      "url": "https://torecat.shop/products/dm26rp3-002"
     },
     {
       "at": "2026-10-23T21:24:12+09:00",
@@ -673,12 +673,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC015.jpg?v=1792148049",
       "kind": "new",
       "price": "5,250円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "切札混成 ドギラダンテ刈（㊙15/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec015"
     },
@@ -1431,10 +1431,10 @@
       "url": "https://torecat.shop/products/dm26ex2-002"
     }
   ],
-  "saved_at": "2026-11-03T05:06:55+09:00",
+  "saved_at": "2026-11-03T11:16:16+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-03T05:06:55+09:00",
+      "checked_at": "2026-11-03T11:16:16+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1442,7 +1442,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-03T05:06:55+09:00",
+      "checked_at": "2026-11-03T11:16:16+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
