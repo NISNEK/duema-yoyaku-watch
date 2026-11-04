@@ -2,12 +2,12 @@
   "items": [
     {
       "at": "2026-11-04T18:52:47+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/193580853.jpg?v=1789747137",
       "kind": "new",
       "price": "60円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "とこしえの超人 P102/Y25",
       "url": "https://torecat.shop/products/とこしえの超人-p102-y25"
     },
@@ -80,17 +80,6 @@
     {
       "at": "2026-10-23T21:24:12+09:00",
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/poster_86e697ec-572d-4030-aa7e-fd48eef0c73e.jpg?v=1786111717",
-      "kind": "new",
-      "price": "1,000円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "ノーマル4コン(ノンホイル4コン) ※光り物を除きます",
-      "url": "https://torecat.shop/products/dm26ex3-normal-4kon"
-    },
-    {
-      "at": "2026-10-23T21:24:12+09:00",
-      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-082a_1adea699-615c-48e2-923b-ce187136cd4f.jpg?v=1790254732",
       "kind": "new",
       "price": "4円",
@@ -101,12 +90,12 @@
     },
     {
       "at": "2026-10-23T15:04:19+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-067a_eb574e6a-96c5-4657-ac88-24281268b98c.jpg?v=1790254718",
       "kind": "new",
       "price": "8円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "ボルシャック・マントラ　67/89 DM26EX2",
       "url": "https://torecat.shop/products/duelmasters-dm26ex2-067"
     },
@@ -167,12 +156,12 @@
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-065_d05a783e-fa71-46bc-abb0-6505581af260.jpg?v=1790254716",
       "kind": "new",
       "price": "24円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "バクロ法師の封　65/89 DM26EX2",
       "url": "https://torecat.shop/products/duelmasters-dm26ex2-065"
     },
@@ -190,72 +179,6 @@
     {
       "at": "2026-10-17T00:28:35+09:00",
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC015.jpg?v=1792148049",
-      "kind": "new",
-      "price": "5,200円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札混成 ドギラダンテ刈（㊙15/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec015"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC007.jpg?v=1792148013",
-      "kind": "new",
-      "price": "2,980円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札混成 光隼 蒼斬丸（㊙7/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec007"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO008.jpg?v=1792147369",
-      "kind": "new",
-      "price": "2,280円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "天革の騎令嬢 ミラクルステラ（超8/超50）",
-      "url": "https://torecat.shop/products/dm26ex4-cho008"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-014.jpg?v=1792147418",
-      "kind": "new",
-      "price": "2,000円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札混成 ドギラダンテ刈（14/99）",
-      "url": "https://torecat.shop/products/dm26ex4-014"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO027.jpg?v=1792147555",
-      "kind": "new",
-      "price": "1,400円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "PP-「P」（超27/超50）",
-      "url": "https://torecat.shop/products/dm26ex4-cho027"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-010.jpg?v=1792147382",
-      "kind": "new",
-      "price": "1,180円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札混成 光隼 蒼斬丸（10/99）",
-      "url": "https://torecat.shop/products/dm26ex4-010"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-011.jpg?v=1792147390",
       "kind": "new",
       "price": "400円",
@@ -266,36 +189,14 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-003.jpg?v=1792147316",
       "kind": "new",
       "price": "80円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "切札接続 ドールバロム（3/99）",
       "url": "https://torecat.shop/products/dm26ex4-003"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO018.jpg?v=1792147464",
-      "kind": "new",
-      "price": "80円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "戦国接続 ギャラクテスト・シデンシーザー（超18/超50）",
-      "url": "https://torecat.shop/products/dm26ex4-cho018"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO002.jpg?v=1792147312",
-      "kind": "new",
-      "price": "50円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "ジョリー・ザ・ジョルネード（超2/超50）",
-      "url": "https://torecat.shop/products/dm26ex4-cho002"
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
@@ -307,28 +208,6 @@
       "stock": "在庫あり",
       "title": "切札混成 5000BT（34/99）",
       "url": "https://torecat.shop/products/dm26ex4-034"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO026.jpg?v=1792147547",
-      "kind": "new",
-      "price": "20円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "グレープ・ダール（超26/超50）",
-      "url": "https://torecat.shop/products/dm26ex4-cho026"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO021.jpg?v=1792147492",
-      "kind": "new",
-      "price": "10円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "ジョジョジョ・マキシマム（超21/超50）",
-      "url": "https://torecat.shop/products/dm26ex4-cho021"
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
@@ -683,10 +562,10 @@
       "url": "https://torecat.shop/products/dm26ex2-002"
     }
   ],
-  "saved_at": "2026-11-04T18:52:47+09:00",
+  "saved_at": "2026-11-05T02:44:31+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-04T18:52:47+09:00",
+      "checked_at": "2026-11-05T02:44:31+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -694,7 +573,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-04T18:52:47+09:00",
+      "checked_at": "2026-11-05T02:44:31+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
