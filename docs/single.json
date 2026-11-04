@@ -1,17 +1,6 @@
 {
   "items": [
     {
-      "at": "2026-11-03T11:16:16+09:00",
-      "available": false,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm24rp3-S02.jpg?v=1744291770",
-      "kind": "new",
-      "price": "750円",
-      "shop": "トレキャット",
-      "stock": "売り切れ",
-      "title": "楯教の求道者 ザゼ・ゼーン S2/S11",
-      "url": "https://torecat.shop/products/dm24-rp3-s2-s11"
-    },
-    {
       "at": "2026-11-01T17:10:10+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-053_f0c2b7a2-b07e-48a4-9ce0-01d51d5dece7.jpg?v=1790254707",
@@ -362,6 +351,17 @@
       "stock": "在庫あり",
       "title": "切札縫合 アビス記号jS（11/99）",
       "url": "https://torecat.shop/products/dm26ex4-011"
+    },
+    {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-003.jpg?v=1792147316",
+      "kind": "new",
+      "price": "80円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "切札接続 ドールバロム（3/99）",
+      "url": "https://torecat.shop/products/dm26ex4-003"
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
@@ -771,10 +771,10 @@
       "url": "https://torecat.shop/products/dm26ex2-002"
     }
   ],
-  "saved_at": "2026-11-04T07:26:38+09:00",
+  "saved_at": "2026-11-04T11:38:25+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-04T07:26:38+09:00",
+      "checked_at": "2026-11-04T11:38:25+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -782,7 +782,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-04T07:26:38+09:00",
+      "checked_at": "2026-11-04T11:38:25+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
