@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "at": "2026-11-06T08:54:46+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26sd1-o001STAR.jpg?v=1775227783",
+      "kind": "new",
+      "price": "70円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】「正義星帝」 ＜ライオネル.Star＞ (DM26-SD1 1☆/11)",
+      "url": "https://torecat.shop/products/正義星帝-ライオネル-star-dm26-sd1-1-11dm26-sd1"
+    },
+    {
       "at": "2026-11-06T03:50:59+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/1_15fcb406-5e81-4422-9587-d7bbf9ac03e9.png?v=1775190786",
@@ -1431,17 +1442,6 @@
       "url": "https://torecat.shop/products/dm26ex3-017"
     },
     {
-      "at": "2026-10-27T17:33:12+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC011.jpg?v=1789730410",
-      "kind": "new",
-      "price": "1,650円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "祝え！冥帝王 ダイジュ・ディダノス（㊙11/㊙24）",
-      "url": "https://torecat.shop/products/dm26rp3-sec011"
-    },
-    {
       "at": "2026-10-23T21:24:12+09:00",
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp1-S007a.jpg?v=1775824027",
@@ -1594,17 +1594,6 @@
       "stock": "在庫あり",
       "title": "勝利宣言 鬼丸「覇」（1/100）",
       "url": "https://torecat.shop/products/dm26ex3-001"
-    },
-    {
-      "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S009.jpg?v=1789730222",
-      "kind": "new",
-      "price": "260円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "爆龍羅王 ゴリナボルト（S9/S11）",
-      "url": "https://torecat.shop/products/dm26rp3-s009"
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
@@ -2553,6 +2542,17 @@
       "url": "https://torecat.shop/products/dm26ex4-cho003"
     },
     {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO010.jpg?v=1792147386",
+      "kind": "new",
+      "price": "80円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "邪眼皇アレクサンドルIII世（超10/超50）",
+      "url": "https://torecat.shop/products/dm26ex4-cho010"
+    },
+    {
       "at": "2026-10-16T09:46:51+09:00",
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25rp4-Sec07_eb71c1b9-6db0-42f9-a519-e4a3aad33d7e.jpg?v=1766146806",
@@ -2606,17 +2606,6 @@
       "stock": "在庫あり",
       "title": "【状態B】飛翔龍 5000VT（1/89）",
       "url": "https://torecat.shop/products/dm26ex2-001"
-    },
-    {
-      "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-016.jpg?v=1784286681",
-      "kind": "new",
-      "price": "550円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "【状態B】鬼黒皇グレイテスト・ジャオウガ（16/89）",
-      "url": "https://torecat.shop/products/dm26ex2-016"
     },
     {
       "at": "2026-10-16T09:46:51+09:00",
@@ -2705,12 +2694,23 @@
       "stock": "在庫あり",
       "title": "【状態B】轟速 ザ・ドック（20/89）",
       "url": "https://torecat.shop/products/dm26ex2-020"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-MC002.jpg?v=1784286747",
+      "kind": "new",
+      "price": "80円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】CRYMAX ジャオウガ（MC2/30）",
+      "url": "https://torecat.shop/products/dm26ex2-mc002"
     }
   ],
-  "saved_at": "2026-11-06T03:50:59+09:00",
+  "saved_at": "2026-11-06T08:54:46+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-06T03:50:59+09:00",
+      "checked_at": "2026-11-06T08:54:46+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -2718,7 +2718,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-06T03:50:59+09:00",
+      "checked_at": "2026-11-06T08:54:46+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
