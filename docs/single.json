@@ -606,83 +606,6 @@
       "url": "https://torecat.shop/products/evenomikotodmrp21-10b-10"
     },
     {
-      "at": "2026-11-06T14:42:52+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SP002.jpg?v=1789730346",
-      "kind": "restock",
-      "price": "3,300円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "～邪眼帝 PARTⅡ～（SP2/SP5）",
-      "url": "https://torecat.shop/products/dm26rp3-sp002"
-    },
-    {
-      "at": "2026-11-06T14:42:52+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC004.jpg?v=1789730380",
-      "kind": "restock",
-      "price": "1,600円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "Dr.富士山ッピング（㊙4/㊙24）",
-      "url": "https://torecat.shop/products/dm26rp3-sec004"
-    },
-    {
-      "at": "2026-11-06T14:42:52+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp1-S004a.jpg?v=1775824024",
-      "kind": "restock",
-      "price": "680円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "旋略のS アドミラル・アレグル(DM26RP1 S4/S11) SR",
-      "url": "https://torecat.shop/products/旋略のs-アドミラル-アレグルdm26rp1-s4-s11-sr"
-    },
-    {
-      "at": "2026-11-06T14:42:52+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC015.jpg?v=1789730426",
-      "kind": "restock",
-      "price": "650円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "黎悪銃と邪煉哀の決断（㊙15/㊙24）",
-      "url": "https://torecat.shop/products/dm26rp3-sec015"
-    },
-    {
-      "at": "2026-11-06T14:42:52+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC019.jpg?v=1789730443",
-      "kind": "restock",
-      "price": "600円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "アアルカイトの電影（㊙19/㊙24）",
-      "url": "https://torecat.shop/products/dm26rp3-sec019"
-    },
-    {
-      "at": "2026-11-06T14:42:52+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp1-S011.jpg?v=1775824030",
-      "kind": "restock",
-      "price": "580円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "斬隠将撃龍ニバイケン(DM26RP1 S11/S11) SR",
-      "url": "https://torecat.shop/products/斬隠将撃龍ニバイケンdm26rp1-s11-s11-sr"
-    },
-    {
-      "at": "2026-11-06T14:42:52+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC016.jpg?v=1789730430",
-      "kind": "restock",
-      "price": "350円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "裏魔導書グリモア-Ⅰ章（㊙16/㊙24）",
-      "url": "https://torecat.shop/products/dm26rp3-sec016"
-    },
-    {
       "at": "2026-11-06T03:50:59+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/1_15fcb406-5e81-4422-9587-d7bbf9ac03e9.png?v=1775190786",
@@ -2773,10 +2696,10 @@
       "url": "https://torecat.shop/products/dm26ex2-mc006"
     }
   ],
-  "saved_at": "2026-11-06T14:42:52+09:00",
+  "saved_at": "2026-11-06T22:16:34+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-06T14:42:52+09:00",
+      "checked_at": "2026-11-06T22:16:34+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -2785,11 +2708,11 @@
     },
     "torecat": {
       "checked_at": "2026-11-06T14:42:52+09:00",
-      "error_count": 0,
+      "error_count": 1,
       "error_notified": false,
-      "last_error": null,
+      "last_error": "ページが開けませんでした（HTTP 401）",
       "name": "トレキャット",
-      "state": "ok"
+      "state": "error"
     }
   },
   "show_images": true
