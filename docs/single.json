@@ -1,15 +1,26 @@
 {
   "items": [
     {
-      "at": "2026-11-06T14:42:52+09:00",
+      "at": "2026-11-07T04:59:18+09:00",
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/promoy21-030.jpg?v=1790249942",
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp1-SEC002.jpg?v=1775824007",
       "kind": "new",
-      "price": "250円",
+      "price": "1,280円",
       "shop": "トレキャット",
       "stock": "在庫あり",
-      "title": "【状態B】フェアリー・Re:ライフ　P30/Y21 DMPROMOY21",
-      "url": "https://torecat.shop/products/状態b-フェアリー-re-ライフ-p30-y21-dmpromoy21"
+      "title": "叡智のW インビンシブル・ギャラクシー(DM26RP1 ㊙2/㊙24) SR",
+      "url": "https://torecat.shop/products/叡智のw-インビンシブル-ギャラクシーdm26rp1-㊙2-㊙24-sr"
+    },
+    {
+      "at": "2026-11-06T14:42:52+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp1-DM001a.webp?v=1775824838",
+      "kind": "new",
+      "price": "1,680円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "切札竜 ボルメテウス・リバース・ドラゴン(DM26RP1 DM1/DM1) DMR",
+      "url": "https://torecat.shop/products/切札竜-ボルメテウス-リバース-ドラゴンdm26rp1-dm1-dm1-dmr"
     },
     {
       "at": "2026-11-05T20:18:27+09:00",
@@ -454,17 +465,6 @@
     {
       "at": "2026-10-17T00:28:35+09:00",
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC008.jpg?v=1792148018",
-      "kind": "new",
-      "price": "150円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札電融 ボンシャラー・KIRIX（㊙8/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec008"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-002.jpg?v=1792147308",
       "kind": "new",
       "price": "130円",
@@ -582,6 +582,17 @@
       "stock": "在庫あり",
       "title": "【状態B】水蜃 フカフチノカミ（4/89）",
       "url": "https://torecat.shop/products/dm26ex2-004"
+    },
+    {
+      "at": "2026-10-16T09:46:51+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-028.jpg?v=1784286708",
+      "kind": "new",
+      "price": "140円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】轟速 ザ・ロウィン（28/89）",
+      "url": "https://torecat.shop/products/dm26ex2-028"
     },
     {
       "at": "2026-10-16T09:46:51+09:00",
@@ -771,10 +782,10 @@
       "url": "https://torecat.shop/products/dm26ex2-002"
     }
   ],
-  "saved_at": "2026-11-08T02:47:09+09:00",
+  "saved_at": "2026-11-08T06:05:56+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-08T02:47:09+09:00",
+      "checked_at": "2026-11-08T06:05:56+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -782,7 +793,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-08T02:47:09+09:00",
+      "checked_at": "2026-11-08T06:05:56+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
