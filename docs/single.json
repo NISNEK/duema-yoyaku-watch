@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "at": "2026-11-08T15:40:43+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26sd1-b008.jpg?v=1775227589",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "【状態B】ロスト・Re:ソウル",
+      "url": "https://torecat.shop/products/ロスト-re-ソウルdm26-sd1"
+    },
+    {
       "at": "2026-11-07T04:59:18+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp1-SEC002.jpg?v=1775824007",
@@ -21,6 +32,17 @@
       "stock": "在庫あり",
       "title": "切札竜 ボルメテウス・リバース・ドラゴン(DM26RP1 DM1/DM1) DMR",
       "url": "https://torecat.shop/products/切札竜-ボルメテウス-リバース-ドラゴンdm26rp1-dm1-dm1-dmr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SEC001a.jpg?v=1786094332",
+      "kind": "new",
+      "price": "460円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "天命＜天下のお嬢様ですのよ＞（㊙1/㊙20）",
+      "url": "https://torecat.shop/products/dm26ex3-sec001"
     },
     {
       "at": "2026-11-05T20:18:27+09:00",
@@ -65,6 +87,17 @@
       "stock": "在庫あり",
       "title": "超轟速 レッドランチャー　69/89 DM26EX2",
       "url": "https://torecat.shop/products/duelmasters-dm26ex2-069"
+    },
+    {
+      "at": "2026-10-29T00:23:22+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-STDSEC012.jpg?v=1789730498",
+      "kind": "new",
+      "price": "780円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "禁時混成王 ドキンダンテXXII（STD㊙12/）",
+      "url": "https://torecat.shop/products/dm26rp3-stdsec012"
     },
     {
       "at": "2026-10-23T21:24:12+09:00",
@@ -234,6 +267,17 @@
     {
       "at": "2026-10-17T00:28:35+09:00",
       "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC004.jpg?v=1792148000",
+      "kind": "new",
+      "price": "1,800円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "切札接続 ドールバロム（㊙4/㊙25）",
+      "url": "https://torecat.shop/products/dm26ex4-sec004"
+    },
+    {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-014.jpg?v=1792147418",
       "kind": "new",
       "price": "1,640円",
@@ -241,17 +285,6 @@
       "stock": "在庫あり",
       "title": "切札混成 ドギラダンテ刈（14/99）",
       "url": "https://torecat.shop/products/dm26ex4-014"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC004.jpg?v=1792148000",
-      "kind": "new",
-      "price": "1,560円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札接続 ドールバロム（㊙4/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec004"
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
@@ -318,6 +351,17 @@
       "stock": "在庫あり",
       "title": "切札接続 マンジー・ザ・ジョリー（㊙16/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec016"
+    },
+    {
+      "at": "2026-10-17T00:28:35+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO006.jpg?v=1792147351",
+      "kind": "new",
+      "price": "700円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "偽りの羅刹 アガサ・エルキュール（超6/超50）",
+      "url": "https://torecat.shop/products/dm26ex4-cho006"
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
@@ -782,10 +826,10 @@
       "url": "https://torecat.shop/products/dm26ex2-002"
     }
   ],
-  "saved_at": "2026-11-08T06:05:56+09:00",
+  "saved_at": "2026-11-08T15:40:43+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-08T06:05:56+09:00",
+      "checked_at": "2026-11-08T15:40:43+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -793,7 +837,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-08T06:05:56+09:00",
+      "checked_at": "2026-11-08T15:40:43+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
