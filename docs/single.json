@@ -1,6 +1,50 @@
 {
   "items": [
     {
+      "at": "2026-11-10T04:59:46+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S009.jpg?v=1793958633",
+      "kind": "restock",
+      "price": "450円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "超天星ライゾウ「灼」（S9/S10）",
+      "url": "https://torecat.shop/products/dm26ex5-s009"
+    },
+    {
+      "at": "2026-11-10T04:59:46+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S005.jpg?v=1793958630",
+      "kind": "restock",
+      "price": "380円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "超神星ヴァルカン・アンチャンス（S5/S10）",
+      "url": "https://torecat.shop/products/dm26ex5-s005"
+    },
+    {
+      "at": "2026-11-10T04:59:46+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S008.jpg?v=1793958633",
+      "kind": "restock",
+      "price": "200円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "暗黒神羅凰ゼロ・フェニックス（S8/S10）",
+      "url": "https://torecat.shop/products/dm26ex5-s008"
+    },
+    {
+      "at": "2026-11-10T04:59:46+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S001.jpg?v=1793958575",
+      "kind": "restock",
+      "price": "70円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "八重の精霊パーフェクト・エイティー（S1/S10）",
+      "url": "https://torecat.shop/products/dm26ex5-s001"
+    },
+    {
       "at": "2026-11-09T07:30:28+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex2-008_61bf3120-4a95-4cb3-8613-1d257f1411ac.jpg?v=1761015696",
@@ -10,6 +54,72 @@
       "stock": "在庫あり",
       "title": "メラベンチャー・ザ・ジョニー(DM25EX2 8/105)",
       "url": "https://torecat.shop/products/メラベンチャー-ザ-ジョニーdm25ex2-8-105"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-006.jpg?v=1793958832",
+      "kind": "new",
+      "price": "100円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "大獄の封殺ディアス Z（6/40）",
+      "url": "https://torecat.shop/products/dm26ex5-006"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP027.jpg?v=1793958780",
+      "kind": "new",
+      "price": "100円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "ヒメギャ・ルピア（DP27/DP40）",
+      "url": "https://torecat.shop/products/dm26ex5-dp027"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP022.jpg?v=1793958777",
+      "kind": "new",
+      "price": "80円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "亡禍医 ヘモグロ（DP22/DP40）",
+      "url": "https://torecat.shop/products/dm26ex5-dp022"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S001.jpg?v=1793958575",
+      "kind": "new",
+      "price": "70円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "八重の精霊パーフェクト・エイティー（S1/S10）",
+      "url": "https://torecat.shop/products/dm26ex5-s001"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP023.jpg?v=1793958778",
+      "kind": "new",
+      "price": "50円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "特攻人形ジェニー（DP23/DP40）",
+      "url": "https://torecat.shop/products/dm26ex5-dp023"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-029a.jpg?v=1793958886",
+      "kind": "new",
+      "price": "50円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "青寂の精霊龍 カーネル / サイレント・ジェラシー（29/40）",
+      "url": "https://torecat.shop/products/dm26ex5-029"
     },
     {
       "at": "2026-11-07T14:51:19+09:00",
@@ -123,6 +233,127 @@
     },
     {
       "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP024.jpg?v=1793958778",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "生死の天秤（DP24/DP40）",
+      "url": "https://torecat.shop/products/dm26ex5-dp024"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP039.jpg?v=1793958787",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "ピクシー・ライフ（DP39/DP40）",
+      "url": "https://torecat.shop/products/dm26ex5-dp039"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP033.jpg?v=1793958784",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "サイバー・チューン（DP33/DP40）",
+      "url": "https://torecat.shop/products/dm26ex5-dp033"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP036.jpg?v=1793958785",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "ライフプラン・チャージャー（DP36/DP40）",
+      "url": "https://torecat.shop/products/dm26ex5-dp036"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP010.jpg?v=1793958727",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "クリスタル・メモリー（DP10/DP40）",
+      "url": "https://torecat.shop/products/dm26ex5-dp010"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP012.jpg?v=1793958729",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "地獄門デス・ゲート（DP12/DP40）",
+      "url": "https://torecat.shop/products/dm26ex5-dp012"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-007.jpg?v=1793958833",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "翔竜提督アークピッチ（7/40）",
+      "url": "https://torecat.shop/products/dm26ex5-007"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP018.jpg?v=1793958732",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "フェアリー・シャワー（DP18/DP40）",
+      "url": "https://torecat.shop/products/dm26ex5-dp018"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP035.jpg?v=1793958785",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "霞み妖精ジャスミン（DP35/DP40）",
+      "url": "https://torecat.shop/products/dm26ex5-dp035"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP038.jpg?v=1793958786",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "フェアリーの火の子祭（DP38/DP40）",
+      "url": "https://torecat.shop/products/dm26ex5-dp038"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP005.jpg?v=1793958724",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "閃光の守護者ホーリー（DP5/DP40）",
+      "url": "https://torecat.shop/products/dm26ex5-dp005"
+    },
+    {
+      "at": "2026-11-07T14:51:19+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP014.jpg?v=1793958730",
       "kind": "new",
@@ -145,14 +376,36 @@
     },
     {
       "at": "2026-11-07T14:51:19+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP006.jpg?v=1793958725",
       "kind": "new",
       "price": "10円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "DNA・スパーク（DP6/DP40）",
       "url": "https://torecat.shop/products/dm26ex5-dp006"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-SEC001CHO.jpg?v=1793961688",
+      "kind": "new",
+      "price": "99,999円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "「誣」の頂 ウェディング・イノセンス（㊙1超/㊙6）",
+      "url": "https://torecat.shop/products/dm26ex5-sec001cho"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-SEC003CHO.jpg?v=1793961689",
+      "kind": "new",
+      "price": "29,800円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "フェリックス・ミザリィ（㊙3超/㊙6）",
+      "url": "https://torecat.shop/products/dm26ex5-sec003cho"
     },
     {
       "at": "2026-11-07T04:59:18+09:00",
@@ -222,14 +475,58 @@
     },
     {
       "at": "2026-11-07T04:59:18+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp1-SEC002.jpg?v=1775824007",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-G008.jpg?v=1793958672",
+      "kind": "new",
+      "price": "1,980円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "アーテル・ゴルギーニ（G8/G20）",
+      "url": "https://torecat.shop/products/dm26ex5-g008"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S010.jpg?v=1793958633",
+      "kind": "new",
+      "price": "1,400円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "無限龍王ボルシャック・ライジングNEX（S10/S10）",
+      "url": "https://torecat.shop/products/dm26ex5-s010"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S004.jpg?v=1793958629",
       "kind": "new",
       "price": "1,280円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "叡智のW インビンシブル・ギャラクシー(DM26RP1 ㊙2/㊙24) SR",
-      "url": "https://torecat.shop/products/叡智のw-インビンシブル-ギャラクシーdm26rp1-㊙2-㊙24-sr"
+      "stock": "売り切れ",
+      "title": "フェリックス・ミザリィ（S4/S10）",
+      "url": "https://torecat.shop/products/dm26ex5-s004"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-G018.jpg?v=1793958678",
+      "kind": "new",
+      "price": "800円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "光開の精霊サイフォゲート（G18/G20）",
+      "url": "https://torecat.shop/products/dm26ex5-g018"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-G020.jpg?v=1793958679",
+      "kind": "new",
+      "price": "780円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "ボルシャック・栄光・ルピア（G20/G20）",
+      "url": "https://torecat.shop/products/dm26ex5-g020"
     },
     {
       "at": "2026-11-07T04:59:18+09:00",
@@ -255,14 +552,58 @@
     },
     {
       "at": "2026-11-07T04:59:18+09:00",
-      "available": true,
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-G013.jpg?v=1793958675",
+      "kind": "new",
+      "price": "550円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "～邪眼帝 PARTⅡ～（G13/G20）",
+      "url": "https://torecat.shop/products/dm26ex5-g013"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-G001.jpg?v=1793958634",
       "kind": "new",
       "price": "550円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "天頂と停滞と水晶の決断（G1/G20）",
       "url": "https://torecat.shop/products/dm26ex5-g001"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-G002.jpg?v=1793958634",
+      "kind": "new",
+      "price": "500円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "闘門の精霊ウェルキウス（G2/G20）",
+      "url": "https://torecat.shop/products/dm26ex5-g002"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S006.jpg?v=1793958631",
+      "kind": "new",
+      "price": "480円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "ダイヤモンド・ブリザードP’S（S6/S10）",
+      "url": "https://torecat.shop/products/dm26ex5-s006"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S009.jpg?v=1793958633",
+      "kind": "new",
+      "price": "450円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "超天星ライゾウ「灼」（S9/S10）",
+      "url": "https://torecat.shop/products/dm26ex5-s009"
     },
     {
       "at": "2026-11-07T04:59:18+09:00",
@@ -274,6 +615,17 @@
       "stock": "在庫あり",
       "title": "ボルシャック・ロマネスク（G17/G20）",
       "url": "https://torecat.shop/products/dm26ex5-g017"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S005.jpg?v=1793958630",
+      "kind": "new",
+      "price": "380円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "超神星ヴァルカン・アンチャンス（S5/S10）",
+      "url": "https://torecat.shop/products/dm26ex5-s005"
     },
     {
       "at": "2026-11-07T04:59:18+09:00",
@@ -300,6 +652,39 @@
     {
       "at": "2026-11-07T04:59:18+09:00",
       "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S007.jpg?v=1793958631",
+      "kind": "new",
+      "price": "280円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "龍聖霊マギア・デル・フィン（S7/S10）",
+      "url": "https://torecat.shop/products/dm26ex5-s007"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP032.jpg?v=1793958783",
+      "kind": "new",
+      "price": "280円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "ゼロの裏技ニヤリー・ゲット（DP32/DP40）",
+      "url": "https://torecat.shop/products/dm26ex5-dp032"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-G015.jpg?v=1793958676",
+      "kind": "new",
+      "price": "250円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "貴布人 テブルカッケ＝エディ（G15/G20）",
+      "url": "https://torecat.shop/products/dm26ex5-g015"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-G007.jpg?v=1793958672",
       "kind": "new",
       "price": "220円",
@@ -307,6 +692,39 @@
       "stock": "在庫あり",
       "title": "凶鬼03号 ガシャゴズラ（G7/G20）",
       "url": "https://torecat.shop/products/dm26ex5-g007"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S008.jpg?v=1793958633",
+      "kind": "new",
+      "price": "200円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "暗黒神羅凰ゼロ・フェニックス（S8/S10）",
+      "url": "https://torecat.shop/products/dm26ex5-s008"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S003.jpg?v=1793958629",
+      "kind": "new",
+      "price": "180円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "クリスタル・ツヴァイランサーP’S（S3/S10）",
+      "url": "https://torecat.shop/products/dm26ex5-s003"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP007.jpg?v=1793958726",
+      "kind": "new",
+      "price": "180円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "ヘブンズ・ゲート（DP7/DP40）",
+      "url": "https://torecat.shop/products/dm26ex5-dp007"
     },
     {
       "at": "2026-11-07T04:59:18+09:00",
@@ -376,12 +794,12 @@
     },
     {
       "at": "2026-11-07T04:59:18+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S002.jpg?v=1793958629",
       "kind": "new",
       "price": "80円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "超閃機 ジャバジャックP’S（S2/S10）",
       "url": "https://torecat.shop/products/dm26ex5-s002"
     },
@@ -464,12 +882,12 @@
     },
     {
       "at": "2026-11-07T04:59:18+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-DP008.jpg?v=1793958726",
       "kind": "new",
       "price": "30円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "オリオティス・ジャッジ（DP8/DP40）",
       "url": "https://torecat.shop/products/dm26ex5-dp008"
     },
@@ -498,11 +916,22 @@
     {
       "at": "2026-11-05T20:18:27+09:00",
       "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SEC018.jpg?v=1786093821",
+      "kind": "new",
+      "price": "860円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "宿禰マロン＜最強傑作でし！＞（㊙18/㊙20）",
+      "url": "https://torecat.shop/products/dm26ex3-sec018"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SEC019CHOa.jpg?v=1786094374",
       "kind": "new",
       "price": "620円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "帝哲人＜声出していけヨ！＞（㊙19超/㊙20）",
       "url": "https://torecat.shop/products/dm26ex3-sec019cho"
     },
@@ -520,13 +949,13 @@
     {
       "at": "2026-11-05T20:18:27+09:00",
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SEC001a.jpg?v=1786094332",
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SEC019a.jpg?v=1786094370",
       "kind": "new",
-      "price": "460円",
+      "price": "140円",
       "shop": "トレキャット",
       "stock": "在庫あり",
-      "title": "天命＜天下のお嬢様ですのよ＞（㊙1/㊙20）",
-      "url": "https://torecat.shop/products/dm26ex3-sec001"
+      "title": "帝哲人＜声出していけヨ！＞（㊙19/㊙20）",
+      "url": "https://torecat.shop/products/dm26ex3-sec019"
     },
     {
       "at": "2026-11-05T20:18:27+09:00",
@@ -573,72 +1002,6 @@
       "url": "https://torecat.shop/products/dm26rp2-011"
     },
     {
-      "at": "2026-11-01T17:10:10+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-079.jpg?v=1789105145",
-      "kind": "new",
-      "price": "40円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "オンソク童子 <ターボ.鬼>　79/89 DM26-EX2",
-      "url": "https://torecat.shop/products/オンソク童子-ターボ-鬼-79-89-dm26-ex2"
-    },
-    {
-      "at": "2026-11-01T17:10:10+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-069_a3835ca6-f3bb-4863-bb5b-4c06de90aca6.jpg?v=1790254720",
-      "kind": "new",
-      "price": "16円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "超轟速 レッドランチャー　69/89 DM26EX2",
-      "url": "https://torecat.shop/products/duelmasters-dm26ex2-069"
-    },
-    {
-      "at": "2026-10-29T00:23:22+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-STDSEC012.jpg?v=1789730498",
-      "kind": "new",
-      "price": "780円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "禁時混成王 ドキンダンテXXII（STD㊙12/）",
-      "url": "https://torecat.shop/products/dm26rp3-stdsec012"
-    },
-    {
-      "at": "2026-10-27T17:33:12+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC011.jpg?v=1789730410",
-      "kind": "new",
-      "price": "1,260円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "祝え！冥帝王 ダイジュ・ディダノス（㊙11/㊙24）",
-      "url": "https://torecat.shop/products/dm26rp3-sec011"
-    },
-    {
-      "at": "2026-10-23T21:24:12+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp2-S001.jpg?v=1781507845",
-      "kind": "new",
-      "price": "700円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "「業流」の頂 ゾロ・ア・スタート（S1/S11）",
-      "url": "https://torecat.shop/products/dm26rp2-s001"
-    },
-    {
-      "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SEC009.jpg?v=1789730402",
-      "kind": "new",
-      "price": "1,740円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "キング∞エンペラー（㊙9/㊙24）",
-      "url": "https://torecat.shop/products/dm26rp3-sec009"
-    },
-    {
       "at": "2026-10-22T21:19:28+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-007.jpg?v=1786093050",
@@ -681,17 +1044,6 @@
       "stock": "在庫あり",
       "title": "黎悪銃と邪煉哀の決断（11/77）",
       "url": "https://torecat.shop/products/dm26rp3-011"
-    },
-    {
-      "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25rp4-TR1_7c41240a-0f9d-4b63-85d4-cd5eaae2638d.jpg?v=1766146818",
-      "kind": "new",
-      "price": "90円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "「正義星帝」 <ライオネル.Star>(DM25RP4 TR1/TR9)",
-      "url": "https://torecat.shop/products/正義星帝-ライオネル-star-dm25rp4-tr1-tr9"
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
@@ -764,7 +1116,7 @@
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-014.jpg?v=1792147418",
       "kind": "new",
-      "price": "1,640円",
+      "price": "1,780円",
       "shop": "トレキャット",
       "stock": "在庫あり",
       "title": "切札混成 ドギラダンテ刈（14/99）",
@@ -784,28 +1136,6 @@
     {
       "at": "2026-10-17T00:28:35+09:00",
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC014.jpg?v=1792148045",
-      "kind": "new",
-      "price": "1,350円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札混成 レッヴォゾーン（㊙14/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec014"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC024.jpg?v=1792148089",
-      "kind": "new",
-      "price": "1,060円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札縫合 メイドヴァロム（㊙24/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec024"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-010.jpg?v=1792147382",
       "kind": "new",
       "price": "990円",
@@ -813,28 +1143,6 @@
       "stock": "在庫あり",
       "title": "切札混成 光隼 蒼斬丸（10/99）",
       "url": "https://torecat.shop/products/dm26ex4-010"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-chog01-photo.jpg?v=1792171219",
-      "kind": "new",
-      "price": "920円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "ハイパー・ザ・ジョニー（超G1/超G12）",
-      "url": "https://torecat.shop/products/dm26ex4-chog01"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC016.jpg?v=1792148054",
-      "kind": "new",
-      "price": "920円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札接続 マンジー・ザ・ジョリー（㊙16/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec016"
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
@@ -861,17 +1169,6 @@
     {
       "at": "2026-10-17T00:28:35+09:00",
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC010b.webp?v=1792292786",
-      "kind": "new",
-      "price": "480円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札連結 ガイアーセイ・カイザー/切札電融 リュウセール・カイザー（㊙10/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec010"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC021.jpg?v=1792148076",
       "kind": "new",
       "price": "480円",
@@ -890,17 +1187,6 @@
       "stock": "在庫あり",
       "title": "切札混成 5000BT（㊙23/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec023"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC006.jpg?v=1792148009",
-      "kind": "new",
-      "price": "410円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札接続 スーパー・ロマキルカスク（㊙6/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec006"
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
@@ -982,17 +1268,6 @@
     {
       "at": "2026-10-17T00:28:35+09:00",
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO017a.jpg?v=1792147453",
-      "kind": "new",
-      "price": "80円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "バーンメア・ザ・シルバー / オラオラ・スラッシュ（超17/超50）",
-      "url": "https://torecat.shop/products/dm26ex4-cho017"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-022.jpg?v=1792147497",
       "kind": "new",
       "price": "80円",
@@ -1037,17 +1312,6 @@
     {
       "at": "2026-10-16T09:46:51+09:00",
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-SPR002.jpg?v=1784286738",
-      "kind": "new",
-      "price": "800円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "【状態B】世界竜皇 ボルシャック・ヒカリスマ（SPR2/SPR5）",
-      "url": "https://torecat.shop/products/dm26ex2-spr002"
-    },
-    {
-      "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-001.jpg?v=1784286752",
       "kind": "new",
       "price": "570円",
@@ -1055,17 +1319,6 @@
       "stock": "在庫あり",
       "title": "【状態B】飛翔龍 5000VT（1/89）",
       "url": "https://torecat.shop/products/dm26ex2-001"
-    },
-    {
-      "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-015a.jpg?v=1786094306",
-      "kind": "new",
-      "price": "320円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "【状態B】音卿の精霊龍 ラフルル・ラブ / 「未来から来る、だからミラクル」（15/100）",
-      "url": "https://torecat.shop/products/状態b-音卿の精霊龍-ラフルル-ラブ-未来から来る-だからミラクル-15-100"
     },
     {
       "at": "2026-10-16T09:46:51+09:00",
@@ -1088,17 +1341,6 @@
       "stock": "在庫あり",
       "title": "【状態B】水蜃 フカフチノカミ（4/89）",
       "url": "https://torecat.shop/products/dm26ex2-004"
-    },
-    {
-      "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-028.jpg?v=1784286708",
-      "kind": "new",
-      "price": "140円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "【状態B】轟速 ザ・ロウィン（28/89）",
-      "url": "https://torecat.shop/products/dm26ex2-028"
     },
     {
       "at": "2026-10-16T09:46:51+09:00",
@@ -1147,17 +1389,6 @@
     {
       "at": "2026-10-16T09:46:51+09:00",
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-032.jpg?v=1784286714",
-      "kind": "new",
-      "price": "8円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "【状態B】野望の決闘（32/89）",
-      "url": "https://torecat.shop/products/dm26ex2-032"
-    },
-    {
-      "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-033.jpg?v=1784286716",
       "kind": "new",
       "price": "8円",
@@ -1165,17 +1396,6 @@
       "stock": "在庫あり",
       "title": "【状態B】覇道の決闘（33/89）",
       "url": "https://torecat.shop/products/dm26ex2-033"
-    },
-    {
-      "at": "2026-10-16T09:46:51+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-026a.jpg?v=1784286706",
-      "kind": "new",
-      "price": "8円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "【状態B】「鬼情」の極 ジャオウグリラ / 「自由で欲望のままに生きるのだ！」（26/89）",
-      "url": "https://torecat.shop/products/dm26ex2-026"
     },
     {
       "at": "2026-10-16T09:46:51+09:00",
@@ -1233,18 +1453,18 @@
       "url": "https://torecat.shop/products/dm26ex2-002"
     }
   ],
-  "saved_at": "2026-11-09T18:29:23+09:00",
+  "saved_at": "2026-11-10T04:59:46+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-09T10:55:36+09:00",
-      "error_count": 1,
+      "checked_at": "2026-11-10T04:59:46+09:00",
+      "error_count": 0,
       "error_notified": false,
-      "last_error": "ページが開けませんでした（HTTP 503）",
+      "last_error": null,
       "name": "アメニティードリーム",
-      "state": "error"
+      "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-09T18:29:23+09:00",
+      "checked_at": "2026-11-10T04:59:46+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
