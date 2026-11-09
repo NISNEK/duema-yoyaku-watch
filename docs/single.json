@@ -12,17 +12,6 @@
       "url": "https://torecat.shop/products/メラベンチャー-ザ-ジョニーdm25ex2-8-105"
     },
     {
-      "at": "2026-11-08T15:40:43+09:00",
-      "available": false,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26sd1-b008.jpg?v=1775227589",
-      "kind": "new",
-      "price": "10円",
-      "shop": "トレキャット",
-      "stock": "売り切れ",
-      "title": "【状態B】ロスト・Re:ソウル",
-      "url": "https://torecat.shop/products/ロスト-re-ソウルdm26-sd1"
-    },
-    {
       "at": "2026-11-07T14:51:19+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-G003a.jpg?v=1793958635",
@@ -728,12 +717,12 @@
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-CHO008.jpg?v=1792147369",
       "kind": "new",
       "price": "2,280円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "天革の騎令嬢 ミラクルステラ（超8/超50）",
       "url": "https://torecat.shop/products/dm26ex4-cho008"
     },
@@ -1222,10 +1211,10 @@
       "url": "https://torecat.shop/products/dm26ex2-002"
     }
   ],
-  "saved_at": "2026-11-09T07:30:28+09:00",
+  "saved_at": "2026-11-09T10:55:36+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-09T07:30:28+09:00",
+      "checked_at": "2026-11-09T10:55:36+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1233,7 +1222,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-09T07:30:28+09:00",
+      "checked_at": "2026-11-09T10:55:36+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
