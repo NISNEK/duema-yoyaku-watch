@@ -1,50 +1,6 @@
 {
   "items": [
     {
-      "at": "2026-11-10T04:59:46+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S009.jpg?v=1793958633",
-      "kind": "restock",
-      "price": "450円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "超天星ライゾウ「灼」（S9/S10）",
-      "url": "https://torecat.shop/products/dm26ex5-s009"
-    },
-    {
-      "at": "2026-11-10T04:59:46+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S005.jpg?v=1793958630",
-      "kind": "restock",
-      "price": "380円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "超神星ヴァルカン・アンチャンス（S5/S10）",
-      "url": "https://torecat.shop/products/dm26ex5-s005"
-    },
-    {
-      "at": "2026-11-10T04:59:46+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S008.jpg?v=1793958633",
-      "kind": "restock",
-      "price": "200円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "暗黒神羅凰ゼロ・フェニックス（S8/S10）",
-      "url": "https://torecat.shop/products/dm26ex5-s008"
-    },
-    {
-      "at": "2026-11-10T04:59:46+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-S001.jpg?v=1793958575",
-      "kind": "restock",
-      "price": "70円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "八重の精霊パーフェクト・エイティー（S1/S10）",
-      "url": "https://torecat.shop/products/dm26ex5-s001"
-    },
-    {
       "at": "2026-11-09T07:30:28+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex2-008_61bf3120-4a95-4cb3-8613-1d257f1411ac.jpg?v=1761015696",
@@ -1002,6 +958,17 @@
       "url": "https://torecat.shop/products/dm26rp2-011"
     },
     {
+      "at": "2026-11-01T17:10:10+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-061_9e7996bc-e36e-4f4f-bff2-8ebe9a616441.jpg?v=1790254713",
+      "kind": "new",
+      "price": "40円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "悪霊鬼王ジャオディオス　61/89 DM26EX2",
+      "url": "https://torecat.shop/products/duelmasters-dm26ex2-061"
+    },
+    {
       "at": "2026-10-22T21:19:28+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-007.jpg?v=1786093050",
@@ -1453,10 +1420,10 @@
       "url": "https://torecat.shop/products/dm26ex2-002"
     }
   ],
-  "saved_at": "2026-11-10T04:59:46+09:00",
+  "saved_at": "2026-11-10T11:40:08+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-10T04:59:46+09:00",
+      "checked_at": "2026-11-10T11:40:08+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1464,7 +1431,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-10T04:59:46+09:00",
+      "checked_at": "2026-11-10T11:40:08+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
