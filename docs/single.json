@@ -178,12 +178,12 @@
     },
     {
       "at": "2026-11-07T14:51:19+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-002.jpg?v=1793958830",
       "kind": "new",
       "price": "10円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "ボルシャック・ドギラゴン（2/40）",
       "url": "https://torecat.shop/products/dm26ex5-002"
     },
@@ -914,10 +914,10 @@
       "url": "https://torecat.shop/products/dm26ex2-002"
     }
   ],
-  "saved_at": "2026-11-13T07:20:45+09:00",
+  "saved_at": "2026-11-13T11:44:10+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-13T07:20:45+09:00",
+      "checked_at": "2026-11-13T11:44:10+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -925,7 +925,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-13T07:20:45+09:00",
+      "checked_at": "2026-11-13T11:44:10+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
