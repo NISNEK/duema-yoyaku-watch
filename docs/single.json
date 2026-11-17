@@ -45,39 +45,6 @@
       "url": "https://torecat.shop/products/dm26ex2-pr010"
     },
     {
-      "at": "2026-11-18T02:36:59+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-PR001.jpg?v=1784286649",
-      "kind": "restock",
-      "price": "900円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "引き裂かれし永劫、エムラクール（PR1/PR10）",
-      "url": "https://torecat.shop/products/dm26ex2-pr001"
-    },
-    {
-      "at": "2026-11-18T02:36:59+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-031.jpg?v=1784286713",
-      "kind": "restock",
-      "price": "180円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "【状態B】覚悟の決闘（31/89）",
-      "url": "https://torecat.shop/products/dm26ex2-031"
-    },
-    {
-      "at": "2026-11-18T02:36:59+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-MC008.jpg?v=1784286689",
-      "kind": "restock",
-      "price": "8円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "【状態B】魔誕導師ブラックルシファー（MC8/30）",
-      "url": "https://torecat.shop/products/dm26ex2-mc008"
-    },
-    {
       "at": "2026-11-17T01:08:56+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-PR2a.jpg?v=1770985807",
@@ -551,6 +518,17 @@
       "url": "https://torecat.shop/products/dm26rp3-s007"
     },
     {
+      "at": "2026-10-23T21:24:12+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR15a.jpg?v=1770985777",
+      "kind": "new",
+      "price": "60円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "時空の支配者ディアボロス Z(DM25EX4 TR15/TR21) SR",
+      "url": "https://torecat.shop/products/時空の支配者ディアボロス-zdm25ex4-tr15-tr21-sr"
+    },
+    {
       "at": "2026-10-22T21:19:28+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-STD009.jpg?v=1789730469",
@@ -571,17 +549,6 @@
       "stock": "在庫あり",
       "title": "引き裂かれし永劫、エムラクール（PR1/PR10）",
       "url": "https://torecat.shop/products/dm26ex2-pr001"
-    },
-    {
-      "at": "2026-10-22T21:19:28+09:00",
-      "available": false,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-007.jpg?v=1786093050",
-      "kind": "new",
-      "price": "850円",
-      "shop": "トレキャット",
-      "stock": "売り切れ",
-      "title": "流星アーシュ＜私が主役⁉＞（7/100）",
-      "url": "https://torecat.shop/products/dm26ex3-007"
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
@@ -637,6 +604,17 @@
       "stock": "在庫あり",
       "title": "爆龍羅王 ゴリナボルト（S9/S11）",
       "url": "https://torecat.shop/products/dm26rp3-s009"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR09a.jpg?v=1770985775",
+      "kind": "new",
+      "price": "220円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "超時空ストームG・XX(DM25EX4 TR9/TR21) SR",
+      "url": "https://torecat.shop/products/超時空ストームg-xxdm25ex4-tr9-tr21-sr"
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
@@ -1552,10 +1530,10 @@
       "url": "https://torecat.shop/products/dm26ex2-002"
     }
   ],
-  "saved_at": "2026-11-18T02:36:59+09:00",
+  "saved_at": "2026-11-18T08:57:40+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-18T02:36:59+09:00",
+      "checked_at": "2026-11-18T08:57:40+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1563,7 +1541,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-18T02:36:59+09:00",
+      "checked_at": "2026-11-18T08:57:40+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
