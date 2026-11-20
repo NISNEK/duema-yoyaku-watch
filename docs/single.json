@@ -101,12 +101,12 @@
     },
     {
       "at": "2026-11-20T06:26:55+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR10.jpg?v=1771161420",
       "kind": "new",
       "price": "10円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "ボルベルグ・龍覇 ・ドラゴン(DM25EX4 TR10/TR21) SR",
       "url": "https://torecat.shop/products/ボルベルグ-龍覇-ドラゴンdm25ex4-tr10-tr21-sr"
     },
@@ -175,50 +175,6 @@
       "stock": "在庫あり",
       "title": "BOLSHA9-銅鑼-5(DM25EX4 11/65) VR",
       "url": "https://torecat.shop/products/bolsha9-銅鑼-5dm25ex4-11-65-vr"
-    },
-    {
-      "at": "2026-11-20T06:26:55+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-SP001.jpg?v=1789730563",
-      "kind": "restock",
-      "price": "5,580円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "理想と平和の決断（SP1/SP5）",
-      "url": "https://torecat.shop/products/dm26rp3-sp001"
-    },
-    {
-      "at": "2026-11-20T06:26:55+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-SEC001.jpg?v=1793960171",
-      "kind": "restock",
-      "price": "580円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "クリスタル・ツヴァイランサーP’S（㊙1/㊙5）",
-      "url": "https://torecat.shop/products/dm26ex5-sec001"
-    },
-    {
-      "at": "2026-11-20T06:26:55+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp1-STD001.jpg?v=1775824030",
-      "kind": "restock",
-      "price": "400円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "頂上電融 クライアッシュ“覇星” ’22(DM26RP1 STD1/) SR",
-      "url": "https://torecat.shop/products/頂上電融-クライアッシュ-覇星-22dm26rp1-std1-sr"
-    },
-    {
-      "at": "2026-11-20T06:26:55+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-003.jpg?v=1771161407",
-      "kind": "restock",
-      "price": "10円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "怒流牙忍法 照宝闘の術(DM25EX4 3/65) VR",
-      "url": "https://torecat.shop/products/怒流牙忍法-照宝闘の術dm25ex4-3-65-vr"
     },
     {
       "at": "2026-11-19T22:03:27+09:00",
@@ -342,28 +298,6 @@
       "url": "https://torecat.shop/products/dm26ex3-051"
     },
     {
-      "at": "2026-11-19T13:07:44+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-PR007CHO.jpg?v=1784288931",
-      "kind": "new",
-      "price": "4,280円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "ブレイン・スラッシュ（PR7超/PR10）",
-      "url": "https://torecat.shop/products/dm26ex2-pr007cho"
-    },
-    {
-      "at": "2026-11-19T13:07:44+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-PR004CHO.jpg?v=1784286659",
-      "kind": "new",
-      "price": "2,600円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "アーテル・ゴルギーニ（PR4超/PR10）",
-      "url": "https://torecat.shop/products/dm26ex2-pr004cho"
-    },
-    {
       "at": "2026-11-19T01:27:43+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp1-024.jpg?v=1790254383",
@@ -464,12 +398,12 @@
     },
     {
       "at": "2026-11-07T04:59:18+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-SEC003.jpg?v=1793960172",
       "kind": "new",
       "price": "2,380円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "ダイヤモンド・ブリザードP’S（㊙3/㊙5）",
       "url": "https://torecat.shop/products/dm26ex5-sec003"
     },
@@ -494,6 +428,17 @@
       "stock": "在庫あり",
       "title": "大河聖霊エル・ドラード（DP2/DP40）",
       "url": "https://torecat.shop/products/dm26ex5-dp002"
+    },
+    {
+      "at": "2026-11-06T14:42:52+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/promoy21-059.jpg?v=1790249967",
+      "kind": "new",
+      "price": "700円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "フェアリー・Re:ライフ　P59/Y21 DMPROMOY21",
+      "url": "https://torecat.shop/products/duelmasters-promoy21-059"
     },
     {
       "at": "2026-11-06T14:42:52+09:00",
@@ -1168,12 +1113,12 @@
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S03.jpg?v=1771161416",
       "kind": "new",
       "price": "480円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "覇王の頭蓋 髑髏魔城(DM25EX4 S3/S15) SR",
       "url": "https://torecat.shop/products/覇王の頭蓋-髑髏魔城dm25ex4-s3-s15-sr"
     },
@@ -2146,10 +2091,10 @@
       "url": "https://torecat.shop/products/dm26ex2-002"
     }
   ],
-  "saved_at": "2026-11-20T06:26:55+09:00",
+  "saved_at": "2026-11-20T11:32:01+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-20T06:26:55+09:00",
+      "checked_at": "2026-11-20T11:32:01+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -2157,7 +2102,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-20T06:26:55+09:00",
+      "checked_at": "2026-11-20T11:32:01+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
