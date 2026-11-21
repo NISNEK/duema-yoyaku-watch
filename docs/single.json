@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "at": "2026-11-21T16:30:24+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26bd1-Sec01.jpg?v=1795227278",
+      "kind": "new",
+      "price": "69,800円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "ボルメテウス・ホワイト・ドラゴン・ネクサス（秘1/秘1）",
+      "url": "https://torecat.shop/products/dm26bd1-sec01"
+    },
+    {
       "at": "2026-11-21T03:45:03+09:00",
       "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26bd1-SP002.jpg?v=1795174217",
@@ -431,12 +442,12 @@
     },
     {
       "at": "2026-11-21T03:45:03+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26bd1-010.jpg?v=1795174032",
       "kind": "new",
       "price": "20円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "ネオ・ボルメテウス・ホワイト・ドラゴン（10/35）",
       "url": "https://torecat.shop/products/dm26bd1-010"
     },
@@ -585,12 +596,12 @@
     },
     {
       "at": "2026-11-21T03:45:03+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26bd1-ex021.jpg?v=1795174191",
       "kind": "new",
       "price": "10円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "アポカリプス・デイ（21/25）",
       "url": "https://torecat.shop/products/dm26bd1-ex021"
     },
@@ -969,28 +980,6 @@
       "url": "https://torecat.shop/products/魅惑のロイヤル-エイリアンdm25ex4-tr21-tr21-vr"
     },
     {
-      "at": "2026-10-17T19:23:59+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp3-S010.jpg?v=1789730226",
-      "kind": "new",
-      "price": "540円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "祝え！冥帝王 ダイジュ・ディダノス（S10/S11）",
-      "url": "https://torecat.shop/products/dm26rp3-s010"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": false,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-014.jpg?v=1792147418",
-      "kind": "new",
-      "price": "2,180円",
-      "shop": "トレキャット",
-      "stock": "売り切れ",
-      "title": "切札混成 ドギラダンテ刈（14/99）",
-      "url": "https://torecat.shop/products/dm26ex4-014"
-    },
-    {
       "at": "2026-10-17T00:28:35+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC022.jpg?v=1792148080",
@@ -1037,17 +1026,6 @@
     {
       "at": "2026-10-17T00:28:35+09:00",
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC019.jpg?v=1792148067",
-      "kind": "new",
-      "price": "680円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札電融 モモムゲン（㊙19/㊙25）",
-      "url": "https://torecat.shop/products/dm26ex4-sec019"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-SEC011.jpg?v=1792148031",
       "kind": "new",
       "price": "550円",
@@ -1088,17 +1066,6 @@
       "stock": "在庫あり",
       "title": "切札連結 ガイアーセイ・カイザー/切札電融 リュウセール・カイザー（㊙10/㊙25）",
       "url": "https://torecat.shop/products/dm26ex4-sec010"
-    },
-    {
-      "at": "2026-10-17T00:28:35+09:00",
-      "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex4-011.jpg?v=1792147390",
-      "kind": "new",
-      "price": "380円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "切札縫合 アビス記号jS（11/99）",
-      "url": "https://torecat.shop/products/dm26ex4-011"
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
@@ -1431,10 +1398,10 @@
       "url": "https://torecat.shop/products/dm26ex2-002"
     }
   ],
-  "saved_at": "2026-11-21T09:21:03+09:00",
+  "saved_at": "2026-11-21T16:30:24+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-21T09:21:03+09:00",
+      "checked_at": "2026-11-21T16:30:24+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1442,7 +1409,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-21T09:21:03+09:00",
+      "checked_at": "2026-11-21T16:30:24+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
