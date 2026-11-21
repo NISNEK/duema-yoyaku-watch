@@ -387,12 +387,12 @@
     },
     {
       "at": "2026-11-21T03:45:03+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26bd1-018a.jpg?v=1795174071",
       "kind": "new",
       "price": "30円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "同期の妖精 / ド浮きの動悸（18/35）",
       "url": "https://torecat.shop/products/dm26bd1-018"
     },
@@ -508,12 +508,12 @@
     },
     {
       "at": "2026-11-21T03:45:03+09:00",
-      "available": true,
+      "available": false,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26bd1-035.jpg?v=1795174110",
       "kind": "new",
       "price": "10円",
       "shop": "トレキャット",
-      "stock": "在庫あり",
+      "stock": "売り切れ",
       "title": "赤い稲妻 テスタ・ロッサ（35/35）",
       "url": "https://torecat.shop/products/dm26bd1-035"
     },
@@ -850,17 +850,6 @@
     {
       "at": "2026-11-06T03:50:59+09:00",
       "available": true,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26sd1-e002F.jpg?v=1775227547",
-      "kind": "new",
-      "price": "120円",
-      "shop": "トレキャット",
-      "stock": "在庫あり",
-      "title": "【状態B】月下卍壊 ガ・リュミーズ 卍",
-      "url": "https://torecat.shop/products/月下卍壊-ガ-リュミーズ-卍dm26-sd1"
-    },
-    {
-      "at": "2026-11-06T03:50:59+09:00",
-      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26sd1-b001.jpg?v=1775227591",
       "kind": "new",
       "price": "50円",
@@ -945,6 +934,17 @@
       "stock": "在庫あり",
       "title": "アアルカイトの電影（㊙19/㊙24）",
       "url": "https://torecat.shop/products/dm26rp3-sec019"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp1-014a_b42a4169-2688-481e-9611-2c6ce214895e.jpg?v=1790254376",
+      "kind": "new",
+      "price": "200円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "改竄の炎 ボルメテウス・ハック　14/77 DM26RP1",
+      "url": "https://torecat.shop/products/duelmasters-dm26rp1-014"
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
@@ -1431,10 +1431,10 @@
       "url": "https://torecat.shop/products/dm26ex2-002"
     }
   ],
-  "saved_at": "2026-11-21T03:45:03+09:00",
+  "saved_at": "2026-11-21T09:21:03+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-21T03:45:03+09:00",
+      "checked_at": "2026-11-21T09:21:03+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -1442,7 +1442,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-21T03:45:03+09:00",
+      "checked_at": "2026-11-21T09:21:03+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
