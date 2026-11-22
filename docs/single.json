@@ -45,17 +45,6 @@
       "url": "https://torecat.shop/products/正義星帝-ライオネル-star-ノーマル仕様dm26-sd1"
     },
     {
-      "at": "2026-11-07T04:59:18+09:00",
-      "available": false,
-      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-SEC003.jpg?v=1793960172",
-      "kind": "new",
-      "price": "2,380円",
-      "shop": "トレキャット",
-      "stock": "売り切れ",
-      "title": "ダイヤモンド・ブリザードP’S（㊙3/㊙5）",
-      "url": "https://torecat.shop/products/dm26ex5-sec003"
-    },
-    {
       "at": "2026-11-06T03:50:59+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26sd1-c002F.jpg?v=1775227485",
@@ -485,10 +474,10 @@
       "url": "https://torecat.shop/products/dm26ex2-002"
     }
   ],
-  "saved_at": "2026-11-22T06:07:38+09:00",
+  "saved_at": "2026-11-23T01:23:56+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-22T06:07:38+09:00",
+      "checked_at": "2026-11-23T01:23:56+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -496,7 +485,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-22T06:07:38+09:00",
+      "checked_at": "2026-11-23T01:23:56+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
