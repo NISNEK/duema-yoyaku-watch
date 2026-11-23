@@ -1,6 +1,127 @@
 {
   "items": [
     {
+      "at": "2026-11-23T20:06:41+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-SP1a.jpg?v=1770985812",
+      "kind": "new",
+      "price": "3,800円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "天獄の正義 ヘブンズ・ヘブン(DM25EX4 SP1/SP5) VIC",
+      "url": "https://torecat.shop/products/天獄の正義-ヘブンズ-ヘブンdm25ex4-sp1-sp5-vic"
+    },
+    {
+      "at": "2026-11-23T20:06:41+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-SecSPR3.webp?v=1783313827",
+      "kind": "new",
+      "price": "2,000円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "覇王の特権大使-キサラギdm25ex4-spr3㊙-spr20-spr",
+      "url": "https://torecat.shop/products/覇王の特権大使-キサラギdm25ex4-spr3㊙-spr20-spr"
+    },
+    {
+      "at": "2026-11-23T20:06:41+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-PR1a.jpg?v=1770985808",
+      "kind": "new",
+      "price": "200円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "金河刃 ニケ(DM25EX4 PR1/PR5) SPR",
+      "url": "https://torecat.shop/products/金河刃-ニケdm25ex4-pr1-pr5-spr"
+    },
+    {
+      "at": "2026-11-23T20:06:41+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-PR3a.jpg?v=1770985807",
+      "kind": "new",
+      "price": "50円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "豚葬槍 ブータン(DM25EX4 PR3/PR5) SPR",
+      "url": "https://torecat.shop/products/豚葬槍-ブータンdm25ex4-pr3-pr5-spr"
+    },
+    {
+      "at": "2026-11-23T20:06:41+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex2-MC001.jpg?v=1784286647",
+      "kind": "new",
+      "price": "8円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "【状態B】竜皇神 ボルシャック・バクテラス（MC1/30）",
+      "url": "https://torecat.shop/products/dm26ex2-mc001"
+    },
+    {
+      "at": "2026-11-23T20:06:41+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S03.jpg?v=1771161416",
+      "kind": "restock",
+      "price": "480円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "覇王の頭蓋 髑髏魔城(DM25EX4 S3/S15) SR",
+      "url": "https://torecat.shop/products/覇王の頭蓋-髑髏魔城dm25ex4-s3-s15-sr"
+    },
+    {
+      "at": "2026-11-23T20:06:41+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR01a.jpg?v=1770985811",
+      "kind": "restock",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "流星のフォーエバー・カイザー(DM25EX4 TR1/TR21) VIC",
+      "url": "https://torecat.shop/products/流星のフォーエバー-カイザーdm25ex4-tr1-tr21-vic"
+    },
+    {
+      "at": "2026-11-23T20:06:41+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR21.jpg?v=1771161408",
+      "kind": "restock",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "魅惑のロイヤル・エイリアン(DM25EX4 TR21/TR21) VR",
+      "url": "https://torecat.shop/products/魅惑のロイヤル-エイリアンdm25ex4-tr21-tr21-vr"
+    },
+    {
+      "at": "2026-11-23T20:06:41+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-003.jpg?v=1771161407",
+      "kind": "restock",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "怒流牙忍法 照宝闘の術(DM25EX4 3/65) VR",
+      "url": "https://torecat.shop/products/怒流牙忍法-照宝闘の術dm25ex4-3-65-vr"
+    },
+    {
+      "at": "2026-11-23T20:06:41+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR19.jpg?v=1771161409",
+      "kind": "restock",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "再興王女プリン(DM25EX4 TR19/TR21) VR",
+      "url": "https://torecat.shop/products/再興王女プリンdm25ex4-tr19-tr21-vr"
+    },
+    {
+      "at": "2026-11-23T20:06:41+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR10.jpg?v=1771161420",
+      "kind": "restock",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "ボルベルグ・龍覇 ・ドラゴン(DM25EX4 TR10/TR21) SR",
+      "url": "https://torecat.shop/products/ボルベルグ-龍覇-ドラゴンdm25ex4-tr10-tr21-sr"
+    },
+    {
       "at": "2026-11-23T06:55:53+09:00",
       "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm24rp3-S09.jpg?v=1744291765",
@@ -10,6 +131,160 @@
       "stock": "在庫あり",
       "title": "【状態B】哀しみの夜 シンベロム・カタルシス S9/S11",
       "url": "https://torecat.shop/products/dm24-rp3-s9-s11"
+    },
+    {
+      "at": "2026-11-20T06:26:55+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-011.jpg?v=1771161403",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "BOLSHA9-銅鑼-5(DM25EX4 11/65) VR",
+      "url": "https://torecat.shop/products/bolsha9-銅鑼-5dm25ex4-11-65-vr"
+    },
+    {
+      "at": "2026-11-20T06:26:55+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-002.jpg?v=1771161411",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "偽りの聖霊王 オブリビオン(DM25EX4 2/65) VR",
+      "url": "https://torecat.shop/products/偽りの聖霊王-オブリビオンdm25ex4-2-65-vr"
+    },
+    {
+      "at": "2026-11-20T06:26:55+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-006.jpg?v=1771161405",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "芸夢鯨鯢 バンキング(DM25EX4 6/65) VR",
+      "url": "https://torecat.shop/products/芸夢鯨鯢-バンキングdm25ex4-6-65-vr"
+    },
+    {
+      "at": "2026-11-20T06:26:55+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-018.jpg?v=1771161399",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "禁断の邪眼 ドキンダムR(DM25EX4 18/65) VR",
+      "url": "https://torecat.shop/products/禁断の邪眼-ドキンダムrdm25ex4-18-65-vr"
+    },
+    {
+      "at": "2026-11-20T06:26:55+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-009.jpg?v=1771161409",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "偽りの剣豪バロムバロスト(DM25EX4 9/65) VR",
+      "url": "https://torecat.shop/products/偽りの剣豪バロムバロストdm25ex4-9-65-vr"
+    },
+    {
+      "at": "2026-11-20T06:26:55+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR16.jpg?v=1771161410",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "悪魔神ザビ・イプシロン(DM25EX4 TR16/TR21) VR",
+      "url": "https://torecat.shop/products/悪魔神ザビ-イプシロンdm25ex4-tr16-tr21-vr"
+    },
+    {
+      "at": "2026-11-20T06:26:55+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-017.jpg?v=1771161400",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "偽りの名 スネーク・ザ・ガン(DM25EX4 17/65) VR",
+      "url": "https://torecat.shop/products/偽りの名-スネーク-ザ-ガンdm25ex4-17-65-vr"
+    },
+    {
+      "at": "2026-11-20T06:26:55+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR20.jpg?v=1771161411",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "戦闘の天才 ムロク(DM25EX4 TR20/TR21) VR",
+      "url": "https://torecat.shop/products/戦闘の天才-ムロクdm25ex4-tr20-tr21-vr"
+    },
+    {
+      "at": "2026-11-20T06:26:55+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR14.jpg?v=1771161419",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "姫様宣言プリンプリン(DM25EX4 TR14/TR21) SR",
+      "url": "https://torecat.shop/products/姫様宣言プリンプリンdm25ex4-tr14-tr21-sr"
+    },
+    {
+      "at": "2026-11-20T06:26:55+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR19.jpg?v=1771161409",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "再興王女プリン(DM25EX4 TR19/TR21) VR",
+      "url": "https://torecat.shop/products/再興王女プリンdm25ex4-tr19-tr21-vr"
+    },
+    {
+      "at": "2026-11-20T06:26:55+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR10.jpg?v=1771161420",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "ボルベルグ・龍覇 ・ドラゴン(DM25EX4 TR10/TR21) SR",
+      "url": "https://torecat.shop/products/ボルベルグ-龍覇-ドラゴンdm25ex4-tr10-tr21-sr"
+    },
+    {
+      "at": "2026-11-20T06:26:55+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-019.jpg?v=1771161398",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "ボルシャック・カモン・ピッピー(DM25EX4 19/65) VR",
+      "url": "https://torecat.shop/products/ボルシャック-カモン-ピッピーdm25ex4-19-65-vr"
+    },
+    {
+      "at": "2026-11-18T16:08:47+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-016.jpg?v=1771161400",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "偽りの決闘 ボルシャック・イーサン(DM25EX4 16/65) VR",
+      "url": "https://torecat.shop/products/偽りの決闘-ボルシャック-イーサンdm25ex4-16-65-vr"
+    },
+    {
+      "at": "2026-11-17T01:08:56+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-PR2a.jpg?v=1770985807",
+      "kind": "new",
+      "price": "60円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "超哲駆 ロビー(DM25EX4 PR2/PR5) SPR",
+      "url": "https://torecat.shop/products/超哲駆-ロビーdm25ex4-pr2-pr5-spr"
     },
     {
       "at": "2026-11-14T07:54:37+09:00",
@@ -32,6 +307,83 @@
       "stock": "在庫あり",
       "title": "【状態B】「正義星帝」 ＜ライオネル.Star＞  (ノーマル仕様)",
       "url": "https://torecat.shop/products/正義星帝-ライオネル-star-ノーマル仕様dm26-sd1"
+    },
+    {
+      "at": "2026-11-13T01:19:43+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-PR4a.jpg?v=1770985808",
+      "kind": "new",
+      "price": "940円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "勝首領龍 カツドン(DM25EX4 PR4/PR5) SPR",
+      "url": "https://torecat.shop/products/勝首領龍-カツドンdm25ex4-pr4-pr5-spr"
+    },
+    {
+      "at": "2026-11-07T04:59:18+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex5-SEC005.jpg?v=1793960173",
+      "kind": "new",
+      "price": "6,380円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "無限龍王ボルシャック・ライジングNEX（㊙5/㊙5）",
+      "url": "https://torecat.shop/products/dm26ex5-sec005"
+    },
+    {
+      "at": "2026-11-06T14:42:52+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-SP4a.jpg?v=1771161390",
+      "kind": "new",
+      "price": "7,980円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "爆銀王剣 バトガイ刃斗(DM25EX4 SP4/SP5) VIC",
+      "url": "https://torecat.shop/products/爆銀王剣-バトガイ刃斗dm25ex4-sp4-sp5-vic"
+    },
+    {
+      "at": "2026-11-06T14:42:52+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-SP3a.jpg?v=1771161390",
+      "kind": "new",
+      "price": "6,300円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "滅殺刃 ゴー・トゥ・ヘル(DM25EX4 SP3/SP5) VIC",
+      "url": "https://torecat.shop/products/滅殺刃-ゴー-トゥ-ヘルdm25ex4-sp3-sp5-vic"
+    },
+    {
+      "at": "2026-11-06T14:42:52+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26ex3-SEC020.jpg?v=1786093853",
+      "kind": "new",
+      "price": "700円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "星増樹＜あきない遊びだぜ！＞（㊙20/㊙20）",
+      "url": "https://torecat.shop/products/dm26ex3-sec020"
+    },
+    {
+      "at": "2026-11-06T03:50:59+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S09a.jpg?v=1770985781",
+      "kind": "new",
+      "price": "1,260円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "芸魔温泉！オンセン・ガロウズ(DM25EX4 S9/S15) SR",
+      "url": "https://torecat.shop/products/芸魔温泉-オンセン-ガロウズdm25ex4-s9-s15-sr"
+    },
+    {
+      "at": "2026-11-06T03:50:59+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S11a.jpg?v=1770985782",
+      "kind": "new",
+      "price": "1,100円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "モーニング・ABYFLHA・カイザー(DM25EX4 S11/S15) SR",
+      "url": "https://torecat.shop/products/モーニング-abyflha-カイザーdm25ex4-s11-s15-sr"
     },
     {
       "at": "2026-11-06T03:50:59+09:00",
@@ -58,6 +410,83 @@
     {
       "at": "2026-11-05T20:18:27+09:00",
       "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S13.jpg?v=1771161412",
+      "kind": "new",
+      "price": "850円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "鬼修羅と跳次元の決断(DM25EX4 S13/S15) SR",
+      "url": "https://torecat.shop/products/鬼修羅と跳次元の決断dm25ex4-s13-s15-sr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S12a.jpg?v=1770985783",
+      "kind": "new",
+      "price": "700円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "千両力士 多禍の泥粋(DM25EX4 S12/S15) SR",
+      "url": "https://torecat.shop/products/千両力士-多禍の泥粋dm25ex4-s12-s15-sr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR04a.jpg?v=1771161389",
+      "kind": "new",
+      "price": "620円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "禁断 ～封印されしX～(DM25EX4 TR4/TR21)",
+      "url": "https://torecat.shop/products/禁断-封印されしx-dm25ex4-tr4-tr21"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S04.jpg?v=1771161415",
+      "kind": "new",
+      "price": "540円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "轟く跳躍 テレポートゾーン(DM25EX4 S4/S15) SR",
+      "url": "https://torecat.shop/products/轟く跳躍-テレポートゾーンdm25ex4-s4-s15-sr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": false,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR05a.jpg?v=1770985773",
+      "kind": "new",
+      "price": "520円",
+      "shop": "トレキャット",
+      "stock": "売り切れ",
+      "title": "轟く覚醒 レッドゾーン・バスター(DM25EX4 TR5/TR21) SR",
+      "url": "https://torecat.shop/products/轟く覚醒-レッドゾーン-バスターdm25ex4-tr5-tr21-sr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S01.jpg?v=1771161417",
+      "kind": "new",
+      "price": "420円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "光夢龍フィオナ・フォレスト(DM25EX4 S1/S15) SR",
+      "url": "https://torecat.shop/products/光夢龍フィオナ-フォレストdm25ex4-s1-s15-sr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S08.jpg?v=1771161413",
+      "kind": "new",
+      "price": "380円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "刀志猫のプワソン(DM25EX4 S8/S15) SR",
+      "url": "https://torecat.shop/products/刀志猫のプワソンdm25ex4-s8-s15-sr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26sd1-a007.jpg?v=1775227665",
       "kind": "new",
       "price": "350円",
@@ -65,6 +494,61 @@
       "stock": "在庫あり",
       "title": "【状態B】流星のガイアッシュ・カイザー (ノーマル仕様)",
       "url": "https://torecat.shop/products/流星のガイアッシュ-カイザー-ノーマル仕様dm26-sd1"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-SecSPR1.webp?v=1783313790",
+      "kind": "new",
+      "price": "300円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "沈黙の守護者-シュタインdm25ex4-spr1㊙-spr20-spr",
+      "url": "https://torecat.shop/products/沈黙の守護者-シュタインdm25ex4-spr1㊙-spr20-spr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S07a.jpg?v=1770985780",
+      "kind": "new",
+      "price": "220円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "時空の絆マスター・ルピア(DM25EX4 S7/S15) SR",
+      "url": "https://torecat.shop/products/時空の絆マスター-ルピアdm25ex4-s7-s15-sr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S06a.jpg?v=1770985781",
+      "kind": "new",
+      "price": "220円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "時空の停滞シュタイヴァル(DM25EX4 S6/S15) SR",
+      "url": "https://torecat.shop/products/時空の停滞シュタイヴァルdm25ex4-s6-s15-sr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-SecSPR2.webp?v=1783313766",
+      "kind": "new",
+      "price": "200円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "戦略の芸術家-バンキッシュdm25ex4-spr2㊙-spr20-spr",
+      "url": "https://torecat.shop/products/戦略の芸術家-バンキッシュdm25ex4-spr2㊙-spr20-spr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR08.jpg?v=1771161423",
+      "kind": "new",
+      "price": "200円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "復活の祈祷師ザビ・ミラ(DM25EX4 TR8/TR21) SR",
+      "url": "https://torecat.shop/products/復活の祈祷師ザビ-ミラdm25ex4-tr8-tr21-sr"
     },
     {
       "at": "2026-11-05T20:18:27+09:00",
@@ -80,6 +564,17 @@
     {
       "at": "2026-11-05T20:18:27+09:00",
       "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR02a.jpg?v=1770985811",
+      "kind": "new",
+      "price": "100円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "勝利のリュウセイ・カイザー(DM25EX4 TR2/TR21) VIC",
+      "url": "https://torecat.shop/products/勝利のリュウセイ-カイザーdm25ex4-tr2-tr21-vic"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26sd1-d001.jpg?v=1775227545",
       "kind": "new",
       "price": "100円",
@@ -87,6 +582,127 @@
       "stock": "在庫あり",
       "title": "【状態B】月下卍壊 ガ・リュミーズ 卍 (ノーマル仕様)",
       "url": "https://torecat.shop/products/月下卍壊-ガ-リュミーズ-卍-ノーマル仕様dm26-sd1"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-008.jpg?v=1771161404",
+      "kind": "new",
+      "price": "90円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "D2R2 邪眼のブラックオーバー(DM25EX4 8/65) VR",
+      "url": "https://torecat.shop/products/d2r2-邪眼のブラックオーバーdm25ex4-8-65-vr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR03a.jpg?v=1770985812",
+      "kind": "new",
+      "price": "90円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "勝利のガイアール・カイザー(DM25EX4 TR3/TR21) VIC",
+      "url": "https://torecat.shop/products/勝利のガイアール-カイザーdm25ex4-tr3-tr21-vic"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR18.jpg?v=1771161409",
+      "kind": "new",
+      "price": "80円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "頂上接続 ムザルミ=ブーゴ1st(DM25EX4 TR18/TR21) VR",
+      "url": "https://torecat.shop/products/頂上接続-ムザルミ-ブーゴ1stdm25ex4-tr18-tr21-vr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-010a.jpg?v=1770985792",
+      "kind": "new",
+      "price": "60円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "時空の忠剣ハチ公(DM25EX4 10/65) VR",
+      "url": "https://torecat.shop/products/時空の忠剣ハチ公dm25ex4-10-65-vr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S05.jpg?v=1771161415",
+      "kind": "new",
+      "price": "30円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "仁義の超刃(DM25EX4 S5/S15) SR",
+      "url": "https://torecat.shop/products/仁義の超刃dm25ex4-s5-s15-sr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR13a.jpg?v=1770985776",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "時空の鼓動 ブラックX(DM25EX4 TR13/TR21) SR",
+      "url": "https://torecat.shop/products/時空の鼓動-ブラックxdm25ex4-tr13-tr21-sr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-003.jpg?v=1771161407",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "怒流牙忍法 照宝闘の術(DM25EX4 3/65) VR",
+      "url": "https://torecat.shop/products/怒流牙忍法-照宝闘の術dm25ex4-3-65-vr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S14.jpg?v=1771161411",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "死命接続 グレイトフ・ル・フトイレグ(DM25EX4 S14/S15) SR",
+      "url": "https://torecat.shop/products/死命接続-グレイトフ-ル-フトイレグdm25ex4-s14-s15-sr"
+    },
+    {
+      "at": "2026-11-05T20:18:27+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S15.jpg?v=1771161411",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "影炎のリュウセイ・シャドウ(DM25EX4 S15/S15) SR",
+      "url": "https://torecat.shop/products/影炎のリュウセイ-シャドウdm25ex4-s15-s15-sr"
+    },
+    {
+      "at": "2026-10-23T21:24:12+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR15a.jpg?v=1770985777",
+      "kind": "new",
+      "price": "60円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "時空の支配者ディアボロス Z(DM25EX4 TR15/TR21) SR",
+      "url": "https://torecat.shop/products/時空の支配者ディアボロス-zdm25ex4-tr15-tr21-sr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR06a.jpg?v=1770985773",
+      "kind": "new",
+      "price": "620円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "時空の精圧ドラヴィタ(DM25EX4 TR6/TR21) SR",
+      "url": "https://torecat.shop/products/時空の精圧ドラヴィタdm25ex4-tr6-tr21-sr"
     },
     {
       "at": "2026-10-22T21:19:28+09:00",
@@ -102,6 +718,72 @@
     {
       "at": "2026-10-22T21:19:28+09:00",
       "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S03.jpg?v=1771161416",
+      "kind": "new",
+      "price": "480円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "覇王の頭蓋 髑髏魔城(DM25EX4 S3/S15) SR",
+      "url": "https://torecat.shop/products/覇王の頭蓋-髑髏魔城dm25ex4-s3-s15-sr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-SecSPR4.webp?v=1783313852",
+      "kind": "new",
+      "price": "400円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "魔導具の巨匠-ミロクdm25ex4-spr4㊙-spr20-spr",
+      "url": "https://torecat.shop/products/魔導具の巨匠-ミロクdm25ex4-spr4㊙-spr20-spr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR07a.jpg?v=1770985774",
+      "kind": "new",
+      "price": "380円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "時空の禁断 レッドゾーンX(DM25EX4 TR7/TR21) SR",
+      "url": "https://torecat.shop/products/時空の禁断-レッドゾーンxdm25ex4-tr7-tr21-sr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR11.jpg?v=1771161420",
+      "kind": "new",
+      "price": "300円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "偽りの月 インターステラ(DM25EX4 TR11/TR21) SR",
+      "url": "https://torecat.shop/products/偽りの月-インターステラdm25ex4-tr11-tr21-sr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S10.jpg?v=1771161413",
+      "kind": "new",
+      "price": "300円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "芸魔龍虎 ディメイジン(DM25EX4 S10/S15) SR",
+      "url": "https://torecat.shop/products/芸魔龍虎-ディメイジンdm25ex4-s10-s15-sr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR09a.jpg?v=1770985775",
+      "kind": "new",
+      "price": "220円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "超時空ストームG・XX(DM25EX4 TR9/TR21) SR",
+      "url": "https://torecat.shop/products/超時空ストームg-xxdm25ex4-tr9-tr21-sr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm26rp1-014a_b42a4169-2688-481e-9611-2c6ce214895e.jpg?v=1790254376",
       "kind": "new",
       "price": "200円",
@@ -113,6 +795,39 @@
     {
       "at": "2026-10-22T21:19:28+09:00",
       "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-S02.jpg?v=1771161416",
+      "kind": "new",
+      "price": "110円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "流星の逆転撃(DM25EX4 S2/S15) SR",
+      "url": "https://torecat.shop/products/流星の逆転撃dm25ex4-s2-s15-sr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-004a.jpg?v=1770985788",
+      "kind": "new",
+      "price": "100円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "時空の吸引ドンドン・クローラー(DM25EX4 4/65) VR",
+      "url": "https://torecat.shop/products/時空の吸引ドンドン-クローラーdm25ex4-4-65-vr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR12.jpg?v=1771161419",
+      "kind": "new",
+      "price": "60円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "超次元の王家(DM25EX4 TR12/TR21) SR",
+      "url": "https://torecat.shop/products/超次元の王家dm25ex4-tr12-tr21-sr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
       "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-020.jpg?v=1771161398",
       "kind": "new",
       "price": "60円",
@@ -120,6 +835,105 @@
       "stock": "在庫あり",
       "title": "最高にして彩光なる再興(DM25EX4 20/65) VR",
       "url": "https://torecat.shop/products/最高にして彩光なる再興dm25ex4-20-65-vr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-001a.jpg?v=1770985787",
+      "kind": "new",
+      "price": "40円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "時空の王機ミル・アーマ(DM25EX4 1/65) VR",
+      "url": "https://torecat.shop/products/時空の王機ミル-アーマdm25ex4-1-65-vr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-007a.jpg?v=1770985790",
+      "kind": "new",
+      "price": "40円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "時空の忍ヤミノザンジ(DM25EX4 7/65) VR",
+      "url": "https://torecat.shop/products/時空の忍ヤミノザンジdm25ex4-7-65-vr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-005.jpg?v=1771161405",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "超兄弟！アクア・アッセンブル(DM25EX4 5/65) VR",
+      "url": "https://torecat.shop/products/超兄弟-アクア-アッセンブルdm25ex4-5-65-vr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-014.jpg?v=1771161401",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "「友情」の樹極 フィオナ・シャングリラ(DM25EX4 14/65) VR",
+      "url": "https://torecat.shop/products/友情-の樹極-フィオナ-シャングリラdm25ex4-14-65-vr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-013a.jpg?v=1771161402",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "時空の化身エボテム(DM25EX4 13/65) VR",
+      "url": "https://torecat.shop/products/時空の化身エボテムdm25ex4-13-65-vr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-012.jpg?v=1771161402",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "芸魔紅虎 カラクレナイゴ(DM25EX4 12/65) VR",
+      "url": "https://torecat.shop/products/芸魔紅虎-カラクレナイゴdm25ex4-12-65-vr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-015.jpg?v=1771161401",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "無敵の超人(DM25EX4 15/65) VR",
+      "url": "https://torecat.shop/products/無敵の超人dm25ex4-15-65-vr"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR01a.jpg?v=1770985811",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "流星のフォーエバー・カイザー(DM25EX4 TR1/TR21) VIC",
+      "url": "https://torecat.shop/products/流星のフォーエバー-カイザーdm25ex4-tr1-tr21-vic"
+    },
+    {
+      "at": "2026-10-22T21:19:28+09:00",
+      "available": true,
+      "image": "https://cdn.shopify.com/s/files/1/0867/4322/0526/files/dm25ex4-TR21.jpg?v=1771161408",
+      "kind": "new",
+      "price": "10円",
+      "shop": "トレキャット",
+      "stock": "在庫あり",
+      "title": "魅惑のロイヤル・エイリアン(DM25EX4 TR21/TR21) VR",
+      "url": "https://torecat.shop/products/魅惑のロイヤル-エイリアンdm25ex4-tr21-tr21-vr"
     },
     {
       "at": "2026-10-17T00:28:35+09:00",
@@ -375,10 +1189,10 @@
       "url": "https://torecat.shop/products/dm26ex2-002"
     }
   ],
-  "saved_at": "2026-11-23T06:55:53+09:00",
+  "saved_at": "2026-11-23T20:06:41+09:00",
   "shops": {
     "amenity": {
-      "checked_at": "2026-11-23T06:55:53+09:00",
+      "checked_at": "2026-11-23T20:06:41+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
@@ -386,7 +1200,7 @@
       "state": "ok"
     },
     "torecat": {
-      "checked_at": "2026-11-23T06:55:53+09:00",
+      "checked_at": "2026-11-23T20:06:41+09:00",
       "error_count": 0,
       "error_notified": false,
       "last_error": null,
